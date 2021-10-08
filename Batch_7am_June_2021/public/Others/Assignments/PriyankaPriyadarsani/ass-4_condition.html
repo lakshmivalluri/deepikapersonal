@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Employee_salary</title>
+     <style>
+         h3{
+             background-color: tomato;
+             color: black;
+             text-align: center;
+             border-radius: 10px;
+         }
+     </style>
+    </head>
+    <body>
+        <h3>Employee Tax Details</h3>
+        <script type="text/javascript">
+      var name="Priyanka";
+      var age=24;
+      var department="cse";
+      var basicsalary=75000;
+       var gender="female";
+      var pf,totsal,hra,tax;
+      pf=14*basicsalary/100;
+      hra=25*basicsalary/100;
+      totsal=basicsalary+hra+pf;
+
+      console.log("employee name:"+name)
+      console.log("employee age:"+age)
+      console.log("department:"+department)
+      console.log("employee basic salary is:"+basicsalary)
+      console.log("gender:"+gender)
+      console.log("employe pf is:"+pf)
+      console.log("employee hra is:"+hra)
+      console.log("employee total salary is:"+totsal)
+      if (gender=="female"){
+          if(totsal>200000){
+              tax=(basicsalary*10)/100;
+              console.log("employee tax is:"+tax)
+
+          }
+          else if(totsal>100000){
+              tax=(basicsalary*5)/100;
+              console.log("employee tax is:"+tax)
+          }
+          else if(totsal > 50000) {
+              tax=(basicsalary*0)/100
+              console.log("employee tax:"+tax)
+
+          }
+      }
+      if(gender=="male"){
+           if(totsal > 200000){
+               tax=(basicsalary *15)/100;
+               console.log("employee tax is:"+tax)
+           }
+           else if(totsal > 100000){
+               tax=(basicsalary*10)/100;
+               console.log("employee tax is:"+tax)
+           }
+           else if(total > 50000){
+               tax=(basicsalary*5)/100;
+               console.log("employee details:"+tax)
+           }
+      }
+
+        
+
+
+
+
+        </script>
+    </body>
+</html>
+
+

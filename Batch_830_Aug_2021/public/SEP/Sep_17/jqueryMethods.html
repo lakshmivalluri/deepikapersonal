@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Jquery Methods
+        </title>
+        <script src="../jquery.js"></script>
+        <style>
+            .container {
+                border: 1px solid;
+                width: 200px;
+                height: 200px;
+                text-align: center;
+            }
+            .highlight {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="click" onclick="doAction()">
+        <div class="container" onclick="highlightElement()">
+            HELLO
+        </div>
+        <input type="text" id="uname">
+        <script>
+            var highlightElement = () => {
+                /*if ($(".container").hasClass("highlight")) {
+                    $(".container").removeClass("highlight");
+                } else {
+                    $(".container").addClass("highlight");
+                }*/
+                $(".container").toggleClass("highlight");
+            } 
+            var doAction = () => {
+                // console.log($("#uname").val());
+                $("#uname").val("Beautiful");
+                
+            }
+        </script>
+    </body>
+</html>

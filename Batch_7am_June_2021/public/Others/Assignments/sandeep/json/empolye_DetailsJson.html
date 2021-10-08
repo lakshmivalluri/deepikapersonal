@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <script>
+        var empDetails ={
+            sName : 'teena',
+            sAge :25,
+            sGender :'female',
+            sSalary : 25000,
+            total:0, pf:0,  hra: 0
+
+        };
+       
+        console.log ("the employee name :" + empDetails.sName);
+        console.log ("the employee age :" + empDetails.sAge);
+        console.log ("the employee gender :" + empDetails.sGender);
+        console.log ("the employee name :" + empDetails.sSalary);
+
+       /* empDetails.total = empDetails.sSalary - empDetails.pf- empDetails.hra ;
+        console.log ("the total value :" + empDetails.total); */
+
+        if (empDetails.sGender === "male"){
+            console.log ("the Pf value :"+ empDetails.sSalary*0.25 );
+            console.log ("the hra value :"+ empDetails.sSalary*0.15);
+            
+        }
+
+        if (empDetails.sGender === "female"){
+            console.log ("the Pf value :"+ empDetails.sSalary*0.25 );
+            console.log ("the hra value :"+ empDetails.sSalary*0.15);
+            
+
+        }
+        empDetails.total = empDetails.sSalary - empDetails.sSalary*0.25- empDetails.sSalary*0.15;
+        console.log ("the total value :" + empDetails.total);
+
+    </script>
+</body>
+</html>

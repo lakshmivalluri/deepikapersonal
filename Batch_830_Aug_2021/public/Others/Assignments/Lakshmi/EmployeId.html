@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Detials Page</title>
+		<script src='first.js'></script>
+		<link rel="stylesheet"  href="first.css">
+	</head>
+	<body>
+        <h3 class="heading">
+        	Employee Details
+        </h3>
+        <ul class="inputdata">
+        	<li >Employee Name:
+        		<span class="gap"><input type="text" id="ename"></span>
+        	</li>
+        	<li>
+        		Employee Age:
+        		<span class="gap1"><input type="text" id="eage"></span>
+        	</li>
+        	<li>
+        		Gender:<span class="gap3">Male<input type="radio" value="male" id="egender">
+        		       female<input type="radio" value="female" id="egender"></span>
+
+        	</li>
+        	<li>Location:
+        		<span class="gap2"><select name="" id="elocation">
+        			<option value="Hyderabad">Hyderabad</option>
+        			<option value="Bangloor">Bangloor</option>
+        			<option value="Kolkata">Kolkata</option>
+        			<option value="Chenni">Chenni</option>
+        		</select></span>
+        	</li>
+        	
+        	<li>
+        		<span class="gap4"><input type="button" value="generateEmployDetailsPg" onclick="employDetailsInfo();" ></span>
+        	</li>
+        </ul>
+        <ul class="employDetailsCard">
+        	<li style="color: blue;text-align: center;">
+                Employ Details Page
+            </li>
+            <li>
+                Employ Name: <span id="rname"></span>
+            </li>
+             <li>
+                Employ age: <span id="rage"></span>
+            </li>
+             <li>
+                Employ gender: <span id="rgender"></span>
+            </li>
+             <li>
+                Employ Location: <span id="rlocation"></span>
+            </li>
+            
+            
+            <li>
+            	<span class="gap3"><input type="button" value="Add"  >  <span><input type="button" value="Delete"></span></span>
+            </li>
+        </ul>
+        
+	</body>
+</html>

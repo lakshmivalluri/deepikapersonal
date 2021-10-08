@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class Parent {
+                constructor() {
+                    console.log("am frm cons of parent")
+                }
+                displayParentInfo() {
+                    console.log("Its from parent")
+                }
+            }
+
+            class Child extends Parent {
+                constructor() {
+                    super(); //calling the const of parent class
+                    this.name = "RAJ";
+                    console.log("frm const of child")
+                }
+                displayChildInfo() {                    
+                    console.log("Am frm child " + this.name);
+                    //this.displayParentInfo();
+                }
+                test() {
+                    console.log("hello test from child")
+                }
+            }
+
+            class GrandChild extends Child {
+                constructor() {
+                    
+                    super();
+                    this.name = "Teena";
+                    console.log("am frm cons of grand child")
+                }
+                displayGrandChildInfo() {
+                    console.log("am frm grand child method")
+                }
+                test() {
+                    super.test();
+                    console.log("Hello from grand child test")
+                    console.log(this.name);
+                }
+            }
+            var s1 = new GrandChild();
+            /*s1.displayGrandChildInfo();
+            s1.displayChildInfo();
+            s1.displayParentInfo(); */
+            s1.test();
+         </script>
+    </body>
+</html>

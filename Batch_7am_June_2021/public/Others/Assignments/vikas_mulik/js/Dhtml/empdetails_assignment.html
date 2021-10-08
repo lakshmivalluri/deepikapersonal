@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ap.css">
+</head>
+<body>
+    <h2>Employee details </h2>
+    <ul>
+        <li>
+            Ename: <input type="text" id="ename">
+        </li>
+        <li>
+            Eage: <input type="text" id="eage">
+        </li>
+        <li>Gender: <input type="radio" name="ungender" id="egender" value="male">male
+                    <input type="radio" name="ungender" id="egender" value="female" >female
+        </li>
+
+        <li>
+            Deparment: 
+            <select id="edep" >
+                <option value="it"> it</option>
+                <option value="electrical">electrical</option>
+                <option value="chemetry">chemetry</option>
+                <option value="maths">maths</option>
+                <option value="zoology">zoology</option>
+            </select>
+        
+        </li>
+        <li>
+            Basicsalery: <input type="number" id="ebasicsalery">
+        </li>
+        <li  style="text-align: right;">
+            <input type="button" value="Submit" onclick=" gendeterempdata();">
+        </li>
+    </ul>
+
+    <ul class="payslipblock">
+        <li  class="details">
+            payslip
+            </li>
+            <li>
+            Ename: <span id="rename"></span>
+        </li>
+        <li>
+            Eage: <span id="reage" ></span>
+        </li>
+        <li>
+            Egender: <span id="regender" ></span>
+        </li>
+        <li>
+            Deparment: <span id="redep" ></span>
+        </li>
+        <li>
+            Basicsalery: <span id="rbasicsalery" ></span>
+        </li>
+        <li>
+            Pf : <span id="rpf" ></span>
+        </li>
+        <li>
+            Hrf: <span id="rhrf" ></span>
+        </li>
+        <li>
+            Total: <span id="rtotal" ></span>
+        </li>
+        <li>
+            Tax: <span id="rtax"></span>
+        </li>
+    </ul>
+      <script src="empdetail.js" ></script>
+
+</body>
+</html>

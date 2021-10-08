@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Sports Registration</title>
+        <link rel="stylesheet" type="text/css" href="sportStyle.css">
+        <script src="sport.js"></script>
+    </head>
+    <body>
+        <div id="registration">
+        <div id="heading">University sports Registration</div><br><br>
+        <div class="detail">
+        <span>Enter Collage Details</span>
+      </div>
+        
+        <ul>
+            
+            <li>
+            <div class ="ulabel">Collage Name:</div>
+			<div class="control"><input type="text" name="clname"  id = "colname"></div>
+            </li>
+            <li>
+             <div class ="ulabel">Collage code:</div>
+			<div class="control"><input type="text" name="code"  id = "code"></div>
+            </li>
+            <li>
+            <div class ="ulabel">Location:</div>
+			<div class="control"><select id="opt"><option>Aurangabad</option>
+                <option>Pune</option></select></div>
+            </li>   
+         </ul><br><br>
+         <div class="detail1">
+            <span>Enter Collage Details</span>
+         </div>
+        <ul>
+            
+            <li>
+                <div class ="ulabel">Student Name:</div>
+			<div class="control"><input type="text" name="clname"  id = "sname"></div></li>
+            </li>
+            <li>
+                <div class ="ulabel">Age:</div>
+			<div class="control"><input type="text" name="code"  id = "age"></div></li>
+            </li>
+            <li>
+                <div class ="ulabel">Gender:</div>
+			<div class="control"><input type="radio" name="gender" value="Male">Male
+                            <input type="radio" name="gender" value="Female">Female</li>
+             <li>
+                 <div class ="ulabel">Sports:</div>
+                <div class="control"><input type="text" name="sport"  id = "sport"></div></li>
+            </li>
+                <li>
+                    <input type="button" value="Register" onclick="registerData()" id="reg">
+                </li>
+            
+        </ul>
+        </div>
+        
+       <div class="detailsBlock"></div>
+    
+    </body>
+</html>

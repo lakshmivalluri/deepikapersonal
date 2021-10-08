@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            navigator Object
+        </title>
+    </head>
+    <body>
+        <div>
+            <script>
+                console.log(typeof(navigator.userAgent))
+                if (navigator.userAgent.includes('Edg')) {
+                    alert("am in Edge");
+                } else if (navigator.userAgent.includes('Firefox')){
+                    alert("am in firefox");
+                } else {
+                    alert("am in chrome");
+                }
+                
+                
+            </script>
+        </div>
+    </body>
+</html>

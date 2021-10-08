@@ -1,0 +1,129 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+ul {
+    font-size: 2.4rem;
+    border: 4px solid #3a86ff;
+    width: 70%;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 12%;
+    background-color: #dfe7fd;
+}
+
+li {
+    margin: 50px;
+    margin-left: 100px;
+    list-style: none;
+}
+
+.left {
+    width: 50%;
+    height: 450px;
+    float: left;
+    color: #ff006e;
+}
+
+.right {
+    width: 50%;
+    float: left;
+    color: #fca311;
+}
+
+#uname {
+    text-indent: 25px;
+    height: 2rem;
+    width: 60%;
+    font-size: 20px;
+    border: 4px solid #43aa8b;
+}
+
+#unumber {
+    text-indent: 25px;
+    height: 1.5rem;
+    width: 30%;
+    font-size: 20px;
+    border: 4px solid #43aa8b;
+}
+
+.ugender {
+    padding-top: 15px;
+    font-size: 2rem;
+}
+
+#ulocation {
+    text-indent: 2rem;
+    width: 100%;
+    height: 6rem;
+    border: 4px solid #ee6c4d;
+    border-radius: 2rem;
+    word-spacing: 2mm;
+    letter-spacing: 2px;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+#add, #save {
+    height: 4rem;
+    width: 9rem;
+    float: right;
+    margin-right: 14rem;
+    font-size: 2rem;
+    color: #f94144;
+    background-color: #f2e9e4;
+    border: 4px solid #118ab2;
+    cursor: pointer;
+}
+
+#save {
+    margin-right: 32rem;
+    color: #ef476f;
+    font-size: 2.5rem;
+    border: 4px solid #b5179e;
+}
+
+#add, #save:hover {
+    height: 5rem;
+    width: 10.5rem;
+    color: red;
+    font-size: 2.5rem;
+    border: 5px solid #118ab2;
+    background-color: greenyellow;
+}
+
+table {
+    width: 90%;
+    text-align: center;
+    border: 4px solid #06d6a0;
+    margin-left: 50px;
+    margin-bottom: 15em;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #dee2e6;
+}
+
+tr, td {
+    padding: 30px;
+    border: 4px solid #9b5de5;
+}
+
+td {
+    color: #00afb9;
+}
+
+.hide {
+    display: none;
+}
+
+.edit, .delete {
+    width: 120px;
+    height: 80px;
+    margin: 20px;
+    font-size: 1.5rem;
+    color: #00afb9;
+    border: 3px solid #00f5d4;
+    cursor: pointer;
+    background-color: #edf2f4;
+}

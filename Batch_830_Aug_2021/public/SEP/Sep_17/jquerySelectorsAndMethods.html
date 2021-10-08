@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="../jquery.js"></script>
+        <style>
+            .highlight {
+                border: 1px solid;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Apply" onclick="applyChanges()">
+        <div>
+            hello
+        </div>
+        <span>
+            test
+        </span>
+        <p>
+            new content
+        </p>
+        <div>
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 4</span>
+            <span>Item 5</span>
+        </div>
+        <a href="" name="test">ONE</a>
+        <a href="" name="sample" target="_blank">TWO</a>
+        <a href="" name="xyz">THREE</a>
+        <div class="container">
+
+        </div>
+        <script>
+            var applyChanges = () => {
+                //$("*").css('border', '1px solid');
+                //$("span:first").addClass("highlight")
+                // $("span:first-child").addClass("highlight")
+                //$("a[name=sample]").addClass('highlight')
+                //$('span:eq(3)').addClass("highlight");
+                //$("span:first-of-type").addClass("highlight")
+
+               // $("span").addClass("highlight");
+               // $("p").addClass("highlight");
+                $('span, p').addClass("highlight");
+            }   
+        </script>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>CSS Positions with Blocks</title>
+    <style type="text/css">
+        .back {
+            border: 1px solid #c8e1ff;
+            background-color: #f1f8ff;
+        }
+
+        .header {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            position: relative;
+            height: 550px;
+        }
+
+        .block {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            position: absolute;
+        }
+
+        .left-top-1 {
+            background-color: red;
+            top: 0%;
+            left: 0%;
+        }
+
+        .left-top-2 {
+            background-color: green;
+            top: 50px;
+            left: 50px;
+        }
+
+        .right-top-1 {
+            background-color: red;
+            top: 0%;
+            right: 0%;
+        }
+
+        .right-top-2 {
+            background-color: green;
+            top: 50px;
+            right: 50px;
+        }
+
+        .left-bottom-1 {
+            background-color: red;
+            left: 0%;
+            bottom: 0%;
+        }
+
+        .left-bottom-2 {
+            background-color: green;
+            left: 50px;
+            bottom: 50px;
+        }
+
+        .right-bottom-1 {
+            background-color: red;
+            right: 0%;
+            bottom: 0%;
+        }
+
+        .right-bottom-2 {
+            background-color: green;
+            right: 50px;
+            bottom: 50px;
+        }
+
+        .center-1 {
+            background-color: blue;
+            left: 42%;
+            top: 30%;
+        }
+
+        .center-2 {
+            background-color: blue;
+            right: 42%;
+            top: 30%;
+        }
+
+        .center-3 {
+            background-color: blue;
+            left: 42%;
+            bottom: 30%;
+        }
+
+        .center-4 {
+            background-color: blue;
+            right: 42%;
+            bottom: 30%;
+        }
+
+        .center {
+            background-color: white;
+            top: 40%;
+            right: 46%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back header">
+        Block Alignment
+    </div>
+    <div class="back content">
+        <div class="block left-top-1"></div>
+        <div class="block left-top-2"></div>
+        <div class="block right-top-1"></div>
+        <div class="block right-top-2"></div>
+        <div class="block left-bottom-1"></div>
+        <div class="block left-bottom-2"></div>
+        <div class="block right-bottom-1"></div>
+        <div class="block right-bottom-2"></div>
+        <div class="block center-1"></div>
+        <div class="block center-2"></div>
+        <div class="block center-3"></div>
+        <div class="block center-4"></div>
+        <div class="block center"></div>
+    </div>
+</body>
+
+</html>

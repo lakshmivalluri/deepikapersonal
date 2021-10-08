@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EmployeeDetails_JSON obhect through this keyword</title>
+  </head>
+  <h2>EmployeeDetails_JSON obhect through this keyword</h2>
+  <body>
+    <script>
+     var Empdetails = {
+          name: "",
+          gender: " ",
+          department: "",
+          basicsal:" " ,
+          pf:" " ,
+          totalsal:" ", 
+          tax: "",
+
+        EmployeeDetails: function () {
+          this.name = prompt("Enter Employee Name");
+          this.gender = prompt("Enter gender");
+          this.department = prompt("Enter dept");
+          this.basicsal = prompt("Enter basicsalary");
+          this.basicsal = parseInt(this.basicsal);
+        },
+
+        salarycalculation: function () {
+         this.basicsal = parseInt (this.basicsal);
+        Empdetails.pf = this.basicsal*14/100 ;
+        this.totalsal = this.basicsal + this.pf;
+        },
+
+        Taxcondition: function () {
+          this.salarycalculation();
+
+          if (Empdetails.gender == 'male') {
+              if (Empdetails.totalsal > 40000){
+                Empdetails.tax= this.totalsal*0.15;                
+                console.log("tax:" + Empdetails.tax);
+              }
+              else if(Empdetails.totalsal > 20000 && Empdetails.totalsal < 40000){
+                Empdetails.tax= this.totalsal*0.10;
+                console.log("tax:" + Empdetails.tax);
+              }
+              else if(Empdetails.totalsal > 10000 && Empdetails.totalsal < 20000){
+                Empdetails.tax = this.totalsal*0.5;
+                console.log("tax:" + Empdetails.tax);
+              }
+              else {
+                console.log("tax:" + "null");
+              }
+            }
+            else if (Empdetails.gender == 'female'){
+              if (Empdetails.totalsal > 20000  ){
+                Empdetails.tax = this.totalsal*0.01;
+                console.log("tax:" + Empdetails.tax);
+              }
+              else if (Empdetails.totalsal >= 10000 && Empdetails.totalsal <= 20000) {
+                Empdetails.tax = this.totalsal*0.01;
+                console.log("tax:" + Empdetails.tax);
+              }
+              else if (Empdetails.totalsal >= 5000 && Empdetails.totalsal <10000) {
+                Empdetails.tax = this.totalsal*0.01;
+                console.log("tax:" + Empdetails.tax);
+              }
+              else{
+                console.log("tax:" +"null");
+              }
+            }
+        },
+        displayData: function () {
+          Empdetails.EmployeeDetails();
+          this.Taxcondition();
+          
+             console.log("employee name is:" + Empdetails.name);
+             console.log("employee gender " + Empdetails.gender);
+             console.log("employee department :" + Empdetails.department);
+             console.log("basicsal is " + Empdetails.basicsal);
+             console.log("pf is " + Empdetails.pf);
+             console.log("totalsal is " + Empdetails.totalsal);
+             console.log("tax" + Empdetails.tax);
+        },
+      };
+
+      Empdetails.displayData();
+    </script>
+  </body>
+</html>

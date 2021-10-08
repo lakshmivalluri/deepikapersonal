@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>StudentDeatilsPageUsingSprittingImage</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		table{
+			width: 100%;
+		}
+		thead{
+			background-color: black;
+			color: white;
+		}
+		td:hover
+		{
+			background-color: goldenrod;
+			font-weight: bolder;
+		}
+		.head_part
+		{
+			color: black;
+			font-size: 26px;
+			font-weight: bold;
+			text-align: center;
+			border: 2px solid white;
+			background-color: goldenrod;
+		}
+		.main_part
+		{
+			background-color: palegoldenrod;
+			color: black;
+			padding: 10px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		.foot_part
+		{
+			text-align: center;
+			border: 2px solid white;
+			color: white;
+
+		}
+		.img_box
+		{
+			height: 185px;
+			width: 179px;
+			padding-left: 15px;
+		}
+		.Image_holder
+		{
+			height: 165px;
+			width: 162px;
+		    background-image: url(Images/Spriting_image.png);
+		    border: 3px solid;
+		    background-position-x: -41px;
+	
+		}
+		.s_no
+		{
+			font-weight: bold;
+		}
+		.item1
+		{
+			background-position-y: -15px;
+		}
+		.item2
+		{
+		    background-position-y: -229px;
+		}
+		.item3
+		{
+		    background-position-y: -445px;
+		}
+		.item4
+		{
+		    background-position-y: -662px;
+		}
+		.item5
+		{
+		    background-position-y: -879px;
+		}
+	</style>
+</head>
+<body>
+	<div class="head_part">Student Details</div>
+	<div class="main_part">
+		<table border="2px solid" bordercolor="red" cellspacing="3px" cellpadding="5px">
+			<thead>
+				<tr>
+					<th>Serial no.</th>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Profile picture</th>
+					<th>Class</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="s_no">1</td>
+					<td>Neha</td>
+					<td>Odisha</td>
+					<td class="img_box"><div class="Image_holder item1"></div></td>
+					<td rowspan="5">12th</td>
+					<td>
+						<table border="2px solid" >
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Math</td>
+									<td>100</td>
+									<td>33</td>
+									<td>77</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>55</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>69</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>73</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>68</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="s_no">2</td>
+					<td>Rahul</td>
+					<td>Bangalore</td>
+					<td class="img_box"><div class="Image_holder item2"></div></td>
+					
+					<td>
+						<table border="2px solid" >
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Math</td>
+									<td>100</td>
+									<td>33</td>
+									<td>73</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>65</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>62</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>56</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>85</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="s_no">3</td>
+					<td>Meena</td>
+					<td>Punjab</td>
+					<td class="img_box"><div class="Image_holder item3"></div></td>
+					
+					<td>
+						<table border="2px solid" >
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Math</td>
+									<td>100</td>
+									<td>33</td>
+									<td>68</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>51</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>66</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>63</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>59</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="s_no">4</td>
+					<td>Ramesh</td>
+					<td>Keral</td>
+					<td class="img_box"><div class="Image_holder item4"></div></td>
+					
+					<td>
+						<table border="2px solid" >
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Math</td>
+									<td>100</td>
+									<td>33</td>
+									<td>76</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>45</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>59</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>71</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>98</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="s_no">5</td>
+					<td>Hrisikesh</td>
+					<td>Hyderabad</td>
+					<td class="img_box"><div class="Image_holder item5"></div></td>
+					
+					<td>
+						<table border="2px solid" >
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Math</td>
+									<td>100</td>
+									<td>33</td>
+									<td>67</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>65</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>66</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>63</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>58</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="foot_part">©allCopyReserved_2021</div>
+</body>
+</html>

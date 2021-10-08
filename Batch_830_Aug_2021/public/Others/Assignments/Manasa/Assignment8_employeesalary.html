@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Salary</title>
+
+</head>
+<body>
+	<h2 style="color: blue; text-align: center;">Employee Salary Calculation</h2>
+	<script type="text/javascript">
+		var sname = prompt("Enter Employee Name");
+		var age = prompt("Enter Employee Age");
+		var gender = prompt("Enter Employee gender");
+		var basicSalary = prompt("Enter Employee basicSalary");
+		basicSalary = parseInt(basicSalary);
+
+
+
+		var hra = (basicSalary*25)/100;
+		var pf = (basicSalary*14)/100;
+		var totalSalary = basicSalary+hra+pf
+		
+        console.log("Name is "+sname);
+		console.log("Employee Age is " + age);
+		console.log("Employee gender is " + gender);
+		console.log("Employee basicSalary is " + basicSalary);
+		console.log("HRA is " +hra);
+		console.log("PF is " +pf);
+		console.log("TotalSalary is " +totalSalary);
+
+		if (gender == 'male') {
+
+		if (totalSalary>300000) {
+			var tax = (totalSalary*15)/100;
+
+        } else if (totalSalary>200000) {
+        	var tax = (totalSalary*10)/100;
+          }
+          else if (totalSalary>100000) {
+          	var tax3 = (totalSalary*5)/100;
+          }
+       } 
+       else if (gender == 'female') {
+          if (totalSalary>300000) {
+          		var tax = (totalSalary*10)/100;
+          }
+          else if (totalSalary>200000) {
+          		var tax = (totalSalary*5)/100;
+          }
+        }
+          
+        else{
+        	console.log("No Tax");
+    }
+
+    console.log("tax is " +tax);
+
+        
+
+
+	</script>
+
+</body>
+</html>

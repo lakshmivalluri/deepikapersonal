@@ -1,0 +1,48 @@
+.productDetails {
+    border: 1px solid;
+    width: 300px;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+}
+
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+img{ 
+    width: 150px;
+    height: 150px;
+}
+.beforeDiscount {
+    color: blue;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-decoration-color: red;    
+}
+
+.finalPrice {
+    color: green;
+    font-weight: bold;
+}
+
+.loadingBlock {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    display: none;
+}
+
+.errBlock {
+    display: none;
+    border: 1px solid;
+    color: red;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}

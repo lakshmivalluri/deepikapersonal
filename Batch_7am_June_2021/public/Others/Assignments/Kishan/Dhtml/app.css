@@ -1,0 +1,31 @@
+.heading {
+    text-align: center;
+    font-weight: bold;
+    background-color: blue;
+    font-size: 18px;
+
+}
+ ul {
+     border: 2px dotted;
+     width: 500px;
+     margin: 10px auto;
+     padding: 2px;
+
+ }
+ li {
+      list-style: none;
+      border: solid red;
+      margin: 5px;
+      padding: 5px;
+
+ }
+ .marksContainer input[type=text]{
+     width: 15px;
+ }
+ .sTitle {
+        text-align: center;
+        color: green;
+ }
+ .progressCardBlock {
+    display: none;
+ }

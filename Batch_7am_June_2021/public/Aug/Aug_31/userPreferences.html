@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating html5 localStorage and sessionStorage</title>
+        <script src="../jquery.js"></script>
+        <script src="app.js"> </script>
+        <style>
+            h3 {
+                text-align: center;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            #wlcmBlock {
+                border: 1px solid;
+                padding: 30px;
+                position: absolute;
+                left: 30%;
+                top: 40%;
+                width: 400px;
+                background-color: #cdea21;
+                display: none;
+                color: #000;
+            }
+            .themeChooser {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Welcome to page
+        </h3>
+        <div class="themeChooser">
+            Select Theme: 
+            <select name="" id="theme" onchange="themeChange(event)">
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="grey">Grey</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </div>
+        Enter User Name: <input type="text" id='uname'>
+        <input type="button" value="Save" onclick="saveUser()">
+        <div id="wlcmBlock"></div>
+    </body>
+</html>

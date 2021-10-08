@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            Conditional statements
+        </title>
+    </head>
+   <body>
+       <h3>
+           Employee Details
+       </h3>
+             <script type="text/javascript">
+                 console.log("Start with employee details ");
+                 var empname, age, department, basicSalary, gender; /*1st way: variable declaration */
+                 empname ="Srilu";
+                 age = 25;                                        /*variable Initializing*/
+                 department = "cse";
+                 basicSalary = 10000;
+                 gender = "female";
+                 var pf = basicSalary*(14/100);                /*2nd way: variable declaring and definition*/
+                 var hra = basicSalary*(25/100);
+                 var totalSalary = pf + basicSalary + hra;
+                 console.log("Employee Name:"+ empname);
+                 console.log("Age:"+ age);
+                 console.log("Department:"+ department);
+                 console.log("totalSalary is "+ totalSalary);
+                 console.log("calculating tax details of "+ empname);                 
+                     /*Female employee details*/
+                    if(gender =="female" && totalSalary > 200000)
+                     {
+                       console.log("Tax percent = 10%");
+                     }
+                       else if(totalSalary > 100000) 
+                       {
+                        console.log("Tax Percent = 5%")
+                       } 
+                       else if(totalSalary > 50000)
+                       {
+                         console.log("Tax percent = 0");   
+                       }
+                       else if(totalSalary < 50000){
+                         console.log("Tax percent won't calculate for  salary which is below 50k");
+                       }
+                       /*Male employee details*/                
+                      else if(gender =="male" && totalSalary > 200000)
+                     {
+                       console.log("Tax percent = 15%");
+                     }
+                       else if(totalSalary > 100000) 
+                       {
+                        console.log("Tax Percent = 10%")
+                       } 
+                       else if(totalSalary > 50000)
+                       {
+                         console.log("Tax percent = 5%");   
+                       }
+                       else {
+                         console.log("Unable to fetch the employee tax details");
+                       }
+                  
+                console.log("Tax Calculation is done");
+             </script>
+   </body>
+    </html>

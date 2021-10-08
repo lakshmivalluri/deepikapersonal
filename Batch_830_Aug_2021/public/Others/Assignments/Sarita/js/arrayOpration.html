@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var choice = prompt("Enter  your choice to perform opration on array: \n 1. find prime number in array \n 2. find sum of prime number \n 3.find largest number in array \n 4. find second largest number in array \n 5. Sorting array \n 6. list out all palindrom number \n 7. list out all armstrng number");
+
+        
+            choice = parseInt(choice);
+            var store = [];
+            switch(choice){
+                case 1:
+                    primenum();
+                break;
+                case 2:
+                    sumofPrime();
+                break;
+                case 3:
+                    large();
+                break;
+                case 4:
+                    secondLarge();
+                break;
+                case 5:
+                    sort();
+                break;
+                case 6:
+                    palindrom();
+                break;
+                case 7:
+                    armstrong();
+                break;
+
+            }
+            function primenum() {
+                var number = [99, 7, 10, 13, 14, 18, 20];
+                var tracker = 0 , n;
+                var sum =  0;
+                console.log(number);
+                for (var n = 0; n < number.length; n++) {
+                    var num = number[n];
+                    var tracker = 0;
+                    for (var i = 2; i < num; i++) {
+                        var rem = num % i;
+                        if (rem == 0) {
+                            tracker++;
+                            break;
+                        }				
+                    }
+
+                    if (tracker == 0) {
+                       store.push(num);
+                        
+                    } 
+
+
+                }
+                for (var i = 0 ; i < store.length ; i++){
+                    console.log("prime number is "+ store[i]);
+                }
+                
+            }
+            function sumofPrime() {
+                var number = [99, 7, 10, 13, 14, 18, 20];
+            var tracker = 0 , n;
+            var sum =  0;
+            console.log(number);
+            for (var n = 0; n < number.length; n++) {
+                var num = number[n];
+				var tracker = 0;
+				for (var i = 2; i < num; i++) {
+					var rem = num % i;
+					if (rem == 0) {
+						tracker++;
+						break;
+					}				
+				}
+
+				if (tracker == 0) {
+					
+                    sum = sum + num ;
+                    
+				} 
+			}
+            console.log("sum of prime number = "+sum);
+
+            }
+            function large(){
+                var num = [10 , 20 , 80, 23 ,  12 ,44 ,70,90];
+                var max = num[0];
+                var max1 ;
+                for(var i = 1; i < num.length; i++){
+                    if(num[i] > max){
+                        max = num[i];
+                    }
+                    
+                    
+                    
+                }
+                console.log(num);
+                console.log(max);
+                }
+            function secondLarge(){
+                var num = [10 , 20 , 80, 23 ,  12 ,44 ,70,90];
+                var max = num[0];
+                var max1 ;
+                for (i = 1; i < num.length; i++){
+                    if(max < num[i]){
+                        max1 = max;
+                        max = num[i];
+                    }
+                    if(max1 < num[i] && num[i] < max){
+                        max1 = num[i]
+                    }
+                }
+                console.log(num);
+                console.log(max1);
+                }
+            function sort(){
+                var num = [10 , 20 , 80, 23 ,  12 ,44 ,70,90];
+            var temp;
+            console.log("array element is = " +num);
+
+            for(var i = 0; i < num.length; i++){
+
+                for(var j = i+1; j < num.length ; j++){
+
+                    if(num[j] < num[i]){
+                        temp = num[j];
+                        num[j] = num[i];
+                        num[i] = temp;
+
+                    }
+
+                }
+            }
+            var ch = prompt("1.want to show element in assending order \n2. want to show element in decending order");
+            ch = parseInt(ch);
+
+            switch (ch){
+                case 1:
+
+                 console.log("Assendig order = " +num);
+                 break;
+                case 2:
+                    num.reverse();
+                     console.log("Decending order = " +num);
+                 break;
+
+
+
+            }
+            }
+            function palindrom(){
+                var num = [121, 23 ,141, 112];
+             var store = [];
+             console.log(num);
+             for(var i = 0; i < num.length; i++){
+				var temp = num [i];
+				var rem, reverse = 0;
+				while(num [i]> 0){
+					rem = num [i]% 10;
+					reverse = reverse * 10 + rem ;
+					num[i] = num[i] / 10;
+					num[i] = parseInt(num[i]);
+				}
+				if( temp == reverse){
+					store.push(temp);
+				}
+				
+            }
+            
+            console.log("Palidrom number in given array :" +store);
+            }
+            
+                function armstrong(){
+					var arr =[371, 153,1634,144] ;
+        var armstrong = [];
+        for (var i = 0; i < arr.length; i++) {
+                var store = 0, rem = 0, l = 0, fact = 0, sum = 0;
+                store = arr[i];
+                while (store > 0) {
+                    l++;
+                    store = parseInt(store / 10);
+                }
+                store = arr[i];
+                while (store > 0) {
+                    rem = (store % 10);
+                    fact = 1;
+                    for (var j = 1; j <= l; j++) {
+                        fact = fact * rem;
+                    }
+                    sum += fact;
+                    store = parseInt(store / 10);
+                }
+                if (sum == arr[i]) {
+                    armstrong.push(arr[i]);
+                }
+            }
+            console.log("\n ALL ARMSTRONG NUMBERS IN ARRAY " + arr + " ARE : " + armstrong);
+                }
+            
+
+        </script>
+    </body>
+</html>

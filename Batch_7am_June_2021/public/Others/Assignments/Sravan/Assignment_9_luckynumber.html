@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Finding the Lucy number</title>
+    </head>
+    <body>
+        <h1>lucky number of 278</h1>
+
+        <script type="text/javascript">
+
+        var n = 278;
+        var sum = 0;rem;
+        var j = 0;r;
+        while(n>0){
+            var rem = n % 10;
+            sum = sum + rem;
+            n = n/10;
+            n = parseInt(n);
+        }
+        while(sum>0){
+             var r = sum % 10;
+             j = j + r;
+             sum = sum/10;
+             sum = parseInt(sum);
+        
+        }                                   
+        console.log(j);
+       
+        </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body{
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 170px;
+    height: 140px;
+}
+.header
+{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 14px;
+    font-weight:bold;
+    font-size: 17px;
+    color:white;
+    background-color:#f50057;
+    letter-spacing: 1px;
+}
+.container{
+    text-align: center;
+    height: auto;
+    width: 70%;
+    margin: 34px auto;
+    align-content: center;
+}
+.content { 
+    margin:25px auto 25px auto;
+    font-size: 14px;
+    border-spacing: 0;
+    text-align: center;
+    overflow:hidden ;
+    border-radius: 7px;
+}
+
+ .content tr:nth-child(even) td {
+    background-color:
+    #ffebee;
+}
+
+.sub_content tr td {
+    background-color:  #ffebee !important;
+   
+}
+
+
+.content thead th{
+    background-color:#f50057;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 17px;
+    letter-spacing: 0.7px;
+   
+}
+.content tbody tr td {
+    min-width: 90px;
+    font-size: 14px;
+    font-weight:medium;
+    padding: 7px;
+    letter-spacing:0.5px;
+    background-color: #fcf6f8;
+    text-transform:capitalize;
+}
+
+.sub_content{
+    padding: 14px;
+    font-size: 13px;
+    border: 1.7px rgb(255, 255, 255) solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+.sub_content thead th{
+    background-color:#FCF6F8;
+    color: #212121;
+    font-weight: 600px;
+    font-size: 12px;
+    padding: 10px;  
+}
+
+ 

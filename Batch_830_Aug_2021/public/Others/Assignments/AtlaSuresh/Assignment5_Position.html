@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style type="text/css">
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header, .footer{ 
+            width: 100%;
+            height: 40px;
+            background: rgb(4, 119, 212);
+            text-align: center;
+            padding-top: 20px;
+            color: #fff;
+        }
+        .footer{
+            position:absolute;
+            bottom: 0;
+        }
+        .mainContent{
+            height: 82vh;
+            position: relative;
+        }
+        .first-dv, .second-dv, .firstChild, .secondChild, .thirdChild, .fourthChild{ 
+            width: 100px;
+            height: 100px;
+            background-color: rgb(19, 155, 209);
+            display: inline-block;
+            position: relative;
+        }
+        .second-dv{
+            float: right;
+            background-color: rgb(30, 210, 111);
+        }
+        .third-dv, .fourth-dv{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 60px;
+        }
+        .third-dv{
+            background-color: rgb(231, 34, 83); 
+        }
+        .fourth-dv{
+            background-color: rgb(231, 80, 34); 
+            right: 0;
+        }
+        .firstChild{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-color: rgb(124, 191, 218);
+        }
+        .secondChild{
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            background-color:#6deaa6;
+        }
+        .thirdChild{
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            background-color:#f3577e;
+        }
+        .fourthChild{
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            background-color:#ff7c54;
+        }
+        .centerDiv{
+            width: 100px;
+            height: 100px;
+            /*background-color: rgb(56, 230, 13);*/
+            position:absolute;
+        }
+        .centerDiv1{
+            position: relative;
+            margin: 0 auto;
+            top: 17vh;
+        }
+        .centerDiv2{
+            left: -70px;
+            top: -45px;
+            background: #80bb3b;
+        }
+        .centerDiv3{
+            left: 70px;
+            top: -45px;
+            background: #80bb3b;
+        }
+        .centerDiv4{
+            left: -70px;
+            top: 72px;
+            background: #80bb3b;
+        }
+        .centerDiv5{
+            left: 70px;
+            top: 72px;
+            background: #80bb3b;
+        }
+        .centerDiv6{
+            background-color: rgb(56, 230, 13);
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="header"><strong>Header</strong></div>
+
+            <div class="first-dv">
+                <div class="firstChild"></div>
+            </div>
+            <div class="second-dv">
+                <div class="secondChild"></div>
+            </div>
+            <div class="third-dv">
+                <div class="thirdChild"></div>
+            </div>
+            <div class="fourth-dv">
+                <div class="fourthChild"></div>
+            </div>
+
+            <div class="centerDiv centerDiv1">
+                <div class="centerDiv centerDiv2"></div>
+                <div class="centerDiv centerDiv3"></div>
+                <div class="centerDiv centerDiv4"></div>
+                <div class="centerDiv centerDiv5"></div>
+                <div class="centerDiv centerDiv6"></div>
+            </div>
+           
+   
+        <div class="footer">&copy; Copy right 2021</div>
+    </body>
+</html>

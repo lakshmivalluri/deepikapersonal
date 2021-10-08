@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Demonstrating Student Registration Page
+    </title>
+    <link rel="stylesheet" href="CSSAssignment7.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="header">Student Registration Page</div>
+
+        <div class="block1">
+
+            <ul>
+                <div class="main">Personal Details</div>
+                <li>
+                    <div class="ulabel">
+                        <label for="uname">Name:</label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name="name" maxlength="10">
+                    </div>
+                    <div class="ulabel">
+                        <label for="uemail">eMail ID:</label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name="uemail" maxlength="8">
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ulabel">
+                        <label for="uage">Age:</label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name="uage" maxlength="8">
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ulabel">
+                        Gender:
+                    </div>
+                    <div class="contrlr">
+                        <input type="radio" name="ugender"> Male
+                        <input type="radio" name="ugender"> Female
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="block2">
+
+            <ul>
+                <div class="main">Education</div>
+                <li>
+                    Qualification:
+                    <select>
+                        <option>MBA</option>
+                        <option>MCA</option>
+                        <option>Btech</option>
+                        <option>Mtech</option>
+                    </select>
+                </li>
+                <li>
+                    Known Languags:
+                    <input type="checkbox"> English
+                    <input type="checkbox"> Telugu
+                    <input type="checkbox"> Hindi
+                    <input type="checkbox"> Urdu
+                </li>
+                <li>
+                    Course Opted:
+                    <input type="checkbox"> MBA
+                    <input type="checkbox"> MCA
+                    <input type="checkbox"> BTech
+                    <input type="checkbox"> Mtech
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="block3">
+            <ul>
+                <div class="main">Address</div>
+                <li>
+
+                    <div class="ulabel">
+                        <label for="udoor">Door No: </label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name="door" maxlength="5">
+                    </div>
+
+                    <div class="ulabel">
+                        <label for="ucountry">Country:</label>
+
+                        <select>
+                            <option>IN</option>
+                            <option>USA</option>
+                            <option>CA</option>
+                            <option>AU</option>
+                        </select>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ulabel">
+                        <label for="ustreet">Stree: </label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name="street" maxlength="15">
+                    </div>
+
+                    <div class="ulabel">
+                        <label for="upin">Pincode: </label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name="pin" maxlength="10">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        State:
+                        <select>
+                            <option>Maharastra</option>
+                            <option>Delhi</option>
+                            <option>UP</option>
+                            <option>AP</option>
+                        </select>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="block4">
+            <ul>
+                <div class="main">About Yourself</div>
+                <li>
+                    About you:
+                    <textarea rows="10" cols="50"></textarea>
+                </li>
+                <li>
+                    <input type="button" value="Register">
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer">@Copyrights-2021</div>
+    </div>
+</body>
+
+</html>

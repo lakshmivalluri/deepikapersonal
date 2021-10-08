@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classes</title>
+    </head>
+    <body>
+        <script>
+            class EmpDetails {
+                constructor(name, age, loc) {
+                    this.name = name;
+                    this.age = age;
+                    this.location = loc;
+                }
+                displayEmpDetails() {
+                    console.log("Employee name " + this.name);
+                    console.log("Employee Age " + this.age);
+                    console.log("Loation " + this.location);
+                }
+            }
+
+            var obj = new EmpDetails("teena", 10, "Hyd");
+            console.log(obj);
+            obj.displayEmpDetails();
+
+            var obj2 = new EmpDetails('Krish', 6, "Pune");
+            console.log(obj2)
+        </script>
+    </body>
+</html>

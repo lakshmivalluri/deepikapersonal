@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions with returning value</title>
+    </head>
+    <body>
+        <script>            
+            
+
+            var getTotal = function(firstVal, p2) { // firstval -> 90, b->23
+               
+                var result = firstVal + p2;
+                return result; // return 99;
+
+            }
+            
+            function readUserData() {// calling function
+                var firstVal, secondVal;
+                var a = 99;
+                firstVal = prompt("Enter frist value");
+                secondVal = prompt("Enter second val");
+
+                firstVal = parseInt(firstVal); // 90
+                secondVal = parseInt(secondVal); //23
+                var res = getTotal(firstVal, secondVal); // var res = 99;
+                
+                console.log('The sum is ' + res);
+                console.log("done");
+            }
+
+           
+
+            readUserData();
+        </script>
+    </body>
+</html>

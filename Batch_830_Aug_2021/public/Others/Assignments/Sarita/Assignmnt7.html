@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<style type="text/css">
+		#header{
+			border: 1px solid black;
+			background: gray;
+			height: 40px;
+			color: white;
+			text-align: center;
+			
+			padding-top: 8px;
+			font-size: 20px;
+		}
+		#footer{
+			border: 1px solid black;
+			background: gray;
+			height: 30px;
+			color: white;
+			text-align: center;
+			
+			padding-top: 8px;
+			font-size: 20px;
+		}
+		.mainContaint{
+			border: 1px solid navy;
+			height: 1000px;
+			margin: 10px 0px;
+			background-color:lightgrey;
+			color: #4B0082;
+		}
+		.personal{
+			border: 1px solid black;
+		
+		
+			height: 200px;
+			margin: 30px 10px;
+			position: relative;
+		  
+
+			 
+
+		}
+		span{
+			border: 1px solid black;
+			position: absolute;
+             top: -14px;
+             left:70px; 
+             font-size: 20px;
+             background: pink;
+             color: black;
+             padding: 4px;
+
+
+		}
+		.details{
+               padding: 20px;
+               
+		}
+		.ulabel,  .contrlr{
+				display: inline-block;
+
+			}
+
+			.ulabel {
+				width: 130px;
+				margin-left: 40px;
+				font-size: 20px;
+			}
+			#mail{
+				margin-left: 100px;
+				position: relative;
+				top:-80px;
+			}
+			#mai{
+				margin-left: 100px;
+				position: relative;
+				top:-80px;
+			}
+			#country{
+				margin-left: 400px;
+				position: relative;
+				top:-130px;
+			}
+			#count{
+				margin-left: 400px;
+				position: relative;
+				top:-130px;
+			}
+			#pincode{
+				margin-left: 400px;
+				position: relative;
+				top:-110px;
+			}
+			#pin{
+				margin-left: 400px;
+				position: relative;
+				top:-110px;
+			}
+			#about{
+				position: relative;
+				top: -140px;
+			}
+			#area{
+				margin-left: 70px;
+				border-radius: 10px;
+			}
+			#reg{
+				float: right;
+				font-size: 20px;
+				padding: 4px;
+
+			}
+	</style>
+</head>
+<body>
+	<div id="header">Student Registration Page</div>
+	<div class="mainContaint">
+		<div class="personal">
+			<span>Personal Details</span><br>
+			<div class="details">
+			
+				<div class="ulabel">
+						<label for="uname"> Name: </label>
+					</div>
+					<div class="contrlr">
+						<input type="text" name="uname" maxlength="10">
+					</div><br><br>
+					<div class="ulabel">
+						<label for="uname"> Age: </label>
+					</div>
+					<div class="contrlr">
+						<input type="text" name="uage">
+					</div><br><br>
+					<div class="ulabel">
+						<label for="uname">Gender : </label>
+					</div>
+					<div class="contrlr">
+						<input type="radio" name="gender" value="male">Male
+				       <input type="radio" name="gender" value="female">Female
+					</div>
+					
+				<div class="ulabel">
+						<label for="umail" id="mail"> Mail: </label>
+					</div>
+					<div class="contrlr" id="mai">
+						<input type="text" name="mail">
+					</div><br>
+
+			
+		</div>
+		</div>
+		
+		<div class="personal">
+			<span>Educational Details</span><br>
+			<div class="details">
+			
+				<div class="ulabel">
+						<label for="uqualification"> Qualification: </label>
+					</div>
+
+					<div class="contrlr">
+						<select name="Qualification">
+						<option>BE/Btech</option>
+						<option>MBA</option>
+						<option>MCA</option>
+						<option>BCA</option>
+					</select>
+					</div><br><br>
+					<div class="ulabel">
+						<label for="lang"> Language Known: </label>
+					</div>
+					<div class="contrlr">
+						<input type="checkbox" name="lng_eng"> English
+						<input type="checkbox" name="lng_tel"> Telugu
+						<input type="checkbox" name="lng_hin"> Hindi
+						<input type="checkbox" name="lng_urd"> Urdu
+					</div><br><br>
+					<div class="ulabel">
+						<label for="course">Course Opted : </label>
+					</div>
+					<div class="contrlr">
+						<input type="radio" name="course" value="MBA">MBA
+				       <input type="radio" name="course" value="MCA">MCA
+				       <input type="radio" name="course" value="Btech">Btech
+				       <input type="radio" name="course" value="Mtech">Mtech
+					</div>
+					
+				
+		</div>
+		</div>
+		<div class="personal">
+			<span>Address Details</span><br>
+			<div class="details">
+			
+				<div class="ulabel">
+						<label for="doorno"> DoorNo: </label>
+					</div><div class="contrlr">
+						<input type="text" name="uname" maxlength="10">
+					</div><br><br>
+					<div class="ulabel">
+						<label for="streer"> StreetName: </label>
+					</div>
+					<div class="contrlr">
+						<input type="text" name="street" maxlength="10">
+					</div><br><br>
+					<div class="ulabel">
+						<label for="state"> State: </label>
+					</div>
+					<div class="contrlr">
+						<select name="State">
+						<option>Maharashtra</option>
+						<option>Telgana</option>
+						<option>Tamilnadu</option>
+						<option>Kerala</option>
+						<option>Andhra Prdesh</option>
+						<option>Madhya Prdesh</option>
+					</select>
+					</div><br><br>
+					<div class="ulabel">
+						<label for="umail" id="country"> Country: </label>
+					</div>
+					<div class="contrlr" id="count">
+						<select name="Country">
+						<option>India</option>
+						<option>USA</option>
+						<option>Thailand</option>
+						<option>Bhutan</option>
+						<option>Britin</option>
+						<option>Canda</option>
+					</select>
+					</div><br><br>
+					<div class="ulabel">
+						<label for="pincode" id="pincode"> Pincde: </label>
+					</div>
+					<div class="contrlr" id="pin">
+						<input type="text" name="pin">
+					</div><br>
+
+
+					
+					
+				
+		</div>
+		</div>
+		
+		<div class="personal">
+			<span>About Yourself</span><br>
+			<div class="details">
+			
+				<div class="ulabel">
+						<label for="about" id="about"> About Yourself: </label>
+					</div><div class="contrlr">
+						<textarea rows="10" cols="100" id="area"></textarea>
+					</div><br><br>
+		
+		</div>
+		<div>
+			<input type="submit" name="registrat" value="Registration" id="reg">
+		</div>
+</div>
+	</div>
+	<div id="footer">@CopyRight 2021</div>
+
+</body>
+</html>

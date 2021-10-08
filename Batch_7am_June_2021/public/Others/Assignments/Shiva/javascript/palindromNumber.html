@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <title>
+		      palindrom or not
+	    </title>
+    </head>
+    <body>
+         <script type="text/javascript">
+            //var i = prompt("enter a number to check palindrom or not");
+            //i = parseInt(i);
+            var i = 121;
+            var n = i;
+            var rem,result = 0;           
+            while(i > 0) {
+                rem = i % 10;
+                result = result * 10 + rem;               
+                i = i / 10;
+                i = parseInt(i);
+            }
+            console.log(result);            
+            if (result == n) {
+                console.log("palindrom");
+            } else {
+                console.log("not palindrom");
+            }
+         </script>
+   </body>
+</html>

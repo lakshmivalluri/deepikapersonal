@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Descending order</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var des = [22, 66, 45, 98, 43];
+			var temp = 0;
+			for (var i = 0; i < des.length; i++) {
+				for (var j = i + 1; j < des.length; j++) {
+					if (des[i] < des[j]) {
+						temp = des[i];
+						des[i] = des[j];
+						des[j] = temp;
+					}
+				}
+			}
+			for (i = 0; i < des.length; i++) {
+				console.log(des[i]);
+			}
+		</script>
+	</body>
+</html>

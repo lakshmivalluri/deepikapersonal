@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>If-statement Assignment</title>
+</head>
+<body>
+    <script>
+    var name , age , gender , department, salary ;
+        name = 'kishan';
+        gender = 'male';
+        age = 27;
+        department = 'IT';
+        salary = 200000;
+        
+        
+         console.log("name:" + name + '  ' + "age:" + age  + ' ' +   "gender:" + gender   + ' ' +  "department:" + department  + ' ' + 'salary:' + salary);
+        /* if gender is a male */
+    
+    if (gender === 'male') {
+       if( salary >= 200000) {
+        console.log("tax percent is 15 % of 200000 salary = " + ' ' + (salary*15)/100);
+       }
+       else if ( salary >= 100000) {
+        console.log("tax percent is 10 % of 100000 salary = " + ' ' + (salary*10)/100);
+       }
+       else if ( salary <= 50000) {
+        console.log("tax percent is 2.5 %  of 50000 salary = " + ' ' + (salary*2.5)/100);
+       }
+    }
+     else {
+
+    }
+      
+      /* if gender is a female */
+
+      if (gender === 'female') {
+        if( salary >= 200000) {
+         console.log("tax percent is 10 % of 200000  salary = " + ' ' + (salary*10)/100);
+        }
+        else if ( salary >= 100000) {
+         console.log("tax percent is 5 % of 100000 salary = " + ' ' + (salary*5)/100);
+        }
+        else if ( salary <= 50000) {
+         console.log("tax percent is 15 % of 50000 salary = " + ' ' + (salary*0)/100);
+        }
+    }
+    
+
+    
+    </script>
+</body>
+</html>

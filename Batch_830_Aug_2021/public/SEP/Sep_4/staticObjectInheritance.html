@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Inheritance demo
+        </title>
+    </head>
+    <body>
+        <script>
+
+            var sellerDetails = {
+                sellerName: 'Indian Electronics',
+                sellerLocaiton: 'New Delhi',
+                sellerRating: 4.5,
+                displayinfo: () => {
+
+                }
+            }
+
+            var product1 = {
+                name: 'Laptop',
+                image: 'laptop.png',
+                price: 34500,
+                discount: 10,
+                productRation: 9.3,
+                getDiscountPrice: () => {
+                    this.finalPrice = this.price - (this.price * this.discount) / 100;
+                },
+                displayProductData: function() {
+                    this.getDiscountPrice();
+                    console.log("Product Name: " + this.name);
+                    console.log("Product Price: " + this.price);
+                    console.log("Product Seller Name : " + this.sellerName);
+                    console.log("Product Seller Rating : " + this.sellerRating);
+                    console.log("Seller Location " + this.sellerRating);
+                }
+            }
+
+            product1.__proto__  = sellerDetails;
+            product1.displayProductData();
+
+            var product2 = {
+                name: 'Mobile',
+                image: 'newmobile.png',
+                price: 45677,
+                discount: 12,            
+                sellerName: 'TEST SEller',
+                productRation: 8.1,
+                getDiscountPrice: function() {
+                    console.log("Discount " + this.discount);
+                    console.log("Price " + this.price);
+                    this.finalPrice = this.price - (this.price * this.discount) / 100;
+                    console.log("Final Price" + this.finalPrice );
+                },
+                displayProductData: function() {
+                    this.getDiscountPrice();
+                    console.log("Product Name: " + this.name);
+                    console.log("Product Price: " + this.price);
+                    console.log("Product Seller Name : " + this.sellerName2);
+                    console.log("Product Seller Rating : " + this.sellerRating);
+                    console.log("Seller Location " + this.sellerRating);
+                }
+            }
+            product2.__proto__ = sellerDetails;
+            product2.displayProductData();
+        </script>
+    </body>
+</html>

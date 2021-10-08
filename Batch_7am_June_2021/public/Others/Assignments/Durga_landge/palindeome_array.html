@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> palindromearray</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var data = [23, 44, 567, 987, 121, 345, 6778, 45, 232]
+
+        for (var i = 0; i < data.length; i++ ) {
+        
+        var n = data[i];
+        n = parseInt(n);
+        var p = n;
+        var rem, rev = 0;
+        while (n > 0) {
+            rem = n % 10;
+            rev = rev * 10 + rem;
+            n = parseInt(n / 10);
+        }
+        if (p == rev) {
+            console.log(p + " is  palindrome ")
+        } else {
+            console.log(p + " is not palindrome ")
+        }
+    }
+        </script>
+    </body>
+</html>

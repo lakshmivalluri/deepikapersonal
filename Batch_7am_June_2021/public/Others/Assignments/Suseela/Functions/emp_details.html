@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Details using Functions</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//reading student details
+		function empDetails(){
+			var emp_name,emp_age,dept,gender,basicSal;
+			emp_name =prompt("Enter Employee name:");
+			emp_age =prompt("Enter Employee age:");
+			dept =prompt("Enter Employee dept:");
+			gender =prompt("Enter Employee gender:");
+			basicSal =prompt("Enter Employee Basic Salary:");
+			basicSal = parseInt(basicSal);
+			totalSal(basicSal,gender);
+		}
+		//calculations
+		function totalSal(basicSal,gender){
+			var pf,hra,totalSal;
+			pf =basicSal*0.14;
+			hra =basicSal*0.25;
+			totalSal =basicSal+pf+hra;
+			console.log("hra is " +hra);
+        	console.log("pf is " +pf);
+        	console.log("totalsal is " +totalSal);
+        	taxCalculator(totalSal,gender);
+		}
+		
+		function taxCalculator(totalSal,gender){
+				if(gender=="male") {
+				if(totalSal>200000){
+					tax=(15/100)*totalSal;
+					console.log("tax is" +tax);
+				}
+				else if (totalSal>100000){
+					tax=(10/100)*totalSal;
+					console.log("tax is" +tax);
+				}
+				else if (totalSal>50000) {
+					tax=(5/100)*totalSal;
+					console.log("tax is" +tax);
+				}
+				else{
+					tax=0;
+					console.log("no tax");
+				}
+			}
+			if(gender=="female"){
+				 if(totalSal>200000){
+					tax=(10/100)*totalSal;
+					console.log("tax is" +tax);
+				}
+				else if (totalSal>100000){
+					tax=(5/100)*basicSal
+					console.log("tax_percent=((5/100)*basicSal")
+				}
+				else (totalSal>50000)
+					tax=0;
+					console.log("no tax");
+			}
+		}
+		empDetails();
+		
+	</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title>Lucky number of given number</title>
+	</head>
+	<body>
+		<h1><span style="background: pink;"> Find the lucky number of given number</span></h1>
+		<script type="text/javascript">
+			var n=723,rem=0,sum=0,ssum=0;
+			while(n!=0)
+			{
+	        	rem=n%10;
+	        	sum+=rem;
+	        	n=n/10;
+	        	n=parseInt(n);
+			}
+			while(sum!=0)
+			{
+				rem=sum%10;
+				ssum+=rem;
+				sum=sum/10;
+				sum=parseInt(sum);
+			}
+	        console.log(ssum);
+		</script>
+	</body>
+</html>

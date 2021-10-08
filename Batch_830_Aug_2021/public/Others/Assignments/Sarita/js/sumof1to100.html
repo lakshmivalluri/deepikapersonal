@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>sum of 1 to 100 number</title>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+			var sum = 0 , sum1 = 0 , sum2 = 0;
+			for(var i = 1; i <= 100; i++){
+				
+			  sum = sum + i ;
+
+			}
+			console.log("sum of 1 to 100 = " +sum);
+			for( var i = 90; i >= 20; i--){
+
+				if(i % 2 == 0){
+					sum1 = sum1 + i ;
+				}
+			}
+			console.log("sum of even number between 90 to 20 = " +sum1);
+			for( var i = 50; i >= 21; i--){
+				if(i % 2 != 0){
+					sum2 = sum2 + i ;
+				}
+			}
+			console.log("sum of odd numbr between 50 to 21 = " +sum2);
+		</script>
+
+	</body>
+</html>

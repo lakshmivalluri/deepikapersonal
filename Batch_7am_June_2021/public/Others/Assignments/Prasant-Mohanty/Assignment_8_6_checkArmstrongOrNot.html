@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Check Or Armstrong Or Not
+		</title>
+	</head>
+	<body>
+		<h3>CHECK ARMSTRONG OR NOT</h3>
+		<script type="text/javascript">
+			var n = 299;
+			var temp = n;
+			n = n + "";
+			var len = n.length;
+			n = parseInt(n);
+			var rem;
+			var result = 0;
+			while (n > 0) {
+				rem = n % 10;
+				result = result + rem ** len;
+				n = n / 10;
+				n = parseInt(n);
+			}
+			if (temp == result) {
+				console.log("This is Armstrong")
+			} else {
+				console.log("This is Not Armstrong")
+			}
+		</script>
+	</body>
+</html>

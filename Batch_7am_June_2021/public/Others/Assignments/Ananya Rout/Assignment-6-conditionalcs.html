@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+	  <title>Conditional CS</title>
+  </head>
+  <body>
+  	<h3>Conditional Control Structure</h3>
+  	<script type="text/javascript">
+  		console.log("enter employee details");
+   	 	var EmpName = "Ananya";
+   	 	var Empgender = 'Female';
+   	 	var Dept = 'Developer';
+   	 	var basicSal = 100000;
+   	 	var totalsal, pf, hra
+
+   	 	pf = basicSal*14/100;
+   	 	hra = basicSal*25/100;
+   	 	totalsal = basicSal + pf + hra;
+   	 	console.log("pf is " + pf);
+   	 	console.log("hra is " + hra, "totalsal is " + totalsal);
+
+   	 	if (Empgender=="male") {
+   	 		console.log("He has to give tax");
+   	 		if (totalsal>2000000) {
+   	 			console.log("He has to give 15 perscent tax")
+   	 		}
+   	 		else if (totalsal>=1000000) {
+   	 			console.log("He has to give 10 percent tax");
+   	 		}
+   	 		if (totalsal>50000) {
+   	 			console.log("He has to give 5 percent tax");
+   	 		} else {
+   	 			console.log("He does not have to give tax");
+   	 		}
+
+   	 	}
+   	 	if (Empgender=="Female") {
+   	 		console.log("She has to give tax");
+   	 		if (totalsal>2000000) {
+   	 			console.log("She has to give 10 percent tax");
+   	 		}
+   	 		if (totalsal>1000000) {
+   	 			console.log("She has to give 5 percent tax");
+   	 		} else {
+   	 			console.log("She does not have to give tax");
+   	 		}
+   	 	}
+
+  	</script>
+
+  </body>
+ </html>

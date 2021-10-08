@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ASSIGNMENT 12</title>
+</head>
+
+<body>
+	<h1 style="color: #e76f51; background-color:  #d8e2dc;">
+		PLEASE OPEN CONSOLE WINDOW AND CHECK OUTPUT
+	</h1>
+	<script>
+
+		alert("   ----- DATE FORMATS ----- \n 1 - DD/MM/YY \n 2 - DD, MM(short form) YY  \n 3 - DD, MM(long form) YY \n 4 - MM(short form), DD  YY \n 5 - MM/DD/YY \n 6 - MM, DDth YY, TIME min  \n 7 - MM DD,TIME sec ");
+		var choice = prompt("\n ENTER YOUR CHOICE FOR DATE FOMATS =  ");
+		choice = parseInt(choice);
+
+		switch (choice) {
+			case 1: basicFun(choice);
+				break;
+
+			case 2: basicFun(choice);
+				break;
+
+			case 3: basicFun(choice);
+				break;
+
+			case 4: basicFun(choice);
+				break;
+
+			case 5: basicFun(choice);
+				break;
+
+			case 6: basicFun(choice);
+				break;
+
+			case 7: basicFun(choice);
+				break;
+
+			default: console.log(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 7 ");
+				alert(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 7 ");
+				break;
+		}
+
+		function basicFun() {
+
+			var totalFormat = new Date();
+			var DD = totalFormat.getDate();
+			var MM = totalFormat.getMonth();
+			var YY = totalFormat.getFullYear();
+			var HRS = totalFormat.getHours();
+			var MIN = totalFormat.getMinutes();
+			var SEC = totalFormat.getSeconds();
+
+
+			var MM_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+			var MM_long = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+			switch (arguments[0]) {
+				case 1: if (MM < 9) {
+					console.log(DD + "/0" + (MM + 1) + "/" + YY);
+
+				}
+				else {
+					console.log(DD + "/" + MM + "/" + YY);
+				}
+					break;
+
+				case 2: console.log(DD + ", " + MM_short[MM] + " " + YY);
+					break;
+
+				case 3: console.log(DD + ", " + MM_long[MM] + " " + YY);
+					break;
+
+				case 4: console.log(MM_short[MM] + ", " + DD + " " + YY);
+					break;
+
+				case 5: console.log(MM_short[MM] + "/" + DD + "/" + YY);
+					break;
+
+				case 6: if (HRS < 9) {
+					console.log(MM_short[MM] + ", " + DD + "th " + YY + ",  0" + HRS + ":" + MIN + " min");
+				}
+				else if (MIN < 9) {
+					console.log(MM_short[MM] + ", " + DD + "th " + YY + ",  " + HRS + ":0" + MIN + " min");
+				}
+				else {
+					console.log(MM_short[MM] + ", " + DD + "th " + YY + ",  0" + HRS + ":" + MIN + " min");
+				}
+					break;
+
+
+				case 7: if (HRS < 9) {
+					console.log(MM_short[MM] + " " + DD + ", " + "0" + HRS + " hrs " + MIN + " min " + SEC + " sec");
+				}
+				else if (MIN < 9) {
+					console.log(MM_short[MM] + " " + DD + ", " + HRS + " hrs 0" + MIN + " min " + SEC + " sec");
+				}
+				else if (SEC < 9) {
+					console.log(MM_short[MM] + " " + DD + ", " + HRS + " hrs " + MIN + " min 0" + SEC + " sec");
+				}
+				else {
+					console.log(MM_short[MM] + " " + DD + ", " + HRS + " hrs " + MIN + " min " + SEC + " sec");
+				}
+					break;
+			}
+		}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>
+	    	empDetails
+	    </title>
+    </head>
+    <body>
+       <h2>EmpDetails</h2>
+       <script type="text/javascript">
+       	var name,age,gender,dept,basicsal,pf,hra,totalsal;
+       	name = "Ajay";
+       	age = 27;
+       	gender = "male";
+       	dept = "IT";
+       	basicsal = 150000;
+       	pf = (14/100)*basicsal;
+       	hra = (18/100)*basicsal;
+       	totalsal = basicsal + pf + hra;
+       	console.log("name :"+name);
+       	console.log("age :"+age);
+       	console.log("gender :"+gender);
+       	console.log("department :"+dept);
+       	if (gender == "male") {
+       		if (totalsal > 200000) {
+       			tax = (15/100)*totalsal;
+       			console.log("tax is : "+tax);
+       		} else if (totalsal > 100000) {
+       			tax = (10/100)*totalsal;
+       			console.log("tax is : "+tax);
+       		} else if (totalsal > 50000) {
+       			tax = (5/100)*totalsal;
+       			console.log("tax is : "+tax);
+       		} else {
+       		    tax = 0;
+       		    console.log("tax is : "+tax);
+       		}
+       	}
+       	if (gender == "female") {
+       		if (totalsal > 200000) {
+       			tax = (10/100)*totalsal;
+       			console.log("tax is : "+tax);
+       		} else if (totalsal > 100000) {
+       			tax = (5/100)*totalsal;
+       			console.log("tax is :"+tax);
+       		} else {
+       			tax = 0;
+       			console.log("tax is : "+tax);
+       		}
+       	}
+       </script>
+   </body>
+</html>

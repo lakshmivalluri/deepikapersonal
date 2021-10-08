@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student details page</title>
+	<style type="text/css">
+		.header{
+			width:1350;
+			height: 40px;
+			background: #295e59;
+			text-align: center;
+			font-size: 30px;
+			font-style: bold;
+			border:5px solid black;
+			padding:10px auto;
+			margin: 10px auto;
+			}		
+		.footer{
+			width:1350;
+			height: 40px;
+			background: #295e59;
+			text-align: center;
+			font-size: 30px;
+			font-style: bold;
+			border:5px solid black;
+			padding:10px auto;
+			margin:10px auto;
+			}	
+		.mainblock{
+			width:1300px;
+			height:1200px;
+			border:5px solid black;
+			padding:10px auto;
+			background-color: #79e0d8;
+
+			}
+			.miniblock{
+				width:200px;
+				height:30px;
+				border:2px solid black;
+				margin:10px;
+				padding:10px;
+				float:left;
+				text-align: center;
+				font-size: :20px;
+			}
+			.miniblock1{
+				width:1240px;
+				height: 130px;				
+				 margin:10px;
+				 border: 1px solid;
+				padding:20px ;
+				 float:left;
+				 font-size: 20px;
+			}
+			.mini2{
+				margin-top:20px;
+
+			}
+            .mini3{
+            	width:100px;
+            	height:60px;
+            	float:right;
+            	margin:5px;
+            	padding-top:20px ;
+            	border:5px solid;
+            	text-align: center;
+            }
+            .sub{
+            	margin-left: 500px;
+
+            }
+	</style>
+</head>
+<body>
+<div class="header"> Student Details</div>
+<div class="mainblock">
+	<div class="miniblock"> Personal Details</div>
+	<div class="miniblock1">
+	<label >Name: </label>
+	<input type="text" name="sname">
+	<span class="sub" >Mail Id:
+	<input type="text" name="smail"></span>
+	<div class="mini2">Age:	<input type="text" name="sage"></div>
+	<div class="mini2">Gender:
+	<input type="radio" name="gender">male
+	<input type="radio" name="gender">female</div>
+
+
+
+</div>
+	<div class="miniblock"> Educational Details</div>
+		<div class="miniblock1">
+			<label>Qualification:</label>
+			<select title="click to get Qualification">
+				<option>Tenth class</option>
+				<option>InterMediate</option>
+				<option>Degree</option>
+				<option>B.tech</option>
+			</select>
+			<div class="mini2">Languages Known:
+               
+              <input type="checkbox" name="lan_tel">Telugu
+              <input type="checkbox" name="lan_eng">English
+               <input type="checkbox" name="lan_hin">Hindi
+                 <input type="checkbox" name="lan_urd">Urdu
+
+			</div>
+			<div class="mini2">Course Opted:
+				<input type="radio" name="ecorse">MBA
+				<input type="radio" name="ecorse">MCA
+				<input type="radio" name="ecorse">B.TECH
+				<input type="radio" name="ecorse">M.TECH
+			</div>
+		</div>
+		<div class="miniblock"> Adress:</div>
+		<div class="miniblock1">
+			<div> Door No:
+				<input type="text" name="dno">
+				<span class="sub">Country: <input type="text" name="coun"></span>
+			</div>
+			<div class="mini2">Street Name <input type="text" name="sname">
+              <span class="sub">Pincode:<input type="text" name="pin"></span>
+
+			</div>
+			<div class="mini2"> State:
+				<select>
+					<option>AndhraPradesh</option>
+					<option>Telengana</option>
+					<option>Tamilnadu</option>
+					<option>Kerala</option>
+				</select>
+			</div>
+
+		</div>
+		<div class="miniblock"> Adress Details</div>
+		
+		<div class="miniblock1">Adress:
+		<textarea rows="5" coloums="50"></textarea>
+		</div>
+		<div class="mini3">Register
+				</div>
+		
+</div>
+<div class="footer">@Copyright</div>
+</body>
+</html>

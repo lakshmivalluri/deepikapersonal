@@ -1,0 +1,83 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			descision making if else structure
+		</title>
+		
+	</head>
+	<body>
+	
+
+ 
+ <script type="text/javascript">
+ 	
+
+
+ 	      console.log("this is start condition");
+				var empame =prompt("enter empname");
+				var gender = prompt("enter gender");
+				var dept = prompt("enter dept");
+				var basicsal =prompt("enter basicsal");
+				basicsal=parseInt(basicsal);
+				var pf,hra,basicsal;
+
+
+				var totalsal,tax;
+				pf = basicsal* 0.14;
+				 pf=parseInt(pf);
+				hra =basicsal* 0.25 ;
+				totalsal = hra + basicsal + pf;
+     
+		       console.log("empname is " + empame);
+				console.log("pf is:"+pf);
+				console.log("hra is :"+hra);
+				console.log("gender is :"+gender)
+			   console.log("totalsal is:" + totalsal)
+
+			   if(gender="male")
+			   {
+
+			   	if (totalsal >=200000)
+			   {
+			   	
+			   		var tax1 = (totalsal*0.15);
+			   		console.log("Tax percent is 15%:"+tax1);
+			   }
+			   
+			   else if(totalsal >= 100000 && totalsal<=200000)
+
+			   {
+			   	
+			   	     var tax2 = (totalsal*0.10);
+			   	console.log("Tax percent is 10%:"+tax2);
+			   	
+
+			   }
+			   else if(totalsal>= 50000 && totalsal<=100000)
+			   {
+			   	
+			    var	tax3 = (totalsal*0.5);
+			    console.log("Tax percent is 5%:"+tax3);
+
+			   }
+			   else (totalsal>=50000 && totalsal<=50000)
+			   {
+			   	var	tax3 = (totalsal*0.5);
+			    console.log("Tax percent is 5%:"+tax3);
+
+			
+			   }
+			 }
+			   
+			
+			   
+			   
+
+
+
+
+		</script>
+
+	</body>
+	</html>

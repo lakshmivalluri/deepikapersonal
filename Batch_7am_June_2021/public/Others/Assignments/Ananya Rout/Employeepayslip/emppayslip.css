@@ -1,0 +1,31 @@
+.header {
+  background: pink;
+  padding-top: 4px;
+  padding-left: 5px;
+  text-align: center;
+}
+ul {
+  border: 2px solid;
+  width: 500px;
+  margin: 10px auto;
+}
+li {
+  list-style: none;
+  border: 1px dotted;
+  margin: 6px;
+  padding: 3px;
+}
+.payslip {
+  display: none;
+  background-color: pink;
+  border: 2px dotted;
+}
+.inner {
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
+}
+.button {
+  text-align: right;
+}

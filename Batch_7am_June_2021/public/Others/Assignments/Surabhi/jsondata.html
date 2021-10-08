@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			descision making if else structure
+		</title>
+		
+	</head>
+	<body>
+	
+
+ 
+ <script type="text/javascript">
+ 	
+
+
+ 	      console.log("this is start condition");
+
+                  var Employeedetails={
+
+                empname:"Raj",
+                gender:"Female",
+                Dept:"Finance",
+                basicsal:40000,
+                
+
+                  }
+   
+               Employeedetails.pf =  Employeedetails.basicsal*0.14;
+              Employeedetails.pf = parseInt(pf);
+               Employeedetails.hra = Employeedetails.basicsal*0.15
+		     	Employeedetails.totalsal = Employeedetails.hra +Employeedetails.basicsal +Employeedetails.pf;
+
+
+                 console.log("empname is " + Employeedetails.empname);
+				console.log("pf is:"+Employeedetails.pf);
+				console.log("hra is :"+Employeedetails.hra);
+				console.log("gender is :"+Employeedetails.gender);
+			   console.log("totalsal is:" +Employeedetails.totalsal);
+
+		     
+     
+			if (Employeedetails.totalsal > = 200000)
+					   {
+					   	
+					   		Employeedetails.tax1 = (Employeedetails.totalsal*0.15);
+					   		console.log("Tax percent is 15%:"+Employeedetails.tax1);
+					   }
+					   
+					   else if(Employeedetails.totalsal >= 100000 &&  Employeedetails.totalsal <=200000)
+
+					   {
+					   	
+					   	     Employeedetails.tax2 = (Employeedetails.totalsal*0.10);
+					   	console.log("Tax percent is 10%:"+  Employeedetails.tax2);
+					   	
+
+					   }
+					   else if(Employeedetails.totalsal>= 50000 && Employeedetails.totalsal<=100000)
+					   {
+					   	
+					   Employeedetails.tax3 = (  Employeedetails.totalsal*0.5);
+					    console.log("Tax percent is 5%:"+ Employeedetails.tax3);
+
+					   }
+					   else(Employeedetails.totalsal<50000)
+					   {
+					   	console.log("below that tax wont get calculated");
+					   }
+					 }

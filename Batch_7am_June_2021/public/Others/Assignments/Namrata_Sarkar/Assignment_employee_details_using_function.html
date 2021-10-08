@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demonstrating employee detalis
+        </title>
+    </head>
+        <h1>Demonstrating employee detalis</h1>
+    <body>
+        <script type="text/javascript">
+            var empName, age, deparment, basicsalary, gender, pf, hra, totalsalary, tax;
+
+            function readEmployeeDetails() {
+                empName = prompt("Enter Employee Name");
+                age = prompt("Enter Age");
+                deparment = prompt("Enter Department");
+                basicsalary = prompt("Enter Basicsalary");
+                gender = prompt("Enter Gender");
+                basicsalary = parseInt(basicsalary);
+
+                getPfHraAndTotalsalary();
+
+            }
+
+            function getPfHraAndTotalsalary() {
+                pf = (14 * basicsalary) / 100;
+                hra = (25 * basicsalary) / 100;
+                totalsalary = (pf + hra + basicsalary); 
+            }
+
+            function displayEmployeeDetails() {
+                console.log(" Employee Name is " + empName);
+                console.log(" Age is " + age);
+                console.log(" Department is " + deparment);
+                console.log(" Bacic Salary is " + basicsalary);
+                console.log(" Gender is " + gender);
+                console.log(" Pf is " + pf);
+                console.log(" Hra is " + hra);
+                console.log(" Total Salary is " + totalsalary); 
+
+                 getTax();
+            }
+    
+            function getTax() { 
+                if (gender == "male") {
+
+                if(totalsalary > 200000) {
+                   tax  = (totalsalary * 15) / 100;
+                   console.log(" Tax is " + tax)
+            }
+                else if(totalsalary > 100000 && totalsalary < 200000) {
+                   tax = (totalsalary * 10) / 100;
+                   console.log(" Tax is " + tax)
+            }
+                else if(totalsalary > 50000 && totalsalary < 100000) {
+                   tax = (totalsalary * 5) / 100;
+                   console.log(" Tax is " + tax)
+            }
+        }
+
+                if(gender == "female") {
+
+                if(totalsalary > 200000) {
+                   tax = (totalsalary * 10) / 100;
+                   console.log(" Tax is " + tax)
+            }
+                else if(totalsalary > 100000 && totalsalary < 200000) {
+                   tax = (totalsalary * 5) / 100;
+                   console.log(" Tax is " + tax)
+            }
+                else if(totalsalary > 50000 && totalsalary < 100000) {
+                   tax = (totalsalary * 0) / 100;
+                   console.log(" Tax is " + tax)
+            }
+        }
+    }
+                readEmployeeDetails();    
+                displayEmployeeDetails();       
+
+            </script>
+    </body>
+</html>

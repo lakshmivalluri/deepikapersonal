@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating async and await keywords</title>
+    </head>
+    <body>
+        <script>
+            async function dispalyData() {
+                console.log("one");
+                setTimeout(() => {
+                    console.log("Two");
+                }, 2000);
+                console.log("three");
+            }
+
+            async function showMsg() {
+                console.log("frm show msg");
+                dispalyData().then(()=> {
+                    console.log("done");
+                });
+                
+            }
+
+            showMsg();
+
+            
+        </script>
+    </body>
+</html>

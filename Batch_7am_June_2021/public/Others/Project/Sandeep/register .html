@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register Form</title>
+    <style>
+        body{
+            background: url("https://images.pexels.com/photos/586744/pexels-photo-586744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-attachment: fixed;
+        }
+        h2 {
+            background:linear-gradient(45deg,black,red,black);
+            text-align: center;
+            color:white;
+            padding: 10px;
+            width:100vmax;
+            margin: 0%;
+        }
+        .register-div {
+            text-align: center;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: linear-gradient(45deg, blueviolet, deeppink);
+            width: 300px;
+            padding: 10px;
+            margin: 150px auto;
+            box-shadow: 0px 5px 15px black;
+        }
+        .register-div h3 {
+            text-align: center;
+            font-size : 30px;
+
+        }
+        .form-control {
+            width: 290px;
+            padding: 5px;
+            margin: 5px 0px;
+            color: white ;
+            outline: none;
+            border : none;
+            background: transparent;
+            border-bottom: 2PX solid pink;
+            
+        }
+        .form-control option {
+            color : pink;
+        }
+        ::placeholder{
+            color : pink;
+        }
+        .form-btn {
+            width: 290px;
+            margin : 5px;
+            background: linear-gradient(45deg, blueviolet,deeppink);
+            color:white;
+            padding: 10px;
+            box-shadow: 0px 5px 15px black;
+            
+        }
+        nav {
+            background:linear-gradient(45deg, blueviolet,deeppink);
+            font-size: 22px;
+        }
+        nav a {
+            align-content: center;
+            text-decoration: none;
+            color:rgb(28, 196, 42);
+            padding: 15px;
+            width: 100%;
+                }
+        .register-footer {
+              background:linear-gradient(45deg, red,black,red);
+              width: 100vmax;
+              height: 50px;
+              text-align: center;
+              color: white;
+              padding: 10px;
+              overflow: hidden;
+              margin : 0px;
+              
+          }
+    </style>
+    
+</head>
+<body>
+    <h2> Register-form</h2>
+    <nav>
+        <a href="for .html" target="_blank">Home</a>
+        <a href="http://www.filpKart.in"target="_blank">Website</a>
+        <a href="http://www.amazon.in"target="_blank">Contact us</a>
+
+        <a href="login.html" target="_blank">Login</a>
+
+    </nav>
+    
+    <div class="register-div">
+        <h3>Register Form</h3>
+        <form class="register-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="password">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                <option>Select your Designation</option>
+                <option>Jr.software Engineering</option>
+                <option>sr.software Engineering</option>
+                <option>team lead</option>
+                <option>Manager</option>
+            </select>
+          </div>
+          <div >
+            <input type="submit" class="form-btn" placeholder="Register Here">
+        </div>
+        
+        </form>
+    </div>
+    <div class="register-footer">
+        <footer>
+            copyrigths &copy; 
+            <p> All Rights are Reserved
+            <a href="#">Sandeep Seeram</a>
+            </p>
+        </footer>
+</body>
+</html>

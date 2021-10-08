@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML Input elements
+		</title>
+		<style type="text/css">
+			ul {
+				border: 2px solid;
+				width: 500px;
+				margin: 10px auto;
+			}
+			li {
+				list-style: none;
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+			h3 {
+				text-decoration: underline;
+				text-align: center;
+				padding: 10px;
+				margin: 5px;
+			}
+			ul {				
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			Student Details Registration Page
+		</h3>
+		<form action="http://www.sample2342.com/data/uinfo" method="POST">
+			<ul>
+				<li>
+					<label for="uname">Enter user Name:</label>
+					<input type="text" name="uname" required>
+				</li>
+				<li>
+					
+					<input name="upwd" type="password" maxlength="5" placeholder="Acnt password">
+				</li>
+				<li>
+					Gender: 
+					<input type="radio" name="ugender" value="male">Male
+					<input type="radio" name="ugender" value="female">Female
+				</li>
+				
+				<li>
+					Known Languages:
+					<input type="checkbox" name="lng_eng">English
+					<input type="checkbox" name="lng_tel">Telugu
+					<input type="checkbox" name="lng_hin">Hindi
+					<input type="checkbox" name="lng_urd">Urdu
+				</li>
+				<li>
+					Country:
+					<select name="ucountry">
+						<option></option>
+						<option>India</option>
+						<option>USA</option>
+						<option selected>Japan</option>
+						<option>Singapor</option>
+					</select>
+				</li>
+				<li>
+					Tell about Urself:
+					<textarea name="aboutUser"></textarea>
+				</li>
+				
+				<li>
+					<input type="submit" value="Register  user">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>

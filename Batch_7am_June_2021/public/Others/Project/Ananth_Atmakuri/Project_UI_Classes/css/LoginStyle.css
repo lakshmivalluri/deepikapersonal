@@ -1,0 +1,84 @@
+.inner {
+    border: 5px solid;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-color: orange;
+    border-bottom-color: green;
+    border-left-color: white;
+    border-right-color: white;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px;
+    font-weight: bolder;
+    color: blue;
+    background-color: white;
+    }
+li {
+    margin: 5px;
+    padding: 20px;  
+    list-style: none;
+    border: 2px solid;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-color: blue;
+}
+::marker {
+    color: darkred;
+}
+.mainimg {
+    background-image: url("../images/Login_Page.jpg");
+    background-position:center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.button {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+}
+.outer,  .innerblock{
+    display: inline-block;
+}
+
+.outer {
+    width: 200px;
+    font-size: large;
+}
+.uname {
+    display: none;
+    color: red;
+    border: 2px solid;
+    background: honeydew;
+    position: absolute;
+    top: 306px;
+    left: 803px;
+}
+.upsw {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 374px;
+    left: 803px;
+    border: 2px solid;
+    background: honeydew;
+}
+#presentDate {
+    border: 10px solid;
+    color: blue;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-color: orange;
+    border-bottom-color: green;
+    border-left-color: white;
+    border-right-color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    width: 30%;
+}

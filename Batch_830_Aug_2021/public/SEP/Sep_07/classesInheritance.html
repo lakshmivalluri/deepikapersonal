@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inheritance btwn classes</title>
+    </head>
+    <body>
+        <script>
+            class Publisher {
+                constructor(rating) {
+                    this.pubName = 'Indian Publisher',
+                    this.location = 'Hyderabad';
+                    this.rating = rating
+                }
+                displayPublisherDetails() {
+                    console.log("Publisher name " + this.pubName)
+                    console.log("Rating is " + this.rating);
+                    console.log('Location is ' + this.location);
+                }
+            }
+
+            class BookDetails extends Publisher {
+                constructor(data) {
+                    super(data.prating);
+                    this.bookName = data.bname;
+                    this.bookPrice = data.bprice;
+                    this.author = data.aname;
+                    this.type = data.type;
+                }
+                displayBookDetails() {
+                    this.getDiscountPrice();
+                    console.log("Book Details");
+                    console.log("Book name " + this.bookName);
+                    console.log("Author " + this.author);
+                    console.log("After discount price " + this.discountPrice);
+                    this.displayPublisherDetails();
+                }
+                getDiscountPrice() {
+                    this.discountPrice = this.bookPrice - (10 * this.bookPrice) / 100;
+                }
+            }
+
+            var b1 = new BookDetails({aname: 'Chetan', bprice: 3456, type: 'Career', bname: 'My Tech Dreams', prating: 9});
+            b1.displayBookDetails();
+
+            var b2 = new BookDetails({aname: 'Kishan sharma', bprice: 2399, type: 'TimeTravel', bname: 'Traveling to old days', prating: 10});
+            b2.displayBookDetails();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Student Details
+		</title>
+	</head>
+	<body>
+		<h3>
+			Student Details.
+		</h3>
+		<script type="text/javascript">
+			console.log("About to start student details")
+			var sname = "Teena";
+			var sage = 10;
+			var gender = 'Female';
+			var m1 = 45;
+			var m2 = 50, m3 = 60, m4 = 40;
+			var total, avg;
+
+			total = m1 + m2 + m3 + m4;
+
+			avg = total / 4;
+			console.log("Name " + sname);
+			console.log("Age " + sage);
+			console.log("Marks " + m1 + ' ' + m2  + " " + m3 + ' ' + m4);
+			console.log("Total is " + total);
+			console.log("Avg is " + avg);
+
+			if (avg >= 40) {
+				console.log("Passed");	
+				if (avg >= 90) {
+					console.log("you got Distinction")
+				} else if(avg >= 60) {
+					console.log("you got first class");
+				} else {
+					console.log("Second class");
+				}
+			} else {
+				console.log("Failed");
+			}
+			console.log("The END");
+
+			
+		</script>
+	</body>
+</html>
+
+
+
+

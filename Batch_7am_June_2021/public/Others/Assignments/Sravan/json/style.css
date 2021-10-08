@@ -1,0 +1,25 @@
+ul{
+    border: 2px solid rgb(9, 9, 10);
+    width: 500px;
+    margin: 10PX auto;
+    padding:  15px;
+    background-color: darkgoldenrod;
+}
+li{
+    border: 1px groove;
+    margin: 5px;
+    padding: 10px;
+    background-color: darkkhaki;
+   
+}
+.heading{
+    text-align: center;
+    font-size: 25px;
+    font-family: serif;
+    color: rgb(95, 9, 9);
+    text-decoration: underline;
+
+}
+.employeeData{
+    display: none;
+}

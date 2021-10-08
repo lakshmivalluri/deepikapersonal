@@ -1,0 +1,39 @@
+body {
+    background: #ccc;
+}
+
+h3 {
+    border: 1px solid;
+    color: green;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product, .product li {
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+} 
+
+.product li {
+    background-color: rgb(179, 160, 160);
+}
+
+.product li img {
+    width: 190px;
+    height: 190px;
+}
+
+.product {
+    float: left;
+    width: 300px;
+} 
+.empdeatails {
+    background-color: rgb(172, 43, 43);
+    margin: 5px;
+    padding: 5px;
+    height: 1200px;
+}

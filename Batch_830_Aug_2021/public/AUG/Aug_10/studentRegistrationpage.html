@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Demonstrating Student Registration page
+		</title>
+		<style type="text/css">
+			li {
+				list-style: none;
+				border: 1px solid;
+				background: #ccc;
+				margin: 5px;
+				padding: 5px;
+			}
+			ul {
+				width: 700px;
+				height: 700px;
+				border: 1px solid #ccc;
+				margin: 10px auto;
+				padding: 0;
+			}
+			.ulabel,  .contrlr{
+				display: inline-block;
+			}
+
+			.ulabel {
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<div class="ulabel">
+					<label for="uname">Enter User Name: </label>
+				</div>
+				<div class="contrlr">
+					<input type="text" name="uname" maxlength="10">
+				</div>
+			</li>
+			<li>
+				<div class="ulabel">
+					<label for="uPasswrd">Account Password </label>
+				</div>
+				<div class="contrlr">
+					<input type="password" name="uPasswrd" maxlength="8">
+				</div>
+				
+				
+			</li>
+			<li>
+				<div class="ulabel">
+					Gender:
+				</div>
+				<div class="contrlr">
+				 	<input type="radio" name="ugender"> Male
+					<input type="radio" name="ugender"> Female
+				</div>
+			</li>
+			<li>
+				Known Languags: 
+					<input type="checkbox"> English
+					<input type="checkbox"> Telugu
+					<input type="checkbox"> Hindi
+					<input type="checkbox"> Urdu
+			</li>
+			<li>
+				Country:
+				<select>
+					<option>India</option>
+					<option>Japan</option>
+					<option>USA</option>
+					<option>Kenya</option>
+				</select>
+			</li>
+			<li>
+				About urself:
+				<textarea rows="10" cols="50"></textarea>
+			</li>
+			<li>
+				<input type="button" value="Register">
+			</li>
+		</ul>
+
+	</body>
+</html>

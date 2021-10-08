@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title> Employee Details with JS</title>
+	</head>
+	<body>
+		<h2>Employee Details</h2>
+		<script type="text/javascript">
+			var name="Seema";
+			var age=20;
+			var gender="Female";
+			var dep="IT";
+			basics=3000;
+			pf=(basics*12)/100;
+			hra=(basics*50)/100;
+			totals=(basics+pf+hra)*12;
+			console.log("Employee name: "+name)
+			console.log("Employee age: "+age)
+			console.log("Employee department: "+dep)
+			console.log("Employee total salary: "+totals)
+			if (gender == "Male"){
+	
+				if (totals>200000) {
+					tax=(totals*15)/100;
+					console.log("Emplyee gender is: "+gender);
+					console.log("Emplyee Tax amount is: "+tax);
+				}
+			else if (totals>100000) {
+				tax=(totals*10)/100;
+				console.log("Emplyee gender is: "+gender);
+				console.log("Emplyee Tax amount is: "+tax);
+			}
+			else if (totals>50000) {
+				tax=(totals*5)/100;
+				console.log("Emplyee gender is: "+gender);
+				console.log("Emplyee Tax amount is: "+tax);
+			}
+			}
+			if (gender == "Female"){
+	
+				if (totals>200000) {
+					tax=(totals*10)/100;
+					console.log("Emplyee gender is: "+gender);
+					console.log("Emplyee Tax amount is: "+tax);
+				}
+			else if (totals>100000) {
+				tax=(totals*5)/100;
+				console.log("Emplyee gender is: "+gender);
+				console.log("Emplyee Tax amount is: "+tax);
+			}
+			else if (totals>50000) {
+				console.log("Emplyee gender is: "+gender);
+				console.log("Emplyee Tax amount is exempted. ");
+			}
+			}
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>
+		    login_page
+	    </title>
+	    <style type="text/css">
+	    	.header {
+	    		text-align: center;
+	    		text-decoration: underline;
+	    		background: grey;
+	    		line-height: 60px;
+	    		font-size: 30px;	    		
+	    	}
+	    	.footer {
+	    		border: 1px solid;
+	    		position: absolute;
+                bottom: 10px;
+                width: 100%;
+		   		text-align: center;
+	    		text-decoration: underline;
+	    		background: grey;
+	    		line-height: 60px;
+	    		font-size: 20px;
+	    		font-style: oblique;
+	    		color: black;
+	    	}
+	    	.bgimage {
+	    		background-image: url("images/iimg.PNG");
+	    		background-size: cover;
+	    	}
+	    	.box {
+	    		border: 1px solid;
+	    		height: 240px;
+	    		width: 400px;
+	    		position: absolute;
+	    		top: 26%;
+	    		left: 35%;
+	    		text-align: center;
+	    		font-size: 30px;
+	    		background: lightcyan;
+	    		font-weight: bold;
+	    		font-style: oblique;
+	    		text-decoration: underline;
+	    	}
+	    	.sname {
+	    		position: absolute;
+	    		top: 37%;
+	    		left: 39%;
+	    	}
+	    	.spassword {
+	    		position: absolute;
+	    		top: 43%;
+	    		left: 36%;
+	    	}
+	    	.signup {
+	    		border: 1px solid;
+	    		height: 25px;
+	    		width: 80px;
+	    		position: absolute;
+	    		bottom: 40%;
+	    		left: 41%;
+	    		background: #57a2ef;
+	    		text-align: center;
+	    	}
+	    	.forgot {
+	    	    border: 1px solid;
+	    		height: 25px;
+	    		width: 130px;
+	    		position: absolute;
+	    		bottom: 40%;
+	    		right: 40%;
+	    		background: #57a2ef;
+	    		text-align: center;
+	    	}
+	    	.login {
+	    		border: 1px solid;
+	    		position: absolute;
+	    		bottom: 47%;
+	    		left: 48%;
+	    		background: #9fa29f;
+	    	}
+	    </style>
+    </head>
+    <body class="bgimage">
+        <div class="header">Enter your details</div>
+        <div>
+        	<div class="box">login</div>
+        </div>
+        <form>
+          	<div class="sname">
+          	  <label for="name">Enter mail</label>
+          	  <input type="text" name="name" placeholder="enter your mail" required="mail">
+          	</div>
+          	<div class="spassword">
+          		<label for="password">Enter password</label>
+          		<input type="password" name="password" placeholder="enter your password" required="password">
+          	</div>
+          	<div class="login">
+          		<div>login</div>
+          	</div>
+          	<div class="signup">
+          	   <a href="http://localhost:8081/project/signUp_page.html" target="_blank"><div>sign-Up</div></a>
+          	</div>
+          	<div class="forgot">
+          		<a href="http://localhost:8081/project/forgot_page.html" target="_blank"><div>Forgot Password</div></a>
+          	</div>
+         </form>
+         <div class="footer">
+         	<div>CopyRights-FullStack@2021-ShivaKumar</div>
+         </div>
+        </div>
+   </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee  details</title>
+    <style>
+        h2{
+            border: 2px solid;
+            background: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2> EMPLOYEE DETAILS</h2>
+    <ul>
+        <li>basicsalary</li>
+        <li>pf</li>
+        <li>hrs</li>
+        <li>totalsalary</li>
+        <li>tax</li>
+    </ul>
+    <script>
+        var empname="vikas";
+        var age=21;
+        var gender="male";
+        var dep="it";
+        var basicsalary=5000000;
+        var pf=(14/100)*basicsalary;
+        var hrs=(25/100)*basicsalary;
+        var totalsalary=pf+hrs+basicsalary;
+        
+
+        console.log("start");
+        console.log("name "+empname);
+        console.log("age "+age);
+        console.log("gender "+gender);
+        console.log("dep "+dep);
+        console.log("basicsalary "+basicsalary);
+        console.log("pf "+pf);
+        console.log("hrs "+hrs);
+        console.log("totalsalary "+totalsalary);
+        
+    
+        if(gender=="male"){
+            if(totalsalary>200000){
+                var tax=(15/100)*totalsalary;
+                console.log("tax "+tax);
+                console.log("heey your tax 15%");
+            }
+            else if(totalsalary>100000){
+                var tax=(10/100)*totalsalary;
+                console.log("tax "+tax);
+                console.log("heey your tax 10%");
+            }
+            else if(totalsalary>50000){
+                var tax=("5/100")*totalsalary;
+                console.log("tax "+tax);
+                console.log("heey your tax 5%");
+            }
+            else{
+            console.log("heey your not tax");
+             }
+            }
+            if(gender=="female"){
+                if(totalsalary>200000){
+                    var tax=(10/100)*totalsalary;
+                    console.log("tax "+tax);
+                    console.log("heey your tax 10%")
+                }
+                else if(totalsalary>100000){
+                    var tax=(5/100)*totalsalary;
+                    console.log("tax "+tax);
+                    console.log("heey your tax 5%");
+                }
+                else if (totalsalary>50) {
+                    console.log("heey your tax 0%")
+
+                    
+        
+                
+                }
+            }
+    
+    
+   console.log("end");
+        
+    </script>
+    
+</body>
+</html>

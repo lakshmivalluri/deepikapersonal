@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee details using Functions</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var empDetails = () => {
+				var empName, age, depart, basicSalary, gen;
+				empName = prompt("Enter employee name");
+				age = prompt("Enter age");
+				depart = prompt("Enter department");
+				basicSalary = prompt("Enter basicSalary");
+					basicSalary = parseInt(basicSalary);
+				gen = prompt("Enter gender");
+				salaryCalculation(basicSalary, gen);
+			}
+			function salaryCalculation(basicSalary, gen) {
+				var pf, hra, totalSalary;
+					pf = parseInt((14 * basicSalary) / 100);
+					hra = parseInt((25 * basicSalary) / 100);
+					totalSalary = parseInt(pf + hra + basicSalary);
+				console.log("employee-gender is" + " " + gen);
+				console.log("pf is" + " " + pf);
+				console.log("hra is" + " " + hra);
+				console.log("Totalsalary is" + " " + totalSalary);
+			}
+			empDetails();
+
+			
+		</script>
+
+	</body>
+</html>

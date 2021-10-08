@@ -1,0 +1,1307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    text-decoration: none;
+    position: relative;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+/*---------- CHAT WINDOW ----------*/
+.chatwindow .btn-chat {
+    text-transform: uppercase;
+    font-size: 14px;
+    bottom: 15px;
+    position: fixed;
+    right: 2%;
+    z-index: 3;
+    padding: auto;
+    border: none;
+    width: 20%;
+}
+.chatwindow .btn-info:focus {
+    box-shadow: none;
+}
+.chatBox {
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    right: 1%;
+    z-index: 3;
+    background: #fff;
+}
+.chatMsg {
+    width: 300px;
+    padding: 10px;
+	background: #fff;
+}
+.chatcontainer {
+    height: 250px;
+	margin-bottom: 10px;
+	background: #fff;
+	padding: 5px;
+    overflow-y: auto;
+}
+.msgBox {
+	background: #fff;
+	padding: 5px 0;
+    z-index: 999;
+}
+.msgBox input {
+    height: 40px !important;
+    text-align: left;
+    width: 100% !important;
+}
+.chatMsg input {
+    height: 30px;
+    width: 100%;
+    padding: 0 6px;
+}
+.chatMsg input:focus {
+    outline: none;
+    font-size: 14px;
+}
+.chatMsg .btn-send, .chatMsg .btn-close {
+    margin-bottom: 5px;
+    border: none;
+    opacity: 0.9;
+}
+.btn-send {
+    background-color: rgba(0,171,214,0.8);
+}
+.chatMsg .btn-close {
+    background-color: #ff4500;
+}
+.chatMsg .btn-send:hover, .chatMsg .btn-close:hover, .chatMsg .btn-chat:hover {
+    opacity: 1;
+}
+.chatBox h3 {
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 30%);
+    cursor: pointer;
+}
+.msg {
+    /*
+    padding: 4px 10px;
+    background: rgba(0,171,214,0.8);
+    max-width: 70%;
+    width: fit-content;
+    word-wrap: break-word;
+    margin: 3px 0;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    */
+    padding: 3px;
+	color: blue;
+}
+.rmsg {
+    /*
+    text-align: right;
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    */
+    padding: 3px;
+	text-align: right;
+	color: green;
+}
+/*  ---------- LOGIN PAGE  ---------- */
+.innerLoginPage {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 10px;
+    background-image: url(../images/Banners/pexels-freestocksorg-291762.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+.overlay {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom right, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+}
+.loginContent {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+    border: 1px solid rgba(102,102,102,0.3);
+    border-radius: 10px;
+}
+.loginCredential {
+    position: relative;
+    margin: auto;
+}
+.loginForm {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loginForm .errBlock, .forgotContent .msgBlock {
+    font-size: 20px;
+    font-weight: 700;
+}
+.loginForm h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.loginForm .textbox, 
+.forgotContentForm .textbox,
+.signinmain .textbox {
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.loginForm .textbox input,
+.forgotContentForm .textbox input,
+.signinmain .textbox input {
+    font-size: 15px;
+    color: #222222;
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    outline: none;
+}
+input:focus-visible {
+    background-color: none !important;
+}
+.loginForm .textbox span::before,
+.forgotContentForm .textbox span::before,
+.signinmain .textbox span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #fff;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.5s;
+}
+.loginForm .textbox span::after,
+.forgotContentForm .textbox span::after,
+.signinmain .textbox span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2%;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+}
+.loginForm .textbox + .hightlight { 
+    border: none;
+}
+.hightlight + span::after {
+    background-image: linear-gradient(120deg, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+}
+.hightlight + span::before {
+    margin-top: -25px;
+}
+.loginForm .rememberMe input {
+    border: 1px solid #fff;
+}
+.loginForm .rememberMe label {
+    color: #fff;
+    padding-left: 15px;
+}
+.loginForm .loginBtns {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.login-btn, .signin-btn, .remember-btn {
+    width: 80%;
+    margin: 0 2px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: rgb(0,171,214);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    border: 1px solid rgba(58,57,81,0.6);
+}
+.loginForm .login-btn:hover {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    border: 1px solid #fff;
+}
+.loginForm .bottomText {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+.loginForm .bottomText .forgot-btn {
+    color: #ff4500;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.loginForm .bottomText .forgot-btn:hover {
+    color: rgb(14, 132, 211);
+}
+.loginDesc {
+    text-align: right;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.loginDesc .loginIcon {
+    margin: 60px 0 10px 0px;
+}
+.loginDesc .loginIcon img {
+    width: 25%;
+}
+.loginDesc .LoginIntro h1 {
+    font-weight: 300;
+}
+.loginDesc .LoginIntro h4 {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+.loginDesc .LoginIntro p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4vh;
+}
+.loginDesc .register {
+    justify-content: flex-end;
+}
+.loginDesc .register .signin-btn {
+    width: 50%;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    transition: 0.5s;
+}
+.loginDesc .register .signin-btn:hover {
+    color: rgb(0,171,214);
+    background: #fff;
+}
+
+
+
+
+/*  ---------- FORGOT PASSWORD PAGE  ---------- */
+.forgotPage {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 10px;
+    background: linear-gradient(90deg, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+}
+.forgotContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.forgotContentForm {
+    text-align: center;
+    padding: 40px 60px;
+    border: 1px solid rgba(102,102,102,0.3);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 50%);
+}
+.forgotContentForm h1 {
+    color: #222222;
+    margin-bottom: 10px;
+}
+.forgotContentForm p {
+    margin-bottom: 25px;
+    color: #777777;
+}
+.forgotContentForm .textbox {
+    margin-bottom: 50px;
+}
+.forgotContentForm .textbox span::before {
+    left: 50%;
+    color: #222222;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: 0.5s;
+}
+.remember-btn {
+    width: 50%;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    transition: 0.5s;
+}
+.remember-btn:hover {
+    color: rgb(0,171,214);
+    background: #fff;
+}
+
+/*  ---------- SIGNIN PAGE  ---------- */
+.signinPage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 10px;
+    background: linear-gradient(90deg, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+}
+.signin-info {
+    width: 80%;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 50%);
+}
+.signin-credential {
+    background: #fff;
+    width: 100%;
+}
+.welcomenote {
+    background-image: url("../images/Banners/pexels-pixabay-247115.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 1;
+}
+.welcomenote-overlay {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(61, 57, 79, 0.2) 0%, rgba(0, 171, 214, 0.5) 100%, rgba(58, 57, 81, 0.5) 60%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.welcomenote h1 {
+    color: #fff;
+    font-weight: 300;
+}
+.welcomenote img {
+    width: 30%;
+}
+.welcomenote h4 {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+.welcomenote p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4vh;
+}
+.welcomenote button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+    outline: none;
+}
+.welcomenote button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%,-50%);
+}
+.welcomenote button:hover {
+    border: 1px solid rgb(0,171,214);
+}
+.welcomenote button:hover i {
+    color: rgb(0,171,214);
+}
+.signinform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-text {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.503);
+    text-align: center;
+}
+.signin-credential {
+    padding: 30px 25px;
+}
+.credential-info h4 {
+    color: rgb(0,171,214);
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.credentialsocialicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.sicon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.19) !important;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.credentialsocialicon a {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+}
+.sicon a:hover i {
+    transform: scale(1.2);
+}
+.sicon.facebook a:hover i {
+    color: #fff;
+}
+.sicon.facebook:hover {
+    background: #4267B2;
+    color: #fff;
+}
+.sicon.gmail a:hover i {
+    color: #fff;
+}
+.sicon.gmail:hover {
+    background: #db4a39;
+}
+.sicon.linkedin a:hover i {
+    color: #fff;
+}
+.sicon.linkedin:hover {
+    background: #0e76a8;
+}
+.credentialsocialicon a i {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.503);
+}
+
+/***** Video Poppup *****/
+.videopopup {
+    position: relative;
+}
+.videopopup-overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    background-image: -webkit-gradient(linear,left top, right top,from(#025984),color-stop(#003456),to(#013155));
+    background-image: -o-linear-gradient(left,#025984,#003456,#013155);
+    background-image: linear-gradient(to right,#025984,#003456,#013155);
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+.welcomevideo-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -55%) scale(0);
+        -ms-transform: translate(-50%, -55%) scale(0);
+            transform: translate(-50%, -55%) scale(0);
+    width: 80%;
+    height: 85vh;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 5px 30px rgb(0, 0, 0, 0.3);
+            box-shadow: 0 5px 30px rgb(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 2;
+    overflow-y: hidden;
+    border-radius: 3px;
+}
+.signinPage .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:5%;
+    top:3%;
+    width:50px;
+    height:50px;
+    line-height: 1.1;
+    background:transparent;
+    color: #ff4500;
+    font-size:30px;
+    font-weight:600;
+    text-align:center;
+    z-index: 2;
+    opacity: 0.5;
+    -webkit-transform: translate(-5%, -3%);
+        -ms-transform: translate(-5%, -3%);
+            transform: translate(-5%, -3%);
+}
+.videopopup.active .videopopup-overlay {
+    display:block;
+}
+.videopopup.active .welcomevideo-content {
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    -webkit-transform:translate(-50%,-50%) scale(1);
+        -ms-transform:translate(-50%,-50%) scale(1);
+            transform:translate(-50%,-50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+} 
+.welcomevideoblock {
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+.welcomevideo video {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 85vh;
+    border-radius: 3px;
+}
+.welcomevideologo {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 30px;
+}
+.welcomevideologo img {
+    width: 40%;
+}
+.welcomevideo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+/***** signinmain Poppup *****/
+.signinmain {
+    text-align: center;
+    margin-top: 10px;
+}
+.signinmain .textbox {
+    margin: 30px 0;
+    border-bottom: 1px solid  rgba(255,69,0, 0.4) !important;
+}
+.signinform .textbox input {
+    height: 32px;
+}
+.signinform .textbox span::before {
+    color: #ccc;
+    z-index: 0;
+}
+.signinform .rgender {
+    color: rgba(0, 0, 0, 0.63);
+    margin-top: 25px;
+}
+.signinform .rgender input {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.login-btn.rlogin {
+    width: 85%;
+    margin-top: 7px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    border: 1 px solid #fff;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.login-btn.rlogin:hover {
+    background: rgba(255,69,0, 0.5);
+    border: 1px solid rgba(58,57,81,0.6);
+}
+
+/*---------- INDEX PAGE ----------*/
+.centerHeader .inner {
+    padding: 20px 0;
+}
+.centerHeader .inner .row,
+.bottomHeader .inner .row,
+.accessories .inner .row {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.centerHeader .inner .cHLeft, 
+.centerHeader .inner .cHLogo, 
+.centerHeader .inner .cHRight,
+.centerHeader .inner .cHRight form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.centerHeader .inner .row a {
+    color: #222;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cHLeft .checkout,
+.cHLeft .wishlist,
+.cHLeft .contact,
+.cHRight .profile,
+.cHRight .cart {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 11px 8px;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.centerHeader .inner .cHLogo img {
+    display: none;
+}
+.cHRight .search input, .cHRight .search button {
+    margin: 0 2px;
+}
+.cHRight i {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(206, 212, 218);
+    outline: 0;
+    box-shadow: none;
+}
+.btn-outline-success {
+    border: none;
+    font-size: 20px;
+}
+.btn-outline-success:hover {
+    background: none;
+}
+.btn-outline-success:hover i {
+    color: rgba(0,171,214,0.8);
+}
+.btn-outline-success.focus, .btn-outline-success:focus {
+    box-shadow: none;
+    outline: none;
+}
+.btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: rgba(0,171,214,0.8);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-success.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.bottomHeader {
+    position: relative;
+    background-color: #fff;
+    border-top: 1px solid rgba(102,102,102,0.1);
+}
+.bottomHeader .inner {
+    padding: 2px 0;
+}
+.productMenu {
+    width: 100%;
+}
+.productMenus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.menuItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItems li {
+    padding: 10px 15px;
+    transition: background 0.5s ease-in-out;
+}
+.menuItems li:hover a {
+    color: rgba(0,171,214,0.8);
+}
+.megaLinks li:hover {
+    background: rgba(255,69,0,.8);
+}
+.megaMenu {
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+    width: 80vw;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+.megaMenu .content {
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+    border-left: 1px solid rgba(58,57,81,0.5);
+    border-right: 1px solid rgba(58,57,81,0.5);
+}
+.content .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2;
+    padding: 1rem;
+}
+.content .col h2 {
+    color: #ff4500;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+.content .col .megaLinks li, 
+.content .col .megaLinks a {
+    padding: 0;
+    color: #222;
+    font-size: 14px;
+}
+.content .col .megaLinks a {
+    padding: 1rem;
+}
+.content .col .megaLinks li:hover a {
+    color: #fff;
+}
+.menuItems a {
+    color: #222;
+}
+.menuItems li:hover .megaMenu {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+}
+.centerHeader .cHLeft .checkout a::after,
+.centerHeader .cHLeft .wishlist a::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 14px;
+    background: rgba(34,34,34,0.2);
+    width: 1px;
+    height: 18px;
+}
+.productBanner {
+    margin-bottom: 70px;
+}
+
+
+.accessories .inner .row {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accessories .accessoriesImage img {
+    width: 100%;
+    height: 480px;
+}
+.pTitle .subTitle h6 {
+    font-size: 16px;
+    color: rgba(0,171,214,0.8);
+    letter-spacing: 8px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-family: Poppins;
+}
+.pTitle .title h5 {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #222222;
+    font-family: Poppins;
+    text-transform: unset;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.pTitle .title h5::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: rgba(0,171,214,0.8);
+    bottom: 0;
+}
+.pTitle .despriction {
+    margin-bottom: 25px;
+    color: #777777;
+}
+.pTitle .despriction p {
+    margin-bottom: 10px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.accesoriesInnerText .categoryList {
+    margin-bottom: 20px;
+    overflow: hidden;
+    clear: both;
+}
+.categoryList .listItem {
+    overflow: hidden;
+    clear: both;
+}
+.categoryList .listItem li {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.categoryList .listItem li::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(0,171,214,0.8);
+    top: 8px;
+    left: 0;
+}
+.categoryList .listItem li a {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    color: #666;
+    padding: 0 10px 0 18px;
+    line-height: 24px;
+}
+.btn.about-btn.accessoriesBtn {
+    user-select: none;
+    appearance: none;
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 9px 25px;
+    background-color: rgba(0,171,214,0.8);
+    color: #fff;
+    border: 1px solid rgba(0,171,214,0.8);
+    text-transform: uppercase;
+    white-space: normal;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: all 0.5s;
+    outline: none;
+    border-radius: 30px;
+}
+.btn.about-btn.accessoriesBtn:hover {
+    background-color: #ff4500;
+    border: 1px solid #ff4500;
+}
+
+
+
+.ourServices {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.ourServices .inner .row {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ourServices .center .pTitle {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.ourServices .center .title h5::before {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.services .serviceImageOuter {
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+    position: relative;
+}
+.services .serviceImageOuter .serviceImageInner {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    min-width: 50px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.services .serviceText {
+    display: block;
+    text-align: center;
+}
+.services .serviceText .serviceTitle {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    letter-spacing: 0;
+    transition: all 0.5s;
+}
+.services .serviceText .serviceDescription {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    transition: all 0.5s;
+}
+.services:hover .serviceImageInner {
+    transform:rotateY(360deg);
+}
+
+
+
+.dealOfTheDay {
+    margin-bottom: 180px;
+}
+.dealOfTheDay .inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgba(8, 166, 206, 0.3);
+}
+.dealOfTheDay .inner .row {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.countdownTimer {
+    display: flex;
+    align-items: center;
+}
+.dealTimer {
+    position: relative;
+}
+.dealTimer .pTitle .title h5::before {
+    display: none;
+}
+.dealTimerBlock {
+    text-align: left;
+    padding-left: 10%;
+}
+.timerSeconds {
+    color: rgba(0,171,214,0.8);
+}
+.timerDay {
+    color: #ff4500;
+}
+.timerHours, .timerMinutes {
+    color: #222222;
+}
+.countdownTimer .data {
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    position: relative;
+}
+.countdownTimer {
+    padding-bottom: 20px;
+}
+.btn.about-btn.accessoriesBtn.dealBtn {
+    margin-top: 20px;
+}
+.timerImage {
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.timerImage .dealImage {
+    position: relative;
+    display: block;
+    transition: all 0.5s;
+}
+.timerImage .dealImage img {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.newArrival .inner .row {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newArrival .center .title h5::before {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.productDisplay {
+    position: relative;
+    width: 370px;
+    height: 600px;
+}
+.productDisplayItems {
+    position: absolute;
+    width: 370px;
+    height: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(102,102,102,0.1);
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+.productDisplayItems:hover {
+    transform: rotateY(180deg);
+}
+.cardFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.cardFace.cardFaceFront .newArrivalImage img{
+    width: 368px;
+    height: 493px;
+}
+.cardFace.cardFaceFront .nATextContent .name {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: Poppins;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.cardFace.cardFaceFront .nATextContent .desc {
+    color: #222222;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Poppins;
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
+.cardFace.cardFaceFront .nATextContent .price {
+    color: #222222;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: Poppins;
+    color: rgba(0,171,214,0.8);
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
+.cardFace.cardFaceBack {
+    background: rgba(0,171,214,0.3);
+    transform: rotateY(180deg);
+    padding: 25px;
+    text-align: initial;
+} 
+.cardFace.cardFaceBack .cardHeader {
+    line-height: 20px;
+}
+.cardFace.cardFaceBack .cardHeader .cardTitle {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #232323;
+}
+.cardFace.cardFaceBack .cardHeader .cardDesc {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #232323;
+}
+.cardFace.cardFaceBack .cardHeader .cardPrice {
+    margin: 0 0 5px;
+}
+.cardFace.cardFaceBack .rating {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+}
+.cardFace.cardFaceBack .cardFooter {
+    line-height: 18px;
+    padding: 20px 0;
+}
+.cardFooter .cardDesc .productDetails h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(35, 35, 35);
+    font-family: Poppins;
+    text-transform: capitalize;
+}
+.cardFooter .cardDesc .productDetails p { 
+    font-size: 14px;
+    font-family: Poppins;
+    text-transform: capitalize;
+    color: #232323;
+}
+.cardFooter .cardDesc .productDetails h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(35, 35, 35);
+    font-family: Poppins;
+    text-transform: capitalize;
+}
+.cardFooter .cardCart {
+    margin: 25px 0 0;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.customerReviews {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+    height: 100%;  
+}
+.customerReviews .inner {
+    background-color: rgba(8, 166, 206, 0.3);
+    padding: 60px 0px;
+}
+.customerReviews .inner .row {
+    background: transparent;
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    padding-bottom: 0;
+}
+.customerReviews .center .title h5::before {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    cursor: grab;
+    padding: 65px 50px 40px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

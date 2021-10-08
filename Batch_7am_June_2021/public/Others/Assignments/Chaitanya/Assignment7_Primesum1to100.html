@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sum_of_Prime_Numbers</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var count = 0 , sum = 0;
+		for(var i = 2; i <= 100 ; i++) {
+			if(count == 1) {
+				sum = sum + (i - 1) ;
+			}
+			count = 0;
+			for(j = 2; j <= i ; j++) {
+				if(i % j == 0) {
+					count++;
+				}
+			}
+		}
+		console.log("Sum of Prime numbers between 1 to 100 is " + sum);
+	</script>
+
+</body>
+</html>

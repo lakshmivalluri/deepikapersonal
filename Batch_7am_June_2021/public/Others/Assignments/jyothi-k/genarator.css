@@ -1,0 +1,47 @@
+.Detail {
+
+    text-align: center;
+    border : 2px solid;
+    height: 35px;
+    font-weight: bold;
+    color: blue;
+    font-size:25px;
+}
+  ul {
+      border : 2px solid;
+      width : 500px;
+      margin : 20px;
+      padding : 20px;
+  } 
+  .li {
+    border : 1px solid;
+    font-size : 20px;
+    font-weight : bold ;
+    padding : 10px;
+    text-align: center; 
+    font-style: oblique;
+    font-weight: 200;
+  } 
+  .EmployeeBlock {
+  display : none;
+
+  }
+  .button{
+    text-align: right;
+    font-weight: bold;
+  }
+  .cen{
+    font-weight: 300;
+    font-size: x-large;
+    text-align: center;
+  }
+  .rli{
+    text-align: left;
+    border : 1px solid;
+    font-size : 20px;
+    font-weight : bold ;
+    padding : 10px;
+    font-style: oblique;
+    font-weight: 200;
+  }
+

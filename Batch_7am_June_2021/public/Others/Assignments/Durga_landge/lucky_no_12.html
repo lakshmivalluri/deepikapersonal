@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log("the lucky no is");
+		var n = 2345;
+		var sum = 0, rem;
+		while ( n > 0 ) {
+			rem = n % 10;
+			sum += rem;
+			n = parseInt(n/10);
+		if (n == 0 && sum >= 10) {
+			n = sum;
+			sum = 0;
+		}
+}
+		console.log(sum)
+	</script>
+</body>
+</html>

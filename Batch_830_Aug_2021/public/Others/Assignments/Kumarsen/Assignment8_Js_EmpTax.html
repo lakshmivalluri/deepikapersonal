@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Dynamic_emp
+		</title>
+		<script type="text/javascript">
+			alert("Hellow");
+			var ename = prompt("Enter employee name");
+			var eage = prompt("Enter age");
+			var egender = prompt("Enter gender");
+
+			if((egender == "male") || (egender == "Male" )) {
+				
+			}
+
+			var ebasicsal = prompt("Enter sallary");
+				ebasicsal = parseInt(ebasicsal);
+
+			var hra, pf, totalsal, tax, finalsal;
+				hra = (25 * ebasicsal)/100;
+				pf = (14 * ebasicsal)/100;
+				totalsal = ebasicsal + hra + pf;
+
+			if(egender == ("male" || "Male")){
+				if(totalsal > 200000){
+					tax = (15 * totalsal)/100;
+				}
+				else if (totalsal > 100000) {
+					tax = ( 10 * totalsal)/100;
+				}
+				else if (totalsal > 50000){
+					tax = (5 * totalsal)/100;
+				}
+				else{
+					tax = 0;
+				}
+			}
+			else {
+				if(totalsal > 200000){
+					tax = (10 * totalsal)/100;
+				}
+				else if (totalsal > 100000){ 
+					tax = ( 5 * totalsal)/100;
+				}
+				else{
+					tax = 0;
+				}
+			}
+
+			finalsal = totalsal - tax;
+
+			console.log("Employee name : " + ename);
+			console.log("Age : " + eage);
+			console.log("Gender : " + egender);
+			console.log("Basic salary : " + ebasicsal);
+			console.log("HRA : " + hra);
+			console.log("PF : " + pf);
+			console.log("Total salary : " + totalsal);
+			console.log("Tax : " + tax);
+			console.log("Final salary : " + finalsal);
+		</script>
+	</head>
+	<body>
+		look into the console tag of Debugger tools
+	</body>
+</html>

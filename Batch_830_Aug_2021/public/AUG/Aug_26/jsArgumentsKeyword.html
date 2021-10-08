@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Arguments keyword
+        </title>
+    </head>
+    <body>
+        <script>
+            function addValues() {
+
+                var result = 0;
+                for (var i = 0 ; i < arguments.length; i++) {
+                    result += arguments[i];
+                }
+                console.log("the sum is " + result);
+
+            }
+
+            addValues(20, 34, 34, 44, 56, 23);
+
+            function showValues(a, b) { // a = [34, 45, 90] b = 99
+                // arguments = [[34, 45, 90], 99]; arguments[1] arguments[0][0]
+                
+                console.log("frm show values")
+            }
+
+            var data = [34, 45, 90]
+            showValues(data, 99); // showValues([34, 45, 90], 99);
+        </script>
+    </body>
+</html>

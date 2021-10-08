@@ -1,0 +1,20 @@
+.empDetails {
+    border: 1px solid;
+    width: 300px;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+}
+
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+img{ 
+    width: 150px;
+    height: 150px;
+}

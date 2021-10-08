@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>	
+		<script type="text/javascript">
+			var sname = prompt("Enter student name");
+			var grade;
+			var age = prompt("Enter student age");
+			var m1 = prompt("Enter sub 1");
+			var m2 = prompt("Enter sub 2");
+			var m3 = prompt("Enter sub 3");
+
+			m1 = parseInt(m1);
+			m2 = parseInt(m2);
+			m3 = parseInt(m3);
+
+			var total, avg;
+			total = m1 + m2 + m3;
+			avg = total / 3;
+
+			if (avg >= 40) {
+				grade = "You passed";
+			} else {
+				grade = 'You got a surprise';
+			}
+
+			console.log("Student Details");
+			console.log("Name " + sname);
+			console.log("Total " + total)
+			console.log("Avg " + avg);
+			console.log('Grade ' + grade)
+		</script>
+	</body>
+</html>

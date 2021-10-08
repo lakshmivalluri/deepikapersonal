@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student basic salary</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var EmpDetails = {
+			"name" : "riya",
+			'age' : 22,
+			"gender" : "Female",
+			"basicsalary" : 25000,
+			"hra" : 0,
+			"pf" : 0,
+			"totalsalary" : 0,
+		}
+		EmpDetails.hra = (25*EmpDetails.basicsalary) /100;
+		EmpDetails.pf = (14*EmpDetails.basicsalary) /100;
+		EmpDetails.totalsalary = parseInt(EmpDetails.basicsalary+EmpDetails.hra+EmpDetails.pf);
+
+		console.log("Employee Name =" +EmpDetails.name);
+		console.log("Employee Age =" +EmpDetails.age);
+		console.log("Employee Gender =" +EmpDetails.gender);
+		console.log("Employee Hra =" +EmpDetails.hra);
+		console.log("Employee Pf =" +EmpDetails.pf);
+		console.log("Employee Totalsalary =" +EmpDetails.totalsalary);
+
+
+
+
+
+
+		// var name = "archana";
+		// var age = 24;
+		// var basicsalary = 20000;
+		// var hra = (25*basicsalary)/100;
+		// var pf = (14 * basicsalary)/100;
+		// var totalsalary = hra + pf + basicsalary;
+		// console.log("name is " +name);
+		// console.log("age is " +age);
+		// console.log("hra is "+ hra);
+		// console.log("pf is "+ pf);
+		// console.log("totalsalary is "+ totalsalary);
+	</script>
+
+</body>
+</html>

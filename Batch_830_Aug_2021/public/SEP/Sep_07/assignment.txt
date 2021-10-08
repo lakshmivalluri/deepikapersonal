@@ -1,0 +1,16 @@
+
+
+Create a formpage for Univ sports reg
+
+    block to read college details
+        collegename
+        code
+        location
+
+    block to read Student deails
+        name
+        age
+        gender
+        sport
+
+        Register -> 

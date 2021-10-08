@@ -1,0 +1,66 @@
+.ulabel{
+
+    margin-left: 20px;
+     width:170px;
+        font-size: 20px;
+        color:white;
+    
+    }
+    
+    .ulabel ,.control{
+        
+        display: inline-block;
+    }
+    li{
+        
+        padding: 10px;
+        list-style-type: none;
+        margin-left: -15px;
+        margin-top: 10px;
+        margin-right: 20px;
+    
+    }
+    ul{
+        border: 1px solid black;
+        margin: 10px auto;
+        width: 50%;
+        height: auto;
+        background:skyblue;
+    }
+    h3{
+       margin-left: 170px;
+       border: 1px solid;
+       width: 200px;
+       padding: 10px;
+       text-align: center;
+       background:coral;
+       color:white;
+       font-size: x-large;
+       
+    }
+    #ad{
+        border: 2px solid palevioletred;
+        width: 50%;
+        margin: 10px auto;
+        
+        color:indigo;
+    }
+    td{
+        border: 1px solid gray;
+        padding:10px;
+        font-size: 20px;
+    
+    }
+    
+    #send{
+        width: 100px;
+        height: 20px;
+        font-size: 17px;
+        padding: 4px;
+
+    }
+    .reg{
+        font-size: 17px;
+        padding: 4px;
+        
+    }

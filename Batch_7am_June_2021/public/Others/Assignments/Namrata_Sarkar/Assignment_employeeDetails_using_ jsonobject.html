@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demonstrating Employee Details with jsonobject</title>
+  </head>
+  <h1>Demonstrating Employee Details with jsonobject</h1>
+  <body>
+    <script>
+      var eDetails = {
+        name: "",
+        age: " ",
+        gender: " ",
+        department: " ",
+        basicsalary: " ",
+        pf: " ",
+        hra: " ",
+        totalsalary: " ",
+        tax: " ",
+
+        readEmployeeData: function () {
+          this.name = prompt("Enter Employee Name");
+          this.age = prompt("Enter Employee age");
+          this.gender = prompt("Enter gender");
+          this.department = prompt("Enter department");
+          this.basicsalary = prompt("Enter basicsalary");
+          this.basicsalary = parseInt(this.basicsalary);
+        },
+
+        getPfHraAndTotalsalary: function () {
+          eDetails.pf = (14 * eDetails.basicsalary) / 100;
+          eDetails.hra = (25 * eDetails.basicsalary) / 100;
+          eDetails.totalsalary =
+            eDetails.pf + eDetails.hra + eDetails.basicsalary;
+        },
+
+        getTax: function () {
+          this.getPfHraAndTotalsalary();
+
+          if (eDetails.gender == "male") {
+            if (eDetails.totalsalary > 200000) {
+              eDetails.tax = (eDetails.totalsalary * 15) / 100;
+              console.log(" Tax is " + eDetails.tax);
+            } else if (
+              eDetails.totalsalary > 100000 &&
+              eDetails.totalsalary < 200000
+            ) {
+              eDetails.tax = (eDetails.totalsalary * 10) / 100;
+              console.log(" Tax is " + eDetails.tax);
+            } else if (
+              eDetails.totalsalary > 50000 &&
+              eDetails.totalsalary < 100000
+            ) {
+              eDetails.tax = (eDetails.totalsalary * 5) / 100;
+              console.log(" Tax is " + eDetails.totalsalary);
+            }
+          }
+
+          if (eDetails.gender == "female") {
+            if (eDetails.totalsalary > 200000) {
+              eDetails.tax = (eDetails.totalsalary * 10) / 100;
+              console.log(" Tax is " + eDetails.tax);
+            } else if (
+              eDetails.totalsalary > 100000 &&
+              eDetails.totalsalary < 200000
+            ) {
+              eDetails.tax = (totalsalary * 5) / 100;
+              console.log(" Tax is " + eDetails.tax);
+            } else if (
+              eDetails.totalsalary > 50000 &&
+              eDetails.totalsalary < 100000
+            ) {
+              eDetails.tax = (eDetails.totalsalary * 0) / 100;
+              console.log(" Tax is " + eDetails.tax);
+            }
+          }
+        },
+        displayData: function () {
+          eDetails.readEmployeeData();
+          this.getTax();
+          console.log(" Employee details:- ");
+          console.log(" Employee Name " + eDetails.name);
+          console.log(" Employee Age " + eDetails.age);
+          console.log(" Employee Gender " + eDetails.gender);
+          console.log(" Employee Department " + eDetails.department);
+          console.log(" Employee's Basicsalary " + eDetails.basicsalary);
+          console.log(" Employee's PF " + eDetails.pf);
+          console.log(" Employee's HRA " + eDetails.hra);
+          console.log(" Employee's Total Salary " + eDetails.totalsalary);
+          console.log(" Employee's tax " + eDetails.tax);
+        },
+      };
+
+      eDetails.displayData();
+    </script>
+  </body>
+</html>

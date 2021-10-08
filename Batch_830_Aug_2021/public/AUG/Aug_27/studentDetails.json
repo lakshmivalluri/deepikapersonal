@@ -1,0 +1,30 @@
+{
+    "details": [
+        {
+            "name": "Raj", 
+            "age": 10, 
+            "gender": "male", 
+            "marks": [23, 90, 88, 34], 
+            "total": 0, 
+            "avg": 0
+        },
+        {
+            "name": "Raj", 
+            "age": 10, 
+            "gender": "male", 
+            "marks": [23, 90, 88, 34], 
+            "total": 0, 
+            "avg": 0
+        },
+        {
+            "name": "Raj", 
+            "age": 10, 
+            "gender": "male", 
+            "marks": [23, 90, 88, 34], 
+            "total": 0, 
+            "avg": 0
+        }
+    ]
+    
+}
+

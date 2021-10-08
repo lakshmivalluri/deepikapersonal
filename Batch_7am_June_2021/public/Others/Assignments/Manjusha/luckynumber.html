@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Finding lucky number</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var lucky = 125;
+			var sum = 0, r;
+			while(lucky > 0) {
+				r = lucky % 10;
+				sum = sum + r;
+				lucky = parseInt(lucky / 10);
+				
+				if (lucky == 0 && sum >= 10) {
+					lucky = sum;
+					sum = 0;
+					
+				}
+			
+			}
+				console.log(sum);			
+
+		</script>
+
+	</body>
+</html>

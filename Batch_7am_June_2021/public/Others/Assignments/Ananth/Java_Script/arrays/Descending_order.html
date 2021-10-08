@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ascending order</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr = [1,5,7,8,2,3,6];
+			var temp = 0;
+			for (var i = 0;i <  arr.length; i++ ){
+				for (var j = i+1; j < arr.length; j++) {
+					if (arr[i] < arr[j]){
+						temp = arr[i];
+						arr[i] = arr[j];
+						arr[j] = temp;
+					}
+				}
+			}
+			for (i = 0 ; i < arr.length; i++){
+				console.log(arr[i]);
+			}
+		</script>
+	</body>
+</html>

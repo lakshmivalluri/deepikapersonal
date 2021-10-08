@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head
+	<meta charset="utf-8">
+	<title>Contact details With Json Format</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var condtls={
+					'firstname':'Manish',
+					'lastname':'Tiwari',
+							phoneno:{
+								office:'0512264152',
+								personal:['9648526341','1234567890']
+							         },
+							emailid:{
+								office:'abc1@gmail.com',
+								personal:['avx2@gmail.com','asc3@gmail.com']
+								   },
+							address:{
+									personal:{'dno':'152',
+											'streetNo':'Street 2',
+											stateinfo:{
+												'statename':'Uttar Pradesh',
+												'statecode':'09'
+													}
+								 			},
+									office:{
+											'country':'India',
+											stateinfo:{
+													'statename':'Uttar Pradesh',
+													'statecode':'09'
+													}
+
+
+										   }		
+
+									},	 			
+			'designation':'Software Engineer'	,
+			'profilepic':"https:\\8081:\public\Others\Assignments\Manish_Tiwari\J.S\1.jpg"
+		};
+
+		console.log("First Name is : "+ condtls.firstname);
+		console.log("Last Name is : "+ condtls.lastname);
+		console.log("Office Phone No is : "+ condtls.phoneno.office);
+		console.log("Personal Phone No is : "+ condtls.phoneno.personal);
+		console.log("Office email id is : "+ condtls.emailid.office);
+		console.log("Personal email id is : "+ condtls.emailid.personal);
+		console.log("Personal Address  is : "+ condtls.address.personal.dno +" Street No :"+ condtls.address.personal.streetNo +" State : "+ condtls.address.personal.stateinfo.statename +" State Code :"+ condtls.address.personal.stateinfo.statecode);
+		console.log("Office Address  is : "+ condtls.address.office.stateinfo.statename +" "+"State Code:"+condtls.address.office.stateinfo.statecode+" "+"Country: "+condtls.address.office.country);
+		console.log("Designation is : "+ condtls.designation);
+		console.log("Profile Picture  is : "+ condtls.profilepic);
+
+	</script>
+
+</body>
+</html>

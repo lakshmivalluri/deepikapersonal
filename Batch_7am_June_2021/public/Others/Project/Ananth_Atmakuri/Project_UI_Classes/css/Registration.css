@@ -1,0 +1,107 @@
+ul {
+    list-style: none;
+}
+.inner {
+    border: 2px solid;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 5%;
+    background-color: black;
+}
+li {
+    /*border: 1px solid;*/
+    margin: 10px;
+    padding: 15px;
+    /*list-style: none;
+    border-radius: 15px;
+    /*text-align: center;*/
+}
+.main {
+    background-image: url("../images/Mainpage.jpg");
+    background-position:center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: darkred;
+}
+a:focus {
+    color: green;
+}
+/*button:hover {
+    font-size: 20px;
+    color: greenyellow;
+}*/
+h1 {
+    text-align: center;
+    color: gold;
+}
+.submit {
+    text-align: center;
+}
+.outer, .innerblock {
+    display: inline-block;
+}
+.outer {
+    width: 300px;
+}
+.uname {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 164px;
+    left: 760px;
+    border: 2px solid;
+    background: honeydew;
+}
+.upsw {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 228px;
+    left: 760px;
+    border: 2px solid;
+    background: honeydew;
+}
+.rpsw {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 290px;
+    left: 760px;
+    border: 2px solid;
+    background: honeydew;
+}
+.valid {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 320px;
+    left: 760px;
+    border: 2px solid;
+    background: honeydew;
+}
+.uphn {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 473px;
+    left: 760px;
+    border: 2px solid;
+    background: honeydew;
+}
+.footer {
+    border: double;
+    text-align: center;
+    background-color: black;
+    color: cornsilk;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}

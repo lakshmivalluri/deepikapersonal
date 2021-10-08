@@ -1,0 +1,26 @@
+h2{
+    text-align: center;
+    background: coral;
+}
+ul{
+    border: 2px dotted;
+    width: 500px;
+    margin: 5px auto;
+    padding: 5px;
+    background: burlywood;
+
+}
+li{
+    border: 1px solid;
+    background: cadetblue;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+}
+.details{
+    text-align: center;
+    color:black;
+}
+.payslipblock{
+    display: none;
+}

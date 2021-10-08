@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // largestno = 89
+            /*var seconLarg = 0;
+            var data = [2, 59,209, 101, 34, 56, 77, 89, 23, 56, 204, 109, 201];
+            var largestno = data[0];
+            for (var i = 1 ; i < data.length; i++) {
+                if (largestno < data[i]) {  
+                    if (seconLarg < largestno) {
+                        seconLarg = largestno;
+                    }
+                    largestno = data[i];
+                }  else if (seconLarg < data[i]) {
+                    seconLarg = data[i];
+                }              
+                
+            }
+            console.log(largestno)
+            console.log(seconLarg);*/
+
+            var data1 = [23, 45, 56];
+            //var data2 = data1.join(',').split(',');
+            var data2 = data1.slice();
+            console.log(typeof(data1));
+
+            data1.push(200);
+
+            console.log(data1);
+            console.log(data2);
+
+
+        </script>
+    </body>
+</html>

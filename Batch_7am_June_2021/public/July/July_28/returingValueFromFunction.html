@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Returing value from function
+        </title>
+    </head>
+    <body>
+        <script>   
+            var firstVal, secondVal;         
+            var readData = function() { // calling function
+                firstVal = prompt("Enter first value");
+                secondVal = prompt("Enter second value");
+
+                firstVal = parseInt(firstVal);
+                secondVal = parseInt(secondVal);
+                var res = addValues(); // called function
+                console.log("The sum is " + res);
+            }
+
+            function addValues() { 
+                var result = firstVal + secondVal; 
+
+                return result;    // return 30          
+            }
+           
+            readData();
+
+        </script>
+    </body>
+</html>

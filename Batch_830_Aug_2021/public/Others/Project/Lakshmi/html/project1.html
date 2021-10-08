@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>login to website</title>
+    </head>
+        <link rel="stylesheet"  href="..\css\project1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <body>
+        <div class ="page" id="page">
+            <header > LOGIN PAGE</header>
+            <div class="contain">
+                <div id="span">Login Form</div>
+                <div class="space">User Name :<input type="text" name="enter user name" id="uname"></div>
+                <div class="space1">Password :<input type="Password" name=""id="upassword">
+                <i class="fa fa-eye-slash" aria-hidden="true" style="margin-left:-30px; " id="eye"></i>
+                </div>
+                <div class="login"> <input type="button" value="login" onclick="showData()"> </div>
+                <div  class="sign" ><input type="button" value="sign up" onclick="signUpPage()"></div>
+                <div id="forgot"><input type="button"value="Forgot password ?" onclick="forGotPage()"></div>
+
+            </div>
+                <div id="display">suceesfully loged in</div>
+                <footer > Copy Right@2021</footer>
+        </div>
+        <div class="page1" id="signUp">
+    	      <header class="header1"> SIGN UP PAGE</header>
+    	      <div class="contain">
+                    <div id="span0"> Sign Up Form</div>
+                    <div class="space3"> User Name :<span><input type="text" id="userName"><span></div>
+                    <div class="space3">Password :<span id="span1"><input type="Password" id="userPaswrd"></span>
+                        <i class="fa fa-eye-slash" aria-hidden="true" style="margin-left:-30px;"  id="eye1"></i>
+                    </div>
+                    <div class="space2">Cnfrm Password :<span id="span2"><input type="Password" id="confrmPaswrd" ></span>
+                        <i class="fa fa-eye-slash" aria-hidden="true" style="margin-left:-30px;"  id="eye2"></i>
+                    </div>
+                	<div class="space3"> Mobile No :<span id="span3"><input type="number" id="uNumber" maxlength="10" ></span>
+                    </div>
+                	<div class="space3"> Email Id :<span id="span4"><input type="email" id="eMail"></span></div>
+                	<div class="sign1"><input type="button" value=" submit " id="submit" onclick="submitData()"></div>
+    	      </div>
+    
+                 <footer class="footer1">Copy Right @2021</footer>
+        </div>
+        <div class="page2" id="signUp2">
+              <header class="header2"> FORGOT PASSWORD PAGE</header>
+              <div class="contain2" >
+
+    	            <span id="span1">Email Id:<input type="Email" id="uEmail"></span>
+    	            <div><input type="button" id="done" value="Done" onclick="showLoginPage()"></div>
+
+    	      </div>
+    	         <footer class="footer2" > Copy Right@2021</footer>
+        </div>
+        <!--<div class="page3" id="page3">
+              <header class="header2"> LOGIN CONFORMATION PAGE</header>
+              <div class="contain3">
+                    <div class="space">User Name :<input type="text" name="enter user name" id="urname"></div>
+                    <div class="space1">Password :<input type="Password" name=""id="urpassword">
+                    <i class="fa fa-eye-slash" aria-hidden="true" style="margin-left:-30px; " id="eye3"></i>
+                    </div>
+                    <div class="space4"><input type="button" value="login" id="login" onclick="showProductPage()" ></div>
+              </div>
+                  <footer class="footer3" > Copy Right@2021</footer>
+        </div>-->
+        <div class="page4" id="page4">
+              <header class="header2"> PRODUCT DISPLAY PAGE</header>
+              <div class="container4">
+                <div class="viewBlock"></div>
+               <aside class="products">
+                  <div><input type="button" name="mens cloths" value="mens cloths" id="mencloths" onclick="mensCloths()"></div>
+                  <div><input type="button" value="womens cloths" id="womencloths" onclick="womenCloths()"></div>
+                  <div><input type="button" name="electonics" value="Electornics" id="electronics" onclick="electronics()"></div>
+                  <div><input type="button" name="mobiles" value="Mobiles" id="mobiles"></div>
+                  <div><input type="button" name="mens footware" value="Mens Footware" id="menfootware"></div>
+                   <div><input type="button" name="women footeware" value="WomenFootware" id="womenfootware"></div>
+                  <div><input type="button" name="kids ware" value="Kids Ware" id="kidsware"></div>
+               </aside>
+               <div class="block">
+               <div id="rblock"> </div>
+               <div id="rblock1"></div>
+               <div id="rblock2"></div>
+                
+              <div class="view"><input type="button"value="view all"id="view1" onclick="viewMensProduct()"></div>
+              <div class="view1"><input type="button"value="view all"id="view2" onclick="viewWomenProduct()"></div>
+              <div class="view2"><input type="button"value="view all"id="view3" onclick="viewElectronicProduct()"></div>
+            </div>
+              <div id="rblock3"></div>
+              <div id="rblock4"></div>
+              <div id="rblock5"></div>
+             
+              </div>
+              <footer class="footer4" > Copy Right@2021</footer>
+        </div>
+        <div class="page5" id="page5">
+             <header class="header5"> PRODUCT INFORMATION PAGE</header>
+             <div id="viewProduct">VIEW PRODUCT</div>
+             <div id="viewCart">VIEW CART</div>
+             <div class="container5">
+                 
+                 <div id="pblock"></div>
+                 <div id="pblock1"></div>
+                 <div id="pblock2"></div>
+                 <div id="pblock3"></div>
+                 <div id="pblock4" >
+                    <div id="space1">Rating : *****5star</div>
+                    <div id="space1">Reviews: good quality product</div>
+                 </div>
+                 <div id="pblock6" class="discription">
+                     <!--<div id="space">Product Name: 540</div>
+                     <div id="space">categiory: Mens Ware</div>
+                     <div id="space">Price:2000</div>
+                     <div id="space">Vnedor:Trnding Buzz</div>
+                     <div id="space">Manufacturer:Equation bombay shirt company </div>
+                     <div id="space">Instock: Avialable</div>
+                     <div id="space">Colour: Green</div>
+                     <div id="space">Size: 2XL</div>
+                     <div id="space">Discription:</div>-->
+                 </div>
+                 <div id="addToCart" >ADD TO CART</div>
+                 
+             </div>
+             <footer class="footer5" > Copy Right@2021</footer>
+        </div>
+        <div class="page6" id="page6"> 
+            <header class="header6"> CART ITEMS PAGE</header>
+            <div class="container5" id="viewPage">
+            
+            </div>
+            <footer class="footer6" > Copy Right@2021</footer>
+        </div>
+        <div class="page7" id="page7">
+            <header class="header7">ADMIN PAGE</header>
+            <div id="aVendor"><input type="button" value="ADD VENDOR"></div>
+            <div id="aProduct"><input type="button" value="ADD PRODUCT"></div>
+            <footer class="footer7">Copy Right@2021</footer>
+        </div>
+        <script type="text/javascript" src="..\javascript\page1.js"></script>
+        <script type="text/javascript" src="..\javascript\page2.js"></script>
+        <script type="text/javascript" src="..\javascript\page3.js"></script>
+        <script type="text/javascript" src="..\javascript\page4.js"></script>
+        <script type="text/javascript" src="..\javascript\page5.js"></script>           
+    </body>
+   
+</html>

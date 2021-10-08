@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Demonstraing Pseudo Classes
+		</title>
+		<style type="text/css">
+			
+			div:first-child {
+				border: 2px solid;
+			}
+			div:last-child {
+				background: green;
+			}
+			div:nth-child(2) {
+				background: red;
+			}
+			span:only-child {
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			Content 1
+		</div>
+		<div>
+			Content 2
+		</div>
+		<div>
+			Content 3
+		</div>
+		<h3>
+			<div>ITem 1</div>
+			<div>ITem 2</div>
+		</h3>
+		<p>
+			<span>One</span>
+			<span>Tow</span>
+		</p>
+		<p>
+			<span>Three</span>
+		</p>
+	</body>
+</html>

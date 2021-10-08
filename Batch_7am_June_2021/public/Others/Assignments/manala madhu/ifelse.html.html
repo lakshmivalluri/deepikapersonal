@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+			<head>
+				<meta charset="utf-8">
+				<title>
+					if else
+				</title>
+			</head>
+					<body>
+						<script type="text/javascript">
+							var name, age, department, basicsalary, gender, pf, hra,  annuvalsal;
+							name = "madhu";
+							age = 35;
+							department = "textile";
+							basicsalary = 20000;
+							gender = "female";
+
+							pf = (14*basicsalary)/100;
+							hra = (25*basicsalary)/100;
+							totalsalary = pf + hra + basicsalary;
+							annuvalsal = totalsalary*12;
+
+							console.log("Employee Name: " + name);
+							console.log("age: " + age);
+							console.log("department: " + department);
+							console.log("gender: " + gender);
+							console.log("basicsalary: " + basicsalary);
+							console.log("pf: " + pf);
+							console.log("hra: " + hra);
+							console.log("totalsalary: " + totalsalary);
+							console.log("annuvalsalary of Employee: " + annuvalsal);
+
+							if (gender === "male") {
+								/* console.log("employee gender male "); */
+								if (annuvalsal >= 200000){
+									console.log(" annuvalsalary >= 200000 then tax payble amount (15%): " + (annuvalsal*15)/100);
+									}
+									else if (annuvalsal >=150000) {
+									console.log(" annuvalsalary >=150000 then tax payble amount (10%): " + (annuvalsal*10)/100);
+									}	
+									else if(annuvalsal < 150000) {
+										console.log(" annuvalsalary < 150000 then tax payble amount (5%): " + (annuvalsal*5)/100);
+									} 	
+								  /*	else if (gender ==="female") {
+									console.log("employee gender female");
+									} 	
+									else if(annuvalsal >= 200000) {
+										console.log("tax payble=10% " + (annuvalsal*10)/100);
+									}
+									else if(annuvalsal >= 150000) {
+										console.log("tax payble=5% " + (annuvalsal*5)/100);
+									}
+									else {
+										console.log("tax payble nill" )
+									} */
+							}	else {
+									
+								}							
+								if (gender ==="female") {
+								/*	console.log("employee gender female"); */
+										
+									if(annuvalsal >= 200000) {
+										console.log("annuvalsalary >= 200000 then tax payble amount (10%): " + (annuvalsal*10)/100);
+									}
+									else if(annuvalsal >= 150000) {
+										console.log(" annuvalsalary >= 150000 then tax payble amount (5%): " + (annuvalsal*5)/100);
+									}
+									else  {
+										console.log("annuvalsalary < 150000 then tax payble amount nill")
+									}								
+								} else{
+
+								}
+						</script>
+
+					</body>
+</html>

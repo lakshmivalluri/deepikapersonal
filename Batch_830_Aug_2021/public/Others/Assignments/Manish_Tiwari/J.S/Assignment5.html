@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Find Lucky Number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var sum=0;
+		var rem;
+		var n=prompt("Enter a Value")
+		n=parseInt(n);
+		var msgno=0;
+		msgno=n;
+         
+         while (n>0) {
+
+         	rem= n % 10;
+         	sum=sum+rem;
+         	n=  n/10;
+         	n=parseInt(n);
+         	
+         }
+         if (sum<10){
+         		console.log ("Given No is a Prime Number " + msgno);
+         }
+         else{
+         	  console.log ("Given No is Not a Prime Number " + msgno);
+         }
+         
+
+	</script>
+
+</body>
+</html>

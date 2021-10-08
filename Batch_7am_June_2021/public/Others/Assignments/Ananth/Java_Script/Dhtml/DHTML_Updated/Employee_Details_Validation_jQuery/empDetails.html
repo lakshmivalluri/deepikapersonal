@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>PaySlip Details</title>
+          <link rel="stylesheet" href="emp.css">
+          <script src="../../jQueryCompressed.js"></script>
+     </head>
+     <body>
+          <div class="header">Employee Salary Details</div>
+          <ul>
+               <li class="box">
+                    <label for="empname">Enter the Employee Name : &nbsp; </label>
+                    <input type="text" name="empname" id="ename" placeholder="Enter Here" maxlength="10" onkeypress="return validatename(event);">
+                    <div class="uname">invalid Name</div>
+                    <div class="name">valid Name</div>
+               </li>
+               <li class="box">
+                    <label for="age">Enter the Employee Age : &nbsp; </label>
+                    <input type="text" name="age" id="eage" placeholder="Enter Here" maxlength="2" onkeypress="return validateage(event);" >
+                    <div class="uage">invalid Age Format</div>
+                    <div class="age">valid Age</div>
+               </li>
+               <li>
+                    <label for="gender">Select the Gender : &nbsp; </label>
+                    <input type="radio" name="gender" id="egender" value="male">Male
+                    <input type="radio" name="gender" id="agender" value="Female">FeMale
+               </li>
+               <li>
+                    <label for="empdept">select Department : &nbsp; &nbsp;&nbsp;&nbsp; </label>
+                    <select id="edept" name="empdept">
+                         <option></option>
+                         <option>IT</option>
+                         <option>Networking</option>
+                         <option>Sales</option>
+                         <option>HR</option>
+                    </select>
+               </li>
+               <li class="box">
+                    <label for="ebsal">Enter the Basic Sal : &nbsp;</label>
+                    <input type="text" name="ebsal" id="basicsal" maxlength="8" onkeypress="return validatesal(event);">
+                    <div class="usal">Wrong Salary Format</div>
+                    <div class="sal">valid Salary</div>
+               </li>
+               <div class="button"><input type="button" value="GetPayslip" id="submit" onclick="generatePaySlip();"></div>
+          </ul>
+          <div class="creating">
+
+          </div>
+              
+          <script src="empDetails.js"></script>
+     </body>
+</html>

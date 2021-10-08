@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+            var empDetails = {
+                empName : " ",
+                empAge : "",
+                gender : " ",
+                department : " ",
+                tax : " ",
+                readEmployeeDetails : function () {
+                    this.empName = prompt("Enter Name of employee");
+                    this.empAge = prompt("Enter age of employee");
+                    this.gender = prompt("Enter employee Gender");
+                    this.department = prompt("Enter department");
+                    empDetails.basicSal = prompt("Enter Basic salary");
+                    this.basicSal = parseInt(this.basicSal);
+                },
+                getPfHraAndTotal : function () {
+                    empDetails.pf = (15 * this.basicSal) / 100;
+                    empDetails.hra = (25 * this.basicSal) / 100;
+                    empDetails.totalSal = this.pf + this.hra + this.basicSal;
+                },
+                getTax : function () {
+                    this.getPfHraAndTotal();
+                    if (this.gender == "Male") {
+                        if (this.totalSal > 200000) {
+                            empDetails.tax = (this.totalSal * 15) / 100;
+                            console.log("Tax is " + this.tax);
+                        } else if (this.totalSal > 100000) {
+                            this.tax = (empDetails.totalSal * 10) / 100;
+                            console.log("Tax is " + this.tax);
+                        } else if (empDetails.totalSal > 50000) {
+                            this.tax = (this.totalSal * 5) / 100;
+                            console.log("Tax is " + this.tax);
+                        }
+                    } if (empDetails.gender == "Female") {
+                        if (empDetails.totalSal > 200000) {
+                            empDetails.tax = (empDetails.totalSal * 10) / 100;
+                            console.log("Tax is " + empDetails.tax);
+                        } else if (empDetails.totalSal > 100000) {
+                            empDetails.tax = (empDetails.totalSal * 5) / 100;
+                            console.log("Tax is " + empDetails.tax);
+                        } else if (empDetails.totalSal > 50000) {
+                            empDetails.tax = (empDetails.totalSal * 0) / 100;
+                            console.log("Tax is " + empDetails.tax);
+                        }
+                    }
+                },
+                displayData : function () {
+                    empDetails.readEmployeeDetails();
+                    empDetails.getTax();
+                    console.log("THIS IS THE EMPLOYEE DETAILS")
+                    console.log("Employee Name : " + empDetails.empName);
+                    console.log("Employee Age : " + empDetails.empAge);
+                    console.log("Employee Gender : " + empDetails.gender);
+                    console.log("Department : " + empDetails.department);
+                    console.log("Basic Salary is : " + empDetails.basicSal);
+                    console.log("pf is : " + empDetails.pf);
+                    console.log("hra is : " + empDetails.hra);
+                    console.log("Total Salary is : " + empDetails.totalSal);
+                    console.log("Tax is : " + empDetails.tax)
+                }
+            };
+            empDetails.displayData();
+        </script>
+    </body>
+</html>

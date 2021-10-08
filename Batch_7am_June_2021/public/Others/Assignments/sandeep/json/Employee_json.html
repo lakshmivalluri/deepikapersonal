@@ -1,0 +1,81 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Employee details</h3>
+        <script type= "text/javascript">
+            function empData() {
+                var empDetails ={};
+              empDetails.sname = prompt("enter a name");
+              empDetails.sAge = prompt ("enter a age");
+              empDetails.sSalary = prompt ("enter a salary");
+              empDetails.sSalary = parseInt(empDetails.sSalary);
+              empDetails.sGender = prompt ("enter a Gender");
+              salarycalculation(empDetails);
+
+            }
+
+            function salarycalculation(empDetails){
+                var saldetail ={};
+                saldetail.pf=(25/100)* empDetails.sSalary;
+                saldetail.hra=(15/100)* empDetails.sSalary;
+
+                saldetail.total= saldetail.pf+ saldetail.hra + empDetails.sSalary;
+
+                console.log("the salary details of pf" + saldetail.pf);
+                console.log("the salary details ofhra" + saldetail.hra);
+
+                console.log("the salary details of salary" + empDetails.sSalary);
+                console.log("the salary details of total" + saldetail.total);
+                taxcalculator(empDetails ,saldetail);
+                
+            }
+               function  taxcalculator(empDetails ,saldetail){
+                    if (empDetails.sGender === "male"){
+                        if (empDetails.sSalary> 40000){
+
+                            console.log("the tax pay is" + 0.2 * empDetails.sSalary);
+
+                        }
+                        else if(empDetails.sSalary<10000){
+                            console.log ("the tax pay is" + 0.15 * empDetails.sSalary);
+                        
+                    }
+                    else {
+                        console.log ("the tax pay is" + 0 * empDetails.sSalary);
+
+                    }
+                
+        
+                    if (empDetails.sGender=== "female"){
+
+                        if (empDetails.sSalary> 40000){
+                            console.log("the tax pay is" + 0.2 * empDetails.sSalary);
+
+                        }
+                        else if(empDetails.sSalary<10000){
+                            console.log ("the tax pay is" + 0.15 * empDetails.sSalary);
+                        }
+                    
+                    else {
+                        console.log ("the tax pay is" + 0 * empDetails.sSalary);
+
+                    }
+                        }
+            
+                 }
+               }
+                    empData();
+
+
+
+
+        </script>
+    </body>
+    </html>

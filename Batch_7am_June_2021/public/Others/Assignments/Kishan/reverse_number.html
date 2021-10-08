@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Reverse number</title>
+</head>
+<body>
+      <script>
+            var number = prompt('enter a number');
+            number = parseInt(number);
+            var a, rev = 0;
+            while(number > 0) {
+            a = number * 10;
+            rev = (rev * 10 )+( number % 10);
+            number = number/10;
+            number = parseInt(number);
+        }
+          console.log('The Reverse number is :' + rev)
+      </script>
+</body>
+</html>

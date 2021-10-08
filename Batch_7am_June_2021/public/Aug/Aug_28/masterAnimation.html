@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Jquery Animations
+        </title>
+        <script src="../jquery.js"></script>
+        <style>
+            .container {
+                border: 2px solid;
+                width: 250px;
+                height: 250px;
+                background-color: green;
+                text-align: center;
+                margin: 10px;
+                position: relative;
+            }
+
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Apply Change" onclick="doAction()">
+        <div>   
+            <div class="container">
+                CONTENT
+            </div>
+        </div>
+        <script>
+            var doAction = (type) => {
+                //$(".container").css("left", "300px");
+
+                $(".container").animate({
+                    left: '800px',
+                    height: '200px',
+                    width: '200px'
+                }, 3000, function() {
+                    $(".container").animate({left: '10px'}, 3000);
+                });
+            }
+        </script>
+    </body>
+</html>

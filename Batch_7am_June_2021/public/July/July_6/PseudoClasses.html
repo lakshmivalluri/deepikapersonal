@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Pseudo Classes
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+
+			}
+
+			.container:hover {
+				background: green;
+				font-size: 20px;
+			}
+			a:link {
+				color: green;
+			}
+			a:visited {
+				color: red;
+			}
+			a:active {
+				background: red;
+			}
+			a:focus {
+				background: yellow;
+			}
+			div:empty {
+				border: 2px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			CONTENT
+		</div>
+		<a href="http:www.google.com">Google</a>
+		<a href="http:www.flipkart.com">Flipkart</a>
+		<a href="http:www.amazon.com">Amazon</a>
+		<a href="http:www.shopclues.com">ShopClues</a>
+		<div>
+			<div>item1</div>
+			<div>item1</div>
+			<div>
+				<span>item1</span>
+			</div>
+			<div>item1</div>
+		</div>
+	</body>
+</html>

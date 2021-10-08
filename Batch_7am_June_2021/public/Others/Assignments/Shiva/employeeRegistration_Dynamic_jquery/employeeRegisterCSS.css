@@ -1,0 +1,36 @@
+h3 {
+    background-color: gray;
+    text-align: center;
+    line-height: 50px;
+    font-style: italic;
+}
+.ulTag {
+    border: 1px solid;
+    width: 500px;
+    margin: 2% 30%;
+    padding: 5px;
+    background-color: lightgray;
+}
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+span {
+    position: absolute;
+    left: 49%;
+}
+table, tr, td, th {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 15px;
+}
+#showTable {
+    position: fixed;
+    left: 30%;
+}
+div {
+    display: inline;
+    display: none;
+}

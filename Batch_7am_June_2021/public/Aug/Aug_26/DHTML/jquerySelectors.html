@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="../../jquery.js"></script>
+    </head>
+    <body>
+        
+            <div>one</div>
+            <div>Two</div>
+            <div>
+                Three
+                <p>
+                    test
+                    <span>Second child</span>
+
+                </p>
+                <span>hello</span>
+                <b>TEXT</b>
+            </div>
+            <div>four</div>
+            <div>five</div>
+            <span>TEST</span>
+        <a href="http://www.abc.com">LINk 1</a>
+        <a href="http://www.abc.com" target="_blank">LINk 2</a>
+        <script>
+            //$("div:lt(2)").css("border", '1px solid');
+            //$("a[target != _blank]").css("color", "green");
+
+            // $("span[name != test]")
+            //$("div:eq(2)").css("background", "green");
+            //$("div:odd").css("background", "green");
+            // $("div:has(p)").css("background", "green");
+
+                $("div span").css("background", "green");
+        </script>
+    </body>
+</html>

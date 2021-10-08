@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration Page</title>
+		<link rel="stylesheet" href="../CSS/Registration.css"/>
+		<script src="../jQueryCompressed.js"></script>
+	</head>
+	<body class="main">
+		<div class="inner">
+			<form action="" method="post">
+				<h1>IND Shopping Registration</h1>
+				<ul>
+					<li>
+						<div class="outer">
+							<label for="uname">Enter the User Name : </label>
+						</div>
+						<div class="innerblock">
+							<input type="text" onkeypress="return username(event);" name="uname" placeholder="Click here to Enter" maxlength="15" title="Username is used for login and please enter the username that you can remember" required="uname">
+						</div>
+						<div class="uname">Invalid UserName Format</div>
+					</li>
+					<li>
+						<div class="outer">
+							<label for="psw">Enter the Password : </label>
+						</div>
+						<div class="innerblock">
+							<input type="Password" id="upsw" name="psw" onkeypress="return userpsw(event);" maxlength="4" title="Password should contain only numbers and 4 digits" placeholder="****" required="password">
+						</div>
+						<div class="upsw">Invalid Password Format</div>
+					</li>
+					<li>
+					<div class="outer">
+						<label for="pswre-enter">Re-Enter the Password : </label>
+					</div>
+					<div class="innerblock">
+						<input type="Password" id="rpsw" onkeypress="return userPSWReEnter(event);" onblur="return verify(event);" name="pswre-enter" maxlength="4" title="Password should match the above" required="password" placeholder="****">
+					</div>
+					<div class="rpsw">Invalid Password Format</div>
+					<div class="valid">Password did not matched</div>
+					</li>
+					<li>
+						<div class="outer">
+							<label for="dob">Date of Birth : </label>
+						</div>
+						<div class="innerblock">
+							<input type="date" name="dob" required="date">
+						</div>
+					</li>
+					<li>
+						<div class="outer">
+							<label for="email">Enter the Email ID : </label>
+						</div>
+						<div class="innerblock">
+							<input type="text" name="email" title="Email is used for password recovery do remember the email." placeholder="asa@.com" required="email">
+						</div>
+					</li>
+					<li>
+						<div class="outer">
+							<label for="phnumber">Enter the Phone Number : </label>
+						</div>
+						<div class="innerblock">
+							<select>
+								<option></option>
+								<option>+401</option>
+								<option>+986</option>
+								<option>+141</option>
+								<option>+91</option>
+								<option>+1</option>
+								<option>+014</option>
+								<option>+035</option>
+							</select>
+							<input type="text" name="phnumber" id="phn" onkeypress="return userphn(event);" maxlength="10" title="Please select the Country Code and enter the mobile number" placeholder="MobileNumber" required="phnumber">
+						</div>
+						<div class="uphn">Invalid MobileNumber Format.</div>
+					</li>
+				</ul>
+				<div style="text-align : center; padding: 5px;"><input type="submit" name="submit"> <button><a href="http://localhost:8081/Others/Project/Ananth_Atmakuri/Project_UI_Classes/HTML/Login_Page.html">Go to Login Page</button></a></div>
+			</form>
+		</div>
+		<div class="footer">Copyrights @2021</div>
+		<script src="../JavaScript/Registration.js"></script>
+	</body>
+</html>

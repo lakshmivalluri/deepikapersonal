@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="../jquery.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            Click here
+        </div>
+        <script>
+           /* $("#content").click(function(event){
+                console.log("click happend");
+            });
+            $("#content").mouseover(function(event){
+                console.log("mouse oer hapend");
+            });*/
+
+            /*
+            $("#content").on('click', function(){
+                console.log("click happend");
+            }); */
+
+            $("#content").on({
+                'click': function(){
+                    console.log("click happend");
+                },
+                'mouseover': function() {
+                    console.log("mouse oer hapend");
+                }
+            })
+        </script>
+    </body>
+</html>

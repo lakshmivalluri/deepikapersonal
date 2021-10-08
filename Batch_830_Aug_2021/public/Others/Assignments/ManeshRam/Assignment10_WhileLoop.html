@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 10</title>
+</head>
+
+<body>
+    <h1>
+        WHILE LOOP AND FOR LOOP
+    </h1>
+    <script type="text/javascript">
+        var i = 0, intial = 0, choice = 0, num = 0, rem = 0, sum = 0, temp = 0, store = 0, len = 0;
+
+        alert("     ----- EXISTING CHOICES ----- \n 1 - FINDING LUCKY NUMBER OR NOT \n 2 - REVERSE OF A NUMBER \n 3 - TO CHECK NUMBER IS ARMSTRONG NUMBER OR NOT \n 4 - TO CHECK NUMBER IS PALINDROME OR NOT \n 5 - COUNT THE TOTAL NUMBER OF INDIVIDUAL DIGITS ");
+        choice = prompt("\n SELECT AND ENTER YOUR CHOICE =  ");
+        num = prompt("\n ENTER THE NUMBER =   ");
+
+        choice = parseInt(choice);
+        num = parseInt(num);
+        store = num;
+
+        switch (choice) {
+            case 1:
+                while (num > 0) {
+                    sum += (num % 10);
+                    num = parseInt(num / 10);
+                    if ((sum >= 10) && (num == 0)) {
+                        num = sum;
+                        sum = 0;
+                    }
+                }
+                console.log(sum + " IS LUCKY NUMBER OF " + store);
+                alert(sum + " IS LUCKY NUMBER OF " + store);
+                break;
+            case 2:
+                while (num > 0) {
+                    temp = num % 10;
+                    sum = (sum * 10) + temp;
+                    num = parseInt(num / 10);
+                }
+                console.log(sum + " IS REVERSE NUMBER OF " + store);
+                alert(sum + " IS REVERSE NUMBER OF " + store);
+                break;
+            case 3:
+                while (num > 0) {
+                    len++;
+                    num = parseInt(num / 10);
+                }
+                num = store;
+                while (num > 0) {
+                    temp = 1;
+                    for (i = 1; i <= len; i++) {
+                        temp = temp * (num % 10);
+                    }
+                    sum += temp;
+                    num = parseInt(num / 10);
+                }
+                if (sum == store) {
+                    console.log(store + " IS AN ARMSTRONG NUMBER ");
+                    alert(store + " IS AN ARMSTRONG NUMBER ");
+                }
+                else {
+                    console.log(store + " IS NOT AN ARMSTRONG NUMBER ");
+                    alert(store + " IS NOT AN ARMSTRONG NUMBER ");
+                }
+                break;
+            case 4:
+                while (num > 0) {
+                    temp = num % 10;
+                    sum = (sum * 10) + temp;
+                    num = parseInt(num / 10);
+                }
+                if (sum == store) {
+                    console.log(store + " IS AN PALINDROME NUMBER ");
+                    alert(store + " IS AN PALINDROME NUMBER ");
+                }
+                else {
+                    console.log(store + " IS NOT AN PALINDROME NUMBER ");
+                    alert(store + " IS NOT AN PALINDROME NUMBER ");
+                }
+                break;
+            case 5:
+                while (num > 0) {
+                    sum++;
+                    num = parseInt(num / 10);
+                }
+                console.log(" TOTAL NUMBER OF INDIVIDUAL DIGITS IN " + store + " IS " + sum);
+                alert(" TOTAL NUMBER OF INDIVIDUAL DIGITS IN " + store + " IS " + sum);
+                break;
+            default:
+                console.log(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 5 ");
+                alert(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 5 ");
+                break;
+        }
+
+    </script>
+
+</body>
+
+</html>

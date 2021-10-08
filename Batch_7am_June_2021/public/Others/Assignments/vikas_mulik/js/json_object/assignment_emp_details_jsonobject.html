@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>demostring json object with emo details</h2>
+    <script>
+
+        var edeta={
+            name:"",
+            age:"",
+            gender:"",
+            deparment:"",
+            basicsalary:"",
+            pf:"",
+            hr:"",
+            totalsal:"",
+            tax:"",
+
+
+            readdataemp:function(){
+             this.name=prompt("enter the name");
+            this.age=prompt("enter the age");
+            this.gender=prompt("enter the gender");
+            this.deparment=prompt("enter the dep");
+            this.basicsalary=prompt("enter the basicsal");
+            this.basicsalary=parseInt(this.basicsalary);
+
+            },
+
+            getpfhrtaxtotal:function(){
+                edata.pf=(13/100)*edata.basicsalary;
+                edata.hr=(10/100)*edata.basicsalary;
+                edata.totalsal=edata.pf+edata.hr+edata.basicsalary;
+
+            },
+            gettax:function(){
+              this.getpfhrtaxtotal();
+
+                if(edata.gender=="male"){
+                    if(edata.totalsal>30000){
+                    tax=0;
+                    edata.tax=(10/100)*edeta.totalsal;
+                    console.log("your tax is 19% " +edata.tax);
+                }
+
+                else if (edata.totalsal>50000){
+                    tax=0;
+                    edata.tax=(20/100)*edata.basicsalary;
+                    console.log("your tax is 20%");
+
+                }
+                else if(edata.totalsal>600000){
+                    tax=0;
+                    edata.tax=(30/100)*edata.basicsalary;
+                    console.log("you are tsx is 30%");
+                }
+            else{
+                tax=0;
+                console.log("you no tax");
+
+            }
+
+            }
+            if(edata.gender=="female"){
+                if(edata.totalsal>2000){
+                    tax=0;
+                    edata.tax=(5/100)*edata.basicsalary;
+                    console.log("you are tax 5%");
+                }
+                else if (edata.totalsal>40000){
+                    tax=0;
+                    edata.tax=(7/100)*edata.basicsalary;
+                    console.log("you are tax 7%");
+                }
+                else if(edata.totalsal>50000){
+                    tax=0;
+                    edata.tax(9/100)*basicsalary;
+                    console.log("your tax is 9%");
+                }
+                else{
+                    tax=0;
+                    console.log("your are tax 9%");
+                }
+            }
+        },
+            displaydata:function(){
+                edata.readdataemp();
+                this.gettax();
+                console.log("employe details--");
+                console.log("you name "+edata.name);
+                console.log("your age "+edata.age);
+                console.log("your gender "+edata.gender);
+                console.log("your deparment "+edatadeparment);
+                console.log("give the basicsalry "+edata.basicsalary);
+                console.log("your pf is "+edata.pf);
+                console.log("your hr is "+edata.hr);
+                console.log("your totalsalery "+edata.totalsal);
+            },
+
+        };
+
+
+        edata.displaydata();
+
+
+    </script>
+</body>
+</html>

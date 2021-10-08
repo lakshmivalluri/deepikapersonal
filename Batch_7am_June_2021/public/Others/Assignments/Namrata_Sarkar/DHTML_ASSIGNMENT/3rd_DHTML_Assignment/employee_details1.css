@@ -1,0 +1,45 @@
+.heading {
+  text-align: center;
+  font-weight: bold;
+  background-color: navy;
+  font-size: 25px;
+  color: aliceblue;
+  height: 30px;
+  text-decoration: underline;
+}
+ul {
+  border: 3px dotted rgb(201, 201, 212);
+  width: 400px;
+  margin: 10px auto;
+  padding: 2px;
+  color: aliceblue;
+  text-align: center;
+}
+li {
+  list-style: none;
+  border: 1.5px solid wheat;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  height: 25px;
+}
+body {
+  background-image: url(https://www.kolpaper.com/wp-content/uploads/2020/10/Blue-Solid-Color-Wallpapers.jpg);
+}
+.basicsalaryContainer input[type="text"] {
+  width: 150px;
+}
+.eTitle {
+  text-align: center;
+  color: aqua;
+  text-decoration: underline;
+}
+
+.employeeDetailsBlock {
+  display: none;
+}
+.ageErr {
+  color: red;
+  font-size: 12px;
+  display: none;
+}

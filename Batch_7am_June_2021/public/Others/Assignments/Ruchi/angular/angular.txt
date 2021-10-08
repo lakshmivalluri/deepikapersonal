@@ -1,0 +1,43 @@
+Angular: It is frontend/client side JS based framework used to build dynemic web applications.
+- Angular is also used in Mobile app developement
+- By using angular we can develop SPA(Single Page Applications)
+
+Environment Setup for Angular App Development:
+- IDE (Integrated Development Environment) - Visual Studio Code
+	- Intellisence
+	- In Built Git Support
+	- Debugging
+	- Extensions
+	- Open source
+	- Cross Platform
+	- Provides many lanuages  etc.
+- Node JS
+	- It is a server which will execute javascript on browser.
+	- To download click on this link "https://code.visualstudio.com/#alt-downloads"
+	- To know about version which was installed in machine we use "node -v"
+	
+
+- NPM(Node JS Package Manager)
+	- NPM will install automatically once we install the Node JS
+	- NPM is used to maintain all the client side libraries.
+	- To check the npm version we use "npm -v"
+
+
+- Typescript (Superset of Javascript)
+	- It is superset of javascript, means once  we write TS and gets compiled it generates Javascript.
+	- All the angular applications are developed with typescript.
+	- To install the typescript we use a command "npm install -g typescript".
+	- To check the version we use a command like "tsc -v".
+
+
+- Angular CLI (Command Line Interface):
+	- It is a set of commands whcih will improve/speedup the development time.
+	- It is mainly used to Create, Write, Build, Run the angular applications.
+	- And also inorder create angular elements like component,directive,pipe, service etc.
+	- To install Angular CLI we use a command like "npm install -g @angular/cli".
+	- To check the version we use a command "ng version".
+
+> npm uninstall -g @angular/cli
+> npm cache clear --force
+> Restart Machine
+> npm install -g @angular/cli

@@ -1,0 +1,1 @@
+var count=10,mulValues=(n,r)=>{ return count++,(n=parseInt(n))*(r=parseInt(r))},subValues=(n,r)=>{return count++,(n=parseInt(n))-(r=parseInt(r))},divisionValues=(n,r)=>{return count++,(n=parseInt(n))/(r=parseInt(r))},addValues=(n,r)=>{return count++,(n=parseInt(n))+(r=parseInt(r))};

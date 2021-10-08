@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>function assignment emp details</h2>
+    <script>
+    
+    var name,age,gender,basicsal,pf,tax,hr,total;
+ function readdta (){
+  
+   name=prompt("enter the name");
+   age=prompt("enter the age");
+   gender=prompt("enter the gende");
+   basicsal=prompt("give salery");
+   basicsal=parseInt(basicsal);
+    datadetails();
+ }
+
+ function datadetails(){
+     pf=(10/100)*basicsal;
+    hr=(7/100)*basicsal;
+    total=basicsal+hr+pf;
+    console.log("name is "+name);
+    console.log("your age is "+age);
+    
+    console.log("basicsal "+basicsal);
+    console.log("pf "+pf);
+    console.log("hr "+hr);
+    console.log("total is "+total);
+    calculetdata();
+ }
+
+    function calculetdata(){
+         if(gender=="male"){
+            if(total>40000){
+                tax=(15/100)*total;
+                console.log("tax is "+tax);
+            }
+            else if(total>30090){
+                tax=(23/100)*total;
+                console.log("tax is "+tax);
+            }
+            else {
+                tax=0;
+                console.log("tax is no"+tax)
+            }
+        
+        }
+    
+    if(gender=="female"){
+        if(total>40000){
+            tax=(5/100)*total;
+            console.log("tax is "+tax);
+        }
+        else if(total>300000){
+            tax=(7/100)*total;
+            console.log("tax is "+tax);
+        }
+        else {
+            tax=0;
+            console.log("tax is "+tax)
+        }
+    }
+}
+
+     readdta();
+    
+    </script>
+</body>
+</html>

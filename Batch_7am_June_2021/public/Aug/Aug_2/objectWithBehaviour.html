@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Demonstrating json object with properties and behaviour/method
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = {
+                firstVal: 20,
+                secondVal: 30,
+                result: 0,
+                doSum: function() {
+                    this.result = data.firstVal + this.secondVal;
+                    console.log("The sum is " + this.result);
+                },
+                doSub: function() {
+                    data.result = this.firstVal - this.secondVal;
+                    console.log("The Sub is " + data.result);
+                }
+            };
+            data.doSub();
+            data.doSum();
+
+            var sample = {
+                a: 90,
+                showData: function() {
+                    console.log("value of a is " + this.a);
+                }
+            }
+
+            sample.showData();
+        </script>
+    </body>
+</html>
+
+'this'

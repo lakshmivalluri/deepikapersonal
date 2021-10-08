@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var empname = 'TEena';
+			
+
+			var sDetails = ['Raj', 'MAle', [90, 88, 94, 56]]; //sdetails[2][0] -> [......]
+
+			var total = 0, marks, grade, avg;
+
+			for (var i = 0; i < sDetails[2].length; i++) {
+				total = total + sDetails[2][i];
+			}	
+
+			avg = total / marks.length;
+
+			if (avg >= 40) {
+				grade = "Passed";
+			} else {
+				grade = 'You got Surprise';
+			}
+
+			console.log("Student Details");
+			console.log("Student name " + sDetails[0]);
+			console.log("Gender " + sDetails[1]);
+			console.log("Toal marks " +total);
+			console.log('AVg is ' + avg);
+			console.log("Grade " + grade);
+		</script>
+	</body>
+</html>

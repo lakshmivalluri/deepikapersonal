@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            CSS3 display grid system
+        </title> 
+        <style>
+            .container {
+                display: grid;
+                background-color: lightblue;
+                padding: 10px;
+                grid-template-columns: auto auto auto auto auto; /*auto 150px auto 120px; */
+                /*grid-column-gap: 10px;
+                grid-row-gap: 10px; */
+                grid-gap: 10px 15px;
+                grid-template-rows: 80px 100px 80px; /* height of rows */
+                /*justify-content:  space-around; /* space-evenly; /* center;*/
+                align-content: center;
+                height: 500px;
+            }
+            .container > div {
+
+                border: 1px solid blue;
+                text-align: center;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .item2 {
+                /*grid-column-start: 2; /* start cell 
+                grid-column-end: 5; /* before what cell it has to stop */
+                grid-column: 2 / 5;
+            }
+            .item4 {
+                /*grid-row-start: 2;
+                grid-row-end: 4; */
+                grid-row: 2 / 4;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            display:grid
+        </h3>
+        <div class="container">
+            <div> 1 </div>
+            <div class="item2"> 2 </div>
+            <div> 3 </div>
+            <div class="item4"> 4 </div>
+            <div> 5 </div>
+            <div> 6 </div>
+            <div> 7 </div>
+            <div> 8 </div>
+            <div> 9 </div>
+            <div> 10 </div>
+            <div> 11 </div>
+            <div> 12 </div>
+        </div>
+    </body>
+</html>

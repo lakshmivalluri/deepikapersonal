@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Prime Numbers Within An Array
+		</title>
+	</head>
+	<body>
+		<script>
+			var data = [11, 21, 39, 52, 69, 59, 129, 71, 57, 2, 3, 5, 7];
+			var count, n;
+			for (var i = 0; i < data.length; i++) {
+				n = data[i];
+				count = 0;
+				for (var j = 2; j < n; j++) {
+					if (n % j == 0) {
+						count = 1;
+						break;
+					}
+				}
+				if (count > 0) {
+					console.log(n + " is not a prime number")
+				} else {
+					console.log(n + " is a prime number")
+				}
+			}
+		</script>
+	</body>
+</html>

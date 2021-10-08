@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var addValues = (a, b, ...r) => {                
+                var result = a + b;
+                for (var i = 0 ; i < r.length; i++) {
+                    result += r[i];
+                }
+                console.log(result);
+            }
+
+            addValues(20, 90);
+
+            var details = [23, 67, 89, 99];
+            /*for (var i = 0 ; i < details; i++) {
+                console.log(details);
+            } */
+
+            details.forEach((data, index) => {
+                console.log(data);
+                console.log(index)
+            });
+
+            //var result = details.find(value => value == 99);
+            /*for (var i = 0 ; i < details.length; i++) {
+                if (details[i] == 89) {
+                    console.log("found");
+                }
+            } */
+            var foundIndex;
+            function findValue(value, index) {
+                if ( value == 89) {
+                    foundIndex = index;
+                    return true;
+                }
+            }
+
+            var result = details.find(findValue);
+            console.log(result)
+            console.log(foundIndex)
+           
+
+
+
+
+        </script>
+    </body>
+</html>

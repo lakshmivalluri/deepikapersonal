@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Javascript Promises
+        </title>
+    </head>
+    <body>
+        <script>
+            var isFeePaid = true;
+            /*var doJob = () => {
+                if (isFeePaid) {
+                    console.log(" resolve state");
+                    ....
+                } else {
+                    console.log("into reject state");
+                }
+            } */
+
+            var doJob = () => {
+                var myTask = new Promise((resolve, reject) => {
+                    
+                    if (isFeePaid) {
+                        resolve("allow to access notes");
+                    } else {
+                        reject("Ask to clear the balance");
+                    }
+                });
+                myTask.then((value) => {
+                    console.log("success");
+                    console.log(value);
+                }, (rejectVal) => {
+                    console.log("error");
+                    console.log(rejectVal);
+                });
+            }
+
+            doJob();
+        </script>
+    </body>
+</html>

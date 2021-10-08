@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 17</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <h1>
+        UNIVERSITY REGISTRATIONS PAGE
+    </h1>
+    <ul class="left">
+        <h2> COLLEGE DETAILS </h2>
+
+        <li>
+            College Name :
+            <input type="text" name="cName" id="cName" onkeydown="return numvalidation(event)">
+            <div id="cNameEmp">COLLEGE NAME CANNOT CONTAIN NUMBERS</div>
+            <div id="cNameErr">COLLEGE NAME CANNOT BE EMPTY</div>
+        </li>
+        <li>
+            College Code :
+            <input type="text" name="cCode" id="cCode" onkeydown="return numbervalid(event)">
+            <div id="cCodeErr"> COLLEGE CODE CANNOT BE ALPHABET </div>
+            <div id="cCodeEmpty">COLLEGE CODE CANNOT BE EMPTY</div>
+        </li>
+        <li>
+            Location :
+            <input type="text" name="cLocation" id="cLocation">
+            <div id="cLocationErr">COLLEGE LOCATION CANNOT BE EMPTY</div>
+        </li>
+    </ul>
+    <ul class="right">
+        <h2> STUDENT DETAILS </h2>
+
+        <li>
+            Name :
+            <input type="text" name="sName" id="sName" onkeydown="return numvalidation(event)">
+            <div id="sNameEmp">STUDENT NAME CANNOT CONTAIN NUMBERS</div>
+            <div id="sNameErr">STUDENT NAME CANNOT BE EMPTY</div>
+        </li>
+        <li>
+            Age :
+            <input type="text" name="sAge" id="sAge" onkeydown="return backvalid(event)">
+            <div id="ageErr">Age should be only numbers</div>
+            <div id="sAgeErr">STUDENT AGE CANNOT BE EMPTY</div>
+        </li>
+        <li>
+            Gender :
+            <input type="radio" name="sGender" id="sGender" value="Male"> Male
+            <input type="radio" name="sGender" id="sGender" value="Female"> Female
+        </li>
+        <li>
+            Sport :
+            <input type="text" name="sSport" id="sSport" onkeydown="return numvalidation(event)">
+            <div id="sSportEmp">STUDENT SPORT CANNOT CONTAIN NUMBERS</div>
+            <div id="sSportErr">STUDENT SPORT CANNOT BE EMPTY</div>
+        </li>
+    </ul>
+
+    <div id="err">PLEASE FILL ALL DETAILS AND REGISTER</div>
+
+    <button id="btn" onclick="registerDetails()"> REGISTER </button>
+    <table>
+        <thead>
+            <td colspan="8"> REGISTRATION DETAILS </td>
+        </thead>
+        <tr>
+            <td>S.no</td>
+            <td colspan="3">COLLEGE DETAILS</td>
+            <td colspan="4">STUDENT DETAILS</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>COLLEGE NAME</td>
+            <td>COLLEGE CODE</td>
+            <td>COLLEGE LOCATION</td>
+
+            <td>STUDENT NAME</td>
+            <td>STUDENT AGE</td>
+            <td>STUDENT GENDER</td>
+            <td>STUDENT SPORT</td>
+        </tr>
+
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>

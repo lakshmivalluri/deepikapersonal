@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery.js"></script>
+        <title>
+            Jquery Traversing Parents Methods
+        </title>
+        <style>
+            .mystyle {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <div>
+                    TESTING
+                </div>
+            </li>
+        </ul>
+        <script>
+            /*$("div").on({
+                click: function() {},
+                'mouseover': function() {}
+            })*/
+            $("div").on("click", function(event){
+                // $(event.target).parent().addClass("mystyle");
+                // $(event.target).parents().addClass("mystyle");
+                $(event.target).parentsUntil('body').addClass("mystyle");
+            })
+        </script>
+    </body>
+</html>

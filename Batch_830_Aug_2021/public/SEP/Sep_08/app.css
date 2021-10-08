@@ -1,0 +1,31 @@
+.title {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    width: 700px;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+ul,
+.detailsBlock {
+    border: 1px solid;
+    margin: 20px 0;
+    padding: 0;
+    background: #ddd;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    background: #fff;
+}
+
+.detailsBlock {
+    margin: 30px 0;
+}

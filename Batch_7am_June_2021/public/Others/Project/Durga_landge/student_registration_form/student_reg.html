@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> demostrating Input element </title>
+	<style type="text/css">
+		ul {
+			border: 2px solid;
+			width: 500px;
+			margin: 10px solid;
+		}
+		li {
+			list-style: none;
+			border: 1px solid;
+			margin: 5px;
+			padding: 5px;
+		}
+		h3 {
+			text-decoration: underline;
+			text-align: center;
+			padding: 10px;
+			margin: 5px;
+		}
+		ul {
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<h3>
+		Student Details Registration Page
+	</h3>
+	<form action="www.sample2342.com/data/uinfo"   method="GET">
+		
+	<ul>
+		<li>
+			<label for="uname">Enter user Name: </label>
+            <input type="text" name="uname">
+		</li>
+		<li>
+			user account Password:
+			<input name="upwd" type="Password" maxlength="5" placeholder="Acnt password">
+		</li>
+		<li> 
+			Gender:
+			<input type="radio" name="ugender">Male
+			<input type="radio" name="ugender">female
+		</li>
+		<li>
+			known language:
+			<input type="checkbox">English
+			<input type="checkbox">Marathi
+			<input type="checkbox">Hindi
+			<input type="checkbox">urdu
+		</li>
+		<li>
+			country:
+			<select>
+				<option></option>
+				<option selected>India</option>
+				<option>America</option>
+				<option>Japan</option>
+				<option>singapor</option>
+			</select>
+		</li>
+		<li>
+			Tell about urself:
+			<textarea></textarea>
+		</li>
+		<li>
+			<input type="file">
+		</li>
+		<li>
+			<input type="submit" value="register user">
+		</li>
+	</ul>
+</form>
+</body>
+</html>

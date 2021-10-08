@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Employee Details</title>
+</head>
+<body>
+<script type="text/javascript">
+	var ename="Adithya";
+	var age=24;
+	var gender="male";
+	var bascisalary=100000;
+	var hra=(bascisalary*25)/100;
+	var pf=(bascisalary*14)/100;
+	var totalsalary=hra+pf+bascisalary;
+	console.log("Employe ename is"+ename);
+	console.log(" age "+age);	
+	console.log("gender "+gender);
+	console.log("bascisalary "+bascisalary);	
+	console.log("hra "+hra);
+	console.log("pf  "+pf);
+	console.log("totalsalary "+totalsalary);
+	
+	
+
+	if(gender="male"){
+		           console.log("ename is"+ename);
+	if(totalsalary>200000){
+			       var tax=(totalsalary*15)/100;
+			        console.log("tax for Adithya" +tax);
+		                 }
+     else if(totalsalary>100000)
+
+		                {
+                         var tax=(totalsalary*10)/100;
+                          console.log("tax for Adithya"  +tax);
+		                   }                      
+
+        if(totalsalary>50000)
+        {
+        	var tax=(totalsalary*5)/100;
+        	       console.log("tax for Adithya"  +tax);
+
+
+        }else{
+        	console.log("tax is zero");
+        }
+
+
+
+	}
+	else 
+		{
+			console.log("female ");
+		}
+		
+
+</script>
+</body>
+</html>

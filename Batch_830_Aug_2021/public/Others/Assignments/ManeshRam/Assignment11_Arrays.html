@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ASSIGNMENT 11</title>
+</head>
+
+<body>
+	<h1 style="color: #006d77; background-color:  #cddafd;">
+		PLEASE OPEN CONSOLE WINDOW AND CHECK OUTPUT
+	</h1>
+	<script>
+
+		alert("   ----- ARRRAY OPERATIONS ----- \n 1 - FINDING ALL PRIME NUMBERS WITHIN THE ARRAY \n 2 - SUM OF EVEN NUMBERS IN ARRAY  \n 3 - TO FIND LARGEST NUMBER WITHIN THE ARRAY  \n 4 - TO FIND 2nd LARGEST NUMBER WITHIN THE ARRAY \n 5 - SUM OF PRIME NUMBERS WITHIN THE ARRRAY \n 6 - LIST OUT ALL PALINDROMES WITHIN THE ARRAY \n 7 - LIST OUT ALL ARMSTRONG NUMBERS WITHIN THE ARRAY \n 8 - TO SORT VALUES WITHIN THE ARRAY ");
+		var choice = prompt("\n ENTER YOUR CHOICE FOR ARRAY OPERATION =  ");
+		choice = parseInt(choice);
+		var len = prompt("\n ENTER THE LENGTH OF ARRAY = ");
+		len = parseInt(len);
+		var arr = [];
+		for (var i = 0; i < len; i++) {
+			var val = prompt("\n ENTER SINGLE DATA TO BE INSERTED INTO ARRAY =  ");
+			arr.push(parseInt(val));
+		}
+		switch (choice) {
+			case 1: isPrime(choice);
+				break;
+
+			case 2: isEven();
+				break;
+
+			case 3: isLarge(choice);
+				break;
+
+			case 4: isLarge(choice);
+				break;
+
+			case 5: isPrime(choice);
+				break;
+
+			case 6: isPalindrome();
+				break;
+
+			case 7: isArmstrong();
+				break;
+
+			case 8: sort();
+				break;
+
+			default: console.log(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 8 ");
+				alert(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 8 ");
+				break;
+		}
+
+		/* CODES FOR ALL FUNCTIONS GOES ALL THE WAY FROM HERE */
+		function isPrime(val) {
+			var prime = [];
+			for (var i = 0; i < len; i++) {
+				var temp = arr[i];
+				var count = 0;
+				for (var j = 2; j < arr[i]; j++) {
+					if (arr[i] % j == 0) {
+						count++;
+						break;
+					}
+				}
+				if (count == 0) {
+					prime.push(arr[i]);
+				}
+			}
+			if (val == 1) {
+				console.log("\n ARRAY OF SEPERATED PRIME NUMBERS IS : " + prime + " FROM THE ORIGINAL ARRAY " + arr);
+				console.log(prime);
+			}
+			else {
+				var sum = 0;
+				for (var i = 0; i < prime.length; i++) {
+					sum += prime[i];
+				}
+				console.log("\n SUM OF ALL PRIME NUMBERS IN ARRAY " + arr + " IS : " + sum);
+			}
+		}
+
+		function isEven() {
+			var sum = 0;
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] % 2 == 0) {
+					sum += arr[i];
+				}
+			}
+			console.log("\n SUM OF ALL EVEN NUMBERS IN ARRAY " + arr + " IS : " + sum);
+		}
+
+		function isLarge(val) {
+			var max_1 = arr[0], max_2 = 0;
+
+			for (var i = 1; i < arr.length; i++) {
+				if (max_1 < arr[i]) {
+					if (max_2 < max_1) {
+						max_2 = max_1;
+					}
+					max_1 = arr[i];
+				}
+				else if (max_2 < arr[i]) {
+					max_2 = arr[i];
+				}
+			}
+
+			if (val == 3) {
+				console.log("\n LARGEST NUMBER IN ARRAY " + arr + " IS : " + max_1);
+			}
+
+			else {
+				console.log("\n SECOND LARGEST NUMBER IN ARRAY " + arr + " IS : " + max_2);
+			}
+		}
+
+		function isPalindrome() {
+			var palindrome = [];
+			for (let i = 0; i < arr.length; i++) {
+				var store = 0, num = 0, rev = 0;
+				num = arr[i];
+				store = num;
+				while (num > 0) {
+					rev = (rev * 10) + (num % 10);
+					num = parseInt(num / 10);
+				}
+				if (store == rev) {
+					palindrome.push(rev);
+				}
+			}
+			console.log("\n ALL PALINDROMES IN ARRAY " + arr + " ARE : " + palindrome);
+		}
+
+		function isArmstrong() {
+			var armstrong = [];
+			for (var i = 0; i < arr.length; i++) {
+				var store = 0, rem = 0, l = 0, fact = 0, sum = 0;
+				store = arr[i];
+				while (store > 0) {
+					l++;
+					store = parseInt(store / 10);
+				}
+				store = arr[i];
+				while (store > 0) {
+					rem = (store % 10);
+					fact = 1;
+					for (var j = 1; j <= l; j++) {
+						fact = fact * rem;
+					}
+					sum += fact;
+					store = parseInt(store / 10);
+				}
+				if (sum == arr[i]) {
+					armstrong.push(arr[i]);
+				}
+			}
+			console.log("\n ALL ARMSTRONG NUMBERS IN ARRAY " + arr + " ARE : " + armstrong);
+		}
+
+		function sort() {
+			var min = 0, temp = 0, store = [];
+			store = arr.slice();
+
+			for (var i = 0; i < arr.length; i++) {
+				for (var j = i + 1; j < arr.length; j++) {
+					if (arr[i] > arr[j]) {
+						temp = arr[j];
+						arr[j] = arr[i];
+						arr[i] = temp;
+					}
+				}
+			}
+			console.log("\n ASCENDING ORDER OF ARRAY " + store + " IS : " + arr);
+			arr.reverse();
+			console.log("\n DESCENDING ORDER OF ARRAY " + store + " IS : " + arr);
+		}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+h3 {
+     text-align: center;
+     border: 2px solid;
+     padding: 10px;
+     background-color: grey;
+     color: gold;
+}
+ul {
+     border: 2px solid blue;
+     border-radius: 15px;
+     padding: 10px;
+     width: 50%;
+     list-style: none;
+     margin: 20px auto;
+}
+li {
+     /*border: 2px solid green;
+     border-radius: 20px;*/
+     padding: 10px;
+     margin: 10px auto;
+}
+.elabel,  .input{
+     display: inline-block;
+}
+
+.elabel {
+     width: 200px;
+}
+span {
+     font-weight: bolder;
+}
+.button {
+     text-align: center;
+}
+.ename {
+     display: none;
+     color: red;
+     position: absolute;
+     left: 750px;
+     top: 119px;
+}
+.name {
+     display: none;
+     color: green;
+     position: absolute;
+     left: 750px;
+     top: 119px;
+}
+.eage {
+     display: none;
+     color: red;
+     position: absolute;
+     left: 750px;
+     top: 171px;
+}
+.age {
+     display: none;
+     color: green;
+     position: absolute;
+     left: 750px;
+     top: 171px;
+}

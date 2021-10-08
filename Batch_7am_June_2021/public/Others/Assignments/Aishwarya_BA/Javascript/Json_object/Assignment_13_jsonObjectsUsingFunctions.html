@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>EMPLOYEE JSON</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var empdetails={
+				name:'Teena',
+				dept:'finance',
+				basicsal:423420,
+			    pf:0
+			};
+			console.log(empdetails);
+			empdetails.gender="female";
+			empdetails.tax=0;
+			empdetails.tax_percent=0;
+			empdetails.totalsalary=0;
+			function calculatetotalsal(){
+			empdetails.pf=(14/100)*empdetails.basicsal;
+			empdetails.hra=(25/100)*empdetails.basicsal;
+			empdetails.totalsalary=empdetails.pf+empdetails.hra+empdetails.basicsal;
+			calculatetax();
+			}
+			function displayDetails()
+			{
+				calculatetotalsal();
+				console.log("Name :" +empdetails.name);
+				console.log("Dept :" +empdetails.dept);
+				console.log("Basicsal :" +empdetails.basicsal);
+				console.log("Name :" +empdetails.name);
+				console.log("Totalsalary :"+empdetails.totalsalary);
+				calculatetax();
+
+			}
+			function calculatetax()
+			{
+				if(empdetails.gender=="male")
+			    {
+					if(empdetails.totalsalary > 200000)
+					{
+		               empdetails.tax_percent=15;
+		               empdetails.tax=(empdetails.tax_percent/100)*empdetails.totalsalary;
+		               console.log("Tax :"+empdetails.tax);
+					}
+					else if(empdetails.totalsalary > 100000 && empdetails.totalsalary<=200000)
+					{
+		               empdetails.tax_percent=10;
+		               empdetails.tax=(empdetails.tax_percent/100)*empdetails.totalsalary;
+		               console.log("Tax :"+empdetails.tax);
+					}
+					else if(empdetails.totalsalary > 50000 && empdetails.totalsalary<=100000)
+					{
+		               empdetails.tax_percent=5;
+		               empdetails.tax=(empdetails.tax_percent/100)*empdetails.totalsalary;
+		               console.log("Tax :"+empdetails.tax);
+					}
+			    }
+				else
+				{
+				if(empdetails.totalsalary > 200000)
+				{
+	               empdetails.tax_percent=10;
+	               empdetails.tax=(empdetails.tax_percent/100)*empdetails.totalsalary;
+	               console.log("Tax :"+empdetails.tax);
+				}
+				else if(empdetails.totalsalary > 100000 && empdetails.totalsalary <=200000)
+				{
+	               empdetails.tax_percent=5;
+	               empdetails.tax=(tax_percent/100)*empdetails.totalsalary;
+	               console.log("Tax :"+empdetails.tax);
+				}
+				else if(empdetails.totalsalary > 50000 && empdetails.totalsalary <= 100000)
+				{
+	               empdetails.tax_percent=0;
+	               empdetails.tax=(empdetails.tax_percent/100)*empdetails.totalsalary;
+	               console.log("Tax :"+empdetails.tax);
+				}
+				}
+			}
+			displayDetails();
+
+		</script>
+
+	</body>
+</html>

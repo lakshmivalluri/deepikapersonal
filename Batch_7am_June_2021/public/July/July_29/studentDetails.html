@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Student Details
+		</title>
+	</head>
+	<body>
+		<h3>
+			Student Details.
+		</h3>
+		<script type="text/javascript">
+
+			var readStudentDetails = () =>{				
+				var sname, sage, gender, marks, total, avg;
+				sname = prompt("Enter student name");
+				sage = prompt("Enter user age");
+				gender = prompt("Enter gender");
+				marks = [];
+				
+				for (var i = 0; i < 5; i++) {
+					marks[i] = prompt("Enter marks for sub " + (i+1));
+					
+					marks[i] = parseInt(marks[i]);
+ 				}
+				var data = getTotalAndAvg(marks);
+				avg = data[0];
+				total = data[1];
+				displayDetails(sname, sage, total, avg, marks);
+			}
+			
+			var getTotalAndAvg = (marks) => {
+				var total, avg;
+				total = 0; // marks = [34, 67,90, 89, 77]
+				for (var i = 0; i < marks.length; i++) {
+					total += marks[i];
+				}
+				avg = total / 4;
+				return [avg, total];
+			}
+
+			var displayDetails = function (sname, sage, total, avg, marks) {
+								
+				console.log("Name " + sname);
+				console.log("Age " + sage);
+				console.log("Total is " + total);
+				console.log("Avg is " + avg);
+				for (var i = 0 ;i < marks.length; i++) {
+					console.log( ' -> ' + marks[i])
+				}
+				getGrade(avg);
+			}
+
+			function getGrade(avg) {
+				if (avg >= 40) {
+					console.log("Passed");	
+					if (avg >= 90) {
+						console.log("you got Distinction")
+					} else if(avg >= 60) {
+						console.log("you got first class");
+					} else {
+						console.log("Second class");
+					}
+				} else {
+					console.log("Failed");
+				}
+			}
+
+			readStudentDetails();
+		</script>
+	</body>
+</html>
+
+
+
+

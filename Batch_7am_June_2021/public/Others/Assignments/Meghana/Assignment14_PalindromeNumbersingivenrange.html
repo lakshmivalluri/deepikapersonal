@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>List of palindrome Numbers</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var number,a,b;
+			number = prompt("Enter the Number : ");
+			number = parseInt(number);
+			b = prompt("Enter the  Number : ");
+			b = parseInt(b);
+			console.log("Palindrome numbers between" + number + " and " + b + " is : ");
+			for(number; number >= b ; number--){
+				var p = number;
+				var total = 0;
+				while (p>0){
+					a = p % 10;
+					total = total*10 + a;
+					p = p / 10;
+					p = parseInt(p);
+				}
+				if (number == total){
+					console.log(number);
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>
+            Demonstrating creating dom elements through js
+        </h3>
+        
+        <div id="mainContainer"></div>
+        <script>
+            var tagName = prompt("Enter what tag u wnated");
+            var msg = prompt("enter msg to be displayed");
+            var uid = prompt("Enter eement id to be displayed");
+            var bgColor = prompt("Enter color to be added a bg");
+
+            var spanTag = document.createElement(tagName);
+            
+            spanTag.innerText = msg;
+            spanTag.setAttribute('class', 'content');
+            spanTag.setAttribute("id", uid);
+            spanTag.style.border = '1px solid green';
+            spanTag.style.background = bgColor;
+            console.log(spanTag);
+
+            document.querySelector("#mainContainer").append(spanTag);
+
+
+        </script>
+    </body>
+</html>

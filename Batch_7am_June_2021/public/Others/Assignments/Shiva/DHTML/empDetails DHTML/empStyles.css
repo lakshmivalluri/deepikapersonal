@@ -1,0 +1,31 @@
+h2 {
+    background-color: rgb(141, 227, 233);
+    text-align: center;
+ }
+ .main {
+     list-style: none;    
+     margin: 5px;
+     padding: 7px;
+ }
+ .img1 {
+     width: 155px;
+     height: 180px;
+     padding-left: 33px;
+ }
+ li {
+    border: 1px solid;
+    padding: 5px;
+ }
+ .ultag {
+    background-color: #ece5e5;
+    border: 1px solid;
+    width: 240px;
+    padding:14px;
+    margin: 20px;
+    float: left;
+ }
+ div {
+     text-align: center;
+     font-weight: bold;
+     background-color: darkturquoise;
+ }

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Variable Scope
+        </title>
+    </head>
+    <body>
+        <script>
+            var z = 90;
+            z = 99;
+            function sample() {
+                var b = 100;
+                console.log("value of b is " + b)
+                test();
+            }
+
+            function test() {
+                var b = 9000;
+                console.log("b value is " + b)
+            }
+            sample();
+        </script>
+    </body>
+</html>

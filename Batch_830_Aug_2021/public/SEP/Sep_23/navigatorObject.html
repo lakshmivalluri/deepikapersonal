@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Navigator Object
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log(navigator);
+            if (navigator.userAgentData) {
+                // alert("thansk for using chrome");
+            } else {
+                // alert("please switch to chrome for faster experience")
+            }
+            navigator.geolocation.getCurrentPosition((point) => {
+                console.log(point);
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Emp Details using json</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function empDetails() {
+				var empData = {
+				"name" : "Teena",
+				"age" : 25,
+				"dep" : "Finance",
+				"gender" : "Female",
+				"basicSalary" : 25000
+			};
+				salaryCalculation(empData);
+			}
+			function salaryCalculation(empData) {
+				var sData = {};
+					sData.pf = ((14 * empData.basicSalary) / 100);
+					sData.hra = ((25 * empData.basicSalary) / 100);
+					sData.totalSalary = (sData.pf + sData.hra + empData.basicSalary);
+					console.log("employee-name is" + " " + empData.name);
+					console.log("employee-gender is" + " " + empData.gender);
+					console.log("employee-salary is" + " " + empData.basicSalary);
+					console.log("pf is" + " " + sData.pf);
+					console.log("hra is" + " " + sData.hra);
+					console.log("Totalsalary is" + " " + sData.totalSalary);
+			}
+			empDetails();
+		</script>
+	</body>
+</html>

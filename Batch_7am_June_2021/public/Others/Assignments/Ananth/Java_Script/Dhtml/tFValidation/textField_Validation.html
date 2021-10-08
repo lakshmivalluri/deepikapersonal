@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Validation</title>
+          <link rel="stylesheet" href="validationStyles.css" />
+     </head>
+     <body>
+          <ul>
+               <li>
+                    <label>Enter the User Name : &nbsp;</label>
+                    <input type="text" maxlength="10" placeholder="Enter Here" title="User Name Should Not Contain Special Characters or numbers" onkeypress="return validateUserName(event);">
+                    <div class="uname">invalid UserName</div>
+                    <div class="name">valid UserName</div>
+               </li>
+               <li>
+                    <label>Enter the Password : &nbsp;</label>
+                    <input type="password" maxlength="8" id="userpsw" placeholder="Enter Here" onkeypress="return valpsw(event), valpsw1(event), valpsw2(event);">
+                    <div id="firstLetter">First Letter Should Start with uppercase</div>
+                    <div id="maxchr">Should have max of 8 Characters</div>
+                    <div id="onenum">Should have atleast one number</div>
+                    <div id="splchr">Should not start with special character</div>
+               </li>
+          </ul>
+          <script src="validation.js"></script>
+     </body>
+</html>

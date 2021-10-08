@@ -1,0 +1,35 @@
+.heading {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ccc;
+    font-size: 18px;
+}
+ul {
+    border: 2px dotted;
+    width: 600px;
+    margin: 10px auto;
+    padding: 2px;
+}
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+.marksContainer input[type=text] {
+    width: 50px;
+}
+.sTitle {
+    text-align: center;
+    color: green;
+}
+
+.ageErr {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.progressCardBlock {
+    display: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Progress Genrator</title>
+        <link rel="stylesheet" href="app.css">
+
+
+ </head>
+  <body>
+        <div class="heading">
+            progress card generator
+        </div>
+        <ul>
+            <li>
+                student name: <input type="text" id="sname">
+            </li>
+            <li>
+                student no: <input type="text" id="sno">
+            </li>
+            <li>
+                student class: <select id="sclass">
+                                <option value="class I"> class I</option>
+                                <option value="class II"> class II</option>
+                                <option value="class III"> class III</option>
+                              </select>
+            </li>     
+            <li class="marksContainer">
+                marks:
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+            </li>
+            <li style="text-align: right">
+                <input type="button" value="Generate Progress Card" onclick ="generateProgressCard()"/>
+            </li>
+        </ul>
+            <ul class="progressCardBlock">
+                <li class="sTitle" >
+                    Progress card
+                </li>
+                <li>
+                    student name:<span id="rsname"></span>
+                </li>
+                <li>
+                    student no:<span id="rsno"></span>
+                </li>
+                <li>
+                    student class:<span id="rsclass"></span>
+                </li>
+                <li>
+                    Total marks:<span id="rtotal"></span>
+                </li>
+                <li>
+                    avg:<span id="ravg"></span>
+                </li>
+                <li>
+                    grade:<span id="rgrade"></span>
+                </li>
+            </ul>
+           
+        <script src="progresCardDetails.js">
+             
+        </script>
+       
+        
+ </body>
+</html>

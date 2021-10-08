@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>	this is a heading</title>
+	</head>
+	<body>
+		<h3> control structure</h3>
+		<script type="text/javascript">
+			var name="mr. raj";
+			var age=25;
+			var basic_salary=100000;
+			var gender="male";
+			var pf,totalsal,hra,tax,tax_percent;
+			pf=basic_salary*14/100;
+			hra=basic_salary*25/100;
+			totalsalary=pf+hra+basic_salary;
+			tax=totalsalary*15/100
+			console.log("ename:"+name);
+			console.log("eage:"+age);
+			console.log("ebasic_salary:"+basic_salary);
+			console.log("gender:"+gender);
+			console.log("this is the pf:"+pf);
+			console.log("this is the hra:"+hra);
+			console.log("this is the totalsalary:"+totalsalary);
+			console.log("this is the tax:"+tax);
+			
+			if(totalsalary>=100000)
+			{
+
+				tax_percent=totalsalary*10/100;
+				console.log("this is your totaltax:"+tax_percent);
+			if(totalsalary>=50000 && totalsalary<=100000)
+				{
+					tax_percent=totalsalary*5/100;
+					console.log("this is your totaltax"+tax_percent);
+
+
+			}
+		}
+		else
+		{
+			console.log("you are not eligible for paying tax");
+		}
+
+
+
+		</script>
+
+
+	</body>
+</html>

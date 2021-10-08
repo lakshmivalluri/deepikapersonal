@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Contact Details</title>
+	</head>
+	<body>
+		<div>
+			employee name is : 
+			<span id="ename"> </span>
+		</div>
+		<div> hra is :
+			<span id="hra"></span>
+		</div>
+		<div>
+			pf is :
+			<span id="pf"></span>
+		</div>
+		<div>
+			total salary is :
+			<span id="totalsal"></span>
+		</div>
+		<div>
+			tax is :
+			<span id="tax"></span>
+		</div>
+		<script type="text/javascript">
+		var empDetails = {
+        	ename:"Adithya",
+        	age:27,
+        	gender:"male",
+        	basicsalary:100000,
+        	hra:0,
+        	pf:0,
+        	totalsalary:0,
+        	tax:0
+        };
+        	empDetails.hra=(empDetails.basicsalary*25)/100;
+            document.getElementById("hra").innerHTML=empDetails.hra;
+        	empDetails.pf=(empDetails.basicsalary*14)/100;
+            document.getElementById("pf").innerHTML=empDetails.pf;
+        	empDetails.totalsalary=empDetails.hra+empDetails.pf+empDetails.basicsalary;
+            document.getElementById("totalsal").innerHTML=empDetails.totalsalary;
+
+		if(empDetails.gender="male"){
+
+				document.getElementById("ename").innerHTML=empDetails.ename;
+	    }
+	    if(empDetails.totalsalary>200000){
+
+			    empDetails.tax=(empDetails.totalsalary*15)/100;
+
+				document.getElementById("tax").innerHTML=empDetails.tax;
+		    
+	    }else if(empDetails.totalsalary>100000){
+
+		        empDetails.tax=(empDetails.totalsalary*10)/100;
+
+		        document.getElementById("tax").innerHTML=empDetails.tax;   
+		}                      
+
+			
+	
+		</script>
+
+	</body>
+</html>

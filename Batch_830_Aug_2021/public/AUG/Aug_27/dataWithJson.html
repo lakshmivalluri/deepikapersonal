@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empname = "Teena";
+            var empDep = "IT";
+            
+            // var sdetails = ["Raj", 10, 'male', [23, 90, 88, 34], 0, 0]
+            var sdetails = {
+                'name': "Raj", 
+                age: 10, 
+                'gender': 'male', 
+                marks: [23, 90, 88, 34], 
+                "total": 0, 
+                avg: 0
+            };
+
+            for (var i = 0 ; i < sdetails.marks.length; i++) {
+                sdetails.total += sdetails.marks[i];
+            }
+            sdetails.avg = sdetails.total / sdetails.marks.length;
+
+            console.log("Student details");
+            console.log(sdetails);
+            console.log("Studnet name " + sdetails.name);
+            console.log("Age " + sdetails.age);
+            console.log("Gnder " + sdetails.gender);
+            console.log("Total marks " + sdetails.total);
+            console.log("Avg " + sdetails.avg);
+        </script> 
+    </body>
+</html>

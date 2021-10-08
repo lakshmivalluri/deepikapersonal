@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			class ColageDetail{
+				constructor(colnam,cd,lct){
+					this.collagename =colnam;
+					this.code = cd;
+					this.location = lct;
+				}
+				displayData(){
+					console.log("colagename="+this.collagename);
+					console.log("code="+this.code);
+					console.log("location="+this.location);
+
+				}
+			}
+			class StudentDetail extends ColageDetail{
+				constructor(data){
+					super(data.colname,data.code,data.locat);
+					this.name=data.sname;
+					this.age = data.age;
+
+					this.gender =data.gender;
+					this.sports =data.sports
+				}
+				showData(){
+					console.log("StudentName="+this.name);
+					console.log("Ag="+this.age);
+					console.log("Gender="+this.gender);
+					console.log("sports ="+this.sports);
+					this.displayData();
+
+				}
+			}
+
+			var s1 = new StudentDetail({sname:'sarita',age:'30',gender:'female',sports:'tennis',colname:'jnec',code:123,locat:'Aurangabad'});
+			s1.showData();
+		</script>
+	</body>
+</html>

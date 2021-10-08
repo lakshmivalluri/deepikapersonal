@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=s, initial-scale=1.0">
+        <title>
+            Working with Closures
+        </title>
+        <script src="mainApp.js"></script>
+        <script src="lib/mathUtil.js"></script>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter First value:
+                <input type="text" id="fval">
+            </li>
+            <li>
+                Enter Second value:
+                <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="Add" onclick="dojob('add')">
+                <input type="button" value="Multiplication" onclick="dojob('mul')">
+                <input type="button" value="Division" onclick="dojob('div')">
+                <input type="button" value="Substract" onclick="dojob('sub')">
+            </li>
+            <li id='rBlock'>
+
+            </li>
+            <li id="counterBlock">
+
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+           
+
+            class EmpDetails {
+                constructor () {
+
+                }
+            }
+
+            class StudentData {
+                constructor(data) {
+                    this.name = data.sname;
+                    this.age = data.sage;
+                    this.gender = data.sGender;
+                    this.facultyName = data.sFaculty;
+                    this.instituteName = 'NareshIT';
+                    console.log("am frm constructor");
+                } 
+                
+                displayData() {
+                    console.log("NAme is " + this.name);
+                    console.log("Age is " + this.age)
+                }
+                readInfo() {
+                    console.log("am frm read info")
+                }
+            }
+
+
+            
+            var data1 = {
+                sname:'raj',
+                sage: 20,
+                sGender: 'male',
+                sFaculty: 'PRasad'
+            }
+            var ob1 = new StudentData(data1);   
+            
+            var data2 = {
+                sname:'Teena',
+                sage: 10,
+                sGender: 'Female',
+                sFaculty: 'PRasad'
+            }
+
+            var obj2 = new StudentData(data2);
+
+            ob1.displayData();
+            obj2.displayData();
+
+
+            console.log(ob1);
+            console.log(obj2)
+
+            
+        </script>
+    </body>
+</html>

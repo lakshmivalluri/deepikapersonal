@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            
+
+            function readUserData() {// calling function
+                var firstVal, secondVal;
+                firstVal = prompt("Enter frist value");
+                secondVal = prompt("Enter second val");
+
+                firstVal = parseInt(firstVal); // 90
+                secondVal = parseInt(secondVal); //23
+                getTotal(firstVal, secondVal); // getTotal(90, 23)
+            }
+
+            var getTotal = function(a, b) { // firstval -> 90, b->23
+                var result = a + b;
+                console.log('The sum is ' + result);
+            }
+
+            readUserData();
+        </script>
+    </body>
+</html>

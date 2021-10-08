@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sum of even</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = prompt("enter the starting number : ");
+			a = parseInt(a);
+			var b = prompt("enter the ending number : ");
+			b = parseInt(b);
+
+			console.log("the sum of even numbers from " + a + " to " + b +" is : ");
+			var sum=0;
+			for (var a=1 ; a<=100 ; a++) {
+				if(a % 2 == 0) {
+					sum += a;
+				}
+			}
+				console.log(sum);
+		</script>
+	</body>
+</html>

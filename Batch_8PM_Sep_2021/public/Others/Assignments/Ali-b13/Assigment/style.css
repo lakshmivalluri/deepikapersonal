@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 20%,20%;
+    padding: 0;
+    
+    
+}
+
+
+
+.student-detail{
+    font-size: 22px;
+    color:rgb(9, 46, 255) ;
+    margin-top: 6%;
+    text-align: center;
+    
+    
+
+}
+.box-border{
+    width: 70vw;
+    height: 57vh;
+    margin-left: 13%;
+    background-color: rgb(101, 167, 126);
+    border: crimson solid 3px;
+}
+span{
+    color: rgba(5, 9, 248, 0.911);
+}
+h4{
+    color: rgb(44, 10, 27);
+   
+}
+.line-across{
+    border: rgb(14, 4, 20) solid 1px;
+}

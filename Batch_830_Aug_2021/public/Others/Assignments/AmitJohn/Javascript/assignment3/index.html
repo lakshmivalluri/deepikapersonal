@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+var choice =parseInt ( prompt(" 1. List of prime numbers in array \n 2. Sum of even numbers in array  \n 3. Largest number in array  \n 4. Second largest number in array \n 5. Sum of prime numbers \n 6. List of palindrome numbers \n 7. List of armstrong numbers \n 8. Sorting array values"));
+      var dataset = [7, 353, 34, 787, 52, 57, 43, 92, 2332, 71, 87, 283];
+     
+      function prime(){
+        for (var i = 0; i < dataset.length; i++) {
+        var tracker = 0;
+        var temp = dataset[i];
+        temp = parseInt(temp);
+        for (var n = 2; n < temp; n++) {
+          var rem = temp % n;
+          if (rem == 0) {
+            tracker++;
+            break;
+          }
+        }
+        if (tracker == 0) {
+          console.log(temp);
+        }
+      }
+    }
+
+    function even(){
+      var sum = 0;
+      for (var i = 0; i < dataset.length; i++) {
+        var rem = dataset[i] % 2;
+        if (rem == 0) {
+          sum = sum + dataset[i];
+        }
+      }
+      console.log(sum);
+    }
+
+    function largestNum(){
+      var max = dataset[0];
+      for (var i = 0; i < dataset.length; i++) {
+        if (dataset[i] > max) {
+          max = dataset[i];
+        }
+      }
+      console.log(max);
+    }
+
+    function secLargest(){
+      dataset.sort(function (n, i) {
+        return n - i;
+      });
+      console.log(dataset);
+      var max = dataset.length - 2;
+      console.log(dataset[max]);
+    }
+
+    function sumOfPrime(){
+      var sum = 0;
+      for (var i = 0; i < dataset.length; i++) {
+        var tracker = 0;
+        var temp = dataset[i];
+        temp = parseInt(temp);
+        for (var n = 2; n < temp; n++) {
+          var rem = temp % n;
+          if (rem == 0) {
+            tracker++;
+            break;
+          }
+        }
+        if (tracker == 0) {
+          sum += temp;
+          console.log(parseInt(sum));
+        }
+      }
+    }
+
+    function palindrome(){
+      var temp = 0;
+      for (var i = 0; i < dataset.length; i++) {
+        temp = dataset[i];
+        var reverse = 0;
+        while (temp > 0) {
+          var rem = temp % 10;
+          reverse = reverse * 10 + rem;
+          temp = parseInt(temp / 10);
+        }
+        if (dataset[i] == reverse) {
+          console.log(dataset[i]);
+        }
+      }
+    }
+
+    function armstrong(){
+      for (var i = 0; i < dataset.length; i++) {
+        var temp = dataset[i];
+        var compute = 0;
+        var rem = 0;
+        while (temp > 0) {
+          var lenOf = String(dataset[i]).length;
+          rem = temp % 10;
+          compute = compute + rem ** lenOf;
+          temp = parseInt(temp / 10);
+        }
+        if (compute == dataset[i]) {
+          console.log(dataset[i]);
+        }
+      }
+    }
+
+    function sortValue(){
+     dataset.sort(function (a, b) {
+     return a - b;
+     });
+    console.log(dataset);
+    dataset.sort(function (b, a) {
+     return a - b;
+     });
+    console.log(dataset);
+    }
+
+      switch (choice) {
+			case 1: prime();
+				break;
+
+			case 2: even();
+				break;
+
+			case 3: largestNum();
+				break;
+
+			case 4: secLargest();
+				break;
+
+			case 5: sumOfPrime();
+				break;
+
+			case 6: palindrome();
+				break;
+
+			case 7: armstrong();
+				break;
+
+			case 8: sortValue();
+				break;
+
+			default: console.log(" Enter correct choice ");
+				break;
+		}
+     
+    </script>
+  </body>
+</html>

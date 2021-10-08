@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculate Salary</title>
+	<script type="text/javascript">
+		console.log("Here we are calculating the Tax of employee");
+		var empName = prompt("Enter employee name");
+		var empAge = prompt("Enter employee age");
+		var gender = prompt("Enter gender");
+		var basicSalary = prompt("Enter basic salary of employee");
+		basicSalary = parseInt(basicSalary)
+		var hra = (basicSalary*25)/100;
+		var pf = (basicSalary*14)/100;
+		var grossSalary = (basicSalary + hra + pf);
+
+		if(gender == "male"){
+			if(grossSalary > 2000000){
+				tax = (grossSalary*15)/100;
+			}else if (grossSalary > 100000){
+				tax = (grossSalary*10)/100;
+			}else if(grossSalary > 50000){
+				tax = (grossSalary*5)/100;
+			}else{
+				tax= 0;
+			}
+		}
+		else if(gender == "female"){
+			if(grossSalary > 200000){
+				tax = (grossSalary*10)/100;
+			}else if (grossSalary > 100000) {
+				tax = (grossSalary*5)/100;
+			}
+			else{
+				tax= 0;
+			}
+		}	
+
+		var totalSalary = grossSalary-tax;
+
+		console.log("The tax deduction of employee " +empName+ " is " +tax+ " and after tax deduction the total salary is===> "+totalSalary);
+		alert("The tax deduction of employee "+empName+ " is " +tax+ " and after tax deduction the total salary is===> " +totalSalary);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

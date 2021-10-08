@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery.js"></script>
+        <title>
+            Jquery Methods
+        </title>
+        <style>
+            table {
+                width: 100%;
+
+            }
+            .tdbgColor {
+                background-color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table border="1px solid" cellpadding="10" cellspacing="10">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>RAj</td>
+                    <td>10</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Teena</td>
+                    <td>15</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>KRish</td>
+                    <td>11</td>
+                    <td>Mal</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            /*document.querySelector("td").addEventListener("click", function(event){
+
+            }) */
+            $("td").click(function(event) {
+                /*if ($(event.target).hasClass("tdbgColor")) {
+                    $(event.target).removeClass("tdbgColor");
+                } else {
+                    $(event.target).addClass("tdbgColor");
+                }*/
+                $(event.target).toggleClass("tdbgColor");
+            })
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>reverse of numbers</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				
+				var num = 32;
+				var temp =0;
+				 var rev =0 ;
+				 var rem = 0;
+				while( num <=950) {
+				
+					temp = num;
+					rev = 0;
+
+				 while( temp!=0){
+				 	rem = temp % 10;
+				 	rev = rev * 10 + rem;
+				 	temp= temp /10;
+				 	temp = parseInt(temp)
+				 }
+				 rev = parseInt(rev)
+
+				 console.log(rev)
+				 
+				 num++;
+
+			}
+				 	
+
+
+				 
+			</script>
+
+		</body>
+</html>

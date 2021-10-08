@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+	  <meta charset="utf-8">
+	  <title>employee details</title>
+    </head>
+    <h2>Empdetails through json method</h2>
+    <body>
+    	<script type="text/javascript">
+    		/*var Empdetails = {
+    			name: "Ananya",
+    			gender: "female",
+    			dept: "it",
+    			basicsal: 40000,
+    			pf: 0,
+    			totalsal:0, 
+    		}*/      //json eg.
+    		
+    		function Empdetails(){
+    		var Empdetails = {};
+    		Empdetails.name = prompt ("enter the employee name:");
+    		Empdetails.gender = prompt ("enter the employee gender:");
+    		Empdetails.dept = prompt ("enter department:");
+    		Empdetails.basicsal = prompt ("enter the employee basicsalary:");
+    		Salarycalculation(Empdetails);
+    		}
+             function Salarycalculation(){    
+    		Empdetails.basicsal = parseInt (Empdetails.basicsal);
+    		Empdetails.pf = Empdetails.basicsal*14/100 ;
+    		Empdetails.totalsal = Empdetails.basicsal + Empdetails.pf ;
+            console.log("employee name is:" + Empdetails.name);
+            console.log("employee gender " + Empdetails.gender);
+            console.log("employee department :" + Empdetails.dept);
+    		console.log("basicsal is " + Empdetails.basicsal);
+    		console.log("pf is " + Empdetails.pf);
+            console.log("totalsal is " + Empdetails.totalsal);
+            taxcondition();
+        }
+
+            function taxcondition(){
+            if (Empdetails.gender == 'male') {
+            	if (Empdetails.totalsal > 40000){
+            		console.log("tax:" + Empdetails.total*0.15);
+            	}
+            	else if(Empdetails.totalsal > 20000){
+            		console.log("tax:" + Empdetails.total*0.10);
+            	}
+            	else if(Empdetails.totalsal > 10000){
+            		console.log("tax:" + Empdetails.total*0.5);
+            	}
+            	else {
+            		console.log("tax:" + "null");
+            	}
+            }
+            else if (Empdetails.gender == 'female'){
+            	if (Empdetails.total > 20000){
+            		console.log("tax:" + Empdetails.total*0.01);
+            	}
+            	else if (Empdetails.total > 10000) {
+            		console.log("tax:" + Empdetails.total*0.05);
+            	}
+            	else if (Empdetails.total > 5000) {
+            		console.log("tax:" + Empdetails.total*0);
+            	}
+            	else{
+            		console.log("tax:" +"null");
+            	}
+            }
+        }
+        Empdetails();
+    	</script>
+
+    </body>
+ </html>

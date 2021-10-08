@@ -1,0 +1,114 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var userSelect = prompt( " ***** Existing Codes ***** \n 1: Finding The Lucky Lumber \n 2: Reverse Of a Given Number \n 3: To check The Number Is Palimdrome Number or Not \n 4: To check The Number Is Amstrong Number or Not \n 5: Count The Total Number Digits For a Given Number");
+        userSelect= parseInt(userSelect);
+        var sum=0, num=0, rev=0
+          // eg val = 123
+           function luckyNum(){
+            var val = prompt("Please enter any number with atleast three digits");
+                while(val>0){
+                    num = val%10;
+                    //(12) only last digit will assign to (3) val
+                    sum +=num;
+                    // remove last digit (3) and assign first digits to val (12)
+                    val = parseInt(val / 10);
+                }
+                if(sum>=1 && sum<=9){
+                    alert("You got lucky number cheers.Enjoy the wonderful day buddy")
+                }
+                else{
+                    alert("Ohh you didn't got lucky number.Better luck next time buddy");
+                }
+           }
+            function reverseNum(){
+                var val = prompt("Please enter any number with atleast three digits");
+                while(val != 0){
+                    num = parseInt(val % 10);
+                    rev = (rev * 10) + num; 
+                    val = parseInt(val / 10);
+                }
+                alert("Hey buddy,Looks result is in reverse.Just kidding"+"'"+rev+"'");
+            }
+
+            function palindrome(){
+                var val = prompt("Please enter any number with atleast three digits");
+                temp=val;
+                    while(val!=0){
+                        num = val%10;
+                        rev = (rev * 10) + num; 
+                        val = parseInt(val / 10);
+                    }
+                    if(temp == rev){
+                        alert("Hey, It's  palindrome");
+                    }
+                    else{
+                        alert("Hey, It's not a palindrome");   
+                    }
+            }
+            function armstrong(){
+                var val = prompt("Please enter any number with atleast three digits");
+                var temp=0,count=0,p=0;
+                temp= val;
+                checkNum = val;
+                    while(temp != 0)
+                    {
+                        temp = parseInt(temp / 10); 
+                        count++;
+                    }
+                        while (val != 0) 
+                        {
+                            var mul = 1;
+                            p = val % 10;
+                            for(var i=1;i<=count; i++){
+                                mul *= p;
+                            }
+                            sum += mul;
+                            val = parseInt(val / 10);
+                        }
+                        if (checkNum == sum)
+                            alert(" it is a Amstrong number");
+                        else
+                            alert("it is not a Amstrong number");
+            }
+            function indivNum(val){
+                var count=0;
+                var val = prompt("Please enter any number with atleast three digits");
+                while(val != 0)
+                    {
+                        val = parseInt(val / 10); 
+                        count++;
+                    }
+                alert("Total Number of digits are:"+count)
+            }
+
+
+            switch (userSelect) {
+            case 1:
+                luckyNum();
+                break;
+            case 2:
+                reverseNum();   
+                break;
+            case 3:
+                palindrome();  
+                break;
+            case 4:
+                armstrong();  
+                break;
+            case 5:
+                indivNum();
+                break;
+            default:
+                alert("Please choose any one from 1 - 5 in the list of item");
+                break;
+            }
+        </script>
+    </body>
+</html>

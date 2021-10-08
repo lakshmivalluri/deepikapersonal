@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>
+            Demonstring, passing json obj as param
+        </title>
+    </head>
+    <body>
+        <script>
+           
+            function readData() { 
+                var firstVal, secondVal;               
+                firstVal = prompt("Ente first val");
+                secondVal = prompt("Second value");
+                firstVal = parseInt(firstVal);
+                secondVal = parseInt(secondVal);
+                getResult();
+            }
+            function getResult() {
+                var result = 0;
+                result = firstVal + secondVal;
+                console.log("The sum is " + result);
+            }
+
+            readData();
+        </script>
+    </body>
+</html>

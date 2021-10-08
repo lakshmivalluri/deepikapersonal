@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Largest and Smallest number</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = [12, 13, 25, 252];
+			var largest = num[0];
+			var smallest = num[0];
+			for(var i = 0; i < num.length; i++) {
+				if(num[i] > largest) {
+					largest = num[i];
+				} else if(num[i] < smallest) {
+					smallest = num[i];
+				}
+			}
+			console.log("Largest number is" + " " + largest);
+			console.log("Smallest number is" + " " + smallest);
+		</script>
+	</body>
+</html>

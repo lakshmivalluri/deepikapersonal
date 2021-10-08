@@ -1,0 +1,2 @@
+Name: Teena, age: 20, gender: Female
+Name: Krish, age: 30, gender: MAleName:RAJ, age:99Name:RAJ, age:99

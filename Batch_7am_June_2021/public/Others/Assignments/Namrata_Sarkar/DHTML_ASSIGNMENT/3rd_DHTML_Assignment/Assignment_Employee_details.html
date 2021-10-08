@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="employee_details1.css" />
+  </head>
+  <body>
+    <div class="heading">Employee Details Generator</div>
+    <ul>
+      <li>
+        Employee's Name:
+        <input
+          type="text"
+          id="ename"
+          required
+          placeholder="Enter Name"
+          input
+          maxlength="20"
+          type="text"
+          id="sname"
+          onkeypress="return validateEmployeeName(event)"
+        />
+      </li>
+      <li>
+        Employee's Age:
+        <input
+          type="text"
+          id="eage"
+          required
+          placeholder="Enter Age"
+          maxlength="2"
+          onkeypress="return validateEmployeeAge(event)"
+        />
+      </li>
+      <li>
+        Employee's Department:
+        <select id="edepartment">
+          <option>Choose Department</option>
+          <option>IT</option>
+          <option>Networking</option>
+          <option>Marketing</option>
+          <option>Sales</option>
+          <option>Consulting</option>
+        </select>
+      </li>
+      <li>
+        Employee's Gender:
+        <label for="gender">&nbsp; </label>
+        <input type="radio" name="gender" id="egender" value="Male" />Male
+        <input type="radio" name="gender" id="egender" value="Female" />Female
+      </li>
+      <li class="basicsalaryContainer">
+        Employee's Basic Salary:
+        <input
+          type="text"
+          id="eBasicsalary"
+          required
+          placeholder="Enter Basic salary"
+          maxlength="6"
+          onkeypress="return validateEmployeeBasicsalary(event)"
+        />
+      </li>
+      <div class="button">
+        <input
+          type="button"
+          value="Generate Employee Card"
+          id="submit"
+          onclick="generateEmployeeCard();"
+        />
+      </div>
+    </ul>
+    <ul class="employeeDetailsBlock">
+      <li class="eTitle">Employee Card</li>
+      <li>Employee's Name: <span id="rename"></span></li>
+      <li>Employee's Age: <span id="reage"></span></li>
+      <li>Employee's Department: <span id="redepartment"></span></li>
+      <li>Employee's Gender: <span id="gender"></span></li>
+      <li>Employee's Basic Salary: <span id="rebasicsalary"></span></li>
+      <li>PF: <span id="rpf"></span></li>
+      <li>HRA: <span id="rhra"></span></li>
+      <li>Total Salary: <span id="rtotalsalary"></span></li>
+      <li>Tax: <span id="rtax"></span></li>
+    </ul>
+    <script src="employee_details1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Palindrome</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var number = prompt("Enter the Number To check weather it is palindrome or not : ");
+			number = parseInt(number);
+			var p = number;
+			var a, total = 0;
+			while ( number != 0 ) {
+				a = number % 10;
+				total = total*10 + a;
+				number = number / 10;
+				number = parseInt(number);
+			}
+			//console.log(total);
+			if (p == total) {
+				console.log("The Given number " + p + " is palindrome");
+			} else {
+				console.log("The Given number " + p + " is not palindrome");
+			}
+		</script>
+	</body>
+</html>

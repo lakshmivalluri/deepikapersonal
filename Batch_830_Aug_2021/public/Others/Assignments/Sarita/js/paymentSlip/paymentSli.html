@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Genrate Payment slip</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		
+			<ul class="inputData">
+			<h3>Enter Employee Detail</h3>
+			<li>
+			<div class ="ulabel">Employee Name:</div>
+			<div class="control"><input type="text" name="name"  id = "ename"></div></li>
+
+			<li>
+			<div class ="ulabel">Employee Age:</div>
+			<div class="control"><input type="text" name="age" id = "eage"></div></li>
+			<li>
+			<div class ="ulabel">Gender:</div>
+			<div class="control"><input type="radio" name="gender" value = "male">Male
+								<input type="radio" name="gender" value = "female">Female</div></li>
+								
+			<li>
+			<div class ="ulabel">Basic Salary:</div>
+			<div class="control"><input type="text" name="sal" id = "esal"></div></li>
+			<li>
+                <input type="button" value="Generate Payment Slip" onclick="readEmpInfo();" id="reg">
+            </li>
+		</ul>
+		<ul class="paymentSlip">
+            <h3> Payment Slip</h3>
+               
+           
+            <li>
+                <div class ="ulabel">Employee Name:</div> <span id="rname"></span>
+            </li>
+            <li>
+				<div class ="ulabel">Employee Age:</div> <span id="rage"></span>
+            </li>
+            <li>
+				<div class ="ulabel">Gender:</div> <span id="rgender"></span>
+            </li>
+            <li>
+				<div class ="ulabel">Basic Salary:</div><span id="rbasic"></span>
+            </li>
+            <li>
+				<div class ="ulabel">HRA:</div> <span id="rhra"></span>
+            </li>
+            <li>
+				<div class ="ulabel">PF:</div><span id="rpf"></span>
+            </li>
+			<li>
+            	<div class ="ulabel">Total Salary:</div><span id="rtotal"></span>
+            </li>
+        </ul>
+	
+	</body>
+</html>

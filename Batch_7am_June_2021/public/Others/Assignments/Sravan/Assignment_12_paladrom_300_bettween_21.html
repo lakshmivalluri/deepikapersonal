@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            finding the Paladrom Number between 300 to 21
+        </title>
+    </head>
+    <body>
+
+        <h1>Finding the Paladrom Number between 300 to 21</h1>
+
+        <script type="text/javascript">
+
+        for(n = 300;n > 21;n--){
+           var sum = " ";
+           var rem = 0;
+           var num = n;
+        
+            while(num>0){ 
+                rem = num%10;
+                sum = sum+ rem;
+                num = num/10;
+                num = parseInt(num);
+            }
+        if(n == sum){
+            console.log(sum);
+         }
+       }
+        
+        </script>
+    </body>
+</html>

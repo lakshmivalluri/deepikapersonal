@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var name = prompt("Enter your name");
+      var age = prompt("Enter your age");
+      var gender = prompt("Enter your gender");
+      var basicSal = parseInt(prompt("Enter your basic salary"));
+      var hra = (basicSal * 14) / 100;
+      var pfund = (basicSal * 7) / 100;
+      var totalSal = basicSal + hra + pfund;
+      var tax;
+
+      console.log("Name of the employee is " + name);
+      console.log("Age of the employee " + age);
+      console.log("Gender is " + gender);
+      console.log("Basic salary of employee is " + basicSal);
+      console.log("total salary is " + totalSal);
+
+      if (gender == "male") {
+        if (totalSal > 200000) {
+          tax = (totalSal * 15) / 100;
+          console.log("your tax is " + tax);
+        } else if (totalSal > 100000) {
+          tax = (totalSal * 10) / 100;
+          console.log("your tax is " + tax);
+        } else if (totalSal > 50000) {
+          tax = (totalSal * 5) / 100;
+          console.log("your tax is " + tax);
+        } else {
+          tax = 0;
+          console.log("your tax is " + tax);
+        }
+      } else {
+        if (totalSal > 200000) {
+          tax = (totalSal * 10) / 100;
+          console.log("your tax is " + tax);
+        } else if (totalSal > 100000) {
+          tax = (totalSal * 5) / 100;
+          console.log("your tax is " + tax);
+        } else if (totalSal < 50000) {
+          tax = 0;
+          console.log("your tax is " + tax);
+        }
+      }
+    </script>
+  </body>
+</html>

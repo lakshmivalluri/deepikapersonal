@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <script>
+        var empDetails = {
+            "name" : "John" ,
+            "Age" : 23 ,
+            "gender" : "Male" ,
+            "basicSal" : 47000 ,
+            "hra" : 0 ,
+            "pf" : 0 ,
+            "totalSal" : 0
+        }
+        empDetails.hra = (14 *empDetails.basicSal) / 100;
+        empDetails.pf = (7 * empDetails.basicSal) / 100;
+        empDetails.totalSal = parseInt(empDetails.basicSal+empDetails.pf+empDetails.hra);
+        console.log("Employeename = "+empDetails.name);
+		console.log("EmployeeAg = "+empDetails.Age);
+		console.log("EmployeeGender = "+empDetails.gender);
+		console.log("Hra = "+empDetails.hra);
+		console.log("PF = "+empDetails.pf);
+		console.log("EmployeeSalary = "+empDetails.totalSal);
+		
+    </script>
+
+    </body>
+</html>

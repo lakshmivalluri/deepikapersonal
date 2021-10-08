@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assigiment_2</title>
+    </head>
+        <style>
+            body{
+                background: rgb(154, 113, 219);
+            }
+            /*Applying the propotyes by targeting div useing id selector*/
+            #heading{
+                text-align: center;
+                border: 3px solid rgb(12, 16, 230);
+                text-decoration: underline blue;
+                background: rgb(121, 162, 252);
+            }
+            /*Applying the propotyes by targeting student diteals div useing class selector*/
+            .contain{
+                height: 200px;
+                width: 100%;
+                border: 3px solid rgb(17, 0, 255);
+                background-color:skyblue; 
+            }
+            /* here i use flote for moving the div left side of a page */
+            .image{
+                float: left;
+            }
+            img{
+                border: 2px solid rgb(0, 0, 0);
+                height: 196px;
+                width: 200px;
+               float: left;
+            }
+            .paragraph{ 
+                float: left;  
+            }
+            .details{
+               text-align: center;
+            }
+            /*Applying the propotyes by using multi selector method*/
+            .paragraph .img {
+                height: 200px;
+                width: 200px;
+            }
+            
+        </style>
+    <body>
+        <!--here i use the div to make a rapper to the heading tag and give the id for adding css propoetyes-->
+        <div id="heading">
+          <h1>Student Details</h1>
+        </div> <br>
+        <!--here i use one main div and unter the div i create multipul div to showing image and containt-->
+        <div class="contain">   
+            <div class="image">      
+                <img src="img1.jpg">
+            </div>
+            <div class="paragraph">
+                <p class="details">
+                    Name    : Rabinson Mahakud <br>
+                    Age     : 24 <br>
+                    Gender  : Male <br>
+                    Location: Balasore 
+                </p>
+            </div>
+        </div> <br>
+        <div class="contain">   
+            <div class="image">      
+                <img src="img2.jpg">
+            </div>
+            <div class="paragraph">
+                <p class="details">
+                    Name    : Rabinson Mahakud <br>
+                    Age     : 24 <br>
+                    Gender  : Male <br>
+                    Location: Balasore 
+                </p>
+            </div> 
+        </div> <br>
+        <div class="contain">   
+            <div class="image">      
+                <img src="img3.jpg">
+            </div>
+            <div class="paragraph">
+               <p class="details">
+                 Name    : Rabinson Mahakud <br>
+                 Age     : 24 <br>
+                 Gender  : Male <br>
+                 Location: Balasore 
+               </p>
+            </div>
+        </div>
+       
+    </body>
+</html>

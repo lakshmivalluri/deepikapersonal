@@ -1,0 +1,46 @@
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_960_720.jpg);
+}
+
+h3 {
+  border: 2px dotted;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: pink;
+}
+
+.employee,
+.employee li {
+  list-style: none;
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+}
+
+.employee li {
+  background-color: black;
+}
+
+.employee li img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid wheat;
+}
+
+.employee {
+  float: left;
+  width: 280px;
+  height: 350px;
+  border: 2px solid black;
+  text-align: center;
+  color: rgb(174, 192, 207);
+}
+.eDetails {
+  background-image: url(https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_960_720.jpg);
+  margin: 5px;
+  padding: 5px;
+  height: 1120px;
+  width: 98%;
+}

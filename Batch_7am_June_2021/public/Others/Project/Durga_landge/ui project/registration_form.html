@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> registration_form </title>
+	<style type="text/css">
+	    nav {
+    border: 2px solid black;
+    background-color: royalblue;
+    color: #fff;
+    display: flex; justify-content: space-between;
+    align-items: center;
+	}
+    menu span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+  ul {
+			border: 2px solid;
+			width: 550px;
+			margin: auto;
+			background-color: rgb(171, 236, 117);
+            border: 2px solid;
+            height: 500px;
+            padding: 10px;
+            background-image: silver;
+            border-radius: 20px;
+     }
+		li {
+			list-style: none;
+			border: 1px solid;
+			margin: 5px;
+			padding: 5px;
+		}
+		h3 {
+			text-decoration: underline;
+			text-align: center;
+			padding: 10px;
+			margin: 5px;
+		}
+		ul {
+			padding: 0;
+		}
+		a{
+    padding: 10px;
+    margin-left: 150px;
+	text-align: center;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+}
+	</style>
+</head>
+<body>
+    <header>
+        <nav>
+           <menu>
+                <span class="home">Home</span>
+                <span class="about">About</span>
+                <span class="service">Service</span>
+                <span class="contact us"> Contact Us</span>
+            </menu>
+        </nav>
+    </header>
+  <div>
+	<h3>
+		<b>
+		New User register here
+		</b>
+	</h3>
+	<form action="www.sample2342.com/data/uinfo"   method="GET">
+	<ul>
+		<li>
+			<label for="uname">Enter user Name: </label>
+            <input type="text" name="uname">
+		</li>
+		<li>
+			user account Password:
+			<input name="upwd" type="Password" maxlength="5" placeholder="Acnt password">
+		</li>
+		<li>
+			<label for="dob">Date of Birth : &nbsp;</label>
+			<input type="date" name="dob" required="date">
+		</li>
+		<li> 
+			Gender:
+			<input type="radio" name="ugender">Male
+			<input type="radio" name="ugender">female
+		</li>
+		<li>
+			known language:
+			<input type="checkbox">English
+			<input type="checkbox">Marathi
+			<input type="checkbox">Hindi
+			<input type="checkbox">urdu
+		</li>
+		<li>
+			country:
+			<select>
+				<option></option>
+				<option selected>India</option>
+				<option>America</option>
+				<option>Japan</option>
+				<option>singapor</option>
+			</select>
+		</li>
+		<li>
+			Email_Id<input type="Email_id">
+		</li>
+		<li>
+		Contact No:
+		<select>
+			<option></option>
+			<option>+91</option>
+			<option>+94</option>
+			<option>+98</option>
+		</select>
+		<input type="mobileNo">
+		</li>
+		<li>
+			Tell about urself:
+			<textarea></textarea>
+		</li>
+		<li>
+		<input type="file">
+		</li>
+		<li>
+			<input type="submit" value="register user">
+		</li>
+		<br>
+			<a href="login.html">Home</a>
+	</ul>
+</form>
+</body>
+</html>

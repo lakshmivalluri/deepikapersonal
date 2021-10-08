@@ -1,0 +1,70 @@
+body {
+    background: #ccc;
+}
+
+h3 {
+    border: 1px solid;
+    color: green;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product, .product li {
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.actual {
+    text-decoration: line-through;
+    color: orange;
+    font-weight: bold;
+}
+
+.discounted {
+    color: blue;
+    font-weight: bold;
+}
+
+.product li {
+    background-color: #ccc;
+}
+
+.product li img {
+    width: 190px;
+    height: 190px;
+}
+
+.product {
+    float: left;
+    width: 300px;
+} 
+.pDtails {
+    background-color: #fff;
+    margin: 5px;
+    padding: 5px;
+    height: 1200px;
+}
+
+.loadingBlock {
+    left: 40%;
+    top: 20%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+.errorBlock {
+    border: 1px solid;
+    text-align: center;
+    padding: 30px;
+    color: red;
+    width: 300px;
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    display: none;
+}

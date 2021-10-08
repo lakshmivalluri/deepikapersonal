@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>list out palindrome numbers betn 300 to 20</title>
+</head>
+<body>
+	<h3>Write a program to list out all the palindrome numbers between 300-21</h3>
+	<script type="text/javascript">
+		for (var i=300 ; i >= 21; i--) {
+			var a=i;
+			var rem,val= 0;
+				while (a > 0) {
+					rem = a % 10;
+					val=val*10 + rem;
+					a=a/10;
+					a=parseInt(a)
+				}
+			if ( i == val ) {
+				console.log(val)
+			}
+		}
+
+	</script>
+</body>
+</html>

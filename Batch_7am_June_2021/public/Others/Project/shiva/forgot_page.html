@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>
+	        forgot password	
+	    </title>
+	    <style type="text/css">
+	    	.mail {
+	    		position: absolute;
+	    		top: 15%;
+	    		left: 4%;
+	    	}
+	    	.n_password {
+                position: absolute;
+                top: 52%;
+                left: 4%;
+	    	}
+	    	.c_password {
+	    		position: absolute;
+	    		top: 68%;
+	    		left: 6%;
+	    	}
+	    	.box {
+	    		border: 1px solid;
+	    		position: absolute;
+	    		height: 250px;
+	    		width: 400px;
+	    		top: 20%;
+	    		left: 34%;
+	    		background: lightcyan;
+	    	}
+	    	.otp {
+	    		border: 1px solid;
+	    		position: absolute;
+	    		top: 32%;
+	    		left: 42%;
+	    		background: #b5bbbb;
+	    	}
+	    	.done {
+	    		top: 84%;
+	    	}
+	    	.bgimg {
+	    		background-image: url("images/iimg4.PNG");
+	    		background-size: cover;
+	    	}
+	    	.footer {
+	    		border: 1px solid;
+	    		position: absolute;
+                bottom: 10px;
+                width: 100%;
+		   		text-align: center;
+	    		text-decoration: underline;
+	    		background: grey;
+	    		line-height: 60px;
+	    		font-size: 20px;
+	    		font-style: oblique;
+	    		color: black;
+	    	}
+	    </style>
+    </head>
+    <body class="bgimg">
+        <div class="box">        
+        	<div class="mail">
+        		<label for="mail">registered mail id</label>
+        		<input type="text" name="mail" placeholder="email">
+        	</div>
+        	<div class="otp">
+        		<div>get OTP</div>
+        	</div>
+        	<div class="n_password">
+        		<label for="password">Enter new password</label>
+        		<input type="text" name="password" placeholder="new password">
+        	</div>
+        	<div class="c_password">
+        		<label for="password">conform password</label>
+        		<input type="password" name="password" placeholder="********" maxlength="8 characters">
+        	</div>
+        	<div class="otp done">
+        		<a href="http://localhost:8081/project/login_Page.html" target="POST"><div>Done</div></a> 
+        	</div>
+        </div>
+           	<div class="footer">
+         	    <div>CopyRights-FullStack@2021-ShivaKumar</div>
+            </div>
+   </body>
+</html>

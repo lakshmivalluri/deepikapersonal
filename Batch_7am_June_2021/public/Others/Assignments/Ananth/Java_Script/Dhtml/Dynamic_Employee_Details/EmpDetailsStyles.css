@@ -1,0 +1,17 @@
+.header {
+     border: 2px solid;
+     border-radius: 10px;
+     text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.main {
+     border: 2px solid;
+     border-radius: 10px;
+     list-style: none;
+     padding: 10px;
+     margin: 20px;
+     width: 213px;
+     height: 400px;
+     float: left;
+     background: rgb(123, 456, 789);
+}

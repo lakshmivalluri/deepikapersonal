@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Palindrome Numbers</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr = [1,120,131,4,55655];
+			for (var index = 0; index <= arr.length; index++){
+				var arrind = arr[index];
+				var total = 0;
+				while (arrind > 0){
+					a = arrind % 10;
+					total = total*10 + a;
+					arrind = arrind / 10;
+					arrind = parseInt(arrind);
+				}
+				if (arr[index] == total){
+					console.log(arr[index]);
+				}
+			}
+		</script>
+	</body>
+</html>

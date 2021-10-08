@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS3 Keyframes</title>
+            <style>
+                .container {
+                    border: 1px solid;
+                    width: 120px;
+                    height: 120px;
+                    background-color: yellowgreen;
+                    text-align: center;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    animation: mystyles 5s infinite;
+                }
+                @keyframes mystyles {
+                    2% {
+                        background: chocolate;
+                        left: 200px;
+                        top: 100px;
+                    }   
+                    10% {
+                        background: cyan;
+                        left: 100px;
+                        top: 10px;
+                    }
+                    33% {
+                        background-color: pink;
+                        left: 5px;
+                        top: 300px;
+                    }
+                    43% {
+                        border-radius: 50%;
+                        background-color: blueviolet;
+                        left: 90%;
+                        top: 50%;
+                    }
+                    65% {
+                        border-radius: 10px;
+                        background-color: burlywood;
+                        left: 10%;
+                        top: 10%;
+                    }
+                    84% {
+                        border-radius: 40% 40%;
+                        background-color: crimson;
+                        left: 50%;
+                        top: 50%;
+                    }
+                    98% {
+                        background-color:brown;
+                        top: 99%;
+                        left: 98%;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                Hello
+            </div>
+        </body>
+</html>

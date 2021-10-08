@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+       
+          <h3>using json empdetails</h3>
+
+
+          <script type="text/javascript">
+          	
+           var empdetails = {
+           	   name:"",
+           	   age:"",
+           	   gender:"",
+           	   basicsal:"",
+           	   tax:"",
+             
+               readdata : function () {
+              empdetails.name=prompt("enter employee details");
+              this.age=prompt("enter age the employee ");
+              this.gender=prompt("enter gender ");
+              this.basicsal=prompt("enter basic salary of the employee"); 
+              this.basicsal=parseInt(this.basicsal);
+            },
+             
+              
+         
+
+              gettotal :function() {
+              	this.readdata();
+                empdetails.pf=(this.basicsal * 14 ) / 100;
+                empdetails.hra=(this.basicsal * 25 ) / 100;
+                empdetails.total=this.pf+this.hra+this.basicsal;
+               },      
+               
+              
+              gettax:function() {
+                      this.gettotal();
+                  
+                  if (this.gender=="male") {
+                  	this.structure=this.name;
+                  	if (this.total>175000) {
+                  		this.tax=(this.total*15)/100
+                  		console.log(" You Need to pay tax amount " + this.tax);
+                  	}
+                  	else if(this.total>120000){
+                  		this.tax=(this.total*10)/100
+                  		console.log(" You Need to pay tax amount " + this.tax);
+                  	}else if (this.total>75000) {
+                  		this.tax=(this.total*5)/100
+                  		console.log(" You Need to pay tax amount " + this.tax);
+                  	}else{
+                  		this.tax=" You no Need to pay tax due to less salary "
+                  	}
+                  } 
+
+                  if (this.gender=="female") {
+                  	this.structure=this.name; 
+                  	if (this.total>175000) {
+                  	    this.tax=(this.total*10)/100
+                  		console.log(" You Need to pay tax amount " + this.tax);
+                  	}
+                  	else if(this.total>120000){
+                  		this.tax=(this.total*5)/100
+                  		console.log(" You Need to pay tax amount " + this.tax);
+                  	}else if (this.total>75000) {
+                  		this.tax=(this.total*2.5)/100
+                  		console.log(" You Need to pay tax amount " + this.tax);
+                  	}else{
+                  		this.tax=" You Need to pay tax due to less salary "
+                  	}
+                  }
+
+              },
+              getdisplay:function(){
+                
+               
+              	
+               console.log(" Name of the employee is :  " + this.name)
+               console.log(" Age of the employee is :  " + this.age)
+               console.log(" Gender of employee is :" + this.gender)
+               console.log(" basic salary of the employee is : " + this.basicsal)
+               console.log(" pf amount of employee is : " + this.pf)
+               console.log(" hra amount of employee is :" + this.hra)
+               console.log(" total salary of employee is : " + this.total)
+               console.log(" Tax structure for : " + this.structure);
+               this.gettax();
+               console.log(" tax amount is : " + this.tax)
+              },   
+           
+           };
+      
+           empdetails.getdisplay();
+
+
+
+          </script>
+</body>
+</html>

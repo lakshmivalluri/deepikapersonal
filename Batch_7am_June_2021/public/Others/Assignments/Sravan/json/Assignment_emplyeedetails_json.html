@@ -1,0 +1,66 @@
+<html >
+    <head>
+
+        <title>Employee Details</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+     
+    <body>
+
+       <div class="heading">- Employee Details -</div>
+
+        <ul>
+
+       <li> Employee Name : <input type="text" id="ename"> </li>
+
+       <li> Age : <input type="text" id="eage"> </li>
+
+       <li> Department : 
+           <select id="edepart">
+               <option value=""> </option>
+               <option value="programmer">Programmer</option>
+               <option value="designor">Designor</option>
+           </select>
+         </li>
+
+       <li> Gender : <input type="radio" name="ygender" id="egender"> Male
+                    <input type="radio" name="ygender" id="egender">Female
+                    <input type="radio" name="ygender" id="egender"> Transgender 
+       </li>
+
+       <li> Salary : <input type="text" id="esal"> </li>
+
+      <li style="text-align : right;"> <input type="button" value="Generate information" onclick="employeeInformation()"></li>  
+
+    </ul>
+    
+    <ul class = "employeeData">
+
+        <li> Employee Name : <span id="rename"> </span> </li>
+ 
+        <li> Age : <span id="reage"></span> </li>
+ 
+        <li> Department : <span id="redepart"> </span></li>
+ 
+        <li> Gender :<span  id="regender"> </span></li>
+ 
+        <li> BasicSalary : <span id="resal"> </span> </li>
+
+        <li>  Pf : <span id="repf"> </span> </li>
+
+        <li> Hrf : <span id="rehra"> </span> </li>
+
+        <li> Total Salary: <span id="retsalary"> </span> </li>
+ 
+       
+ 
+     </ul>
+ 
+
+   <script src="employeeInformation.js.js"></script>
+
+
+            
+        </div>
+    </body>
+</html>

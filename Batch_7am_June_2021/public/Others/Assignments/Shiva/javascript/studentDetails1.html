@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            studentdetails
+        </title>
+    </head>
+    <body>
+        <script>
+            var name,age,subject,marks,avg,total;
+            function sDetails () {
+                name = "shiva";
+                age = 20;
+               // age = parseInt(age);
+                subject = [];
+                marks = [];
+                for (var i = 0; i < 5; i++) {
+                    subject[i] = prompt("enter a subject");
+                    marks[i] = prompt("enter marks");
+                    marks[i] = parseInt(marks[i]);
+                    
+                }
+                totalOf();
+                
+            }
+            function totalOf() {
+                total = 0;
+                for(var i = 0; i < marks.length; i++) {
+                    total += marks[i];
+                }
+                avg = total / 5;
+                displayDetails();
+            }
+            function displayDetails() {
+                console.log(name);
+                console.log(age);
+                console.log(total);
+                console.log(avg);
+            }
+            sDetails();
+            
+            
+            
+            
+        </script>
+    </body>
+</html>

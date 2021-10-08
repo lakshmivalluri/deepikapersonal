@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> List of Palindrom number</title>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+
+					var num =20;
+					var temp = num ;
+				 
+				 	var rem = 0;
+				 	console.log("list of palindrom number")
+				 	
+				 	
+				 		for( num = 20; num<= 300; num++){
+				 			temp = num
+				 			var rev = 0
+				 
+
+						 	while( temp !=0){
+				 			rem = temp % 10;
+				 			rev = rev * 10 + rem;
+				 			temp = temp /10;
+				 			temp = parseInt(temp);
+				 			}
+				 			//console.log("list of palindrom number")
+				 	
+				 	
+				 		if (num == rev){
+				 	
+				 		
+				 		console.log(rev)
+				 		
+				 	}
+				 	
+				 	}
+
+				 	
+
+				 
+				</script>
+
+	</body>
+</html>

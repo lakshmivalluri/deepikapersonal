@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            Demonstrating JSON object iteration
+        </title>
+    </head>
+    <body>
+        <script>
+            // var data = [
+            //     90,
+            //     'Raj',
+            //     true,
+            //     900
+            // ];
+
+            // for (var i = 0; i < data.length; i++) {
+            //     console.log(data[i]);
+            // }
+           
+           
+           
+            var empData = {
+                name: "Teena",
+                age: 99,
+                gender: 'Female',
+                location: 'Pune',
+                phoneno: [242,2234, 23423,23423],
+                addres:{
+                    dno: '4A',
+                    pincode: 23423,
+                    stateInfo: {
+                        statename: 'AP',
+                        stateCode: '009'
+                    }
+                }
+            }
+
+            function iterateUserObject(data) {                
+                for (var tempKey in data) {
+                    if (typeof(data[tempKey]) == 'object' && !data[tempKey].length) { // json object
+                        iterateUserObject(data[tempKey]);                       
+                    } else {
+                        console.log("Key -> " + tempKey + '  value -> ' + data[tempKey]);
+                    }
+                }
+            }
+
+            iterateUserObject(empData);
+            
+            /*for (var tempKey in empData) {
+                //console.log(tempKey);
+                console.log(empData[tempKey]);
+                
+                if (typeof(empData[tempKey]) == 'object') { // array, json obj
+                   
+                    if (!empData[tempKey].length) { //json obj
+                        
+                        for (var temp in empData[tempKey]) {
+                            console.log(empData[tempKey][temp])
+                        }
+                    }
+                }
+            } */
+
+
+        </script>
+    </body>
+</html>

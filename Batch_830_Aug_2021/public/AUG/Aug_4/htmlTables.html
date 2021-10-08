@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Demonstrating HTML Tables
+		</title>
+		<style type="text/css">
+			.parent {
+				border: 1px solid;
+				padding: 5px;
+				margin: 5px;
+				width: 410px;
+				height: 380px;
+			}
+			.row {
+				clear: both;
+			}
+			.cell {
+				border: 1px solid;
+				width: 80px;
+				float: left;
+				padding: 5px;
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			Table demonstrating
+		</h3>
+		<table border="1px solid" cellspacing="5px" cellpadding="5px">
+			<thead>
+				<tr>
+					<th>Sno</th>
+					<th>Name</th>
+					<th>Current Location</th>
+					<th>Prmnt Location</th>
+					<th>Gender</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+					<td>Pune</td>
+					<td>Mumbai</td>
+					<td>Male</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Teena</td>
+					<td>Hyderbad</td>
+					<td>Delhi</td>
+					<td>Female</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Meena</td>
+					<td rowspan="2">Kerla</td>
+					<td>Goa</td>
+					<td>Female</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Krish</td>
+					
+					<td>Hyderabad</td>
+					<td>Male</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Prasad</td>
+					<td colspan="2">Hyderabad</td>					
+					<td>Male</td>
+				</tr>
+			</tbody>
+			
+		</table>
+
+		<div class="parent">
+			<div class="row">
+				<div class="cell">snno</div>
+				<div class="cell">Namee</div>
+				<div class="cell">Gender</div>
+				<div class="cell">Age</div>
+
+			</div>
+			<div class="row">
+				<div class="cell">1</div>
+				<div class="cell">Prsad</div>
+				<div class="cell">MAle</div>
+				<div class="cell">80</div>
+
+			</div>
+		</div>
+	</body>
+</html>

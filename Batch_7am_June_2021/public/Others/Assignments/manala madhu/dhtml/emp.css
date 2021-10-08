@@ -1,0 +1,28 @@
+.heading {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ccc;
+    font-size: 18px;
+}
+ul {
+    border: 2px dotted;
+    width: 600px;
+    margin: 10px auto;
+    padding: 2px;
+}
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+
+.eTitle {
+    text-align: center;
+    color:blue;
+    background-color: burlywood;
+}
+
+.employeeData {
+    display: none;
+}

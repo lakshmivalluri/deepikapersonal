@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Employee details
+	</title>
+</head>
+<body style="background: black;">
+	<h2 style="font-weight: bold;text-align: center;background: pink;">Employee details</h2>
+	<script type="text/javascript">
+		var name = "Aishu";
+		var age = "20";
+		var dept = "IT";
+		var basicsalary = 120000;
+		var gender = "female";
+		var pf;
+		var hra;
+		var totalsalary;
+		var tax_percent;
+		var tax;
+		pf = (14/100)*basicsalary;
+		hra = (25/100)*basicsalary;
+		totalsalary = pf+hra+basicsalary;
+		console.log("Name :"+name);
+		console.log("Age :"+age);
+		console.log("Department :"+dept);
+		console.log("Gender :"+gender);
+		console.log("Totalsarary :"+totalsalary);
+		if(gender=="male")
+		{
+			if(totalsalary > 200000)
+			{
+               tax_percent=15;
+               tax=(tax_percent/100)*totalsalary;
+               console.log("Tax :"+tax);
+			}
+			else if(totalsalary > 100000 && totalsalary<=200000)
+			{
+               tax_percent=10;
+               tax=(tax_percent/100)*totalsalary;
+               console.log("Tax :"+tax);
+			}
+			else if(totalsalary > 50000 && totalsalary<=100000)
+			{
+               tax_percent=5;
+               tax=(tax_percent/100)*totalsalary;
+               console.log("Tax :"+tax);
+			}
+		}
+		else
+		{
+			if(totalsalary > 200000)
+			{
+               tax_percent=10;
+               tax=(tax_percent/100)*totalsalary;
+               console.log("Tax :"+tax);
+			}
+			else if(totalsalary > 100000 && totalsalary <=200000)
+			{
+               tax_percent=5;
+               tax=(tax_percent/100)*totalsalary;
+               console.log("Tax :"+tax);
+			}
+			else if(totalsalary > 50000 && totalsalary <= 100000)
+			{
+               tax_percent=0;
+               tax=(tax_percent/100)*totalsalary;
+               console.log("Tax :"+tax);
+			}
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Salary Based Tax</title>
+</head>
+<body>
+<script type="text/javascript">
+	var empName = prompt("Enter Your Name");
+	var Age = prompt("Enter your Age");
+	var gender=prompt("Enter the gender");
+	var basicSal= prompt("Enter Your Basic Salary");
+	basicSal= parseInt(basicSal);
+	var tax=0;
+
+	var hra = (basicSal*15)/100, pf = (basicSal*10)/100, totalSal = hra+pf;
+	 console.log("Basic Salary you have entered : "+ basicSal+" \nHra : "+hra+"\nPF : "+pf+"\nTotal Salary : "+ totalSal);
+
+
+	if(gender.toLowerCase() != "male" || "female"){
+    	gender=prompt("Please enter the gender either male or female");
+    }
+
+	if(gender.toLowerCase() == 'male'){
+        if(totalSal>100000){
+           tax = (totalSal*15)/100;
+        }
+        else if(totalSal>50000){
+        	tax = (totalSal*5)/100;
+        }
+	}
+	else if(gender.toLowerCase() == 'female'){
+       if(totalSal>200000){
+           tax = (totalSal*15)/100;
+        }
+        else if(totalSal>100000){
+        	tax = (totalSal*5)/100;
+        }
+	}
+
+	console.log("Your Tax is:"+ tax);
+
+</script>
+</body>
+</html>

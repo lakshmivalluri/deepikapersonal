@@ -1,0 +1,13 @@
+.main-container {
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+}
+.content {
+    background-color: blue;
+    margin: 3px;
+    padding: 3px;
+}
+.dateContainer {
+    text-align: right;
+}

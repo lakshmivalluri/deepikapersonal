@@ -1,0 +1,14 @@
+#wlcmBlock {
+    border: 1px solid;
+    margin: 50px auto;
+    background-color: green;
+    text-align: center;
+    padding: 60px;
+    width: 500px;
+    display: none;
+}
+
+.themeBar {
+    padding: 10px;
+    text-align: right;
+}

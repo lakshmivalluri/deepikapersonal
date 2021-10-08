@@ -1,0 +1,63 @@
+		h2
+		{
+			border: 2px solid red;
+			background-color: black;
+			color: skyblue;
+			text-align: center;
+			font-family: cursive;
+		}
+		img
+		{
+
+
+		  width:250px;
+		  height: 250px;
+		  
+		}
+		.product
+		{
+			border: 3px solid maroon;
+			width: 300px;
+			padding: 5px;
+			margin: 5px;
+			list-style-type: none;
+			background-color: coral
+		}
+		ul
+		{
+			border: 3px solid purple;
+			list-style-type: none;
+			padding: 5px;
+			margin: 5px;
+			background-color: dimgray
+		}
+		.product li{
+			background-color: bisque;
+			color: tomato;
+			border: 3px solid lime;
+			padding: 5px;
+			margin: 5px;
+		}
+		.actual
+		{
+			text-decoration: line-through;
+			color: navy;
+		}
+		.dis
+		{
+			color: black;
+			font-family: cursive;
+		}
+		.product{
+			float: left;
+		}
+		 input
+		{
+			color: red;
+			background-color: yellow;
+			font-family: cursive;
+		    font-weight: bold;
+		}
+		.res{
+			text-align: center;
+		}

@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+	<body>
+		<script type="text/javascript">
+			var cdate = new Date();
+		
+			console.log(cdate);
+
+			var dateFormate = prompt("Enter a value");
+			    dateFormate = parseInt(dateFormate);
+			var dd = cdate.getDate();
+			var mm = cdate.getMonth() + 1;
+			var yy = cdate.getFullYear();
+			var hr = cdate.getHours();
+			var min = cdate.getMinutes();
+			var sec = cdate.getSeconds();
+			var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+			var n = month[cdate.getMonth()];
+			switch(dateFormate) {
+
+				case 1 :
+				       console.log(dd + "/" + mm + "/" + yy);
+				       break;
+				case 2 :
+				        console.log(dd +"," + n + " " + yy);
+				        break;
+				case 3 :
+				       console.log(n + "," + dd + " " + yy);
+				       break;
+				case 4 :
+                       console.log(n + "/" + dd + "/" + yy);
+                       break;
+                case 5 :
+                       console.log(n + "," + dd + "th" + " " + yy + "," + hr + ":" + min + "min");
+                       break;
+                case 6 :       
+                       console.log(n + " " + dd + ","  + hr + "hrs" +" " + min + "min" + " " + sec + "sec");
+                       break;
+                default:
+                       console.log("Wrong input");
+			}
+			console.log(cdate.setDate("40"));
+
+		</script>
+	</body>
+</html>
+
+

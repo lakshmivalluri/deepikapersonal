@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration page</title>
+	<style type="text/css">
+		.container{
+			border: 1px solid;
+			text-align: center;
+			padding: 10px 0px;
+			font-size: 20px;
+			background-color: #616247FF;
+			color: #fff;
+		}
+		.content{
+			border: 1px solid;
+			width: 100%;
+			height: 1200px;
+			margin: 10px 0px;
+			background-color: #616247FF;
+		}
+		.form1{
+			border: 1px solid;
+			margin: 25px 15px;
+			width: 1300px;
+			height: 180px;
+			display: block;
+			position: relative;
+			padding: 30px 0px;
+			background-color: #DAA03DFF;
+			font-size: 20px;
+
+		}
+		.block{
+			border: 1px solid;
+			width: 250px;
+			height: 20px;
+			left: 100px;
+			top: -20px;
+			padding: 10px 0px;
+			text-align: center;
+			position: absolute;
+			background-color:#F2CF0D;
+		}
+		
+		.ulabel, .contrlr{
+			display: inline-block;
+			padding-left: 30px;
+
+		}
+		.ulabel{
+			width: 200px;
+			margin: 20px;
+		}
+		select{
+			width: 300px;
+			height: 30px;
+
+		}
+		.about{
+			top: -150px;
+			position: relative;
+		}
+		textarea{
+			border-radius: 25px;
+		}
+		#button{
+			float: right;
+			width: 150px;
+			height: 80px;
+			margin-right: 50px;
+		}
+
+		.footer{
+			border: 1px solid;
+			text-align: center;
+			padding: 10px 0px;
+			background-color: #616247FF;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">Student Registration Page</div>
+	<div class="content">
+		<div class="form1">
+			<div class=block>Personal Details</div>
+			<div class="ulabel">
+				<label>Name: </label>
+			</div>
+			<div class="contrlr">
+				<input type="text" name="uname" maxlength="10">
+			</div>
+			<div class="ulabel">
+				<label>Mail ID: </label>
+			</div>
+			<div class="contrlr">
+				<input type="email" name="email">
+			</div><br>
+			<div class="ulabel">
+				<label>Age:</label>
+			</div>
+			<div class="contrlr">
+				<input type="number" name="age">
+			</div><br>
+			<div class="ulabel">
+				<label>Gender</label>
+			</div>
+			<div class="contrlr">
+				<input type="radio" name="gender">Male
+				<input type="radio" name="gender">Female
+			</div>	
+			
+		</div>
+		<div class="form1">
+			<div class=block>Education</div>
+			<div class="ulabel">
+				<label>Qualification: </label>
+			</div>
+			<div class="contrlr">
+				<select>
+					<option>BCA</option>
+					<option>BBA</option>
+					<option>MCA</option>
+					<option>BE Computer</option>
+					<option>ME Computer</option>
+				</select>
+			</div><br>
+			<div class="ulabel">
+				<label>Languages Known:</label>
+			</div>
+			<div class="contrlr">
+				<input type="checkbox">
+				<label>PHP</label>
+				<input type="checkbox">
+				<label>JAVA</label>
+				<input type="checkbox">
+				<label>HTML</label>
+				<input type="checkbox">
+				<label>JAVASCRIPT</label>
+			</div><br>
+			<div class="ulabel">
+				<label>Course Opted</label>
+			</div>
+			<div class="contrlr">
+				<input type="radio" name="course">MCA
+				<input type="radio" name="course">ME
+				<input type="radio" name="course">MTech
+				<input type="radio" name="course">MBA
+				<input type="radio" name="course">BE 
+			</div>
+		</div>
+		<div class="form1">
+			<div class=block>Address</div>
+			<div class="ulabel">
+				<label>Door No:</label>
+			</div>
+			<div class="contrlr">
+				<input type="number" name="doorno">
+			</div>
+			<div class="ulabel">
+				<label>Country:</label>
+			</div>
+			<div class="contrlr">
+				<input type="text" name="country">
+			</div><br>
+			<div class="ulabel">
+				<label>Street Name:</label>
+			</div>
+			<div class="contrlr">
+				<input type="text" name="streetname">
+			</div>
+			<div class="ulabel">
+				<label>Pincode:</label>
+			</div>
+			<div class="contrlr">
+				<input type="number" name="pincode">
+			</div><br>
+			<div class="ulabel">
+				<label>State:</label>
+			</div>
+			<div class="contrlr">
+				<select>
+					<option>Maharashtra</option>
+					<option>kerla</option>
+					<option>Tamil Nadu</option>
+					<option>Punjab</option>
+					<option>Telangana</option>
+				</select>
+			</div>
+		</div>
+		<div class="form1">
+			<div class=block>About Yourself</div>
+			<div class="ulabel about">
+				<label>About yourself:</label>
+			</div>
+			<div class="contrlr">
+				<textarea name="abturself" rows="12" cols="135"></textarea>
+			</div>
+		</div>
+		<div>
+		<input type="submit" name="Register" id="button">
+		</div>
+	</div>
+	</div>
+	<div class="footer">@copyright 2021</div>
+</body>
+</html>

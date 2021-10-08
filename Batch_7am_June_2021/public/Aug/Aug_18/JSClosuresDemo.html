@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul {
+                border: 1px solid;
+                width: 500px;
+                margin: 20px auto;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                background-color: #ccc;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+        <script src="app.js"></script>
+        <script src="lib/mathOperationUtil.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value: <input type="text" id="fval">
+            </li>
+            <li>
+                Enter second value: <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="Add" onclick="doOperation('add')">
+                <input type="button" value="Substraction" onclick="doOperation('sub')">
+                <input type="button" value="Division" onclick="doOperation('div')">
+                <input type="button" value="Multiplication" onclick="doOperation('mul')">
+            </li>
+            <li id="rblock"></li>
+            <li id="cblock"></li>
+        </ul>
+    </body>
+</html>

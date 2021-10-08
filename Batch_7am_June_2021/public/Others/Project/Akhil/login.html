@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <style>
+        .header,
+        .footer {
+            background-color: #4e616a;
+            color: #ffffff;
+            border: 1px solid #4b5e67;
+        }
+
+        .header {
+            padding: 10px;
+            font-size: 30px;
+            position: sticky;
+            top: 0px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .container {
+            background-color: #f7f7f7;
+            padding: 10px;
+        }
+
+        .field {
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4e616a;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #00293b;
+        }
+
+        input[type=button] {
+            background-color: #4e616a;
+            border: 1px solid #00293b;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 20px;
+        }
+
+        input[type=button]:hover,
+        input[type=button]:focus {
+            background-color: black;
+            border: 1px solid #00293b;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 20px;
+        }
+
+        h2 {
+            color: #4e616a;
+        }
+
+        .contentBox {
+            border: 1px solid #e7e7e7;
+            border-radius: 5px;
+            background-color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            width: 300px;
+            margin: 150px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">MyWebSite</div>
+    <div class="container">
+        <div class="contentBox">
+            <h2>Login to continue</h2>
+            <div class="field">
+                <label for="uname">User Name</label>
+                <input type="text" id="uname">
+            </div>
+            <div class="field">
+                <label for="upass">Password</label>
+                <input type="password" id="upass">
+            </div>
+            <div class="field">
+                <input type="button" value="Login">
+            </div>
+            <div class="field">
+                Click here to <a href="signup.html">Signup</a>
+            </div>
+            <div class="field">
+                <a href="forgot_pwd.html">Forgot password</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Copy Rights @2021 - Akhil</div>
+</body>
+
+</html>

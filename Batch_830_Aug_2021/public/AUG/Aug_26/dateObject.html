@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var months = ["Jan", "FEB", "MAR", "APR", "MAY", 'JUNE', "JULY", "AUG", "SEP", "OCT"];
+            var cdate = new Date();
+            console.log(cdate);
+            //var cdate = new Date('Aug 10 2010');
+
+            console.log(cdate.getDate());
+            console.log(cdate.getFullYear());
+            console.log(cdate.getMonth());
+            var monthIndex = cdate.getMonth();
+            console.log(months[monthIndex])
+            console.log(cdate.getDay());
+
+
+            var dateFormat1 = cdate.getDate() + '/' + (cdate.getMonth() + 1) + '/' + cdate.getFullYear();
+
+            console.log(dateFormat1);
+        </script>
+    </body>
+</html>
+

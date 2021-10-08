@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+	   <title>DreamstudiesinEuro</title>
+	   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	    <style type="text/css">
+	    	.background{
+	    		border: 2px;
+	    		max-width: 1500px;
+	    		max-height: 900px;
+	    		background-image: url(https://images.wallpapersden.com/image/download/amalfi-italy_bGZqbWuUmZqaraWkpJRmbmdlrWZlbWU.jpg);
+	    		background-size: screen;
+	    	}
+	    	ul{
+	    		border: 2px solid;
+	    		width: 500px;
+	    		margin: 10px auto;
+
+	    	}
+	    	li{
+	    		list-style: none;
+	    		border: 1px dotted;
+	    		margin: 6px;
+	    		padding: 3px;
+	    	}
+	    	h2{
+	    		text-decoration: underline;
+	    		text-align: center;
+	    	}
+	    	.header{
+	    		border: 2px solid;
+	    		height: 40px;
+	    		background: pink;
+	    		padding-top: 4px;
+	    		padding-left: 5px;
+	    	}
+	    	ol{
+	    		font-size: 20px;
+	    	}
+	    	.footer{
+	    		border: 4px solid;
+	    		margin-top: 150px;
+	    		text-align: center;
+	    		background: pink;
+	    	}
+	    </style>
+    </head>
+
+     <body>
+     	<div class="header">
+     	<input type="button" value="Slid up" onclick="doAction('up')">
+        <input type="button" value="Slide Down" onclick="doAction('down')">
+        <input type="button" value="Toggle" onclick="doAction('tog')">
+      </div>
+     	<div class="background">
+       <h2>Student Registration Page</h2>
+       <form action="www.DreamstudiesinEuro.com"method="post">
+         <ul>
+         	<li>
+         		<label for="username">Enter User Name:</label>
+         		<input type="text" name="username">
+         	</li>
+         	<li>
+         		<label for="email">Email Id:</label>
+         		<input type="email" name="text">
+         	</li>
+         	<li>
+         		Mob Number:
+         		<input type="Number" name="Number">
+         	</li>
+         	<li>
+         		<label for="Sub">Subject:</label>
+         		<input type="text" name="Subject">
+         	</li>
+         	<li>
+         		University:
+         		<select name="University">
+         			<option></option>
+         			<option>University of Pavia</option>
+         			<option>University of Padua</option>
+         			<option>Sapienza</option>
+         			<option>University of Milan</option>
+         			<option>University of Turin</option>
+         		</select>
+         	</li>
+         	<li>
+         		Country:
+         		<select name="Country">
+         			<option></option>
+         			<option>India</option>
+         			<option>Italy</option>
+         			<option>Japan</option>
+         			<option>USA</option>
+         			<option>Germany</option>
+         		</select>
+         	</li>
+         	<li>
+         		Known Languages:
+                <input type="Checkbox" name="lang-eng">English
+                <input type="Checkbox" name="lang-hindi">Hindi
+                <input type="Checkbox" name="lang-italian">Italian
+                <input type="Checkbox" name="lang-ger">German
+         	</li>
+         	<li>
+         		Gender:
+         		<input type="radio" name="Gender">Male
+         		<input type="radio" name="Gender">Female
+         	</li>
+         	<li>
+         		Tell About Yourself:
+         		<textarea name="aboutUser"></textarea>
+         	</li>
+         	<li>
+         		<input type="file">
+         	</li>
+         	<li>
+         		<input type="Submit" value="Register User">
+         	</li>
+         </ul>
+     </form>
+     <div class="footer">@ Copyrights 2021</div>
+     </div>
+     <script>
+            var doAction = (type) => {
+                switch (type) {
+                    case 'up': 
+                        $(".background").slideUp(8000);
+                        break;
+                    case 'down':
+                        $(".background").slideDown(8000);
+                        break;
+                    case 'tog':
+                        $(".background").slideToggle(4000);
+                        break;
+                }
+            }
+        </script>
+     </body>
+</html>

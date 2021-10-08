@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>assignment4_table</title>
+        <style>
+            /* here i apply all css proporty*/
+            body{
+                background-color: rgb(158, 250, 173);
+            }
+            #maindiv{
+                border: 3px solid green;
+                text-align: center;
+                text-decoration: underline red;
+                background-color: sandybrown;
+                color: blue;
+            }
+            #contenor{
+                height: 100%;
+                width: 100%;
+            }
+            .table{
+                border: 1px solid rebeccapurple;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+            #maindiv:hover{
+                background-color: rgb(240, 213, 60);
+                text-decoration: none;
+            }
+            tr:hover{
+	            background-color: #4deee0;
+            }
+            td:hover{
+                background-color: rgb(228, 107, 157);
+            }
+            .img{
+                background-image: url(image/employee.png);
+                height: 124px;
+                width: 120px;
+                border: 2px solid rgb(0, 162, 255);
+            }
+            .emp1{
+                background-position: 0px 13px;
+            }
+            .emp2{
+                background-position: -125px 13px;
+            }
+            .emp3{
+                background-position: -254px 13px;
+            }
+            .emp4{
+                background-position: -374px 13px;
+            }
+            .emp5{
+                background-position: -512px -108px;
+            }
+            .emp6{
+                background-position: -136px -115px;
+            }
+            .emp7{
+                background-position: -273px -114px;
+            }
+            .emp8{
+                background-position: -384px -111px;
+            }
+            .emp9{
+                background-position: -518px -232px;
+            }
+            .emp10{
+                background-position: -139px -229px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--here i use heading part-->
+        <div id="maindiv">
+            <h1>STUDENT PROGRESS CARD DETAILS</h1>
+        </div> <br>
+        <div id="contenor">
+            <div class="table">
+                <!--here i creat table-->
+                <table border="3px solid " cellspacing="0" >
+                    <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>NAME OF THE STUDENT</th>
+                        <th>STUDENT PICTURE</th>
+                        <th>LOCATION</th>
+                        <th>CLASS</th>
+                        <th>PROGRESS CARD</th>
+                        <th>PARENT FEDBACK</th>
+                        <th>SIGNATURE OF PARENT</th>
+                        <th>GRADE</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>REKHA KAPUR</td>
+                            <td class="img emp1"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>ramesh kapur</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                </div>
+          
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>AMIR KHAN</td>
+                            <td class="img emp2"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>kabir khan</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>DIMPAL MOLOTHRA</td>
+                            <td class="img emp3"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>raj molotra</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>ALIA BHATT</td>
+                            <td class="img emp4"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>mukesh bhatt</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>BARUN DHABAN</td>
+                            <td class="img emp5"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>sirram padukone</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>6</td>
+                            <td>DEEPIKA PADUKONE</td>
+                            <td class="img emp6"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>sarakh khan</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>7</td>
+                            <td>KARINA KAPUR</td>
+                            <td class="img emp7"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>sohil khan</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>8</td>
+                            <td>GOURI KHAN</td>
+                            <td class="img emp8"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                   <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>agrawal kumar</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>9</td>
+                            <td>SALMAN KHAN</td>
+                            <td class="img emp9"></td>
+                            <td>ODISHA</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>aayushman khan</td>
+                                    <td>A++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>SEEMA VERMA</td>
+                            <td class="img emp10"></td>
+                            <td>HYDRABAD</td>
+                            <td>1</td>
+                            <td>
+                                <table border="1px" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>SUBJECT</th>
+                                            <th>MAX. MARK</th>
+                                            <th>MIN. MARK</th>
+                                            <th>OBTAINED MARK</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <th>MATH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENGLISH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <th>MIL</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TLH</th>
+                                            <td>100</td>
+                                            <td>30</td>
+                                            <td>97</td>
+                                        </tr>
+                                    </tbody> 
+                                    <tfoot>
+                                        <tr>
+                                            <th>TOTAL</th>
+                                            <th>400</th>
+                                            <th>120</th>
+                                            <th>353</th>
+                                        </tr>
+                                    </tfoot>    
+                                </table>
+                                <td> good
+                                    <td>ariyan varma</td>
+                                    <td>B++</td>
+                                </td>
+                            </td>    
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </body>
+</html>

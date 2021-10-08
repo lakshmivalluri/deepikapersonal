@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Employee Details</title>
+	</head>
+	<body>
+        <script type="text/javascript">
+        	var empDetails = {
+        		ename:"Adithya",
+        		age:27,
+        		gender:"male",
+        		basicsalary:100000,
+        		hra:0,
+        		pf:0,
+        		totalsalary:0,
+        		tax:0
+        	};
+        	empDetails.hra=(empDetails.basicsalary*25)/100;
+        	console.log(" hra is "+empDetails.hra);
+        	empDetails.pf=(empDetails.basicsalary*14)/100;
+        	console.log(" pf is "+empDetails.pf);
+        	empDetails.totalsalary=empDetails.hra+empDetails.pf+empDetails.basicsalary;
+        	console.log(" total salary "+empDetails.totalsalary);
+
+			if(empDetails.gender="male"){
+				           console.log("ename is "+empDetails.ename);
+		    }
+		    if(empDetails.totalsalary>200000){
+
+					    empDetails.tax=(empDetails.totalsalary*15)/100;
+
+					    console.log("tax for Adithya " +empDetails.tax);
+		    
+		    }else if(empDetails.totalsalary>100000){
+
+		                empDetails.tax=(empDetails.totalsalary*10)/100;
+
+		                console.log("tax for Adithya "  +empDetails.tax);
+		    }                      
+
+       
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Progess Details</title>
+	<style type="text/css">
+	        h2 {
+	        	text-align: center;
+	        	color: red;
+	        }
+			table, tr, th, td {
+				background: lightblue;
+				border: 5px solid;
+			}
+			.imgBlock {
+				border: 2px solid;
+				background-image: url('images/children_sprite.png');
+				width: 100px;
+				height: 100px;
+			}
+   			.std1 {
+			
+				background-position: -179px -21px; 
+				width: 181px;
+				height: 213px; 
+			}
+			.std2 {
+ 				background-position: -360px -21px; 
+				width: 181px;
+				height: 213px;
+			}
+			.std3 {
+ 				background-position: -553px -15px; 
+				width: 181px;
+				height: 207px;
+   			}
+   			.std4 {
+   				background-position: -762px -3px; 
+				width: 181px;
+				height: 213px;
+			}
+			.std5 {
+				background-position: -170px -243px; 
+				width: 185px;
+				height: 183px;
+			}
+			.std6 {
+				background-position: -359px -241px; 
+				width: 196px;
+				height: 183px;
+
+			}
+			.std7 {
+				background-position: -564px -242px; 
+				width: 190px;
+				height: 202px;
+			}
+			.std8 {
+				background-position: -768px -249px; 
+				width: 191px;
+				height: 195px;
+
+			}
+			.std9 {
+				background-position: -959px -6px; 
+				width: 205px;
+				height: 212px;
+			}
+			.std10 {
+				background-position: -959px -240px; 
+				width: 213px;
+				height: 179px;
+
+			}
+		</style>
+</head>
+<body>
+	<h2>Student Progress Card Details</h2>
+	<table align="center" cellpadding="15px">
+			<thead>
+				<tr>
+					<th>Sno</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Class</th>
+					<th>Image</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Harish</td>
+					<td>5</td>
+					<td>I Class</td>
+					<td>
+						<div class="imgBlock std1"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td rowspan="6">100</td>
+									<td rowspan="6">75</td>
+									<td>95</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>85</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>25</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>35</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>30</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>82</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+
+				<tr>
+					<td>2</td>
+					<td>Geetha</td>
+					<td>6</td>
+					<td>II Class</td>
+					<td>
+						<div class="imgBlock std2"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td>100</td>
+									<td>70</td>
+									<td>55</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+									</tr>			
+								<tr>
+									<td>English</td>
+									<td>80</td>
+									<td>60</td>
+									<td>65</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>70</td>
+									<td>35</td>
+									<td>33</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>60</td>
+									<td>35</td>
+									<td>20</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>55</td>
+									<td>35</td>
+									<td>80</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>65</td>
+									<td>35</td>
+									<td>39</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td colspan="4"></td>
+								</tr>
+								<tr>
+									<td>Remarks</td>
+									<td colspan="4"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				<tr>
+					<td>3</td>
+					<td>Sheela</td>
+					<td>5</td>
+					<td>I Class</td>
+					<td>
+						<div class="imgBlock std3"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td rowspan="6">100</td>
+									<td rowspan="6">75</td>
+									<td>95</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>85</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>25</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>35</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>30</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>82</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+
+				<tr>
+					<td>4</td>
+					<td>Sarath</td>
+					<td>6</td>
+					<td>II Class</td>
+					<td>
+						<div class="imgBlock std4"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td>100</td>
+									<td>70</td>
+									<td>55</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+									</tr>			
+								<tr>
+									<td>English</td>
+									<td>80</td>
+									<td>60</td>
+									<td>65</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>70</td>
+									<td>35</td>
+									<td>33</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>60</td>
+									<td>35</td>
+									<td>20</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>55</td>
+									<td>35</td>
+									<td>80</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>65</td>
+									<td>35</td>
+									<td>39</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td colspan="4"></td>
+								</tr>
+								<tr>
+									<td>Remarks</td>
+									<td colspan="4"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				<tr>
+					<td>5</td>
+					<td>Revathi</td>
+					<td>5</td>
+					<td>I Class</td>
+					<td>
+						<div class="imgBlock std5"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td rowspan="6">100</td>
+									<td rowspan="6">75</td>
+									<td>95</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>85</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>25</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>35</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>30</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>82</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+
+				<tr>
+					<td>6</td>
+					<td>Sailaja</td>
+					<td>6</td>
+					<td>II Class</td>
+					<td>
+						<div class="imgBlock std6"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td>100</td>
+									<td>70</td>
+									<td>55</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+									</tr>			
+								<tr>
+									<td>English</td>
+									<td>80</td>
+									<td>60</td>
+									<td>65</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>70</td>
+									<td>35</td>
+									<td>33</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>60</td>
+									<td>35</td>
+									<td>20</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>55</td>
+									<td>35</td>
+									<td>80</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>65</td>
+									<td>35</td>
+									<td>39</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td colspan="4"></td>
+								</tr>
+								<tr>
+									<td>Remarks</td>
+									<td colspan="4"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				<tr>
+					<td>7</td>
+					<td>Srinu</td>
+					<td>5</td>
+					<td>I Class</td>
+					<td>
+						<div class="imgBlock std7"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td rowspan="6">100</td>
+									<td rowspan="6">75</td>
+									<td>95</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>85</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>25</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>35</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>30</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>82</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+
+				<tr>
+					<td>8</td>
+					<td>Swarna</td>
+					<td>6</td>
+					<td>II Class</td>
+					<td>
+						<div class="imgBlock std8"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td>100</td>
+									<td>70</td>
+									<td>55</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+									</tr>			
+								<tr>
+									<td>English</td>
+									<td>80</td>
+									<td>60</td>
+									<td>65</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>70</td>
+									<td>35</td>
+									<td>33</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>60</td>
+									<td>35</td>
+									<td>20</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>55</td>
+									<td>35</td>
+									<td>80</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>65</td>
+									<td>35</td>
+									<td>39</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td colspan="4"></td>
+								</tr>
+								<tr>
+									<td>Remarks</td>
+									<td colspan="4"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+			<tr>
+					<td>9</td>
+					<td>Radha</td>
+					<td>5</td>
+					<td>I Class</td>
+					<td>
+						<div class="imgBlock std9"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td rowspan="6">100</td>
+									<td rowspan="6">75</td>
+									<td>95</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>85</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>25</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>35</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>30</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>82</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+
+				<tr>
+					<td>10</td>
+					<td>Madhavi</td>
+					<td>6</td>
+					<td>II Class</td>
+					<td>
+						<div class="imgBlock std10"></div>
+					</td>
+					<td>
+					<table border="1px solid" align="center" cellpadding="3px;">
+								<tr>
+									<th>SUBJECT</th>
+									<th>MAX MARKS</th>
+									<th>MIN MARKS</th>
+									<th>OBTAINED MARKS</th>
+									<th>STATUS</th>
+								</tr>
+								<tr>
+									<td>Maths</td>
+									<td>100</td>
+									<td>70</td>
+									<td>55</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+									</tr>			
+								<tr>
+									<td>English</td>
+									<td>80</td>
+									<td>60</td>
+									<td>65</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Science</td>
+									<td>70</td>
+									<td>35</td>
+									<td>33</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Hindi</td>
+									<td>60</td>
+									<td>35</td>
+									<td>20</td>
+									<td style="color:red;text-decoration:underline;">Fail</td>
+								</tr>
+								<tr>
+									<td>Social</td>
+									<td>55</td>
+									<td>35</td>
+									<td>80</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Telugu</td>
+									<td>65</td>
+									<td>35</td>
+									<td>39</td>
+									<td style="color:green;text-decoration:underline;">Pass</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td colspan="4"></td>
+								</tr>
+								<tr>
+									<td>Remarks</td>
+									<td colspan="4"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+		</tbody>
+</body>
+</html>

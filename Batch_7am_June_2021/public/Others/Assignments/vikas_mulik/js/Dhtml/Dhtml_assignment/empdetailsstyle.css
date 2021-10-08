@@ -1,0 +1,28 @@
+body{
+    background: wheat;
+}
+h2{
+    border: 2px solid;
+    background: palegreen;
+    color: green;
+    text-align: center;
+}
+.employee{
+   list-style: none; 
+
+}
+.line,.line li{
+    text-align: center;
+    list-style: none;
+    border: 1px solid;
+    /* width: 500px; */
+    margin: 10px;
+    padding: 5px;
+    background: lightcoral;
+}
+.line{
+    float: left;
+}
+img{
+    height: 100px;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 6</title>
+    <style>
+        body {
+            background-repeat: repeat;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgHLPl07I1rQ2sMiWOrvsiUHtu5DMh8jcKvA&usqp=CAU);
+        }
+
+        .header,
+        .footer {
+            width: auto;
+            height: 65px;
+            border: 3px solid #e63946;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: 100%;
+            color: #ee9b00;
+            background-position: 20px 20px;
+            background-repeat: repeat;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrcMowY17OpWKMBHduWw5gihwQtEf2b1ZKeA&usqp=CAU);
+        }
+
+        .footer {
+            font-size: 80%;
+            height: 50px;
+            color: #0081a7;
+            border: 3px solid #faa307;
+            background-position: 19px ​61px;
+            background-repeat: repeat;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJCcrK9wJiGpBUdQKsIOhu2Ke2ffSixx9soQ&usqp=CAU);
+        }
+
+        .container {
+            width: auto;
+            height: 545px;
+            border: 5px solid #f72585;
+            margin-top: 10px;
+            position: relative;
+            background-image: url(data:image/jpeg;base64,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);
+        }
+
+        li {
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container_1 {
+            width: 350px;
+            height: 500px;
+            border: 3px solid #bc6c25;
+            top: 8px;
+            padding-left: 20px;
+            left: 20px;
+            position: absolute;
+            overflow: auto;
+            color: #b5179e;
+            background-color: #8ecae6;
+        }
+
+        .container_2 {
+            width: 800px;
+            height: 500px;
+            border: 3px solid;
+            top: 8px;
+            right: 60px;
+            overflow: auto;
+            position: absolute;
+        }
+
+        .box {
+            margin: 15px;
+            width: 750px;
+            height: 250px;
+            border: 3px solid;
+            position: relative;
+        }
+
+        .image_box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid;
+            top: 20px;
+            left: 30px;
+            position: absolute;
+            background-image: url(https://drive.google.com/uc?id=1P5HRlmkF2mIj6BRIsvUUazetDTUdVk9p);
+        }
+
+        .msg_box {
+            width: 400px;
+            height: 200px;
+            border: 3px solid;
+            position: absolute;
+            top: 6px;
+            right: 50px;
+            overflow: auto;
+            color: #00afb9;
+            background-color: #cdb4db;
+        }
+
+        .msg {
+            list-style: none;
+
+        }
+
+        .image_box_1 {
+            background-position: -3473px -450px;
+        }
+
+        .image_box_2 {
+            background-position: -427px -33px;
+        }
+
+        .image_box_3 {
+            background-position: -851px -93px;
+        }
+
+        .image_box_4 {
+            width: 180px;
+            background-position: -1250px -81px;
+        }
+
+        .image_box_5 {
+            background-position: -1565px -90px;
+        }
+
+        .image_box_6 {
+            background-position: -84px -427px;
+        }
+
+        .image_box_7 {
+            background-position: -420px -465px;
+        }
+
+        .image_box_8 {
+            background-position: -797px -475px;
+        }
+
+        .image_box_9 {
+            background-position: -1248px -508px;
+        }
+
+        .image_box_10 {
+            background-position: -81px -72px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>STUDENT DETAILS</h1>
+    </div>
+    <div class="container">
+        <div class="container_1">
+            <ol>
+                <li>Archana</li>
+                <li>Suhana</li>
+                <li>Bhargav Reddy</li>
+                <li>Geetha</li>
+                <li>Vamshi Vittanala</li>
+                <li>Roshan</li>
+                <li>Deepali</li>
+                <li>Aman Kumar</li>
+                <li>Deepak Pandey</li>
+                <li>Rahul Parmar</li>
+            </ol>
+        </div>
+        <div class="container_2">
+            <div class="box">
+                <div class="image_box  image_box_1"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Archana </li>
+                    <li class="msg"> Age : 18 Years </li>
+                    <li class="msg"> Class : 12Th Class</li>
+                    <li class="msg"> School : Resonance Eduventures Pvt Ltd</li>
+                    <li class="msg"> Location : Kota , Rajasthan</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_2"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Suhana </li>
+                    <li class="msg"> Age : 14 Years </li>
+                    <li class="msg"> Class : 9Th Class</li>
+                    <li class="msg"> School : Sri Chaitanya IIT School</li>
+                    <li class="msg"> Location : Hyderabad</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_3"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Bhargav Reddy </li>
+                    <li class="msg"> Age : 15 Years </li>
+                    <li class="msg"> Class : 11Th Class</li>
+                    <li class="msg"> School : Delhi Public School</li>
+                    <li class="msg"> Location : Vijayawada</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_4"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Geetha </li>
+                    <li class="msg"> Age : 14 Years </li>
+                    <li class="msg"> Class : 10Th Class</li>
+                    <li class="msg"> School : Narayana Public School</li>
+                    <li class="msg"> Location : Warangal</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_5"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Vamshi Vittanala </li>
+                    <li class="msg"> Age : 10 Years </li>
+                    <li class="msg"> Class : 7Th Class</li>
+                    <li class="msg"> School : MNR High School</li>
+                    <li class="msg"> Location : Hyderabad</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_6"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Roshan </li>
+                    <li class="msg"> Age : 7 Years </li>
+                    <li class="msg"> Class : 4Th Class</li>
+                    <li class="msg"> School : MNR Kids School</li>
+                    <li class="msg"> Location : Hyderabad</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_7"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Deepali </li>
+                    <li class="msg"> Age : 13 Years </li>
+                    <li class="msg"> Class : 10Th Class</li>
+                    <li class="msg"> School : Saint Peter's High School</li>
+                    <li class="msg"> Location : Mumbai</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_8"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Aman Kumar </li>
+                    <li class="msg"> Age : 10 Years </li>
+                    <li class="msg"> Class : 8Th Class</li>
+                    <li class="msg"> School : Hawas High School</li>
+                    <li class="msg"> Location : </li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_9"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Deepak pandey </li>
+                    <li class="msg"> Age : 13 Years </li>
+                    <li class="msg"> Class : 11Th Class</li>
+                    <li class="msg"> School : Millenium High School</li>
+                    <li class="msg"> Location : Visakhpanam</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="image_box image_box_10"></div>
+                <ul class="msg_box">
+                    <li class="msg"> Name : Rahul Parmar </li>
+                    <li class="msg"> Age : 16 Years </li>
+                    <li class="msg"> Class : 12Th Class</li>
+                    <li class="msg"> School : Loyala College</li>
+                    <li class="msg"> Location : Vijayawada</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="margin-top: 10px;">
+        <h1>&copy COPYRIGHTS 2021</h1>
+    </div>
+</body>
+
+</html>

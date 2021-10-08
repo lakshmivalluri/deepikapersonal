@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type ="text/javascript">
+            function mutePage() {
+                var elems = document.querySelectorAll("video, audio");
+
+                [].forEach.call(elems, function(elem) { muteMe(elem); });
+            }
+        </script>
+        <style>
+
+        body {
+                background-image:url('water.jpg');
+                background-repeat:no-repeat;
+                background-attachment: fixed;
+                background-size: 100%,100%;
+                margin-left:10%;
+                margin-right:10%;
+                border: 6px double black;
+                padding: 20px 20px 20px 20px;
+                font-family: sans-serif;
+        </style>
+    </head>
+    <body>
+    <div><b><h1 style="text-align: center;"> Welcome to HaRas Pizza <h1></b></div>
+        <img src="images/Vegpizza.jpg" width=100% >
+        <br>        <br>        <br>
+        <h3 style="text-align:center;"><b> Where every Pizza is carefully tested for excellence </b></h3>
+        <center>
+            <video width=50% loop autoplay muted style="">
+                <source src="Videos/PizzaVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </center>
+        <br>
+        <p><h3 style="text-align: center;">DELICIOUS, FRESH VEGETARIAN PIZZA<h3></p>
+        <p><h4>At HaRa’s, we’re all about taste, and that’s especially with our vegetarian selection.
+         Our vegetarian pizzas require a more delicate touch to ensure the
+         flavors from select vegetables, spices and blends of cheeses comes
+         through. Whether you need a change of pace or it fits your lifestyle,
+         HaRa’s vegetarian pizza will satisfy your tastes.</h4></p>
+
+          <label>Choose from the list of Pizzas below:</label>
+          <br>
+
+            <select id="pizza" name="pizza" size="1">
+            <option value="tomato and cheese">Tomato & Cheese</option>
+            <option value="vegivolcano">Spicy Veg</option>
+            <option value="cheeseburst">Cheese Burst</option>
+            <option value="pineapple">Pipeapple Pizza </option>
+          </select><br><br>
+          <input type="submit" onclick="alert('Now Select the Size of the Pizza!')"></button>
+          <br>
+
+          <p>Please select your Size:</p>
+          <input type="radio" id="Small 12" " name="Size" value="Small">
+          <label for="Small">£12.99: Small 12-inch Pizza - This makes a good small snack </label><br>
+          <input type="radio" id="Medium " name="Size" value="Medium">
+          <label for="Medium">£15.99: Medium 15-inch Pizza - Suitable for a filling lunch</label><br>
+          <input type="radio" id="Large" name="Size" value="Large">
+          <label for="Large">£17.99: Large 18 -inch Pizza - This begs to be shared unless you are hungry</label><br>
+          <input type="radio" id="Extra Large" name="Size" value="Extra Large">
+          <label for="Extra Large">£19.99: Extra Large 21 -inch pizza - Suitable for a family sharing </label><br>
+          <input type="radio" id="Ultra Large" name="Size" value="Ultra Large">
+          <label for="Ultra Large">£25.99: Ultra Large 30 -inch Pizza - For the truly hungry and the brave</label><br>
+
+          <input type="submit" onclick="alert('We will start preparing you order... How do you want your pizza delivered?')"></button>
+          <br>
+
+          <p>Please select Delivery Option:</p>
+          <input type="radio" id="Pick UP" " name="Delivery type" value="Pick Up">
+          <label for="Pick Up"> Pick-up - Catch you soon at our Store </label><br>
+          <input type="radio" id="Delivery " name="Delivery type" value="Deliver">
+          <label for="Deliver"> Delivery - Our Driver will set off soon. Thanks for your patience.</label><br>
+    </body>

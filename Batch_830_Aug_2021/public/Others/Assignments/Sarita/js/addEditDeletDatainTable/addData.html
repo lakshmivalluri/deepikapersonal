@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add User Info in Table</title>
+        <link rel="stylesheet" href="addDetail.css">
+        <script src="addDetail.js"></script>
+    </head>
+    <body>
+        <ul class="inputData">
+			<h3>Enter Details</h3>
+			<li>
+			<div class ="ulabel"> Name:</div>
+			<div class="control"><input type="text" name="name"  id = "uname"></div></li>
+
+            
+            <li>
+                <div class ="ulabel">Age:</div>
+                <div class="control"><input type="text" name="name"  id = "age"></div>
+            </li>
+
+            <li>
+                <div class ="ulabel">Gender:</div>
+                <div class="control"><input type="radio" name="gender" value = "male">Male
+                                    <input type="radio" name="gender" value = "female">Female</div>
+            </li>
+
+            <li>
+                <div class ="ulabel">Location:</div>
+                <div class="control"><input type="text" name="name"  id = "locat"></div>
+            </li>
+            <li>
+                <input type="button" value="Add Details" onclick="getData();" class="reg">
+              
+            </li>
+            <li id="save"></li>
+                                    
+        </ul>
+        <table id="ad">
+            <thead>
+                <td colspan="10" style="text-align: center;  font-size:x-large; background: orangered; color:white;">User Detils</td>
+            </thead>
+            <tr id="heading">
+                <td>sr.no</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>Location</td>
+                <td>Opation</td>
+            </tr>
+            
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title> Employee Details</title>
+</head>
+<body>
+    employee details
+<script type="text/javascript">
+     var ename, age, department, basicsalary,  gender, pf, totalsalary, hra;
+     ename = "Sandip";
+     age = 27;
+     department = "software engineering";
+     basicsalary = 200000;
+     gender = "male";
+
+     pf = 15/100 * basicsalary;
+     hra = 27/100 * basicsalary;
+     totalsalary = basicsalary + hra + pf;
+     console.log("Sandip");
+     console.log("27");
+     console.log("gender male");
+     console.log("software engineering");
+     console.log("basicsalary is" + basicsalary);
+     console.log("hra is" + hra);
+     console.log("pf is" + pf);
+     console.log("totalsalary is" + totalsalary);
+    
+            if (gender == "male") {
+                if (totalsalary > 400000) {
+                    tax = 16/100 * totalsalary;
+                    console.log("tax is " + tax);
+                } else if (totalsalary > 100000) {
+                    tax = 22/100 * totalsalary;
+                    console.log("tax is " + tax);
+                } else if (totalsalary > 50000) {
+                    tax = 12/100 * totalsalary;
+                    console.log("tax is " + tax);
+                } else {
+                    tax = 0;
+                    console.log("tax is " + tax);
+                }
+            }
+            if (gender == "female") {
+                if (totalsalary > 400000) {
+                    tax = 13/100 * totalsalary;
+                    console.log("tax is " + tax);
+                } else if (totalsalary > 100000) {
+                    tax = 10/100 * totalsalary;
+                    console.log("tax is " + tax);
+                } else {
+                    tax = 0;
+                    console.log("no tax");
+                }
+            }
+        </script>
+</body>
+</html>

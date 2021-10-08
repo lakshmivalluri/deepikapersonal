@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <SCRIPt>
+            var sData = [
+                {
+                    name: 'Raj',
+                    age: 10,
+                    gender: 'male',
+                    location: 'Hyderabad'
+                },
+                {
+                    name: 'Teena',
+                    age: 20,
+                    gender: 'Female',
+                    location: 'Hyderabad'
+                },
+                {
+                    name: 'Krish',
+                    age: 5,
+                    gender: 'male',
+                    location: 'Pune'
+                }
+            ];
+            for (var i = 0; i < sData.length; i++) {
+                console.log(sData[i]);
+                for (var key in sData[i]) {
+                    console.log(key + ' -> ' + sData[i][key]);
+                }
+            }
+
+          
+
+            var StudentData = {
+                
+                    name: 'Raj',
+                    age: 10,
+                    gender: 'male',
+                    location: 'Hyderabad'
+                
+            }
+            /*var keys = Object.keys(StudentData);
+            console.log(keys.indexOf('city'))
+            console.log(Object.keys(StudentData));
+            */
+           console.log(StudentData.hasOwnProperty('age'));
+           console.log(StudentData.hasOwnProperty('city'));
+        </SCRIPt>
+    </body>
+</html>

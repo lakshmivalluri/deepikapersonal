@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Demonstrating Employee details - image spriting
+		</title>
+		<style type="text/css">
+			.container {
+				height: 200px;
+				border: 2px solid #ccc;
+
+			} 
+			.imgBlock,
+			.detailsBlock {
+				height: 180px;
+				float: left;
+
+			}
+			.imgBlock {
+				width: 150px;
+				height: 120px;
+				background-image: url('images/spritingimage.png');
+			}
+			.detailsBlock div {
+				padding: 10px;
+			}
+			img {
+				width:  200px;
+				height: 130px;
+			}
+			.emp2 {
+				background-position: -175px -1px;
+			}
+			.emp3 {
+				background-position: -175px 122px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Employee Details</h3>
+		<div class="container">
+			<div class="imgBlock">
+				
+			</div>
+			<div class="detailsBlock">
+				<div>Name : Teena</div>
+				<div>Age : 25</div>
+				<div>Location: Pune</div>
+				<div>Designation: It Engineeer</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="imgBlock emp2">
+				
+			</div>
+			<div class="detailsBlock">
+				<div>Name : Krish</div>
+				<div>Age : 30</div>
+				<div>Location: Mumbai</div>
+				<div>Designation: Support Engineeer</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="imgBlock emp3">
+				
+			</div>
+			<div class="detailsBlock">
+				<div>Name : Suma</div>
+				<div>Age : 30</div>
+				<div>Location: Hyderabad</div>
+				<div>Designation: HR </div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="imgBlock">
+				<img src="images/spritingimage.png" />
+			</div>
+			<div class="detailsBlock">
+				<div>Name : Meena</div>
+				<div>Age : 20</div>
+				<div>Location: Delhi</div>
+				<div>Designation: It Dev Engineeer</div>
+			</div>
+		</div>
+	</body>
+</html>

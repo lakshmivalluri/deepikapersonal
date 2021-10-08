@@ -1,0 +1,57 @@
+header,
+footer,
+main-container {
+    border: 1px solid;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+main-container {
+    top: 55px;
+    bottom: 55px;
+}
+
+footer {
+    bottom: 5px;
+    font-size: 11px;
+}
+
+.msgContainer {
+    border: 1px solid;
+    padding: 10px;
+    width: 550px;
+    background-color: green;
+    margin: 20px;
+    
+}
+
+.addsBlock {
+    border: 1px solid;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 20px;
+    bottom: 50px;
+    background-color: yellow;
+}
+
+@media screen and (max-width:300px) /*and (orientation: landscape/protrait) */{
+    .msgContainer {
+        width: 200px;
+        background-color: pink;
+        font-size: 25px;
+    }   
+
+    .addsBlock {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width: 301px) {
+    .msgContainer{
+        background-color: purple;
+    }
+}

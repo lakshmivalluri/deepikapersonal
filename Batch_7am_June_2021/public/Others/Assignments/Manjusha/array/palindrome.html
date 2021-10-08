@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Palindrome</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = [121, 15, 523, 22522];
+			for(var i = 0; i < num.length; i++) {
+				var index = num[i];
+				var res, r = 0;
+				while(index > 0) {
+					res = index % 10;
+					r = r * 10 + res;
+					index = parseInt(index / 10);
+				}
+				if(num[i] == r) {
+					console.log(num[i]);	
+				}
+			} 
+		</script>
+	</body>
+</html>

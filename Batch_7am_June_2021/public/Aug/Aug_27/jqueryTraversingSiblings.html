@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Jquery Traversing Siblings
+        </title>
+        <script src="../jquery.js"></script>
+        <style>
+            .highlight {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Apply" onclick="doAction()">
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li id="item4">Item4</li>
+            <li>Item5</li>
+            <li id="abc">Item6</li>
+            <li>Item7</li>
+        </ul>
+        <script>
+            function doAction() {
+                // $("#item4").siblings().addClass("highlight");
+                //$("#item4").next().addClass("highlight");
+                //$("#item4").prev().addClass("highlight");
+                $("#item4").nextUntil("#abc").addClass("highlight");
+                // prevAll, prevUntil
+            }
+        </script>
+    </body>
+</html>
+

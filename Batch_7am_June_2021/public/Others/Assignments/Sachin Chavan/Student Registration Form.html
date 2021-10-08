@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		ul{
+			border: 2px solid;
+			width: 500px;
+			margin: 10px auto;
+			padding: 5px;
+		}
+		li{
+			list-style: none;
+			border: 1px solid;
+			margin: 5px;
+			padding: 5px;
+		}
+		h3{
+			text-align: center;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h3>User Registration Details</h3>
+	<form action="https://www.google.com" method="POST">
+		<ul>
+			<li>
+				<label>Enter name:</label>
+				<input type="text" name="uname">
+			</li>
+			<li>
+				<label>Enter password:</label>
+				<input type="password" name="uname">
+			</li>
+			<li>
+				<label>Select gender:</label>
+				<input type="radio" name="ugender" value="Male">Male
+				<input type="radio" name="ugender" value="Female">Female
+			</li>
+			<li>
+				<label>Select language:</label>
+				<input type="checkbox" name="lan_eng" value="che">English
+				<input type="checkbox" name="lan_hindi">Hindi
+				<input type="checkbox" name="lan_marathi" checked>Marathi
+			</li>
+			<li>
+				<label>Select Country:</label>
+				<select name="ucountry">
+					<option></option>
+					<option selected>India</option>
+					<option>Finland</option>
+					<option>Canada</option>
+					<option>Germany</option>
+				</select>
+			</li>
+			<li>
+				<label>About yourself</label>
+				<textarea name="aboutUser"></textarea>
+			</li>
+			<li>
+				<input type="submit" name="clickHere" value="Click Here">
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: blue;
+    background-color: rgb(109, 252, 65);
+    border: crimson solid 3px;
+    border-radius: 12px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+
+    
+
+}
+.edit{
+    width: 120px;
+    padding: 3px;
+    margin: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100px;
+    border: darkmagenta solid 1px;
+
+}
+.block1{
+    float: right;
+    background-color: darkturquoise;
+}
+.block2{
+    clear: both;
+    background-color: darkslategray;
+    float: right;
+}
+.block3{
+    clear: both;
+    background-color: deeppink;
+    float: left;
+    
+}
+.block4{
+    float: left;
+   background-color: gray;
+}
+.block5{ 
+    background-color: gold;
+    float: right;
+    
+}
+.block6{
+    
+  float: right;
+  background-color: lawngreen;
+  
+}
+
+.block7{
+    float: left;
+    clear: both;
+    background-color: lightpink;
+    
+}
+.block8{
+    
+    background-color: lightseagreen;
+    float: left;
+}
+.block9{
+clear: both;
+
+background-color: maroon;
+}
+.block10{
+    background-color: cornflowerblue;
+}
+.block11{
+    float: right;
+    background-color: crimson;
+}
+.block12{
+    clear: both;
+    background-color: darkblue;
+    float: right;
+}
+.block13{
+    float: right;
+    background-color: darkkhaki;
+}
+.block14{
+    float: left;
+    background-color: darkorchid;
+}

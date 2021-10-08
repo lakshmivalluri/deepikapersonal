@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(240, 240, 226);
+}
+
+h3 {
+  border: 4px dotted white;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: underline;
+  background-color: rgb(8, 78, 124);
+}
+
+.employee,
+.employee li {
+  list-style: none;
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+}
+
+.employee li {
+  background-color: rgb(84, 149, 165);
+}
+
+.employee li img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid wheat;
+}
+
+.employee {
+  float: left;
+  width: 280px;
+  height: 350px;
+  border: 2px solid black;
+  text-align: center;
+  color: aliceblue;
+}
+.eDetails {
+  background-image: url(https://www.wallpapersales.uk.com/wp-content/uploads/2017/11/FD41995-Fine-Decor-Apex-Trellis-Stone-Silver-Wallpaper.jpg);
+  margin: 5px;
+  padding: 5px;
+  height: 1120px;
+  width: 98%;
+}

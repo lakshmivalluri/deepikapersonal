@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h3>
+            Add Product to base
+        </h3>
+        <ul>
+            <li class="title">
+                Seller Details
+            </li>
+            <li>
+                Enter Seller Name:
+                <input type="text" id="sname">
+
+            </li>
+            <li>
+                Seller Id:
+                <input type="text" id="sid">
+            </li>
+            <li>
+                Seller Location:
+                <select id="sLocation">
+                    <option >Delhi</option>
+                    <option >Pune</option>
+                    <option >Chennai</option>
+                    <option >Mumbai</option>
+                </select>
+            </li>
+            <li class="btnContainer">
+                <input type="button" value="Register Seller" onclick="registerSeller()">
+            </li>
+        </ul>
+
+        <ul>
+            <li class="title">
+                Register Product Details
+            </li>
+            <li>
+                Enter Product Name:
+                <input type="text" id="pname">
+
+            </li>
+            <li>
+                Product Manufacturer:
+                <input type="text" id="pmanu">
+            </li>
+            <li>
+                Product Type/Category:
+                <select id="ptype">
+                    <option >Electronics</option>
+                    <option >Furniture</option>
+                    <option >Home need</option>
+                    <option >Gardening</option>
+                </select>
+            </li>
+            <li>
+                Image: 
+                <input type="text" id="pimage">
+            </li>
+            <li class="btnContainer">
+                <input type="button" value="Register Seller" onclick="registerProduct()">
+            </li>
+        </ul>
+    </body>
+</html>

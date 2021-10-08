@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Find Palindrome Numbers Within Array
+		</title>
+	</head>
+	<body>
+		<script>
+			var data = [102, 121, 132, 152, 151, 198, 616];
+			for (var i = 0; i < data.length; i++) {
+				var n = data[i];
+				var p = n;
+				var rem, rev = 0;
+				while (n > 0) {
+					rem = n % 10;
+					rev = rev * 10 + rem;
+					n = parseInt(n / 10);
+				}
+				if (p == rev) {
+					console.log(p + " is palindrome");
+				} else {
+					console.log(p + " is not a palindrome number")
+				}
+			}
+
+		</script>
+	</body>
+</html>

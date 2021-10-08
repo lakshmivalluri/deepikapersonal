@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Generaing Employee Pay Slip
+        </title>
+        <link rel="stylesheet" href="empPaySlip.css">
+    </head>
+    <body>
+        <div class="pageHeading">
+            Employee Pay Slip Generator
+        </div>
+        <ul>
+            <li>Employee Name :<input type="text" id="empName"></li>
+            <li>Employee Age :<input type="text" id="empAge"></li>
+            <li>Department :<input type="text" id="dept"></li>
+            <li>Gender :<input type="text" id="empGender"></li>
+            <li>Basic Salary :<input type="number" id="basicSal"></li>
+            <li style="text-align: right;">
+                <input type="button" value="Generate Employee Pay Slip" onclick="generatePaySlip();">
+            </li>
+        </ul>
+        <ul class="paySlipBlock">
+            <li class="opHeading">
+                Your Pay Slip
+            </li>
+            <li>
+                Name Of Employee : <span id="resEmpName"></span>
+            </li>
+            <li>
+                Employee Age : <span id="resEmpAge"></span>
+            </li>
+            <li>
+                Employee Department : <span id="resDept"></span>
+            </li>
+            <li>
+                Gender of Employee : <span id="resGender"></span>
+            </li>
+            <li>
+                Basic Salary : <span id="resBasicSal"></span>
+            </li>
+            <li>
+                Pf : <span id="resPf"></span>
+            </li>
+            <li>
+                Hra : <span id="resHra"></span>
+            </li>
+            <li>
+                Total Salary : <span id="resTotalSal"></span>
+            </li>
+            <li>
+                Tax : <span id="resTax"></span>
+            </li>
+        </ul>
+        <script src="slip.js"></script>
+    </body>
+</html>

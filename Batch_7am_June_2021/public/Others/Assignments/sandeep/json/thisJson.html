@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>This json</h3>
+
+    <script>
+
+        var empDetails ={
+            sname : "",
+            sage : "",
+            sDesignation : "",
+            sSalary : "",
+            sTax : "",
+            sGender : "",
+
+            readEmpDetails : function (){
+                this.sname =prompt ("eneter a Name");
+                this.sage = prompt ("enter a Age");
+                this.sDesignation = prompt("enter a Designation");
+                this.sGender =prompt ("enter a gender");
+                this.sSalary =prompt ("enter a salary");
+                this.sSalary= parseInt(this.sSalary);
+            },
+            readPfAndhra :function(){
+                this.pf = (this.sSalary*15)/100;
+                this.hra = (this.sSalary*20)/100;
+                this.total =(this.pf + this.hra+this.sSalary);
+            },
+            getTax : function() {
+             this.readPfAndhra();
+                if (this.sGender === "male"){
+                    if (this.total > 250000){
+                        this.sTax = (this.sSalary*15)/100;
+                    }else if(this.total > 100000) {
+                        this.sTax = (this.sSalary*10)/100;
+                        
+                    }else{
+                        this.sTax = (this.sSalary*0)/100;
+                    }
+                }if (this.sGender === "female"){
+                    if (this.total > 250000){
+                        this.sTax = (this.sSalary*15)/100;
+                    }else if(this.total > 100000) {
+                        this.sTax = (this.sSalary*10)/100;
+                        
+                    }else{
+                        this.sTax = (this.sSalary*0)/100;
+                    }
+
+                }
+
+
+
+            },
+            displayData: function () {
+                this.readEmpDetails();
+                this.readPfAndhra();
+                this.getTax();
+                console.log ("the name is :" + this.sname);
+                console.log ("the age is  : "+ this.sage);
+                console.log ("the gender is  : "+ this.sGender);
+                console.log ("the salary is  : "+ this.sSalary);
+                console.log ("the designation  : "+ this.sDesignation);
+                console.log ("the pf amount is :" + this.pf);
+                console.log ("the hra amount is :" + this.hra);
+                console.log ("the tax amount is :" + this.sTax);
+
+            },
+    
+            };
+            empDetails.displayData();
+
+     
+    </script>
+</body>
+</html>

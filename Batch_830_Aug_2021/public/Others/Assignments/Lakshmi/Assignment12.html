@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Display Date </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+				var months=["Jan","Feb","Mar","April","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+				var cdate=new Date();
+			    var monthIndex=cdate.getMonth();
+			    var userInput=prompt("choose dateFormat1/dateFormat2/dateFormat3/dateFormat4/dateFormat5/dateFormat6");
+			    var output;
+
+		    switch (userInput){
+
+					case'dateFormat1':
+
+						 output=cdate.getDate()+','+months[monthIndex]+' '+cdate.getFullYear();
+						 console.log(output);
+						         break;
+			        case'dateFormat2':
+
+						 output=cdate.getDate()+','+months[monthIndex]+'est '+cdate.getFullYear();
+						 console.log(output);
+								 break;
+					case'dateFormat3':
+
+						 output=months[monthIndex]+','+cdate.getDate()+' '+cdate.getFullYear();
+						 console.log(output);
+								 break;
+					case'dateFormat4':
+
+						 output=months[monthIndex]+'/'+cdate.getDate()+'/'+cdate.getFullYear();
+						 console.log(output);
+								 break;
+		            case'dateFormat5':
+
+					     output=months[monthIndex]+','+cdate.getDate()+'th '+cdate.getFullYear()+','+cdate.getMinutes()+':'+cdate.getSeconds()+'min'
+			             console.log(output);
+			                   break;
+					case'dateFormat6': 
+
+						 output=months[monthIndex]+' '+cdate.getDate()+','+cdate.getHours()+' hrs '+cdate.getMinutes()+'min '+cdate.getSeconds()+'sec'
+						 console.log(output);
+							 break;
+			}
+
+		</script>
+
+	</body>
+</html>

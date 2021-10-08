@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h1 style="background: pink">Palindrome numbers within an array</h1>
+    <script>
+      var a = [10, 12, 13, 15, 18, 29, 33, 121, 66, 89,898898];
+      for (var i = 0; i < a.length; i++) {
+        var num = a[i];
+         var sum = 0;
+          var count = 1,rem=0;
+        while (num != 0) {
+          count *= 10;
+          num = num / 10;
+          num = parseInt(num);
+        }
+        count=count/10;
+        var nu = a[i];
+        while (nu != 0) {
+          rem = nu % 10;
+          sum += rem * count;
+          sum=parseInt(sum);
+          count /= 10;
+          nu=nu/10;
+          nu=parseInt(nu);
+        }
+        if (a[i] == sum) {
+          console.log(a[i] + " is a palindrome number");
+        }
+      }
+    </script>
+  </body>
+</html>

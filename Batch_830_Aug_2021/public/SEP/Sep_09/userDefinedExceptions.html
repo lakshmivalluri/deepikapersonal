@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                padding: 5px;
+                margin: 5px;
+            }
+            .err {
+                color: red;
+                font-size: 10px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter user name: 
+                <input type="text" id="uname">
+                <div class="err" id="nameErr">
+                    Name field cannot be empty
+                </div>
+            </li>
+            <li>
+                Enter User Age:
+                <input type="text" id="uage">
+                <div class="err" id="ageErr">
+                    Age should be less than 20
+                </div>
+            </li>
+            <li>
+                Enter User Class:
+                <input type="text" id="uclass">
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="registerDetails()">
+            </li>
+        </ul>
+        <script>
+            var registerDetails = () => {
+                var data = {};
+                data.name = document.querySelector("#uname").value;
+                try {
+                    if (data.name == '') {
+                        throw 'nameErr';
+                    } else {
+                        document.querySelector("#nameErr").style.display = 'none';
+                    }                    
+                    data.age = document.querySelector("#uage").value;
+                    if (data.age > 20) {
+                        throw 'ageErr';
+                    } else {
+                        document.querySelector("#ageErr").style.display = 'none';
+                    }
+                    data.className = document.querySelector("#uclass").value;
+                    console.log(data);
+                } catch (err) {
+                    if (err == 'nameErr') {
+                        document.querySelector("#nameErr").style.display = 'block';
+                    }
+                    if (err == 'ageErr') {
+                        document.querySelector("#ageErr").style.display = 'block';
+                    }
+                }
+                
+            }
+        </script>
+    </body>
+</html>

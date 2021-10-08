@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>
+		    SignUp
+	   </title>
+	   <style type="text/css">
+	   	.header {
+	   		border: 1px solid;
+	   		line-height: 60px;
+	   		background: lightblue;
+	   		text-align: center;
+	   		font-size: 25px;
+	   	}
+	   	.footer {
+	   		border: 1px solid;
+	   		position: absolute;
+            bottom: 10px;
+            width: 100%;
+     		text-align: center;
+	   		text-decoration: underline;
+	   		background: lightblue;
+	   		line-height: 60px;
+	   		font-size: 20px;
+	   		font-style: oblique;
+	   	}
+	   	.border {
+	   		border: 1px solid;
+	   		position: absolute;
+	   		top: 22%;
+	   		left: 29%;
+	   		height: 350px;
+	   		width: 500px;
+	   		background: lightcyan;
+	   	}
+	   	.bgimgg {
+	   		background-image: url("images/iimg2.PNG");
+	   		background-size: cover;
+	   	}
+	   	.div {
+	   		margin-top: 21px;
+	   		padding-left: 29px;
+	   	}
+	   </style>
+    </head>
+    <body class="bgimgg">
+        <div>
+        	<div class="header">Enter your details</div>
+        </div>
+        <form action="http://localhost:8081/project/login_Page.html" target="POST">
+        	<div class="border">
+        		<div class="div">
+        			<label for="name">User Name</label>
+        			<input type="text" name="name" placeholder="enter your name" required="name">
+        		</div>
+        		<div class="div">
+        			<label for="mail">mail id</label>
+        			<input type="text" name="mail" placeholder="enter your mail"  required="mail">
+        		</div>
+        		<div class="div">
+        			<label for="password">Password</label>
+        			<input type="text" name="password" placeholder="********" maxlength="8 characters"  required="password">
+        		</div>
+        		<div class="div">
+        			<label for="passwordd">Confirm Password</label>
+        			<input type="password" name="passwordd" placeholder="*******" maxlength="8 characters"  required="passwordd">
+        		</div>
+        		<div>
+        			<div class="div">
+        				DoB :
+        			<select>
+        				<option>day</option>
+        	            <option>1</option>
+        	            <option>2</option>
+        	            <option>3</option>
+        	            <option>4</option>
+        	            <option>5</option>
+        	            <option>6</option>
+        	            <option>7</option>
+        	            <option>8</option>
+        	            <option>9</option>
+        	            <option>10</option>
+        	            <option>11</option>
+        	            <option>12</option>
+        	            <option>13</option>
+        	            <option>14</option>
+        	            <option>15</option>
+        	            <option>16</option>
+        	            <option>17</option>
+        	            <option>18</option>
+        	            <option>19</option>
+        	            <option>20</option>
+        	            <option>21</option>
+        	            <option>22</option>
+        	            <option>23</option>
+        	            <option>24</option>
+        	            <option>25</option>
+        	            <option>26</option>
+        	            <option>27</option>
+        	            <option>28</option>
+        	            <option>29</option>
+        	            <option>30</option>
+        	            <option>31</option>
+        			</select>
+        			<select>
+        				<option>month</option>
+        				<option>1</option>
+        			    <option>2</option>
+        	            <option>3</option>
+        	            <option>4</option>
+        	            <option>5</option>
+        	            <option>6</option>
+        	            <option>7</option>
+        	            <option>8</option>
+        	            <option>9</option>
+        	            <option>10</option>
+        	            <option>11</option>
+        	            <option>12</option>
+        			</select>
+        			<select>
+        				<option>year</option>
+        				<option>1995</option>
+        			    <option>1996</option>
+        	            <option>1997</option>
+        	            <option>1998</option>
+        	            <option>1999</option>
+        	            <option>2000</option>
+        	            <option>2001</option>
+        	            <option>2002</option>
+        	            <option>2003</option>
+        	            <option>2004</option>
+        			</select>
+        			</div>
+        			<div class="div">
+        				Gender :
+        				<input type="radio" name="gender" value="Male">
+        				Male
+        				<input type="radio" name="gender" value="Female">
+        				Female
+        			</div>
+        			<div class="div">
+        				<input type="submit" name="register" value="register">
+        			</div>
+        		</div>
+        	</div>
+        </form>
+         <div class="footer">
+         	<div>CopyRights-FullStack@2021-ShivaKumar</div>
+         </div>
+   </body>
+</html>

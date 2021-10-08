@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amstrong number</title>
+</head>
+<body>
+      <script>
+          var number = 256;
+        var  a,arm,total;
+        total = 0;
+        arm = number;
+        number = number + '';
+        var len = number.length;
+        number = parseInt(number);
+
+        while (number > 0 ) {
+            a = number % 10;
+            total = total + a ** len;
+            number = number / 10;
+            number = parseInt(number);
+        }
+        if (total == arm){
+            console.log(arm + " is armstrong");
+        } else {
+            console.log("not armstrong");
+        }
+
+             
+      </script>
+</body>
+</html>

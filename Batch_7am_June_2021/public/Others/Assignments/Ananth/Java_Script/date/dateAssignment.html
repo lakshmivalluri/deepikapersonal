@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS_Date Assignment</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var date = prompt(" select the value from 1 to 7 => 1.mm/dd/yy  2.mmmm/dd/yy 3.mmmm/dd/yyyy 4.day.mmmm.dd.yyyy 5.mm-dd-yy 6. mm/dd/yy hh:mm 7.mmmm dd yy hh:mm:ss");
+			var udate = new Date();
+			var month = ['jan','feb','march','april','may','June','July','Aug','Sep','Oct','Nov','Dec'];
+			var day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+			switch (date) {
+				case '1':
+					var year = (udate.getFullYear() + '').substr(2, 2);
+					console.log(udate.getMonth()+1 + '/' + udate.getDate() + '/' + year);
+					break;
+				case '2':
+					var year = (udate.getFullYear() + '').substr(2, 2);
+					console.log(month[udate.getMonth()] + '/' + udate.getDate() + '/' + year);
+					break;
+				case '3' :
+					console.log(month[udate.getMonth()] + '/' + udate.getDate() + '/' + udate.getFullYear())
+					break;
+				case '4':
+					console.log(udate.getDay()+1 + '.' + month[udate.getMonth()] + '.' + udate.getDate() + '.' + udate.getFullYear());
+					console.log(day[udate.getDay()] + '.' + month[udate.getMonth()] + '.' + udate.getDate() + '.' + udate.getFullYear());
+					break;
+				case '5':
+					var year = (udate.getFullYear() + '').substr(2, 2);
+					console.log(udate.getMonth()+1 + '-' + udate.getDate() + '-' + year);
+					break;
+				case '6':
+					var year = (udate.getFullYear() + '').substr(2, 2);
+					console.log(udate.getMonth()+1 + '/' + udate.getDate() + '/' + year + ' ' + udate.getHours() + ':' + udate.getMinutes());
+					break;
+				case '7':
+					var year = (udate.getFullYear() + '').substr(2, 2);
+					console.log(day[udate.getDay()] + ' ' + month[udate.getMonth()] + ' ' + udate.getDate() + ' ' + year + ' ' +udate.getHours() + ':' + udate.getMinutes() + ':' + udate.getSeconds());
+			}
+		</script>
+	</body>
+	</html>

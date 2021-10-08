@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Employee Details with Json</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var empDetails={
+			name:" ",
+			age:0,
+			gender:" ",
+			basicsal:0,
+			hra:0,
+			pf:0,
+			totalsal:0,
+			tax:0
+		}
+		function getdtls(){
+			var tempdata;
+
+			tempdata=prompt("Enter Employee Name");
+			empDetails.name=tempdata;
+			tempdata=prompt("Enter Employee Age");
+			empDetails.age=parseInt(tempdata);
+			tempdata=prompt("Enter Employee Gender");
+			empDetails.gender=tempdata;
+			tempdata=prompt("Enter Employee Basic Salary");
+			empDetails.basicsal=parseInt(tempdata);
+			
+			var emprecdata= calculate(empDetails.gender,empDetails.basicsal);
+			 empDetails.totalsal=emprecdata[0];
+			 empDetails.tax=emprecdata[1];
+
+			output();
+
+
+		}
+		function calculate(gender,basicsal){
+			empDetails.hra = (basicsal * 15) / 100; 
+			empDetails.pf = (basicsal * 12)/ 100; 
+			var totalSal=basicsal+empDetails.hra+empDetails.pf;
+			totalSal=parseInt(totalSal);
+			var tax=0;
+
+			if (gender=="male"|| gender=="Male" || gender=="MALE"){
+						if(totalSal> 200000){
+							tax=(totalSal*15)/100;
+
+						}
+						else if(totalSal>100000){
+							tax=(totalSal*10)/100;
+						}
+						else if(totalSal>50000){
+							tax=(totalSal*5)/100;
+						}		
+
+
+			          }
+			else if(gender=="female"|| gender=="Female"||gender=="FEMALE"){
+						if(totalSal>200000){
+							tax=(totalSal*10)/100;
+						}
+						else if(totalSal>10000){
+							tax=(totalSal*5)/100;
+
+						}
+						else{
+							tax=0;
+
+						}
+
+			 }  
+			 tax=parseInt(tax);
+			 var getvalue=[totalSal,tax];
+			 return getvalue;
+		}
+		function output(){
+			console.log("----Employee Details are as follows---");
+			console.log("Employee Name is : "+ empDetails.name);
+			console.log("Employee Age is : "+ empDetails.age);
+			console.log("Employee Gender is : "+ empDetails.gender);
+			console.log("Employee Basic Salary is : "+ empDetails.basicsal);
+			console.log("Employee Hra is : "+ empDetails.hra);
+			console.log("Employee Pf is : "+ empDetails.pf);
+			console.log("Employee Total Salary is : "+ empDetails.totalsal);
+			console.log("Employee Tax is : "+ empDetails.tax);
+		}
+
+		getdtls();
+
+	</script>
+
+</body>
+</html>

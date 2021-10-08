@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h1 style="background: pink">
+      Sorting an array in both ascending and descending order
+    </h1>
+    <script>
+      var a = [7, 9, 11, 2, 5, 3, 24];
+      for (var i = 0; i < a.length - 1; i++) {
+        for (var j = 0; j < a.length - i - 1; j++) {
+          if (a[j] > a[j + 1]) {
+            var temp = a[j];
+            a[j] = a[j + 1];
+            a[j + 1] = temp;
+          }
+        }
+      }
+      console.log("Ascending order");
+      for (var i = 0; i < a.length; i++) {
+        console.log(a[i]);
+      }
+      for (var i = 0; i < a.length - 1; i++) {
+        for (var j = 0; j < a.length - i - 1; j++) {
+          if (a[j] < a[j + 1]) {
+            var temp = a[j];
+            a[j] = a[j + 1];
+            a[j + 1] = temp;
+          }
+        }
+      }
+      console.log("Descending order");
+      for (var i = 0; i < a.length; i++) {
+        console.log(a[i]);
+      }
+    </script>
+  </body>
+</html>

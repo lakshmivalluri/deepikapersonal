@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reverse number between 32 to 950</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			for(var num = 32; num < 950; num++) {
+				var temp = num;
+				var res, r = 0;
+				while(temp > 0) {
+					res = temp % 10;
+					r = r * 10 + res;
+					temp = parseInt(temp / 10);
+				}
+				if(temp = r) {
+				console.log(r);	
+				}
+			}
+			
+		</script>
+	</body>
+</html>

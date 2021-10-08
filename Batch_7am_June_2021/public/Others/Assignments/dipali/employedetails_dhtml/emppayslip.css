@@ -1,0 +1,42 @@
+h2{
+	text-align: center;
+	border: 2px solid yellow;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: bold;
+	background: black;
+	color: skyblue; 
+}
+ul{
+	border: 5px solid indigo;
+	width: 600px;
+	margin: 10px auto;
+	padding: 2px;
+	background-color: moccasin;
+
+
+}
+li{
+	border: 2px solid purple ;
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;
+	
+}
+input{
+	border-color: plum;
+	color: maroon;
+	font-weight: bold;
+	font-style: italic;
+}
+.site{
+	text-align: center;
+	color: #FF5733;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: inherit;
+}
+.payslip{
+
+	display: none;
+       }

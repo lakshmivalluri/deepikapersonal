@@ -1,0 +1,32 @@
+.inputData{
+	width:500px;
+	border:1px solid;
+	margin:10px;
+	padding:5px;
+	background-color:#ccc;
+	margin-left:440px;
+}
+h3{
+	text-align: center;
+	color:red;
+	text-decoration: underline;
+}
+li{
+list-style:none;
+border: 1px solid;
+padding: 5px;
+margin: 5px;
+	
+}
+.gap{
+	margin-left: 100px;
+}
+.gap1{
+	margin-left: 215px;
+}
+.gap3{
+	margin-left: 200px;
+}
+.gap4{
+	margin-left: 260px;
+}

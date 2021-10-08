@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Predefined array methods
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [34, 55, 67, 4, 23, 90];
+            data[1] = 100;
+            console.log(data);
+            /*console.log(data.length);
+            data.push(100);
+            console.log(data);
+            data.unshift(101);
+            console.log(data);
+            data.pop();
+            console.log(data);
+            data.shift();
+            console.log(data);*/
+            //data.splice(2, 0, 101, 102);
+            data.splice(data.length, 0, 200)
+            console.log(data);
+            //console.log(data.findIndex(4));
+            // .map .sort filter findindex()
+
+            /*var sampleData = [344, 565,7,855,35,34,22,66];
+            console.log(sampleData);
+            var value = prompt("enter the value tobe deleted");
+            for (var i = 0 ; i < sampleData.length; i++) {
+                if (sampleData[i] == value) {
+                    break;
+                }
+            }
+            sampleData.splice(i, 1);
+            console.log(sampleData); */
+
+            console.log(data.join(''));
+
+            console.log(data.includes(200));
+
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+    <h1>Employee Details</h1>
+  </head>
+  <body>
+    <script>
+      console.log("Employee Details");
+      class EmployeeData {
+        constructor(data) {
+          this.name = data.sName;
+          this.age = data.sAge;
+          this.gender = data.sGender;
+          this.department = data.sDepartment;
+          this.basicsalary = data.sBasicsalary;
+        }
+
+        displayData() {
+          console.log("Name is " + this.name);
+          console.log("Age is " + this.age);
+          console.log("Gender is " + this.gender);
+          console.log("Department is " + this.department);
+          console.log("Basic Salary is " + this.basicsalary);
+        }
+      }
+
+      var data1 = {
+        sName: "Raj",
+        sAge: 32,
+        sGender: "Male",
+        sDepartment: "IT",
+        sBasicsalary: 75000,
+      };
+      var obj1 = new EmployeeData(data1);
+
+      var data2 = {
+        sName: "Seema",
+        sAge: 29,
+        sGender: "Female",
+        sDepartment: "Networking",
+        sBasicsalary: 81000,
+      };
+
+      var obj2 = new EmployeeData(data2);
+
+      var data3 = {
+        sName: "Rohit",
+        sAge: 34,
+        sGender: "Male",
+        sDepartment: "Marketing",
+        sBasicsalary: 55000,
+      };
+      var obj3 = new EmployeeData(data3);
+
+      var data4 = {
+        sName: "Seetal",
+        sAge: 45,
+        sGender: "Female",
+        sDepartment: "Networking",
+        sBasicsalary: 41000,
+      };
+
+      var obj4 = new EmployeeData(data4);
+
+      var data5 = {
+        sName: "Punit",
+        sAge: 48,
+        sGender: "Male",
+        sDepartment: "IT",
+        sBasicsalary: 66000,
+      };
+      var obj5 = new EmployeeData(data5);
+
+      var data6 = {
+        sName: "Reena",
+        sAge: 39,
+        sGender: "Female",
+        sDepartment: "Consulting",
+        sBasicsalary: 76000,
+      };
+
+      var obj6 = new EmployeeData(data6);
+
+      obj1.displayData();
+      obj2.displayData();
+      obj3.displayData();
+      obj4.displayData();
+      obj5.displayData();
+      obj6.displayData();
+
+      console.log(obj1);
+      console.log(obj2);
+      console.log(obj3);
+      console.log(obj4);
+      console.log(obj5);
+      console.log(obj6);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Reverse of Numbers Between 32 to 950
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			for (var i = 32; i <= 950; i++) {
+				var n = i;
+				var rem, rev = 0;
+				while (n > 0) {
+					rem = n % 10;
+					rev = (rev * 10) + rem;
+					n = parseInt(n / 10);
+				}
+					console.log(+ rev);
+			}
+		</script>
+	</body>
+</html>

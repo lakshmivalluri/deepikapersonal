@@ -1,0 +1,25 @@
+ul {
+     list-style: none;
+}
+li {
+     padding: 10px;
+     margin: 10px;
+     border: 2px solid;
+     border-radius: 15px;
+}
+.valid:before {
+     content: '✓ ';
+     font-weight: bold;
+}
+.invalid:before {
+     content: 'X ';
+     font-weight: bold;
+}
+.uname {
+     display: none;
+     color: red;
+}
+.name {
+     display: none;
+     color: green;
+}

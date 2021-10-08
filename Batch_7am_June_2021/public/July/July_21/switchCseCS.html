@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Demonstrating Switch case CS
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var firstVal = prompt("Enter first Value");
+			var secondVal = prompt("Enter second value");
+			var result;
+			firstVal = parseInt(firstVal);
+			secondVal = parseInt(secondVal);
+
+			var userReq = prompt("Plese select add/mul/sub/div");
+
+			switch(userReq) {
+				case 'add':
+					result = firstVal + secondVal;
+			 		console.log("Sum is " + result);
+			 		break;
+			 	case 'mul':
+			 		result = firstVal * secondVal;
+				 	console.log("Multiplication is " + result);
+				 	break;
+				 case 'sub':
+				 	result = firstVal - secondVal;
+				 	console.log("Substraction is " + result);
+				 	break;
+				 case 'div':
+				 	result = firstVal / secondVal;
+					console.log("Division is " + result);
+					break;
+				default:
+					console.log("Wrong option choosen")
+
+			}
+
+
+
+			// if (userReq == 'add') {
+			// 	result = firstVal + secondVal;
+			// 	console.log("Sum is " + result);
+			// } else if (userReq == 'mul') {
+			// 	result = firstVal * secondVal;
+			// 	console.log("Multiplication is " + result);
+			// } else if (userReq == 'div'){
+			// 	result = firstVal / secondVal;
+			// 	console.log("Division is " + result);
+			// } else if (userReq == 'sub')  {
+			// 	result = firstVal - secondVal;
+			// 	console.log("Substraction is " + result);
+			// } else {
+			// 	console.log("Wrong option choosen")
+			// }
+
+
+
+			
+
+			
+
+		</script>
+	</body>
+</html>

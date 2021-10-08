@@ -1,0 +1,109 @@
+.header {
+     border: 2px solid;
+     text-align: center;
+     color: darkorchid;
+     background-color: floralwhite;
+     font-size: 16px;
+     font-weight: bolder;
+}
+ul {
+     border: 5px solid;
+     margin: 10px auto;
+     padding: 5px;
+     width: 50%;
+     list-style: none;
+     text-align: center;
+     border-radius: 10px;
+}
+li {
+     margin: 10px;
+     padding: 10px;
+}
+.button {
+     text-align: center;
+}
+.creating {
+     display: none;
+}
+.payslip {
+     width: 70%;
+     margin: 10px auto;
+     padding: 5px;
+     text-align: center;
+     background-color: ghostwhite;
+}
+.inner {
+     border: 1px solid;
+     border-radius: 15px;
+     padding: 10px;
+     margin: 10px;
+}
+.uname {
+     display: none;
+     color: red;
+     border: 2px solid;
+     width: 30%;
+     margin-left: 310px;
+     margin-top: 5px;
+}
+.name {
+     display: none;
+     color: green;
+     border: 2px solid;
+     width: 30%;
+     margin-left: 310px;
+     margin-top: 5px;
+}
+.uage {
+     display: none;
+     color: red;
+     border: 2px solid;
+     width: 30%;
+     margin-left: 310px;
+     margin-top: 5px;
+}
+.age {
+     display: none;
+     color: green;
+     border: 2px solid;
+     width: 30%;
+     margin-left: 310px;
+     margin-top: 5px;
+}
+.usal {
+     display: none;
+     color: red;
+     border: 2px solid;
+     width: 30%;
+     margin-left: 310px;
+     margin-top: 5px;
+}
+.sal {
+     display: none;
+     color: green;
+     border: 2px solid;
+     width: 30%;
+     margin-left: 310px;
+     margin-top: 5px;
+}
+.box input[type=text]{
+     width: 100px;
+}
+#ename {
+     margin-left: 14px;
+}
+#eage {
+     margin-left: 27px;
+}
+#edept {
+     margin-left: 72px;
+}
+#egender {
+     margin-left: 59px;
+}
+#basicsal {
+     margin-left: 66px;
+}
+.hide {
+     display: none;
+}

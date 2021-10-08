@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee details</title>
+</head>
+<body>
+        <h3>employee details</h3>
+        <p>go to console</p>
+        <script>
+            var empname, gender, age, dep, basicsal, pf, hra, total;
+            empname= prompt("Employee_name");
+            age= prompt("age");
+            gender=prompt("gender");
+            dep=prompt("Department");
+            basicsal=prompt("Basic_Salary");
+            basicsal= parseInt(basicsal);
+            pf=basicsal*4/100;
+            hra=basicsal*25/100;
+            total=basicsal + pf + hra;
+
+            
+
+            console.log('employee='+ empname);
+            console.log('age='+' '+ age);
+            console.log("gender="+' '+ gender);
+            console.log('department='+' '+ dep);
+            console.log('basicsalary='+' '+ basicsal);
+            console.log('pf='+' '+ pf);
+            console.log('hra='+' '+ hra);
+            console.log('total salary='+' '+total);
+
+            if(gender==='male') {
+                if (total>200000) {
+                    console.log('tax='+' '+total*0.15);
+                    
+                }
+                else if (total>100000) {
+                    console.log('tax='+' '+total*0.10);
+                }
+                else if (total>50000) {
+                    console.log('tax='+' '+total*0.05)
+                }
+                else {
+                    console.log('tax='+' '+'no-tax' )
+                }
+            }
+            else if(gender==='female') {
+                if (total>200000) {
+                    console.log('tax='+' '+total*0.1);
+                    
+                }
+                else if (total>100000) {
+                    console.log('tax='+' '+total*0.05);
+                }
+                else if (total>50000) {
+                    console.log('tax='+' '+total*0)
+                }
+                else {
+                    console.log('tax='+' '+'no-tax' )
+                }
+            }
+            else {
+                console.log('tax='+' '+'no-tax_for_others')
+            }
+            
+        </script>
+</body>
+</html>

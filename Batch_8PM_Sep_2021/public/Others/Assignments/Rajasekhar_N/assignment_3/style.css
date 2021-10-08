@@ -1,0 +1,280 @@
+				body{
+					margin:20px;
+					padding:10px;
+					font-family:sans-serif;
+
+				}
+
+				.head{
+					text-align:center;
+					font-size:20px;
+					background-color:yellow;
+					color:red;
+					border:2px solid green;
+					text-decoration:underline;
+					margin:auto;
+					width:50%;
+					display:block;
+				}
+
+				
+				.container{
+					border:1px solid red;
+					background-color:#03ecfc;
+					margin:10px;
+				}
+				.block1{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: orange;
+					float:left;
+				}
+				.block2{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: blue;
+					
+					float:left;
+					margin-left:120px;
+				}
+				.block3{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: green;
+					clear:both;
+					float:left;
+					margin-top:10px;
+				}
+
+				.block4{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: pink;
+
+					float:left;
+					margin-top :10px;
+					margin-left:10px;
+					margin-right:10px;
+
+				}
+
+				.block5{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: purple;
+					float:left;
+					margin-top :10px;
+					
+				}
+
+				.block6{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: violet;
+					clear:both;
+					float:left;
+					margin-top :10px;
+				}
+
+				.block7{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: skyblue;
+					
+					float:left;
+					margin-top:10px;
+					margin-left :120px;
+				}
+
+				.blockA{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: orange;
+					clear:both;
+					float:left;
+					margin-top:10px;
+				}
+				.blockB{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: blue;
+					float:left;
+					margin-top:10px;
+					margin-left:10px;
+				}
+				.blockC{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: yellow;
+					float:left;
+					margin-top: 10px;
+					margin-left:10px;
+				}
+
+				.blockD{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: pink;
+					clear:both;
+					float:left;
+					margin-top:10px;
+				}
+
+				.blockE{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: purple;
+					
+					float:left;
+					margin-top: 10px;
+					margin-right:10px;
+					margin-left:10px;
+				}
+				.blockF{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: violet;
+					
+					float:left;
+					margin-top:10px;
+					
+				}
+
+				.blockG{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: blue;
+					clear:both;
+					float:left;
+					margin-top: 10px;
+					
+				}
+				
+				.blockH{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: orange;
+					
+					float:left;
+					margin-top: 10px;
+					margin-left:120px;
+				}
+
+				.blocka{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: orange;
+					clear:both;
+					float:right;
+					margin-top:10px;
+				}
+				.blockb{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: blue;
+					float:right;
+					margin-top: 10px;
+					margin-right:10px;
+				}
+				.blockc{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: yellow;
+					float:right;
+					margin-top: 10px;
+					margin-right:10px;
+				}
+
+				.blockd{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: pink;
+					clear:both;
+					float:right;
+					margin-top:10px;
+				}
+
+				.blocke{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: purple;
+					
+					float:right;
+					margin-top: 10px;
+					margin-right:120px;
+				}
+				.blockf{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: violet;
+					clear:both;
+					float:right;
+					margin-top:10px;
+				}
+
+				.blockg{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: blue;
+					float:right;
+					margin-top: 10px;
+					margin-right:10px;
+				}
+				
+				.blockh{
+					height:100px;
+					width :100px;
+				    font-style:bold;
+					text-align:center;
+					background-color: orange;
+					
+					float:right;
+					margin-top: 10px;
+					margin-right:10px;
+				}
+
+				

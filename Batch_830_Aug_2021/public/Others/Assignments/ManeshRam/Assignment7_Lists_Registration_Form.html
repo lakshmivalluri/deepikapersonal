@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 7</title>
+    <style>
+        body {
+            background-color: #d1b3c4;
+        }
+
+        .header,
+        .footer {
+            width: auto;
+            height: 65px;
+            border: 3px solid #e63946;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: 100%;
+            color: #ff9f1c;
+            background-image: url(data:image/jpeg;base64,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);
+        }
+
+        .footer {
+            margin: 10px 0px;
+            background-color: #89b0ae;
+        }
+
+        .container {
+            width: auto;
+            height: 1600px;
+            border: 3px solid #f72585;
+            margin-top: 10px;
+            color: black;
+            background-color: #c1d3fe;
+        }
+
+        .container_1 {
+            width: auto;
+            height: 300px;
+            border: 3px solid #fb8500;
+            margin: 50px;
+            position: relative;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .head_box {
+            width: 250px;
+            height: 35px;
+            border: 3px solid #f20089;
+            top: -30px;
+            left: 153px;
+            position: absolute;
+            padding-top: 20px;
+            padding-bottom: 0%;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            color: #7b2cbf;
+            background-color: #e5989b;
+        }
+
+        ul {
+            width: 80%;
+            height: 70%;
+            margin-top: 40px;
+            margin-left: 60px;
+            list-style: none;
+        }
+
+        .Ulabel,
+        .controller {
+            margin: 20px;
+            float: left;
+        }
+
+        .controller {
+            margin-left: 30px;
+            margin-right: 150px;
+        }
+
+        select {
+            width: 200px;
+            height: 35px;
+            border: 5px solid #bdb2ff;
+            padding-left: 40px;
+            font-weight: bolder;
+            color: #08bdbd;
+            background-color: #f5f3f4;
+        }
+
+        input[type=radio] {
+            margin-left: 30px;
+        }
+
+        #Ulang {
+            margin-left: 10px;
+        }
+
+        textarea {
+            border-radius: 30px;
+            padding: 20px;
+            word-spacing: 2mm;
+            letter-spacing: 2px;
+            background-color: #ffccd5;
+            outline: none;
+            resize: none;
+        }
+
+        .register_box {
+            float: right;
+            margin-top: 0px;
+            margin-right: 50px;
+        }
+
+        input[type=submit] {
+            height: 100px;
+            width: 200px;
+            font-size: 30px;
+            border: 4px solid red;
+            background-color: #2ec4b6;
+        }
+
+        input[type=submit]:hover {
+            cursor: pointer;
+            height: 110px;
+            width: 230px;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            STUDENT REGISTRATION FORM
+        </h1>
+    </div>
+    <form action="mailto:webdev.prasad@gmail.com" method="POST">
+
+        <div class="container">
+            <div class="container_1">
+                <div class="head_box">PERSONAL DETAILS</div>
+                <ul>
+                    <div class="Ulabel">
+                        <label for="Uname">Name :</label>
+                    </div>
+                    <div class="controller">
+                        <input type="text">
+                    </div>
+                    <div class="Ulabel">
+                        <label for="Umail">Mail ID :</label>
+                    </div>
+                    <div class="controller" id="mail" style="width: 25%;">
+                        <input type="email" name="Umail" id="Umail" size="40">
+                    </div>
+                    <div class="Ulabel">
+                        <label for="Uage">Age :</label>
+                    </div>
+                    <div class="controller" style="margin-left: 60px; width: 70%;">
+                        <input type="number" name="Uage" id="Uage" min="1" step="1">
+                    </div>
+                    <div class="Ulabel">
+                        <label for="Ugender">Gender :</label>
+                    </div>
+                    <div class="controller">
+                        <input type="radio" name="Ugender" id="Ugender">Male
+                        <input type="radio" name="Ugender" id="Ugender">Female
+                    </div>
+                </ul>
+            </div>
+            <div class="container_1">
+                <div class="head_box">EDUCATION DETAILS</div>
+                <ul>
+                    <div class="Ulabel">
+                        <label for="Uquali">Qualification :</label>
+                    </div>
+                    <div class="controller" style="margin-right: 600px;">
+                        <select name="Uquali" id="Uquali">
+                            <option value="BTECH">BTECH</option>
+                            <option value="BTECH">MTECH</option>
+                            <option value="BTECH">M.S.</option>
+                            <option value="BTECH">PHD</option>
+                        </select>
+                    </div>
+                    <div class="Ulabel">
+                        <label for="Ulang">Languages Known :</label>
+                    </div>
+                    <div class="controller">
+                        <input type="checkbox" name="Ulang" id="Ulang">ENGLISH
+                        <input type="checkbox" name="Ulang" id="Ulang">TELUGU
+                        <input type="checkbox" name="Ulang" id="Ulang">HINDI
+                        <input type="checkbox" name="Ulang" id="Ulang">TAMIL
+                        <input type="checkbox" name="Ulang" id="Ulang">SANSKRIT
+                    </div>
+
+                    <div class="Ulabel">
+                        <label for="Ucourse">COURSE OPTED :</label>
+                    </div>
+                    <div class="controller" style="margin-right: 300px;">
+                        <input type="radio" name="Ucourse" id="Ucourse">MBA
+                        <input type="radio" name="Ucourse" id="Ucourse">MCA
+                        <input type="radio" name="Ucourse" id="Ucourse">BTECH
+                        <input type="radio" name="Ucourse" id="Ucourse">MTECH
+                    </div>
+                </ul>
+            </div>
+            <div class="container_1">
+                <div class="head_box">ADDRESS</div>
+                <ul>
+                    <div class="Ulabel" style="margin-right: 65px;">
+                        <label for="Uaddress">Address :</label>
+                    </div>
+                    <div class="controller" style="margin-right: 100px;">
+                        <input type="text" name="Uaddress" id="Uaddress">
+                    </div>
+                    <div class="Ulabel" style="margin-left: 70px;">
+                        <label for="Ucountry">COUNTRY :</label>
+                    </div>
+                    <div class="controller">
+                        <select name="Ucountry" id="Ucountry">
+                            <option value="Ucountry">INDIA</option>
+                            <option value="Ucountry">JAPAN</option>
+                            <option value="Ucountry">USA</option>
+                            <option value="Ucountry">LONDON</option>
+                            <option value="Ucountry">CHINA</option>
+                        </select>
+                    </div>
+                    <div class="Ulabel">
+                        <label for="Ustreetname">Street Name :</label>
+                    </div>
+                    <div class="controller">
+                        <input type="text" name="Ustreetname" id="Ustreetname">
+                    </div>
+                    <div class="Ulabel">
+                        <label for="Upin">PINCODE :</label>
+                    </div>
+                    <div class="controller" style="margin-left: 40px;">
+                        <input type="number" name="" id="" min="0" step="1">
+                    </div>
+                    <div class="Ulabel">
+                        <label for="Ustate">State :</label>
+                    </div>
+                    <div class="controller" style="margin-left: 105px;">
+                        <select name="Ustate" id="Ustate">
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+                </ul>
+            </div>
+            <div class="container_1">
+                <div class="head_box">ABOUT YOURSELF</div>
+                <ul>
+                    <div class="Ulabel" style="margin-right: 55px;">
+                        <label for="Uabout">About Yourself :</label>
+                    </div>
+                    <div class="controller" style="margin-right: 0%; padding-right: 0%;">
+                        <textarea name="Uabout" id="Uabout" cols="90" rows="8"></textarea>
+
+                    </div>
+                </ul>
+            </div>
+            <div class="register_box">
+                <input type="submit" value="REGISTER" style="color: red; font-weight: bolder;">
+            </div>
+        </div>
+    </form>
+    <div class="footer">
+        <h2>
+            &copy; COPYRIGHTS 2021
+        </h2>
+    </div>
+</body>
+
+</html>

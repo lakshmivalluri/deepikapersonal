@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Details using js</title>
+	</head>
+	<body>
+		<h4 style="text-decoration: underline; text-align: center;"> Employee Details </h4>
+			<script type="text/javascript">
+				var ename ="suraj devedi";
+				var eage =20;
+				var gender ='Male';
+				var edept ="IT cell";
+				var basicSal,pf,hra;
+				var totalSal,tax;
+					basicSal = 150000;
+					pf = (14*basicSal) / 100;
+					hra = (25 * basicSal) / 100;
+					totalSal = pf + hra + basicSal;
+					console.log("Employee name is " + ename);
+					console.log("Employee age is " + eage);
+					console.log("gender " + gender);
+					console.log("Employee dept " + edept);
+					console.log("Basic Salary  " +''+ basicSal);
+					console.log("pf is  " +''+ pf );
+					console.log("hra is  " +''+ hra);
+					console.log("Total salary is	" +''+ totalSal);
+				if(gender == 'Male')
+			{
+					if(totalSal > 40000){
+					tax = (totalSal * 15)/ 100;
+					console.log ("Tax is  " + tax);
+				} else if (totalSal > 30000) {
+					tax = (totalSal * 10)/100 ;
+					console.log("Tax is  " + tax);
+				} 	else if (totalSal > 10000) {
+					tax =(totalSal * 5)/100;
+					console.log("Tax is	 " + tax);
+				}else{
+					tax = 0;
+					console.log("Tax is  " + tax);
+				}
+			}
+
+					if(gender == 'Female'){
+						if(totalSal > 15000 ){
+							tax = (totalSal * 10) / 100;
+							console.log(" Tax is  " + tax);
+						} else if (totalSal >5000) {
+							tax = (totalSal * 5)/ 100;
+							console.log("Tax is  " + tax);
+						}else {
+							tax = 0;
+							console.log(" Tax is  " + tax);
+						}
+					}
+
+			</script>
+
+	</body>
+</html>

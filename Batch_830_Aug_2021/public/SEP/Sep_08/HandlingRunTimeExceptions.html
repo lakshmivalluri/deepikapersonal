@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="exceptionHandling.js"></script>
+        <title>
+            Handling Runtime Exceptions
+        </title>
+        <style>
+            .welcomeBlock {
+                border: 1px solid;
+                position: absolute;
+                top: 60%;
+                left: 35%;
+                width: 300px;
+                text-align: center;
+                padding: 20px;
+                background-color: yellow;
+                display: none;
+            }
+            #taskContainer {
+                border: 1px solid;
+                padding: 30px;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Enter Employee Name:
+            <input type="text" id="ename" >
+            <input type="button" value="Save" onclick="saveEmpName()">
+            <input type="button" value="Create Task Container" onclick="createTaskContainer()">
+            <input type="button" value="Show Task For Today" onclick="showTask()">
+        </div>
+
+        <div class="welcomeBlock">
+            Thanks for using the page...
+        </div>
+    </body>
+</html>

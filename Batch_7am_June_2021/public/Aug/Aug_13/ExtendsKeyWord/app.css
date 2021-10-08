@@ -1,0 +1,29 @@
+.btnContainer {
+    text-align: right;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+
+ul {
+    width: 500px;
+    border: 1px solid;
+    margin: 20px auto;
+    background-color: #ccc;
+    padding: 2px;
+}
+h3 {
+    text-align: center;
+    background-color: #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>prime list</title>
+    </head>
+    <body>
+        <script>
+        
+        var data = [ 89, 99, 34, 66, 76, 1, 19]
+        
+        var count, n;
+        
+        for (var j = 0; j < data.length; j++); {
+        n = data[j];
+        count = 0;
+        for (var i = 2; i < n; i++) {
+            if (n % i == 0) {
+            count = 1;
+            break;
+        }
+    }
+    if (count > 0) {
+     		console.log( n + "Is NOT Prime");
+     	 } else {
+     		console.log( n + " Is Prime");
+     	}
+    }
+      </script>
+  </body>
+  </html>

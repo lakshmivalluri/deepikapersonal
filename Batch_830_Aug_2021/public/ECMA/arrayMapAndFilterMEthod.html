@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var data = [34, 45, 56, 78, 89];
+
+            /*var result = [];
+            for (var i = 0 ; i < data.length; i++) {
+                if (data[i] % 2 == 0) {
+                    result.push(data[i]);
+                }
+            }
+
+            var result = data.filter((value, index) => {
+                if (value % 2 == 0) {
+                    return value;
+                }
+            });
+            console.log(result); */
+            var empSalary = [1000, 2000, 15000];
+            var result = [];
+            /*for (var i = 0 ; i < empSalary.length; i++) {
+                
+                result[i] = empSalary[i] + 500
+            } */
+
+            var temp = empSalary.map((value) => {
+                return value + 500;
+            });
+            console.log(empSalary);
+            console.log(temp);
+
+        </script>
+    </body>
+</html>

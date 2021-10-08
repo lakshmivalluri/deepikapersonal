@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var choice = parseInt(prompt("1. Sum Of Even No In Array \n 2. Prime No In Array \n 3. Sum Of Prime No \n 4. Palindrome No In Array \n 5. Armstrong No In Array \n 6. Sorting Array \n 7. Largest No In Array \n 8. Second Largest No In Array "));
+
+		var array = [153, 11, 13, 23, 370 , 9, 44 ,99, 131, 2, 6, 8, 24 ,26 ,28];
+
+
+		function Even()
+		{
+			var no, i, sum=0;
+			for(i=1;i<array.length;i++)
+			{
+				if(i%2==0)
+				{
+					console.log(i);
+					sum=sum+i;
+				}
+			}
+			console.log("Addition of even no is " +sum);
+		}
+		
+		function Prime()
+		{
+        	for (var i = 0; i < array.length; i++) 
+        	{
+        	var tracker = 0;
+        	var temp = array[i];
+        	temp = parseInt(temp);
+        	for (var n = 2; n < temp; n++)
+        	{
+          	var rem = temp % n;
+          	if (rem == 0)
+          	{
+            	tracker++;
+            	break;
+          	}
+       		}
+        	if (tracker == 0) 
+        	{
+          		console.log(temp);
+       		}
+      		}
+    	}
+    	function PrimeSum()
+    	{
+    		var sum = 0;
+      		for (var i = 0; i < array.length; i++)
+      		{
+        	var tracker = 0;
+        	var temp = array[i];
+        	temp = parseInt(temp);
+        	for (var n = 2; n < temp; n++)
+        	{
+          	var rem = temp % n;
+          	if (rem == 0) 
+          	{
+            tracker++;
+            break;
+          	}
+        	}
+        	if (tracker == 0) 
+        	{
+          	sum += temp;
+          	console.log(parseInt(sum));
+        	}
+     		}
+
+    	}
+		function Palindrom()
+		{
+			var temp = 0;
+      		for (var i = 0; i < array.length; i++) 
+      		{
+        	temp = array[i];
+        	var reverse = 0;
+        	while (temp > 0)
+        	{
+          	var rem = temp % 10;
+          	reverse = reverse * 10 + rem;
+          	temp = parseInt(temp / 10);
+        	}
+       		if (array[i] == reverse) 
+       		{
+         		 console.log(array[i]);
+        	}
+      		}
+    
+		}
+		function Armstrong()
+		{
+			for (var i = 0; i < array.length; i++) 
+			{
+       		var temp = array[i];
+       		var compute = 0;
+        	var rem = 0;
+        	while (temp > 0)
+        	{
+          	var lenOf = String(array[i]).length;
+          	rem = temp % 10;
+          	compute = compute + rem ** lenOf;
+          	temp = parseInt(temp / 10);
+        	}
+        	if (compute == array[i]) 
+        	{
+          	console.log(array[i]);
+        	}
+    		}
+    	}
+		
+		function Sorting()
+		{ 
+			array.sort(function (a, b) 
+			{
+     		return a - b;
+     		});
+    		console.log(array);
+    		array.sort(function (b, a) 
+    		{
+     		return a - b;
+     		});
+    		console.log(array);
+    	}
+		
+		function LargestNo()
+		{
+			var max = array[0];
+			for(i=0; i<=array.length; i++)
+			{
+				if(array[i]>max)
+				{
+					max =array[i];
+				}
+			}
+			console.log("Largest no in array :" +max);
+		}
+		function Small()
+		{	 
+			array.sort(function (n, i) {
+        	return n - i;
+      		});
+      		console.log(array);
+      		var max = array.length - 2;
+      		console.log(array[max]);
+    	}
+
+		switch (choice)
+		{
+			case 1: Even();
+					break;
+
+			case 2: Prime();
+					break;
+
+			case 3: PrimeSum();
+					break;
+
+			case 4: Palindrom();
+					break;
+
+			case 5: Armstrong();
+					break;
+
+			case 6: Sorting();
+					break;
+
+			case 7: LargestNo();
+					break;
+
+			case 8: Small();
+					break;
+
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Date object</title>
+  </head>
+  <body>
+    <script>
+      var num = prompt(
+        "Enter your choice" +
+          "\n" +
+          "1.mm/dd/yy" +
+          "\n" +
+          "2.mmmm,dd,yy" +
+          "\n" +
+          "3.mmmm,dd,yyyy" +
+          "\n" +
+          "4.day,mmm,dd,yyyy" +
+          "\n" +
+          "5.mm-dd-yy" +
+          "\n" +
+          "6.mm/dd/yy hh:mm" +
+          "\n" +
+          "7.mmmm,dd,yy hh:mm:ss"
+      );
+      var months = [
+        "Jan",
+        "Feb",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "september",
+        "October",
+        "November",
+        "December",
+      ];
+      var days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      var cdate = new Date();
+      switch (num) {
+        case "1":
+          var year = (cdate.getFullYear() + "").substr(2, 2);
+          console.log(
+            cdate.getMonth() + 1 + "/" + cdate.getDate() + "/" + year
+          );
+          break;
+        case "2":
+          var monthindex = cdate.getMonth();
+          var month = months[monthindex];
+          var year = (cdate.getFullYear() + "").substr(2, 2);
+          console.log(month + "," + cdate.getDate() + "," + year);
+          break;
+        case "3":
+          var monthindex = cdate.getMonth();
+          var month = months[monthindex];
+          console.log(
+            month + "," + cdate.getDate() + "," + cdate.getFullYear()
+          );
+          break;
+        case "4":
+          var dayindex = cdate.getDay();
+          var day = days[dayindex];
+          var monthindex = cdate.getMonth();
+          var month = months[monthindex];
+          console.log(
+            day +
+              "," +
+              month +
+              "," +
+              cdate.getDate() +
+              "," +
+              cdate.getFullYear()
+          );
+          break;
+        case "5":
+          var year = (cdate.getFullYear() + "").substr(2, 2);
+          console.log(
+            cdate.getMonth() + 1 + "-" + cdate.getDate() + "-" + year
+          );
+          break;
+        case "6":
+          var year = (cdate.getFullYear() + "").substr(2, 2);
+          console.log(
+            cdate.getMonth() +
+              1 +
+              "/" +
+              cdate.getDate() +
+              "/" +
+              year +
+              " " +
+              cdate.getHours() +
+              ":" +
+              cdate.getMinutes()
+          );
+          break;
+        case "7":
+          var year = (cdate.getFullYear() + "").substr(2, 2);
+          var monthindex = cdate.getMonth();
+          var month = months[monthindex];
+          console.log(
+            month +
+              "," +
+              cdate.getDate() +
+              "," +
+              year +
+              " " +
+              cdate.getHours() +
+              ":" +
+              cdate.getMinutes() +
+              ":" +
+              cdate.getSeconds()
+          );
+          break;
+      }
+    </script>
+  </body>
+</html>

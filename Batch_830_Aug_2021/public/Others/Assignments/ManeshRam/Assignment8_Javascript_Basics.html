@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 8</title>
+</head>
+
+<body>
+    <h1>
+        JAVA SCRIPT BASICS
+    </h1>
+    <script>
+        var name, age = 0, gender, BasicSal = 0, TotalSal = 0;
+
+        name = prompt('Enter Employee Name =  ');
+        age = prompt('Enter Employee Age = ');
+        gender = prompt('Enter Employee Gender = ');
+        BasicSal = prompt('Enter Employee Basic Salary = ');
+
+        age = parseInt(age)
+        BasicSal = parseInt(BasicSal)
+
+        var hra = 0, pf = 0, Tax = 0;
+
+        hra = (25 * BasicSal) / 100;
+        pf = (14 * BasicSal) / 100;
+
+        TotalSal = BasicSal + hra + pf;
+
+        console.log("Employee Name is " + name);
+        console.log("Employee Age is " + age);
+        console.log("Employee Gender is " + gender);
+        console.log("Employee Basic Salary is " + BasicSal + " Rs");
+        console.log("Employee Total Salary is " + TotalSal + " Rs");
+
+
+        if (gender == 'male') {
+            if (TotalSal > 200000) {
+                Tax = (15 * TotalSal) / 100;
+            }
+            else if (TotalSal > 100000) {
+                Tax = (10 * TotalSal) / 100;
+            }
+            else if (TotalSal > 50000) {
+                Tax = (5 * TotalSal) / 100;
+            }
+        }
+        else if (gender == 'female') {
+            if (TotalSal > 200000) {
+                Tax = (10 * TotalSal) / 100;
+            }
+            else if (TotalSal > 100000) {
+                Tax = (5 * TotalSal) / 100;
+            }
+        }
+        else {
+            Tax = 0;
+        }
+
+        console.log("Employee TAX is " + Tax + " Rs \n\n\n");
+        console.log("Employee with name " + name + " , age = " + age + " , Basic Salary = " + BasicSal + " Rs has a Total Salary of " + TotalSal + " Rs and has to pay a Tax of " + Tax + " Rs");
+        alert("Employee with name " + name + " , age = " + age + " , Basic Salary = " + BasicSal + " Rs has a Total Salary of " + TotalSal + " Rs and has to pay a Tax of " + Tax + " Rs");
+
+    </script>
+</body>
+
+</html>

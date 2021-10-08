@@ -1,0 +1,73 @@
+<!Doctype html>
+<head>
+    <title>
+        Json.Emplopee Details
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+    var EmpDetail = {
+        Ename : "",
+        Egender : "",
+        Edept : "",
+        basicSal : 0,
+        pf : 0,
+        hra : 0,
+        tax : 0,
+        totalsal : 0,
+        Actualsal:0,
+        ReadEmpData: function(){
+            this.Ename = prompt ("Enter  name is ");
+            this.Egender = prompt("Enter gender is" );
+            this.Edept = prompt("Enter Edept");
+            this.basicSal = prompt("Enter basicsalary");
+            this.basicSal = parseInt(this.basicSal)
+        
+        },
+    
+        EmpGetsal: function(){
+            this.pf =(15*this.basicSal)/100;
+            this.hra = (25*this.basicSal)/100;
+            this.totalsal = this.pf+this.hra+this.basicSal;
+            this.GettotalTax();
+        },
+
+        GettotalTax : function(){
+            if(EmpDetail.totalsal>=200000)
+            {
+                EmpDetail.tax =(15*EmpDetail.totalsal)/100;
+            }
+            else if (EmpDetail.totalsal>=100000)
+            {
+                EmpDetail.tax =(10*EmpDetail.totalsal)/100;
+            }
+            else if(EmpDetail.totalsal>=50000)
+            {
+              
+                EmpDetail.tax =(5*EmpDetail.totalsal)/100; 
+            }
+            else if(EmpDetail.totalsal<50000)
+            {
+                EmpDetail.tax =(2*EmpDetail.totalsal)/100;  
+            }
+            this.Actualsal = this.totalsal-this.tax;
+            
+        },    
+         Displaydata : function(){
+           this.ReadEmpData();
+           this.EmpGetsal();
+             console.log("enter name "+this.Ename);
+            console.log("enter gender "+this.Egender);
+            console.log("enter dept "+this.Edept);
+            console.log("enter basic salary "+this.basicSal);
+            console.log("enter pf "+this.pf);
+            console.log("enter hra "+this.hra);
+            console.log("enter totalsal "+this.totalsal);
+            console.log("tax "+EmpDetail.tax)
+             console.log("enter Actualsal "+this.Actualsal);
+         }           
+        } 
+     EmpDetail.Displaydata(); 
+    </script>
+</body>
+</html>

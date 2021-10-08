@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+		<body>
+			<script type="text/javascript">
+				var sDetails = {
+					"Name" : "Raj",
+					"age" : 20,
+					marks : []
+				}
+				for (var i=0; i<5; i++){
+
+				sDetails.marks[i] = prompt("Enter Value" +(i+1));
+				sDetails.marks[i] = parseInt(sDetails.marks[i]);
+			    }
+				sDetails.total =0;
+				for (var i= 0; i< sDetails.marks.length; i++){
+					sDetails.total+=sDetails.marks[i];
+
+				}
+				sDetails.avg = sDetails.total/sDetails.marks.length;
+				if (sDetails.avg >= 40){
+					sDetails.grade = "Passed";
+				}else{
+					sDetails.grade = "Surprised";
+				}
+				console.log(sDetails);
+				console.log("Name is : " + sDetails.Name);
+				console.log("Age is : " + sDetails.Age);
+				console.log(" total marks" +sDetails.total);
+				console.log(" avg marks is " +sDetails.avg);
+				console.log(" Grade is "+sDetails.grade);
+			</script>
+
+		</body>
+</html>

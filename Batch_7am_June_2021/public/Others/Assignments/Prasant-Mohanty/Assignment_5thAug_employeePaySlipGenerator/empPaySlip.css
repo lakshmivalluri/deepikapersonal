@@ -1,0 +1,26 @@
+.pageHeading {
+    text-align: center;
+    font-weight: bold;
+    background-color: aquamarine;
+    font-size: 20px;
+}
+ul {
+    border: 3px solid;
+    width: 600px;
+    margin: 10px auto;
+    padding: 2px;
+}
+li {
+    list-style: none;
+    border: 1px solid rgb(68, 30, 236);
+    margin: 5px;
+    padding: 5px;
+}
+.opHeading {
+    text-align: center;
+    font-size: 22px;
+    color: greenyellow;
+}
+.paySlipBlock {
+    display: none;
+}

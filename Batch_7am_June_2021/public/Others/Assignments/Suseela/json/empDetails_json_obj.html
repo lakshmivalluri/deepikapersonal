@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Emp Details using Json Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function employeeData(){
+		var empDetails={};
+		empDetails.name=prompt("Enter name");
+		empDetails.age=prompt("Enter age");
+		empDetails.basicSal=prompt("Enter Basic Salary");
+		empDetails.basicSal=parseInt(empDetails.basicSal);
+		empDetails.dept=prompt("Enter department");
+		empDetails.gender=prompt("Enter gender");
+
+
+		var salObj=getTotalSal(empDetails);
+		empDetails.pf=salObj.pf;
+		empDetails.hra=salObj.hra;
+		empDetails.totalSal=salObj.totalSal;
+		console.log("PF is" +empDetails.pf);
+		console.log("HRA is" +empDetails.hra);
+		console.log("Total Sal is" +empDetails.totalSal);
+		console.log(empDetails);
+	}
+
+		//calculations
+		function getTotalSal(salObj){
+			var pf,hra,totalSal;
+			var basicSal=salObj.basicSal;
+			pf =basicSal*0.14;
+			hra =basicSal*0.25;
+			totalSal =basicSal+pf+hra;
+        	return{'pf':pf,'hra':hra,'totalSal':totalSal}
+		}
+		employeeData();
+	</script>
+</body>
+</html>

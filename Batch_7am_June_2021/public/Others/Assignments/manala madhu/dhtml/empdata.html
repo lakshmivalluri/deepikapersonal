@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="icon" type="image/png" href="tsco.png">
+            <link rel="stylesheet" href="emp.css">
+        </head>
+            <body>
+                <div class="heading">
+                    Enter The Employee Details
+                </div>
+                <ul>
+                    <li> Employye name: <input type="text" id ="ename"></li>
+                    <li> Employye age: <input type="text" id ="eage"></li>
+                    <li> Gender:
+                        <input type="radio" name="ugender" id = "egender">Male
+                        <input type="radio" name="ugender" id = "egender">Female
+                        <input type="radio" name="ugender" id = "egender">Others
+                    </li>
+                    <li> Employye department:
+                         <select id="edepot">
+                            <option value="IT">IT</option>
+                            <option value="doctor">Doctor</option>
+                         </select>
+                    </li>
+                    <li> Employye basicsalary: <input type="text" id ="ebsalary" ></li>
+   
+                    <li style="text-align: center;">
+                         <input type="button" value="Generate Employee data" onclick= "generateemployeedata();">
+                    </li>
+                </ul>
+                <ul class="employeeData">
+                    <li class ="eTitle">
+                        Empoyee data:
+                    </li>
+                    <li>
+                        Employee Name: <span id="rename"></span>
+                    </li>
+                    <li>
+                        Employee Age: <span id="reage"></span>
+                    </li>
+                    <li>
+                        Employee Gender: <span id="regender"></span>
+                    </li>
+                    <li>
+                        Employee Dpoertment: <span id="redepot"></span>
+                    </li>
+                    <li>
+                        Employee Basicsalary: <span id="rebsalary"></span>
+                    </li>
+                    <li>
+                        Employee PF: <span id="repf"></span>
+                    </li>
+                    <li>
+                        Employee HRA: <span id="rehra"></span>
+                    </li>
+                    <li>
+                        Employee TotalSalary: <span id="retsalary"></span>
+                    </li>
+                    <li>
+                        Employee Tax Paying Amount: <span id="retax"></span>
+                    </li>
+                </ul>
+                <script src="emp.js"></script>
+            </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Palindrome between 300 to 21</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			for(var num = 300; num > 21; num--) {
+				var temp = num;
+				var res, r = 0;
+				while(temp > 0) {
+					res = temp % 10;
+					r = r * 10 + res;
+					temp = parseInt(temp / 10);
+				}
+				if(num == r) {
+					console.log(num);
+				}
+			}
+		</script>
+	</body>
+</html>

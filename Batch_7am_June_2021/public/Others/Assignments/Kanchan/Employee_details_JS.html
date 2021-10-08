@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title> Employee Details</title>
+		</head>
+
+		<body>
+			<div style="border: 2px solid ; background-color: pink; font-size:20px; text-align: center;" > Employee Details</div>
+			<script type="text/javascript">
+				var empName, age, deparment, basicsal, pf, hra, totalSal ,Gender,tax;
+
+				empName = " Amita";
+				age = 25;
+				deparment = "It_eng";
+				gender = "female"; 
+				basicsal = 50000;
+				pf = (basicsal * 14)/100;
+				hra = (basicsal*25)/100;
+				totalSal =  pf + hra + basicsal;
+		
+				console.log( "empName"+ " " + empName );
+				console.log ("age" + " " + age);
+				console.log( "deparment" + " " + deparment);
+				console.log("basicsal" +  " " + basicsal);
+				console.log("pf" + " " + pf);
+				console.log("hra" + " " + hra);
+				console.log("totalSal" + " " + totalSal);
+
+				if (gender == "male") {
+					if ( totalSal > 200000) {
+
+				tax = totalSal * 15 /100;
+				console.log ( "  male employee should pay 15% tax" + " male" + " " + tax);
+					}
+
+				 else if ( totalSal > 100000 ){
+				 tax = totalSal * 10/100;
+				 console.log ( " male employee should pay 10% tax" + " " + tax);
+				}
+
+				 else if ( totalSal > 50000) {
+				 	tax = totalSal * 5/100;
+				 	console.log( " male employee should pay 5% tax" + " " + tax);
+				 }
+				
+			}
+			 if ( gender== "female"){
+			 	if ( totalSal > 200000){
+			 		tax = totalSal  * 10 /100;
+			 	
+			 	console.log ( " female employee should pay 10 % tax" + " " + tax);
+			 }
+
+			 	else if ( totalSal > 100000){
+			 		tax = totalSal * 5/100;
+			 		console. log ( "female employee should pay 5% tax" + " " + tax);
+
+			 	}
+			 	 else if (totalSal> 50000) {
+			 	  console.log ( "  no tax ")
+			 	 }
+
+			}	
+			</script>
+					
+
+		</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul {
+                border: 1px solid;
+                width: 500px;
+                margin: 20px auto;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                background-color: #ccc;
+                padding: 5px;
+                margin: 5px;
+            }
+            .title {
+                background-color: yellow;
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="title">
+                USer Registration page
+            </li>
+            <li>Enter ur name : <input type="text" id="uname"></li>
+            <li>
+                Age: <input type="number"  min="10" max="21">
+            </li>
+            <li>
+                Color: 
+                <input type="color">
+            </li>
+            <li>
+                Price Range:
+                <input id="uprice" type="range" min=1000 max=5000 onchange="priceRangeChanged()">
+                <span id="priceSelected"></span>
+            </li>
+            <li>
+                Uer DOB:
+                <input type="datetime-local">
+            </li>
+            <li>
+               
+                <input type="tel" placeholder="Enter phone no">
+            </li>
+            <li>
+                <input type="file" id="fname">
+            </li>
+            <li>
+                Path of ur web page:
+                <input type="url">
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="registerDetails()">
+            </li>
+        </ul>
+        <script>
+            var priceRangeChanged = () => {
+                document.querySelector('#priceSelected').innerHTML = document.querySelector("#uprice").value;
+            }
+
+            var registerDetails = () => {
+                var data = {
+                    fname: document.querySelector("#fname").value,
+                    uname: document.querySelector("#uname").value
+                };
+                console.log(data);
+            }
+        </script>
+    </body>
+</html>

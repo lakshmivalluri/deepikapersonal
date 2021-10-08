@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Json Object</title>
+  </head>
+  <body>
+    <h1>Employee Json object with behavior</h1>
+    <script>
+      var empdetails = {
+        name: "",
+        gender: "",
+        dept: "",
+        basicsalary: 0,
+        totalsalary: 0,
+        pf: 0,
+        hra: 0,
+        readData: function () {
+          this.name = prompt("Enter employee name");
+          this.gender = prompt("Enter gender");
+          this.dept = prompt("Enter department");
+          this.basicsalary = prompt("Enter basicsalary");
+          this.basicsalary = parseInt(empdetails.basicsalary);
+          this.calculatetotalsalary();
+        },
+        calculatetotalsalary: function () {
+          this.pf = (14 / 100) * this.basicsalary;
+          this.hra = (25 / 100) * empdetails.basicsalary;
+          this.totalsalary = this.pf + this.hra + this.basicsalary;
+        },
+        calculateTax: function () {
+          if (this.gender == "male") {
+            if (this.totalsalary > 200000) {
+              this.tax_percent = 15;
+              this.tax = (this.tax_percent / 100) * this.totalsalary;
+              console.log("Tax :" + this.tax);
+            } else if (
+              this.totalsalary > 100000 &&
+              this.totalsalary <= 200000
+            ) {
+              this.tax_percent = 10;
+              this.tax = (this.tax_percent / 100) * this.totalsalary;
+              console.log("Tax :" + this.tax);
+            } else if (this.totalsalary > 50000 && this.totalsalary <= 100000) {
+              this.tax_percent = 5;
+              this.tax = (this.tax_percent / 100) * this.totalsalary;
+              console.log("Tax :" + this.tax);
+            }
+          } else {
+            if (this.totalsalary > 200000) {
+              this.tax_percent = 10;
+              this.tax = (this.tax_percent / 100) * this.totalsalary;
+              console.log("Tax :" + this.tax);
+            } else if (
+              this.totalsalary > 100000 &&
+              this.totalsalary <= 200000
+            ) {
+              this.tax_percent = 5;
+              this.tax = (this.tax_percent / 100) * this.totalsalary;
+              console.log("Tax :" + this.tax);
+            } else if (this.totalsalary > 50000 && this.totalsalary <= 100000) {
+              this.tax_percent = 0;
+              this.tax = (this.tax_percent / 100) * this.totalsalary;
+              console.log("Tax :" + this.tax);
+            }
+          }
+        },
+        displayData: function () {
+          this.readData();
+          console.log("Name " + this.name);
+          console.log("Gender " + this.gender);
+          console.log("Department " + this.dept);
+          console.log("Basicsalary " + this.basicsalary);
+          this.calculateTax();
+        },
+      };
+      empdetails.displayData();
+      console.log(empdetails);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="">
+	<meta charset="utf-8">
+	<script type ="text/javascript">
+		function computeBMI() {
+			var height = Number(document.getElementById("BMI-height-centimetres").value);
+			var weight = Number(document.getElementById("BMI-weight-kilos").value);
+		
+		var BMI=Math.round(weight/Math.pow(height,2)*10000)
+
+		document.getElementById("output").innerText = Math.round(BMI * 100) / 100
+
+		var output=Math.round(BMI * 100) / 100
+		if (output >30)
+			document.getElementById("comment").innerText = "Obese";
+		if (output >=25 && output <=30)
+			document.getElementById("comment").innerText = "Overweight";
+		if (output >=18.5 && output <=25)
+			document.getElementById("comment").innerText = "Healthy";
+		if (output <18.5)
+			document.getElementById("comment").innerText = "Unhealth Eat more!";
+		}
+	</script>
+	<title>Healthy BMI Calculator</title>
+	<style>
+
+        #box {
+                background-color: cyan;
+                margin-left:20%;
+                margin-right:20%;
+                border: 6px double black;
+                padding: 20px 20px 20px 20px;
+                font-family: sans-serif;
+    </style>
+</head>
+<body>
+	<div id="box">
+		<h1 style="text-align:center;"> Healthy BMI Calculator </h1> <h5 style="text-align:center;"> by Raja </h5>
+		<h3 style="color: blue;"> Healthy Weight </h3>
+
+		<h4>
+			Use the BMI calcualtor below to check your body weight and find out if you're at a healthy weight.
+		</h4>
+
+		<h4> Height </h4>
+		<h5> Centimetres </h5>
+		<p>
+			<input id="BMI-height-centimetres" alt="height, Centimetres" type="number" step="0.1" min="0" maxlength="5">
+
+		</p>
+		<div>
+		<hr style="height:2px;width:100%;border-width:0;color:red; background-color: red">
+		</div>
+
+		<h4> Weight </h4>
+		<h5> Kilograms </h5>
+		<div>
+			<input id="BMI-weight-kilos" alt="weight, kilograms" type="number" step="0.1" min="0" maxlength="5">
+
+		</div>
+		<div>
+		<hr style="height:2px;width:100%;border-width:0;color:red; background-color: red">
+		</div>
+
+		<h4> Sex </h4>
+		<div class=radio_item>
+			<input type="radio" name="gender" id="BMI-genders-male" value="male">
+			<label for="male"> Male </label>
+			<input type="radio" name="gender" id="BMI-genders-female" value="female">
+			<label for="female"> Female </label>
+		</div>
+		<div>
+		<hr style="height:2px;width:100%;border-width:0;color:red; background-color: red">
+		</div>
+
+		<h4> Activity </h4>
+		<div class=activity_item>
+			<input id="BMI-activity" name="activity" type="radio" value="inactive">
+			<label for="inactive"> Inactive </label>
+			<input id="BMI-activity" name="activity" type="radio" value="moderate">
+			<label for="moderate"> Moderately active </label>
+			<input id="BMI-activity" name="activity" type="radio" value="active">
+			<label for="active"> Active </label>
+		</div>
+		<div>
+		<hr style="height:2px;width:100%;border-width:0;color:red; background-color: red">
+		</div>
+		<br>
+		<hr style="height:2px;width:100%;border-width:0;color:red; background-color: red">
+		<input type="submit" value="your BMI" onclick="computeBMI();">
+
+		<h2> Your BMI is: <span id="output">?</span></h2>
+		<h2> You weight puts you as: <span id="comment">?</span></h2>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ass1js</title>
+	</head>
+	<body>
+	   <script type="text/javascript">
+	   	 var name = prompt("enter name");
+	   	 var age = prompt("enter age");
+	   	 var gender = prompt("enter gender");
+	   	 var basicsalary = prompt("enter basicsalary");
+	   	 basicsalary = parseInt(basicsalary);
+	   	
+	     console.log("name is"+name);
+	   	 console.log("age is"+age);
+	   	 console.log("gender is"+gender);
+	   	 console.log("basicsalary is"+basicsalary);
+	   	 hrf = (basicsalary*25)/100;
+	   	 pf = (basicsalary*14)/100;
+	   	 totalsalary = basicsalary+hrf+pf
+	   	 console.log("hrf is"+hrf);
+	   	 console.log("pf is"+pf);
+	   	 console.log("totalsalary is"+totalsalary);
+
+        if (gender = "male") {
+        	if (totalsalary>200000) {
+        		tax = (totalsalary*14)/100;
+        		console.log("tax is" +tax);
+        	}else if (totalsalary>100000) {
+        		tax = (totalsalary*10)/100;
+        		console.log("tax is" +tax);
+        	}else if (totalsalary>50000) {
+        		tax = (totalsalary*5)/100;
+        	}else{
+        		tax = 0;
+        		console.log("tax is"+tax);
+        	}
+        }else{
+        	if (totalsalary>200000) {
+        		tax = (totalsalary*10)/100;
+        		console.log("tax is"+tax);
+        	}else if (totalsalary>100000) {
+        		tax = (totalsalary*5)/100;
+        		console.log("tax is"+tax);
+        	}else if (totalsalary>50000) {
+        		tax = 0;
+        		console.log("tax is"+tax);
+        	}
+
+        	
+        }
+
+
+
+
+
+	   	 </script>
+	</body>
+</html>

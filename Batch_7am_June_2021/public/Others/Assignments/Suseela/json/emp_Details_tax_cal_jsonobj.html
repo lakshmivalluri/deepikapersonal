@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tax calculation using Json object</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function employeeData() {
+        var empDetails = {};
+        empDetails.name = prompt("Enter the employee name : ");
+        empDetails.age = prompt("Enter the employee age : ");
+        empDetails.basicsal = prompt("Enter the basic salary : ");
+        empDetails.basicsal = parseInt(empDetails.basicsal);
+        empDetails.gender = prompt("Enter the gender : ");
+        salaryCalculations(empDetails);
+      }
+
+      function salaryCalculations(empDetails) {
+        var saldetails = {};
+        saldetails.pf = (14 / 100) * empDetails.basicsal;
+        saldetails.hra = (25 / 100) *empDetails.basicsal;
+        saldetails.totalsal =empDetails.basicsal + saldetails.hra + saldetails.pf;
+        console.log("basic sal is " + empDetails.basicsal);
+        console.log("hra is " + saldetails.hra);
+        console.log("pf is " + saldetails.pf);
+        console.log("totalsal is " + saldetails.totalsal);
+        taxcalculator(empDetails, saldetails);
+      }
+
+      function taxcalculator(empDetails, saldetails) {
+        if (empDetails.gender == "male") {
+          if (saldetails.totalsal > 400000) {
+            tax = (15 / 100) * saldetails.totalsal;
+            console.log("tax is " + tax);
+          } else if (saldetails.totalsal > 100000) {
+            tax = (10 / 100) * saldetails.totalsal;
+            console.log("tax is " + tax);
+          } else if (saldetails.totalsal > 50000) {
+            tax = (5 / 100) * saldetails.totalsal;
+            console.log("Tax is " + tax);
+          } else {
+            tax = 0;
+            console.log("tax is " + tax);
+          }
+        }
+        if (empDetails.gender == "female") {
+          if (saldetails.totalsal > 400000) {
+            tax = (10 / 100) * saldetails.totalsal;
+            console.log("tax is " + tax);
+          } else if (saldetails.totalsal > 100000) {
+            tax = (5 / 100) * saldetails.totalsal;
+            console.log("tax is " + tax);
+          } else {
+            tax = 0;
+            console.log("no tax");
+          }
+        }
+      }
+      employeeData();
+	</script>
+</body>
+</html>

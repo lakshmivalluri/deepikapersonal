@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>E-Shopping</title>
+		<link rel="stylesheet" href="../CSS/LoginStyle.css"/>
+		<script src="../jQueryCompressed.js"></script>
+	</head>
+	<body class="mainimg">
+		<div id="presentDate"></div>
+		<div class="inner">
+			<form action="https://dummyserver.com" method="post">
+				<h2 style="text-align : center;">Login</h2>
+				<ul>
+					<li>
+						<div class="outer">
+							<label for="uname">Enter the User Name : </label>
+						</div>
+						<div class="innerblock	">
+							<input type="text" onkeypress="return uname(event)" maxlength="20" id="username" title="Enter the username that you have registered" placeholder="Click Here to enter" required="uname">
+						</div>
+						<div class="uname">Invalid UserName</div>
+					</li>
+					<li>
+						<div class="outer">
+							<label>Enter the Password  : </label>
+						</div>
+						<div class="innerblock">
+							<input type="password" name="psw" onkeypress="return userpsw(event)" placeholder="****" maxlength="4" title="Enter your Password" required="password">
+						</div>
+						<div class="upsw">Invalid Password</div>
+					</li>
+				</ul>
+				<div class="button"><input type="submit" name="submit"> 
+					<button><a href = "http://localhost:8081/Others/Project/Ananth_Atmakuri/Project_UI_Classes/Forget_Password.html">Forget Password</button>
+				</div>
+				<div class="button"><button><a href = "http://localhost:8081/Others/Project/Ananth_Atmakuri/Project_UI_Classes/Registration_Page.html">Register/Signup</button></div>
+			</form>
+		</div>
+		<script src="../JavaScript/Loginjs.js"></script>
+	</body>
+</html>

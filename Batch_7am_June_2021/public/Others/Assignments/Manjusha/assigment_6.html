@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment-6</title>
+	</head>
+	<body>
+		<h3>Employee Details</h3>
+		<script type="text/javascript">
+			var empName = "Rajesh";
+			var age = 25;
+			var department = "Teaching";
+			var basicSalary = 20000;
+			var gender = "Male";
+			var pf, hra, totalSalary;	
+				pf = (14 * basicSalary) / 100;
+				hra = (25 * basicSalary) / 100;
+				totalSalary = pf + hra + basicSalary;
+			console.log("employee is" + " " + empName);
+			console.log("employee-age is" + " " + age);
+			console.log("employee-gender is" + " " + gender);
+			console.log("pf is" + " " + pf);
+			console.log("hra is" + " " + hra);
+			console.log("totalsalary is" + " " + totalSalary);
+			if(gender == "Male") {
+				if(totalSalary > 30000) {
+					tax = 15/100 * totalSalary;
+					console.log("tax is" + " " + tax);
+				} else if(totalSalary > 20000) {
+					tax = 10/100 * totalSalary;
+					console.log("tax is" + " " + tax);
+				} else if(totalSalary > 1000) {
+					tax = 5/100 * totalSalary;
+					console.log("tax is" + " " + tax);
+				} else {
+					tax = 0;
+					console.log("tax is" + " " + tax);
+				}
+			}
+			if(gender == "Female") {
+				if(totalSalary > 30000) {
+					tax = 15/100 * totalSalary;
+					console.log("tax is" + " " + tax);
+				} else if(totalSalary > 28000) {
+					tax = 5/100 * totalSalary;
+					console.log("tax is" + " " + tax);
+				} else {
+					tax = 0;
+					console.log("tax is" + " " + tax);
+				}
+			}
+		</script>
+	</body>
+</html>

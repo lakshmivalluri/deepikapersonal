@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Switch Case</title>
+    </head>
+    <body>
+        <script>
+            var fVal = prompt("enter first value");
+            var sVal = prompt("Enter second value");
+
+            fVal = parseInt(fVal);
+            sVal = parseInt(sVal);
+
+            var userAction = prompt("Choose add/ mul/sub/div");
+            var result;
+           /* if (userAction == 'add') {
+                result = fVal + sVal;
+                console.log("The sum is " + result);
+            } else if (userAction == 'sub') {
+                result = fVal - sVal;
+                console.log("The substraction is " + result);
+            } else if (userAction == 'mul') {
+                result = fVal * sVal;
+                console.log("The multiplication is " + result);
+            } else if (userAction == 'div') {
+                result = fVal / sVal;
+                console.log("The division is " + result);
+            } else {
+                console.log("wrong choice")
+            }*/
+
+            switch(userAction) {
+                case 'add':
+                    result = fVal + sVal;
+                    console.log("The sum is " + result);
+                    break;
+                case 'sub':
+                    result = fVal - sVal;
+                    console.log("The substraction is " + result);   
+                    break;
+                case 'div':
+                    result = fVal / sVal;
+                    console.log("The division is " + result);
+                    break;
+                case 'mul':
+                    result = fVal * sVal;
+                    console.log("The multiplication is " + result);
+                    break;
+                default:
+                    console.log("Wrong selection");
+            }
+
+            
+        </script>
+    </body>
+</html>

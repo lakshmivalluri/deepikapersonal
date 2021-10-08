@@ -1,0 +1,52 @@
+nav {
+    height: 75px;
+    background-color: #ffafcc;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #f2cc8f;
+}
+
+#con {
+    position: absolute;
+    right: 3%;
+}
+#srch{
+    margin-left: 50px;
+}
+#brand {
+    background-color: #a8dadc;
+    border: 3px solid;
+    color: red;
+    padding: 8px;
+}
+
+#search {
+    background-color: #a8dadc;
+}
+
+.img-bnnr {
+    margin-top: 10px;
+    margin-left: 25%;
+    height: 40%;
+    width: 50%;
+}
+
+#bn-img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#adsBlock {
+    background-color: #dfe7fd;
+    margin: 8px;
+    border: 3px solid #4361ee;
+}
+
+#marq {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: #faa307;
+    font-size: 1.2rem;
+}

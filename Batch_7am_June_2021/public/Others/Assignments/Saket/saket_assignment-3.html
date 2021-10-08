@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block alignment</title>
+    <style>
+        body {
+            background: cornsilk;
+        }
+        .sticky_header {
+            position: sticky;
+            top: 0;
+            height: 85px;
+            width: 100%;
+            border: 1px solid;
+            background: yellow;
+
+        }
+        h1 {text-align: center;
+            color: darkblue;
+
+        }
+        .p {
+            background: red;
+            top: 92px;
+        }
+        .p, .block {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            margin: 10px 10px;
+            position: absolute;
+            
+        }
+        .child {
+            position: relative;
+            background: blue;          
+            
+        }
+        .main {
+            height: 250px;
+            width: 250px;
+            border: 1px solid;
+            margin: 10px 10px;
+            position: absolute;
+            top: 250px;
+            left: 560px;
+            background: yellow;
+        }
+        .a {
+            top: 95px;
+            right: 0px;
+        }
+        .b {
+            top: 574px;
+            left: 0px;
+        }
+        .c {
+            top: 571px;
+            right: 0px;
+        }
+        .s1 {
+            top: 20px;
+            left: 20px;
+        }
+        .s2 {
+            top: 20px;
+            right: 40px;
+        }
+        .s3 {
+            top: 34px;
+            left: 20px;
+        }
+        .s4 {
+            top: 32px;
+            right: 40px;
+        }
+        .m1 {
+            top: -60px;
+            left: -60px;
+        }
+        .m2 {
+            top: -172px;
+            right: -184px;
+        }
+        .m3 {
+            bottom: 31px;
+            left: -60px;
+        }
+        .m4 {
+            bottom: 143px;
+            right: -190px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky_header">
+        <h1>Block Alignment</h1>
+    </div>
+    <div class="p block" style="top: 95px;">
+        <div class="p block child s1"></div>
+
+    </div>
+ 
+    <div class="p block a">
+        <div class="p block child s2"></div>
+
+    </div>
+    <div class="p block b">
+        <div class="p block child s3"></div>
+
+    </div>
+ 
+    <div class="p block c">
+        <div class="p block child s4"></div>
+
+    </div>
+    <div class="main">
+        <div class="block child m1"></div>
+        <div class="block child m2"></div>
+        <div class="block child m3"></div>
+        <div class="block child m4"></div>
+    </div>
+</body>
+</html>

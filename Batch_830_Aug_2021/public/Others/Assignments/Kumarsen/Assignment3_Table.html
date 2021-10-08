@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Student_Details_Page_Using_Table</title>
+	<style type="text/css">
+	body
+	{
+		background-color: black;
+		color: white;
+	}
+	.head_part
+	{
+		background-color: yellowgreen;
+		color: black;
+		border: 2px solid whitesmoke;
+		text-align: center;
+		font-size: 26px;
+		font-weight: bold;
+	}
+	.main_part
+	{
+		margin-top: 7px;
+		background-color: white;
+		color: black;
+		margin-bottom: 7px;
+		padding: 5px;
+	}
+	.foot_part
+	{
+		color: black;
+		background-color: white;
+		text-align: center;
+		border: 2px;
+	}
+	table
+	{
+		margin: 10px;
+		width: 98.5%;
+	}
+	td:hover
+	{
+		background-color: green;
+		color: white;
+		font-weight: bold;
+	}
+	thead
+	{
+		color: white;
+		background-color: black;
+	}
+	img
+	{
+		background-color: blue;
+		border: 2px solid black;
+		height: 250px;
+		width: 250px;
+	}	
+	.img_holder
+	{
+		width: 250px;
+		background-color: blue;
+	}	
+	</style>
+</head>
+<body>
+	<div class="head_part">Student Details</div>
+	<div class="main_part">
+		<table border="3px solid" bordercolor="blue" cellspacing="3px" cellpadding="5px">
+			<thead>
+				<tr>
+					<th>S.no.</th>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Profile picture</th>
+					<th>Class</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Neha</td>
+					<td>Odisha</td>
+					<td class="img_holder"><img src="Images/Student1.png" alt="loading"></td>
+					<td rowspan="5">12th</td>
+					<td>
+						<table border="2px solid" cellspacing="3px" cellpadding="5px">
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Maths</td>
+									<td>75</td>
+									<td>21</td>
+									<td>65</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>60</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>68</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>72</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>80</td>
+								</tr>
+								<tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Ramesh</td>
+					<td>Delhi</td>
+					<td class="img_holder"><img src="Images/Student2.png" alt="loading"></td>
+					
+					<td>
+						<table border="2px solid" cellspacing="3px" cellpadding="5px">
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Maths</td>
+									<td>75</td>
+									<td>21</td>
+									<td>59</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>62</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>53</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>69</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>78</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Manisha</td>
+					<td>Punjab</td>
+					<td class="img_holder"><img src="Images/Student3.png" alt="loading"></td>
+					
+					<td>
+						<table border="2px solid" cellspacing="3px" cellpadding="5px">
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Maths</td>
+									<td>75</td>
+									<td>21</td>
+									<td>55</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>45</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>62</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>74</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>87</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Hrisikesh</td>
+					<td>Up</td>
+					<td class="img_holder"><img src="Images/Student4.png" alt="loading"></td>
+					
+					<td>
+						<table border="2px solid" cellspacing="3px" cellpadding="5px">
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Maths</td>
+									<td>75</td>
+									<td>21</td>
+									<td>49</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>52</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>63</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>59</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>88</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Maharshi</td>
+					<td>Hyderabad</td>
+					<td class="img_holder"><img src="Images/Student5.png" alt="loading"></td>
+					
+					<td>
+						<table border="2px solid" cellspacing="3px" cellpadding="5px">
+							<thead>
+								<tr>
+									<th>Subject</th>
+									<th>Max_mark</th>
+									<th>Min_mark</th>
+									<th>Obtained</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Maths</td>
+									<td>75</td>
+									<td>21</td>
+									<td>68</td>
+								</tr>
+								<tr>
+									<td>Physics</td>
+									<td>75</td>
+									<td>21</td>
+									<td>42</td>
+								</tr>
+								<tr>
+									<td>Chemistry</td>
+									<td>75</td>
+									<td>21</td>
+									<td>61</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>75</td>
+									<td>21</td>
+									<td>55</td>
+								</tr>
+								<tr>
+									<td>English</td>
+									<td>100</td>
+									<td>33</td>
+									<td>89</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="foot_part">©allCopyReserved_2021</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating CSS Priority Order
+		</title>
+		<style type="text/css">
+			.container {				
+				text-align: center;   /* possible values are left/right/center */
+				font-size: 10px;
+			}
+			#content {
+				height: 200px ;
+				font-size: 20px;
+			}
+			p {
+				background: green;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="container" id="content" style="color: #fff; font-size: 30px;">
+			Hello Every one
+		</p>
+	</body>
+</html>

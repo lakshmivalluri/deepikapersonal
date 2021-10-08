@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>no.of times repeated</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var rep = [1, 2, 2, 5, 1, 6];
+			var count;
+			for (var i = 0; i < rep.length; i++) {
+				count = 1;
+				if (rep[i] != -1) {
+					for (var j = i + 1; j < rep.length; j++) {
+						if(rep[i] == rep[j]) {
+							count ++;
+							rep[j] =-1;
+							
+						}
+					}
+					console.log(rep[i] + " " + "is repeated for" + " " + count + "(time)");
+				}
+			}
+		</script>
+	</body>
+</html>

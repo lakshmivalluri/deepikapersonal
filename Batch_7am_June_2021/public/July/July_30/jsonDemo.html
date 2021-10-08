@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Json object
+        </title>
+    </head>
+    <body>
+        <script>
+           /* var sdetails = {
+                'name': 'Raj',
+                "age": 10,
+                marks: [23, 45, 76]
+            };*/
+            var sdetails = {
+                age: 0,
+                marks: []
+            };
+            sdetails.age = prompt("Enter age value");
+            sdetails.age = parseInt(sdetails.age);
+
+            
+
+
+            sdetails.age = 99;
+            sdetails.name = prompt("name");
+            
+            for (var i = 0 ; i < 5; i++) {
+                sdetails.marks[i] = prompt("Enter value for subect" + (i+1));
+                sdetails.marks[i] = parseInt(sdetails.marks[i]);
+            }
+            sdetails.total = 0;
+            for (var i = 0; i < sdetails.marks.length; i++) {
+                sdetails.total += sdetails.marks[i];
+            }
+            sdetails.avg = sdetails.total/sdetails.marks.length;
+
+            if (sdetails.avg >= 40) {
+                sdetails.grade = "PAssed";
+            } else {
+                sdetails.grade = "Surprise";
+            }
+            console.log(sdetails);
+            console.log("Name is " + sdetails.name);
+            console.log("AGe is " + sdetails.age)
+            console.log("Avg is " + sdetails.avg);
+            console.log("Grade  " + sdetails.grade)
+
+        </script>
+    </body>
+</html>

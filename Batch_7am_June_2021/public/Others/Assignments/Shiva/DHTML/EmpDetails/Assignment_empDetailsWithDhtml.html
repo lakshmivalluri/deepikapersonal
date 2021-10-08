@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <ul>
+        <div>
+            Enter employee name:
+            <input type = "text"  id = "eName" placeholder = "name">
+        </div>
+        <div>
+            Enter age:
+            <input type = "text"  id = "eAge" placeholder = "age">
+        </div>
+        <div>
+            Gender:
+            <input type = "text" id = eGender>
+        </div>
+        <div>
+            Department:
+          <select  id = "eDept">
+            <option>select</option>
+            <option>IT</option>
+            <option>programmer analyst</option>
+            <option>Developer</option>
+            <option>support</option>
+            <option>Testing</option>
+            <option>HR</option>
+          </select>
+        </div>
+        <div>
+            Location:
+            <select id = "eLoc">
+                <option>select</option>
+                <option>Hyderabad</option>
+                <option>bangolore</option>
+                <option>chennai</option>
+                <option>mumbai</option>
+                <option>kolkata</option>
+            </select>
+        </div>
+        <div>
+            Employee basic salary:
+            <input type = "text" id = "eBSal" placeholder = "1234...">
+        </div>
+        <div style = "text-align: center;">
+            <input type = "button" value = "generate pay slip" onclick = "empDetails.showData();">
+        </div>
+    </ul>
+    <script src = "functioningEmpDet.js"></script>
+    <ul class = "paySlip">
+        <li>
+            Employee Name:
+            <span id = "emName"></span>
+        </li>
+        <li>
+            Employee Age:
+            <span id = "emAge"></span>
+        </li>
+        <li>
+            Department:
+            <span id = "emDept"></span>
+        </li>
+        <li>
+            gender:
+            <span id = "emgender"></span>
+        </li>
+        <li>
+            Location:
+            <span id = "emLoc"></span>
+        </li>
+        <li>
+            BasicSalary:
+            <span id = "emBsal"></span>
+        </li>
+        <li>
+            pf:
+            <span id = "empf"></span>
+        </li>
+        <li>
+            hra:
+            <span id = "emHra"></span>
+        </li>
+        <li>
+            Total Salary:
+            <span id = "emTsal"></span>
+        </li>
+        <li>
+            Tax to pay:
+            <span id = "emTax"></span>
+        </li>
+    </ul>   
+</body>
+</html>

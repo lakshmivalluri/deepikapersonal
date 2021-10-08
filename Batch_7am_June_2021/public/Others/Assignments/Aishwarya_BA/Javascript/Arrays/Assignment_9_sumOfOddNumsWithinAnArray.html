@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h1 style="background: pink">Sum of odd numbers within an array</h1>
+    <script>
+      var a = [10, 12, 13, 15, 18, 29],
+        total = 0;
+      for (var i = 0; i < a.length; i++) {
+        if (a[i] % 2 != 0) {
+          total += a[i];
+        }
+      }
+      console.log("Sum is " + total);
+    </script>
+  </body>
+</html>

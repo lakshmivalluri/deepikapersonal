@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var emplyeename = "TEEna";
+
+            var studentData = {
+                name: 'raj',
+                age: 20,
+                marks: [34, 56, 90],
+                total: 0,
+                avg: 0,
+                grade: '',
+                getTotalAndAvg: function() {
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        studentData.total += this.marks[i];
+                    }
+                    this.avg = studentData.total / this.marks.length;
+                    this.getGrade();
+                },
+                getGrade: function() {
+                    this.grade = '';
+                    if (studentData.avg >= 40) {
+                        this.grade = 'Passed'; 
+                    } else {
+                        studentData.grade = 'U have a Surprise';
+                    }
+                },
+                dispalyData: () => {
+                    studentData.getTotalAndAvg();
+                    console.log("Student Detials");
+                    console.log("Name " + this.name)
+                    console.log("Total " + this.total);
+                    console.log("AVG " + studentData.avg);
+                    console.log("Grade " + this.grade);
+                }
+            }
+
+
+            studentData.dispalyData();
+
+            var empDetails = {
+                age: 20,
+                displayEmpInfo: () => {
+                    console.log(this.age);
+                }
+            }
+        </script>
+    </body>
+</html>

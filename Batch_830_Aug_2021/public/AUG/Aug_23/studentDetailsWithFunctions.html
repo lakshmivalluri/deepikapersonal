@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("about to work with student details");
+            
+
+            function readStudnetData() {
+                var sname, age, m1, m2, m3, total, avg;
+                sname = prompt("enter student name");
+                age = prompt("enter studnet age");
+                m1 = prompt("enter marks 1");
+                m1 = parseInt(m1);
+                m2 = prompt("enter marks 2");
+                m2 = parseInt(m2);
+                m3 = prompt("enter marks 3");
+                m3 = parseInt(m3);
+                var res = getTotalAndAvg(m1, m2, m3);
+                total = res[0];
+                avg = res[1];
+                displayStudentData(sname, age, total, avg);
+            }
+
+            function getTotalAndAvg(m1, m2, m3) {
+                var total = 0, avg;
+                total = m1 + m2 + m3;
+                avg = total / 3;
+                var temp = [total, avg];
+                return temp;
+            }
+
+            function displayStudentData(sname, age, total, avg) {
+                
+                console.log("Student Details");
+                console.log("Name is " + sname);
+                console.log('Age is ' + age);
+                console.log("Total is " + total);
+                console.log("Avg is " + avg);
+                var grade = showStudentGrade(avg);
+                console.log("you got -> " + grade);
+            }
+
+            function showStudentGrade(avg) {
+                var grade = '';
+                if (avg >= 40) {
+                    grade = "PAssed";
+                    if (avg >= 90) {
+                        grade = 'Distinction'
+                    } else if (avg >= 60) {
+                        grade = 'First Class';
+                    } else {
+                        grade = 'Second Class';
+                    }
+                } else {
+                    grade = 'Failed'
+                }
+                return grade;
+            }
+
+            
+            readStudnetData();
+
+
+		</script>
+	</body>
+</html>

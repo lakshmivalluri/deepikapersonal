@@ -1,0 +1,32 @@
+
+contact Dtails
+
+    firstname
+
+    lastname
+
+    phoneno
+        office
+            1 alue
+        persnl
+            multiple values
+    emailId
+        office
+            1value
+        persnl
+            multiple value
+    adddress:
+        persnl
+            dno
+            streetno
+            stateinfo
+                statename
+                statecode
+        office
+            country
+            state code
+            state name
+    designation
+    profilepic   - value
+
+    

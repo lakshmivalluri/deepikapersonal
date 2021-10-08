@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Employee Details</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var ename, eage, basicsal, totalsal, hra, pf, tax, gender;
+			ename = prompt("Enter the employee name : ");
+			eage = prompt("Enter the employee age : ");
+			basicsal = prompt("Enter the basic salary : ");
+			basicsal = parseInt(basicsal);
+			gender = prompt("Enter the gender : ")
+
+			pf = 14/100 * basicsal;
+			hra = 25/100 * basicsal;
+			totalsal = basicsal + hra + pf;
+			console.log("basic sal is " + basicsal);
+			console.log("hra is " + hra);
+			console.log("pf is " + pf);
+			console.log("totalsal is " + totalsal);
+
+			if (gender == "male") {
+				if (totalsal > 400000) {
+					tax = 15/100 * totalsal;
+					console.log("tax is " + tax);
+				} else if (totalsal > 100000) {
+					tax = 10/100 * totalsal;
+					console.log("tax is " + tax);
+				} else if (totalsal>50000) {
+					tax = 5/100 * totalsal;
+					console.log("Tax is " + tax);
+				} else {
+					tax = 0;
+					console.log("tax is " + tax);
+				}
+			}
+			if (gender == "female") {
+				if (totalsal > 400000) {
+					tax = 10/100 * totalsal;
+					console.log("tax is " + tax);
+				} else if (totalsal > 100000) {
+					tax = 5/100 * totalsal;
+					console.log("tax is " + tax);
+				} else {
+					tax = 0;
+					console.log("no tax");
+				}
+			}
+		</script>
+	</body>
+</html>

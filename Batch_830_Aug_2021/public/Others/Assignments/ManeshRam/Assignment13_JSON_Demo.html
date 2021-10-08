@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ASSIGNMENT 13</title>
+</head>
+
+<body>
+	<h1 style="background-color: #ffadad; color: blueviolet; text-align: center;">
+		JSON DEMO
+	</h1>
+	<script>
+		var contact_details = {
+
+			"firstName": "Dr. Murali ",
+
+			"lastName": "Krsihna",
+
+			"phoneNumber": {
+				"office": 9754989912,
+				"personal": [8267982142, 6458301457, 7440598746],
+			},
+
+			"Email_Id": {
+				"office": "support@nareshit.com",
+				"personal": ["maneshram20@gmail.com", "webdev.prasad@gmail.com", "manesh.webdev@gmail.com"],
+			},
+
+			"address": {
+				"personal": {
+					"Dr_No": "84-29",
+					"Street_No": " SUMADHURA HORIZON  , Madhapur Rich Currency IT society ",
+					"State_code": 500018,
+					"State_Name": "Telangana",
+				},
+
+				"office": {
+					"Country": "3-50-12/3",
+					"State_code": 500018,
+					"State_Name": "Telangana",
+				},
+			},
+
+			"designation": " Full stack web developer , Noursia Technologies Pvt Ltd , Hyderabad ",
+
+			"profile_pic": "https://static.boredpanda.com/blog/wp-content/uploads/2018/11/01-3-5bebf83d2d890__700.jpg",
+
+		}
+
+
+		alert("   ----- JSON DEMO ----- \n 1 - FIRST NAME \n 2 - LAST NAME  \n 3 - PHONE NUMBER \n 4 - EMAIL ID \n 5 - ADDRESS \n 6 - DESIGNATION  \n 7 - PROFILE PIC ");
+		var choice = prompt("\n ENTER YOUR CHOICE FOR JSON OPERATION =  ");
+		choice = parseInt(choice);
+
+		switch (choice) {
+
+			case 1: alert("\n First Name is : " + contact_details.firstName);
+				console.log("\n First Name is : " + contact_details.firstName);
+				break;
+
+			case 2: alert("\n Last Name is : " + contact_details.lastName);
+				console.log("\n Last Name is : " + contact_details.lastName);
+				break;
+
+			case 3: alert("\n --- SELECT ONE CHOICE --- \n 1 - OFFICE \n 2 - PERSONAL ");
+				var temp = prompt("\n\n  ENTER YOUR CHOICE =  ");
+				if (temp == 1) {
+					alert("\n Office Phone Number is : " + contact_details.phoneNumber.office);
+					console.log("\n Office Phone Number is : " + contact_details.phoneNumber.office);
+				}
+				else if (temp == 2) {
+					for (var i = 0; i < contact_details.phoneNumber.personal.length; i++) {
+						alert("\n Personal Phone Number is : " + contact_details.phoneNumber.personal[i]);
+						console.log("\n Personal Phone Number is : " + contact_details.phoneNumber.personal[i]);
+					}
+				}
+				else {
+					alert("\n PLEASE ENTER CORRECT CHOICE ");
+					console.log("\n PLEASE ENTER CORRECT CHOICE ");
+				}
+				break;
+
+			case 4: alert("\n --- SELECT ONE CHOICE --- \n 1 - OFFICE \n 2 - PERSONAL ");
+				var temp = prompt("\n\n  ENTER YOUR CHOICE =  ");
+				if (temp == 1) {
+					alert("\n Office Email ID is : " + contact_details.Email_Id.office);
+					console.log("\n Office Email ID is : " + contact_details.Email_Id.office);
+				}
+				else if (temp == 2) {
+					for (var i = 0; i < contact_details.Email_Id.personal.length; i++) {
+						alert("\n Personal Email ID is : " + contact_details.Email_Id.personal[i]);
+						console.log("\n Personal Email ID is : " + contact_details.Email_Id.personal[i]);
+					}
+				}
+				else {
+					alert("\n PLEASE ENTER CORRECT CHOICE ");
+					console.log("\n PLEASE ENTER CORRECT CHOICE ");
+				}
+				break;
+
+			case 5: alert("\n --- SELECT ONE CHOICE --- \n 1 - PERSONAL \n 2 - OFFICE ");
+				var temp = prompt("\n\n  ENTER YOUR CHOICE =  ");
+				if (temp == 1) {
+					alert("\n Personal Address is : " + contact_details.address.personal.Dr_No + "  " + contact_details.address.personal.Street_No + "  " + contact_details.address.personal.State_Name + contact_details.address.personal.State_code);
+					console.log("\n Personal Address is : " + contact_details.address.personal.Dr_No + "  " + contact_details.address.personal.Street_No + "  " + contact_details.address.personal.State_Name + contact_details.address.personal.State_code);
+				}
+				else if (temp == 2) {
+					alert("\n Office Address is : " + contact_details.address.office.Country + "  " + contact_details.address.personal.State_Name + "  " + contact_details.address.personal.State_code);
+					console.log("\n Office Address is : " + contact_details.address.office.Country + "  " + contact_details.address.personal.State_Name + "  " + contact_details.address.personal.State_code);
+				}
+				else {
+					alert("\n PLEASE ENTER CORRECT CHOICE ");
+					console.log("\n PLEASE ENTER CORRECT CHOICE ");
+				}
+				break;
+
+			case 6: alert("\n Designation is : " + contact_details.designation);
+				console.log("\n Designation is : " + contact_details.designation);
+				break;
+
+			case 7: alert("\n Profile Pic is : " + contact_details.profile_pic);
+				console.log("\n Profile Pic is : " + contact_details.profile_pic);
+				break;
+
+			default:
+				console.log(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 7 ");
+				alert(" PLEASE ENTER CHOICES VALUES RANGE FROM 1 - 7 ");
+				break;
+
+		}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>finding the Reverse number between 32 to 950</title>
+</head> 
+<body>
+
+    <h1>Finding the Reverse Number in between 32 to 950</h1>
+
+    <script type="text/javascript">
+    
+    for(n = 32; n <= 950; n++){
+        num = n;
+        sum = " ";
+        rem = 0;
+        while(num>0){
+            rem = num%10;
+            sum = sum + rem;
+            num = num/10;
+            num = parseInt(num);
+        }
+
+     console.log(sum);
+
+    }
+
+    </script>
+
+
+</body>
+</html>

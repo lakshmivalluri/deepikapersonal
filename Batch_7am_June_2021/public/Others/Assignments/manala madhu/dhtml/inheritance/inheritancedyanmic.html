@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>inheitance dynamic</title>
+        <style>
+            .heading {
+                border: 1px solid;
+                color: green;
+                text-align: center;
+                text-decoration: underline;
+                background-color: lightblue;
+            }
+            li {
+                list-style: none;
+                border: 1px dotted;
+                padding: 5px;
+                margin: 5px;
+                background-color: khaki;                
+            }
+            .ulabel,  .contrlr{
+				display: inline-block;
+			}
+
+			.ulabel {
+				width: 200px;
+			}
+            ul ,.container {
+                width: 600px;
+                padding: 10px;
+                margin: 10px auto;
+                border: 2px solid;
+                background-color: honeydew;
+            }          
+        </style>
+        <script src="inheritance.js"></script>
+    </head>
+    <body>
+        <h3 class="heading">STUDENT REGISTRATION</h3>
+            <ul>
+                <li>
+                    <div class="ulabel">
+                        <label for = "sname"> STUDENT NAME : </label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name = "sname" id = "sname" maxlength="12" placeholder="enter the student name">
+                    </div>
+                </li>
+                <li>
+                    <div class="ulabel">
+                        <label for = "sage">  AGE :</label>
+                    </div>
+                    <div class="contrlr">
+                        <input type="text" name = "sage" id = "sage" maxlength="2">
+                    </div>                                 
+                </li>
+                <li>
+                    <div class="ulabel">
+                        GENDER :
+                    </div>
+                    <div class="contrlr">
+                        <input type="radio" name ="sgender" value = "male">Male
+                        <input type="radio" name ="sgender" value = "female">Female
+                        <input type="radio" name = "sgender" value = "others">Others
+                    </div>
+                </li>
+                <li > 
+                    <div class="ulabel">CLASS : </div>
+                    <div class="contrlr" >
+                    <select name = "sclass" id = "sclass">
+                        <option>I</option>
+                        <option>II</option>
+                        <option>III</option>
+                        <option>IV</option>
+                        <option>V</option>
+                    </select>   
+                    </div>                
+                </li>
+                <li>
+                    <div class="ulabel">
+                    STUDENT ADDRESS :
+                    </div>
+                    <div class="contrlr" >
+                    <textarea name=" aboutyourself" id ="saddress" row="50" cols="30"></textarea>
+                    </div>
+                </li>
+                <LI style="text-align: center;">
+                    <input type="button" value ="Register" onclick=" studentregistration ();">
+                </LI>
+            </ul>
+            <ul class="container">
+
+            </ul>
+       
+    </body>
+</html>

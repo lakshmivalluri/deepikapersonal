@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prime number 1 to 100 using js</title>
+	</head>
+	<body>
+		<h3 style="text-align: center; text-decoration: underline; text-decoration-color: blue;background: purple;"> Prime number 1 to 100 </h3>
+
+		<script type="text/javascript">
+			var pNum = 0;
+			for(var p=0; p<=100; p++){
+				var count =0;
+				for(var i= 0 ; i <= p; i++){
+					if(p % i == 0){
+						count ++ ;
+						if( count > 2)
+						{
+							break;
+						}
+					}
+				}
+				if (count == 2){
+					console.log( p +  "is a prime number");
+					pNum = pNum + p ;
+				}
+			}
+			console.log("The sum of prime number is :  "+ pNum);
+		</script>
+	</body>
+</html>

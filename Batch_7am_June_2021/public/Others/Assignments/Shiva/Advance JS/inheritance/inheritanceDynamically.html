@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="dynamic.css">
+        
+    </head>
+    <body>
+        <h2>Student Registration</h2>
+        <ul>
+            <li>
+                   <label for="name">Name : </label>
+                   <input type="text" id = "sName" placeholder = "Name" maxlength="30" class = "box">
+            </li>
+            <li>
+                <label for="age">Age : </label>
+                <input type="text" id = "sAge" placeholder = "Age" maxlength="2" class="box1">
+            </li>
+            <li>
+                <label for="class">class : </label>
+                <select id = "sClass" class="box2">
+                    <option>class I</option>
+                    <option>class II</option>
+                    <option>class III</option>
+                    <option>class IV</option>
+                </select>
+            </li>
+            <li>
+                <label for="textarea">Address : </label>
+                <textarea name="address" id="sAddress" cols="30" rows="10" class = "box3"></textarea>
+            </li>
+            <li style = "border: none; text-align: center;">
+                <input type="button" id = "sButton" value = "register" onclick = "studentDetails.showData();">
+            </li>
+        </ul>
+        <script src = "dynamicjs.js"></script>
+        <ul class = "invoke">
+            <li>
+                <div id = "ssname"></div>
+            </li>
+            <li>
+                <div id = "ssage"></div>
+            </li>
+            <li>
+                <div id = "ssclass"></div>
+            </li>
+            <li>
+                <div id = "ssaddress"></div>
+            </li>
+            <li>
+                <div id = "ssSname"></div>
+            </li>
+            <li>
+                <div id = "ssSarea"></div>
+            </li>
+            <li>
+                <div id = "ssSboard"></div>
+            </li>
+        </ul>
+        
+    </body>
+</html>

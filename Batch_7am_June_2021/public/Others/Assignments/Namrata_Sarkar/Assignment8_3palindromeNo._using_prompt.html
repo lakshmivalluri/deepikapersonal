@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Palindrome No
+        </title>
+    </head>
+    <body>
+        <h1>FINDING PALINDROME NO.</h1>
+        
+        <script type="text/javascript">
+          var n = prompt("Enter n value");
+          var r, rev = 0, m;
+          m = n;
+          n = parseInt(n);
+
+           while(n != 0) {
+            r = n % 10;
+            rev = rev *10 + r;
+            n = n / 10;
+            n = parseInt(n);     
+        }
+           if(m == rev) {
+                console.log( " Palindrome no " ) ;  
+            }
+           if(m != rev) { 
+                console.log(" Not Palindrome no " ) ; 
+            }
+          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+header,
+footer,
+main {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+main {
+    top: 50px;
+    bottom: 42px;
+}
+
+footer {
+    bottom: 5px;
+}
+
+body {
+    background-color: #ccc;
+}
+header, footer {
+    text-align: center;
+}
+footer {
+    font-size: 11px;
+}
+
+.bBlock {
+    border: 2px solid;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: yellowgreen;
+}
+
+@media screen and (max-width: 350px) {
+    .bBlock {
+        width: 200px;
+        background-color: violet;
+    } 
+    .addsBlock {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .addsBlock {
+        display: none;
+    }
+    .bBlock {
+        background-color: pink;
+    }
+}
+
+@media print {
+    header {
+        background: red;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .bBlock {
+        border: none;
+        color: blue;
+
+    }
+}
+
+.addsBlock {
+    border-radius: 1px solid;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    border: 1px solid;
+    background-color: yellow;
+}

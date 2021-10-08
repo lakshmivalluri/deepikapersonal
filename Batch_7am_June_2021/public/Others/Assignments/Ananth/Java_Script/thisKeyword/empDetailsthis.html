@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>emp details with objects and thisKeyword</title>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+      var empDetails = {
+          edept : 'it',
+          esal : function() {
+          this.hra = 0.15 * this.basicsal;
+          this.pf = 0.25 * this.basicsal;
+          // here this keyword works because we are declaring function in side a object
+          this.totalsal = this.hra + this.pf + this.basicsal;
+        },
+        etax : function () {
+          if (empDetails.gender == 'male') {
+            if (this.totalsal > 400000 ){
+              this.tax = 0.25 * this.totalsal;
+            } else if (this.totalsal > 250000){
+              this.tax = 0.15 * this.totalsal;
+            } else if (this.totalsal > 150000){
+              this.tax = 0.10 * this.totalsal;
+            } else {
+              this.tax = 0;
+            }
+          }
+          if (this.gender == 'female') {
+            if (this.totalsal > 400000 ){
+              this.tax = 0.20 * this.totalsal;
+            } else if (this.totalsal > 250000){
+              empDetails.tax = 0.10 * this.totalsal;
+            } else if (this.totalsal > 150000){
+              empDetails.tax = 0.05 * this.totalsal;
+            } else {
+              this.tax = 0;
+            }
+          }
+        }
+      }
+      empDetails.name = prompt("Enter the EMployee name : ");
+      empDetails.age = prompt("Enter the Employee age : ");
+      empDetails.basicsal = prompt("Enter the Basic Salary of the employee : ");
+      empDetails.gender = prompt("Enter the gender : ");
+      empDetails.basicsal = parseInt(empDetails.basicsal);
+      empDetails.esal();
+      empDetails.etax();
+      console.log("Employe name is " + empDetails.name);
+      console.log("Employe age is " + empDetails.age);
+      console.log("Employe basicsal is " + empDetails.basicsal);
+      console.log("Employe hra is " + empDetails.hra);
+      console.log("Employe pf is " + empDetails.pf);
+      console.log("total sal is " + empDetails.totalsal);
+      console.log("tax is " + empDetails.tax);
+    </script>
+  </body>
+</html>

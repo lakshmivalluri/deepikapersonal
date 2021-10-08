@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Reading Data from user
+        </title>
+        <script src='studentProgressCard.js'></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h3 class="title">
+            Student Progress Card Generator
+        </h3>
+        <ul class="inputData"> 
+            <li>
+                Enter User Name: 
+                <input type="text" id="uname">
+            </li>
+            <li>
+                Age: <input type="text" id="uage">
+            </li>
+            <li>
+                Languages:
+                English <input type="checkbox" value="English" name="language">
+                Telugu <input type="checkbox" value="Telugu" name="language">
+            </li>
+            <li>
+                Gender: Male <input type="radio" name="gender" value="Male" checked>
+                        Female <input type="radio" name="gender" value="Female">
+            </li>
+            <li>
+                Class: 
+                <select name="" id="uclass">
+                    <option value="Class I">Class I</option>
+                    <option value="Class II">Class II</option>
+                    <option value="Class III">Class III</option>
+                    <option value="Class IV">Class IV</option>
+                </select>
+            </li>
+            <li class="marksContainer">
+                Marks:
+                <input type="text" id="m1" placeholder="Social">
+                <input type="text" id="m2" placeholder="Maths">
+                <input type="text" id="m3" placeholder="Science">
+                <input type="text" id="m4" placeholder="Language">
+                <input type="text" id="m5" placeholder="Computers">
+            </li>
+            <li>
+                <input type="button" value="Generate Progress Card" onclick="readStudentInfo();">
+            </li>
+        </ul>
+
+        <ul class="progressCard">
+            <li style="color: blue;text-align: center;">
+                Progress Card
+            </li>
+            <li>
+                Student Name: <span id="rname"></span>
+            </li>
+            <li>
+                Gender: <span id="rgender"></span>
+            </li>
+            <li>
+                Total: <span id="rtotal"></span>
+            </li>
+            <li>
+                Average Marks: <span id="ravg"></span>
+            </li>
+            <li>
+                Grade: <span id="rgrade" class="grade"></span>
+            </li>
+            <li>
+                Known Languages <span id="language"></span>
+            </li>
+        </ul>
+    </body>
+</html>
+

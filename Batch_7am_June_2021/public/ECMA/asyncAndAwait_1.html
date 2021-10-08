@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*async function showMessage() {
+                return 'hello';
+            }
+
+            showMessage().then((value) => {
+                console.log(value);
+            }); */
+            var showAccountClosing = (balance) => {
+                alert("balance amout is " + balance);
+            }
+            
+
+            async function getUserActualBalance() {
+                var balance = 0;
+                var mypromise = new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        balance = 1200;
+                        resolve(balance);
+                    }, 5000);
+                });
+                balance = await mypromise;
+                
+                showAccountClosing(balance);
+            }
+            getUserActualBalance();
+            
+           
+        </script>
+    </body>
+</html>

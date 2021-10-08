@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position of boxes using float</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        h1,section, footer{
+            border: 3px solid grey;
+        }
+        section{
+            height: 1250px;
+        }
+        footer{
+            margin-top: 7px;
+            text-align: center;
+        }
+        .box1,.box2, .box3, .box4, .box5 , .box6 ,.box7, .box8,.box9, 
+        .box10 ,.box11 ,.box12 ,.box13, .box14 {
+            height: 150px;
+            width: 150px;
+            color: darkblue;
+            font-size: 40px;
+            text-align: center;
+        }
+        .box1{
+            background-color: burlywood;
+            float: right;
+        }
+        .box2{
+            background-color: rgba(8, 22, 36, 0.329);
+            float: right;
+            clear: both;
+        }
+        .box3{
+            background-color: rgb(145, 105, 172);
+            clear: both;
+            float: left;
+        }
+        .box4{
+            background-color: rgb(222, 135, 193);
+            float: left;
+            
+        }
+        .box5{
+            background-color: rgb(134, 163, 100);
+            float: right;
+    
+        }
+        .box6{
+            background-color: rgb(107, 196, 199);
+            float: right;
+        }
+        .box7{
+            background-color: rgb(165, 77, 77);
+            clear: both;
+            float: left;
+        }
+        .box8{
+            background-color: rgb(105, 39, 78);
+            float: left;
+        }
+        .box9{
+            background-color: orangered;
+            clear: both;
+        }
+        .box10{
+            background-color:slategrey;
+        }
+        .box11{
+            background-color: rgb(47, 155, 47);
+            float: right;
+        }
+        .box12{
+            background-color: black;
+            clear: both;
+            float: left;
+        }
+        .box13{
+            background-color: yellowgreen;
+            float: right;
+        }
+        .box14{
+            background-color: seagreen;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+       <h1>BLOCK GAME</h1>
+    </header>
+    <section>
+        <div class="boxes">
+            <div class="box1"> Box1 </div>
+            <div class="box2"> Box2 </div>
+            <div class="box3"> Box3 </div>
+            <div class="box4"> Box4 </div>
+            <div class="box5"> Box5 </div>
+            <div class="box6"> Box6 </div>
+            <div class="box7"> Box7 </div>
+            <div class="box8"> Box8 </div>
+            <div class="box9"> Box9 </div>
+            <div class="box10"> Box10 </div>
+            <div class="box11"> Box11 </div>
+            <div class="box12"> Box12 </div>
+            <div class="box13"> Box13 </div>
+            <div class="box14"> Box14 </div>
+        
+        </div>
+    </section>
+    <footer>
+        <h3>Thank you</h3>
+    </footer>
+    
+</body>
+</html>

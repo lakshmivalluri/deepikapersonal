@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <meta charset="utf-8">
+	  <title></title>
+   </head>
+  <body>
+      <script type="text/javascript">
+      	var ename = prompt("Enter the Epmloyee Name");
+      	var age = prompt("Enter your Age please");
+      	var gender = prompt("Enter your Gender");
+      	var basicsalary = prompt("Enter your basicsalary");
+        basicsalary = parseInt(basicsalary);
+      	var hra = (25 * basicsalary) / 100;
+      	var pf  = (14 * basicsalary) / 100;
+        var totalsalary = pf + hra + basicsalary ;
+        
+
+      	console.log("EmployeeDetails");
+        console.log("Name is " + ename);
+      	console.log("Age is " + age);
+        console.log("Gender is " + gender);
+      	console.log("Bsalary is " + basicsalary);
+      	console.log("Totalsalary is " + totalsalary);
+
+
+       if (gender == "male") {
+        if (totalsalary > 200000) {
+          tax = (totalsalary * 15) / 100;
+          console.log("Your tax is " + tax);
+        } else if (totalsalary > 100000) {
+          tax = (totalsalary * 10) / 100;
+          console.log("Your tax is " + tax);
+        } else if (totalsalary > 50000) {
+          tax = (totalsalary * 5) / 100;
+          console.log("Your tax is " + tax);
+        } else {
+          console.log("Your tax is 0" );
+        }
+      } else {
+        if (totalsalary > 200000) {
+          tax = (totalsalary * 10) / 100;
+          console.log("Your tax is " + tax);
+        } else if (totalsalary > 100000) {
+          tax = (totalsalary * 5) / 100;
+          console.log("Your tax is " + tax);
+        } else if (totalsalary < 50000) {
+          console.log("Your tax is 0" );
+        }
+      }
+    </script>
+  </body>
+</html>

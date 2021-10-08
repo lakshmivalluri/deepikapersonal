@@ -1,0 +1,30 @@
+<script>
+
+    var name ="sandeep";
+    var age=24;
+    var gender="male";
+    var marks =[91, 92, 94, 95, 96];
+    var total= 0, marks, avg, grade;
+
+    var sDetails=['sandeep',24, 'male', [91,92,94,95,96]];
+    for(var i=0 ; i<=sDetails[3].length;i++){
+
+        total = total+ sDetails[3][i];
+        
+    }
+    avg = total/marks.length;
+
+    if (avg>40){
+        grade='passed';
+   
+    }else{
+        grade="surrise";
+    }
+    console.log("student details");
+    console.log("student name" + sDetails[0]);
+    console.log("student Age" + sDetails[1]);
+    console.log("student gender" + sDetails[2]);
+    console.log("total" + total);
+    console.log (" Avg" + avg);
+    console.log ("grade is" + grade);
+</script>

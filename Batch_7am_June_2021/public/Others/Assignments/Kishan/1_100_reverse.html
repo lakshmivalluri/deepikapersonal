@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> 1 to 100 reverse number</title>
+</head>
+<body>
+    <script>
+           for (i=1; i<=100;i++) {
+              var n = i;
+               console.log('The number is' + i);
+               var reverse = 0
+           
+           while ( n > 0) {
+               reverse = (reverse * 10) + (n % 10);
+               n = parseInt(n/10);
+           }
+           console.log('The reverse is' + reverse);
+           }
+    </script>
+    
+</body>
+</html>

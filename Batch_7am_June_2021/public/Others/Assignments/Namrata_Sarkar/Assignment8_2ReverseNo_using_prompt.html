@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Reverse of a no
+        </title>
+    </head>
+    <body>
+        <h1>REVERSE OF A NO.</h1>
+        
+        <script type="text/javascript">
+            console.log(" Reverse of the no ")
+
+            var n = prompt("Enter n value");
+            var r, rev = 0;
+            n = parseInt(n);
+
+            while(n != 0) {
+
+                r = n % 10;
+                rev = rev * 10 + r;
+                n = n / 10;
+                n = parseInt(n);
+            };
+
+            console.log(" The reverse no is : " + rev);
+             </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<Head>
+<title>Student Details
+</title>
+<style type="text/css">
+	.imgSrc
+	{
+width: 200px;
+height: 200px;
+	}
+</style>
+</Head>
+<body>
+	<h1>Student Details:-</h1>
+<p>Name:Sachin Tendulkar</p>
+<p>Age:48</p>
+<p>Gender:Male</p>
+<p>Location:Mumbai</p>
+<br>
+<img class="imgSrc"src="https://th.bing.com/th/id/OIP.bi7rac5bONy9y_jq4FFkuwHaHa?w=182&h=182&c=7&o=5&dpr=1.25&pid=1.7"/>
+<hr>
+<p>Name:M S Dhoni</p>
+<p>Age:40</p>
+<p>Gender:Male</p>
+<p>Location:Rachi</p>
+<br>
+<img class="imgSrc"src="https://th.bing.com/th/id/R.24b0117eddb061692089956f62471028?rik=0%2fFR5ECWkaMjXg&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-7%2fMS-Dhoni-Indian-Cricketer-Best-Wallpaper-22524.jpg&ehk=DhHKJ0426rlzHIa6ua%2b%2fhDUWGiUw1yt77X9LitILr1g%3d&risl=&pid=ImgRaw&r=0"/>
+<hr>
+<p>Name:P V Sindhu</p>
+<p>Age:26</p>
+<p>Gender:Female</p>
+<p>Location:Mumbai</p>
+<br>
+<img class="imgSrc" src="https://th.bing.com/th/id/OIF.HxE3Qz2y4tM6B7FpOhrpmg?w=181&h=181&c=7&o=5&dpr=1.25&pid=1.7"/>
+<hr>
+<p>Name:Lovlina Borgohain</p>
+<p>Age:23</p>
+<p>Gender:Female</p>
+<p>Location:Golaghat</p>
+<br>
+<img class="imgSrc" src="https://th.bing.com/th?id=OIF.niuFwhgh7%2bUpv%2bz27e6lLQ&w=306&h=180&c=7&o=5&dpr=1.25&pid=1.7"/>
+<hr>
+<p>Name:Ravi Dahiya</p>
+<p>Age:23</p>
+<p>Gender:Male</p>
+<p>Location:Sonipat</p>
+<br>
+<img class="imgSrc" src="https://www.sportzcraazy.com/wp-content/uploads/2019/10/ravi-22.jpg"/>
+<hr>
+</body>
+</html>

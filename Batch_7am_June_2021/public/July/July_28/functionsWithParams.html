@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Functions With Params
+        </title>
+    </head>
+    <body>
+        <script>
+            var z = 99;
+            
+            var readData = function() {                
+                var firstVal, secondVal;
+                firstVal = prompt("Enter first value");
+                secondVal = prompt("Enter second value");
+
+                firstVal = parseInt(firstVal);
+                secondVal = parseInt(secondVal);
+                addValues(firstVal, secondVal); // addValues(20, 40);
+                doMultiplication(firstVal, secondVal);
+                doSubstraction(firstVal, secondVal); // actual params
+            }
+
+            function addValues(a, b) { // a = 20, b = 40
+                var result = a + b;
+                console.log("The sum is " + result);
+            }
+            
+
+            function doMultiplication(p1, p2) { // formal params
+                var res = p1 * p2;
+                console.log("Multiplication is " + res);
+            }
+
+            function doSubstraction(firstVal, secondVal) {
+                var result = firstVal - secondVal;
+                console.log("Substraction is " + result)
+            }
+            readData();
+
+        </script>
+    </body>
+</html>

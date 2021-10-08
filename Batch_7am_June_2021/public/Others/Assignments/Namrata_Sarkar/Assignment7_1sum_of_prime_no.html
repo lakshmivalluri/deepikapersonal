@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sum of prime no's
+        </title>
+    </head>
+    <body>
+        <h1>SUM OF PRIME NO'S BETWEEN 1 TO 100</h1>
+
+        <script type="text/javascript">
+            var n = 100, i, sum = 0;
+
+            for(n = 1; n <= 100 ; n++) {
+                var count = 0;
+
+            for(i = 0; i <= n ; i++) {   
+
+            if(n % i == 0) {
+                    count++;
+
+            if(count > 2) {
+                break 
+            }
+        }
+    }
+            if(count == 2) {
+              sum = sum + n;      
+            }
+        }
+            console.log( sum )
+            
+         </script>
+    </body>
+</html>

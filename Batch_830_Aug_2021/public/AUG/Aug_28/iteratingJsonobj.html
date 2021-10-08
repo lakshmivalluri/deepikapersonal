@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iterating Json Object</title>
+    </head>
+    <body>
+        <script>
+            /*var details = [
+                "raj",
+                20,
+                'male',
+                'Hyderbad'
+            ];
+            console.log(details.length);
+            for (var i = 0 ; i < details.length; i++) {
+                console.log(details[i]);
+            }*/
+
+
+            var sData = {
+                name: 'Raj',
+                age: 10,
+                gender: 'male',
+                location: 'Hyderabad'
+            }
+            var data = '';
+            for (var temp in sData) {
+                console.log(temp);
+                console.log(sData[temp]);
+                //data += temp + ' : ' + sData[temp] + ' ';
+            }
+            console.log(sData.name);
+        </script>
+    </body>
+</html>
+

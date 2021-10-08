@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<title>Lucky Number</title>
+  </head>
+  <h2>Finding Lucky Number</h2>
+ <body>
+ 	<script type="text/javascript">
+ 		  var n = 9994;
+            var sum = 0, rem;
+            while (n > 0) {
+                rem = n % 10;
+                sum += rem;
+                n = parseInt(n/10);
+                
+                if (n == 0 && sum >= 10) {
+                    n = sum;
+                    sum = 0;
+                }
+            }
+            console.log(sum);
+ 	</script>
+
+ </body>
+</html>

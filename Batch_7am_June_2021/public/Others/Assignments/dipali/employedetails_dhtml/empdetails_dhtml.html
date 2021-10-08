@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>employee playslip</title>
+	<link rel="stylesheet" type="text/css" href="emppayslip.css">
+</head>
+
+<body>
+
+<h2>Employee Details </h2>
+
+<ul>
+	<li>
+		Enter Employee Name : 
+		<input type="text" id="ename" required>
+	</li>
+	<li>
+		Enter Employee Id : 
+		<input type="text" id="Eid">
+	</li>
+	<li>
+		Enter gender of Employee : 
+		<input type="radio" name="egender" id="empgender" value="male">male
+		<input type="radio" name="egender" id="empgender" value="female">female
+	</li>
+	<li>
+		Enter Age of the employee : 
+		<input type="text" id="eage">
+	</li>
+	<li>
+		Enter Email :
+		<input type="email" id="empemail">
+	</li>
+	<li>
+		Enter department : 
+		<select id="edept">
+			<option></option>
+			<option>HR</option>
+			<option>FINANCE</option>
+			<option>IT</option>
+			<option>MARKETING</option>
+			<option>PRODUCTION</option>
+		</select>
+	</li>
+	<li>
+		 Enter Basic Salary : 
+		 <input type="text" id="esal">
+	</li>
+	<li style="text-align: center;">
+	<input type="button" value="Genrate pay slip" onclick="genratepayslip();">	
+</li>
+</ul>
+<ul class="payslip">
+	<li class="site">
+		  PAY SLIP AND TAX AMOUNT
+	</li>
+	<li>
+		 Name of the Employee : <span id="rname"></span>
+	</li>
+	 <li>
+		 ID of the Employee : <span id="rid"></span>
+	</li>
+	<li>
+		 Gender of the Employee : <span id="rgen"></span>
+	</li>
+	<li>
+		 Age of the Employee : <span id="rage"></span>
+	</li>
+	<li>
+		 Email address of the Employee : <span id="remail"></span>
+	</li>
+	<li>
+		 Deparment of the Employee : <span id="rdept"></span>
+	</li>
+	<li>
+		 Basic Salary of the Employee : <span id="rsal"></span>
+	</li>
+	<li>
+		 PF amount of the Employee : <span id="rpf"></span>
+	</li>
+	<li>
+		 Hra amount of the Employee : <span id="rhra"></span>
+	</li>
+	<li>
+		 Total salary of the Employee : <span id="rtotal"></span>
+	</li>
+	<li>
+		 Tax need pay of the Employee : <span id="rtax"></span>
+	</li>
+      
+</ul>
+   
+   <script src="emppayslip.js">
+   	
+
+   </script>
+
+
+</body>
+</html>

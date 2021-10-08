@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+	<script>
+		var eName = prompt("Enter Employee Name");
+		var eAge = prompt("Enter Employee Age");
+		var eGender = prompt("Enter Employee Gender");
+		var ebasicsal = prompt("Enter Employee Basic Salary");
+			ebasicsal = parseInt(ebasicsal);
+		var hra, pf, totalsal, tax, finalsal;
+		hra = (ebasicsal * 25)/100;
+		pf = (ebasicsal * 14)/100;
+		totalsal = hra + pf;
+		if (eGender == "Male"){
+			if(totalsal > 200000){
+				tax = (totalsal * 15)/100;
+			} else if(totalsal > 100000){
+				tax = (totalsal * 10)/100;
+			}else if(totalsal > 50000){
+				tax = (totalsal * 5)/100;
+			}else{
+				tax = 0;
+			}
+		}
+		else{
+			if(eGender == "Female"){
+				if(totalsal > 200000){
+					tax = (totalsal * 10)/100;
+				}else if(totalsal > 100000){
+					tax = (totalsal * 5)/100;
+				}else{
+					tax = 0;
+				}
+			}
+		}
+		finalsal = totalsal - tax;
+	
+		console.log("Employee Name" + " - " + eName);
+		console.log("Employee Age" + " - " + eAge);
+		console.log("Employee Gender" + " - " + eGender);
+		console.log("Employee Basic Salary" + " - " + ebasicsal);
+		console.log("Employee Totla Salary" + " - " + totalsal);
+		console.log("Employee HRA" + " - " + hra);
+		console.log("Employee PF" + " - " + pf);
+		console.log("Employee TAX" + " - " + tax);
+		console.log("Employee Final Salary" + " - " + finalsal);
+	
+	</script>
+
+</body>
+</html>
+

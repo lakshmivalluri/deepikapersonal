@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta charset="utf-8">
+<title>
+	Demonstrating Date Class
+</title>
+</head>
+	<body>
+		<script type="text/javascript">
+			/*var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep'];
+
+			var cDate = new Date();
+			console.log(cDate);
+			console.log(cDate.getDate());
+			console.log(cDate.getMonth());
+			var monthIndex = cDate.getMonth();
+			console.log(months[monthIndex]);
+			console.log(cDate.getFullYear());
+			console.log(cDate.getDay()); */
+
+			console.log(new Date());
+			var cDate = new Date();
+			var userSelection = prompt("mm/dd/yy  2. mmmm/dd/yyyy, .......");
+			
+			console.log(dateFormat);
+
+			switch(userSelection) {
+				case 1:
+					//mm/dd/yy 
+					var dateFormat = (cDate.getMonth() + 1) + '/' +  cDate.getDate() + '/' + cDate.getFullYear();
+					break;
+				case 2:
+					// mmmm/dd/yyyy
+
+					break;
+			}
+
+
+			
+
+			
+		</script>
+	</body>
+</html>

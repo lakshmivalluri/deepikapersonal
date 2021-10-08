@@ -1,0 +1,102 @@
+h1, h2 {
+    color: #ef476f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    border: 4px solid #219ebc;
+    text-align: center;
+    padding: 20px;
+    color: #219ebc;
+    background-color: #dfe7fd;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.left, .right {
+    float: left;
+    border: 4px solid #bdb2ff;
+    width: 40%;
+    margin-left: 55px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+input {
+    margin-left: 15px;
+}
+
+input[type=text] {
+    font-size: 1.6rem;
+    width: 250px;
+    text-indent: 10px;
+    border: 3px solid #48cae4;
+    box-shadow: 5px 5px silver;
+}
+
+#cCodeErr, #ageErr, #cNameErr, #cCodeEmpty, #cLocationErr, #sNameErr, #sAgeErr, #sSportErr, #cNameEmp, #sNameEmp, #sSportEmp {
+    display: none;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 20%;
+    font-size: 1.4rem;
+    border: 2px solid red;
+    color: red;
+}
+
+#err {
+    display: none;
+    width: 30%;
+    float: left;
+    margin-top: 5px;
+    margin-left: 200px;
+    font-size: 1.4rem;
+    border: 2px solid red;
+    color: red;
+}
+
+#btn {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 150px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: #dc2f02;
+    background-color: #e8e8e4;
+    border: 4px solid #e63946;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: #06d6a0;
+    border: 4px solid green;
+    font-weight: bolder;
+}
+
+table {
+    display: none;
+    width: 98%;
+    border: 3px solid #06d6a0;
+    float: left;
+    margin-top: 140px;
+    margin-bottom: 20rem;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+tr, td {
+    padding: 10px;
+    border: 3px solid #06d6a0;
+}

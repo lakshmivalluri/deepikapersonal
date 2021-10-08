@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Lucky Number</title>
+    </head>
+    <body>
+            <h4 style="text-decoration: underline; text-align: center;text-decoration: underline;background: aqua">Lucky Number</h4>
+        <script type = "text/javascript">
+            var n= prompt ("enter a number");
+            n = parseInt(n);
+            var rem;
+            var sum = 0;
+            n = parseInt(n); 
+                while(n>0){
+                    rem = n%10;
+                    sum = sum + rem ;
+                    n = n/10;
+                    n = parseInt(n);
+                }
+                console.log("the sum of the given number is" + sum);
+                    rem = sum%10;
+                    var m = sum/10;  
+                    m = parseInt(m);
+                    sum = rem +m;
+                    console.log("lucky number is" + sum)
+        </script>
+    </body>
+</html>

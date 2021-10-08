@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>palindromic-number</title>
+</head>
+<body>
+    <h1>palindromic number</h1>
+    <p>go to console</p>
+    <script>
+        var n= m= prompt('enter-number');
+        var n= parseInt(n);
+        var rem, sum='';
+
+            while(n>0) {
+                rem= n%10;
+                rem= rem + '';
+                sum+= rem;
+                n= n/10;
+                n= parseInt(n); 
+            }
+            
+            if (m==sum) {
+                console.log(m +''+ 'this number is a palindromic number');
+            } else {
+                console.log('not a palendromic number');
+            }
+            console.log(m);
+            console.log(sum);
+    </script>
+</body>
+</html>

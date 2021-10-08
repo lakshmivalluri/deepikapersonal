@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Positions
+		</title>
+		<link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajAD_LVcM20ptDLLQe3hhjvjxcNUhMymu1w&usqp=CAU"/>
+		<style type="text/css">
+			.block {
+				border: 1px solid;
+				text-decoration: underline;
+				text-align: center;
+				width: 130px;
+				height: 130px;
+			}
+			.block1 {
+				background: green;
+			}
+			.block2 {
+				background: blue;
+				top: 100px;
+				left: 200px;
+				position: absolute;
+			}
+			.block3 {
+				background: yellow;
+			}
+			
+			.iparent {
+				border: 1px solid;
+				padding: 10px;
+				height: 150px;
+				
+			}
+			.gparent {
+				border: 2px solid;
+				padding: 30px;
+				height: 250px;
+				
+			}
+			img {
+				width: 60px;
+				height: 50px;
+				position: absolute;	
+
+			}
+			.header {
+				border: 1px solid;
+				padding: 20px;
+				height: 50px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>	
+		<div class="header">
+			<img src="https://edit.org/img/blog/2019060315-logo-sports-center.jpg" />
+		</div>
+		<div class="block block1">
+			Block 1
+		</div>
+		<img src="https://edit.org/img/blog/2019060315-logo-sports-center.jpg1" title="my company logo" alt="logo image">
+		<div class="gparent">
+			<div class="iparent">
+				<div class="block block2">
+					Block 2
+				</div>
+			</div>
+		</div>
+		<div class="block block3">
+			Block 3
+		</div>
+		
+
+	</body>
+</html>

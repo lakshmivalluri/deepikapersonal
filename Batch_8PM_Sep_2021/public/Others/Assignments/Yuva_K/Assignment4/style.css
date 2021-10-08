@@ -1,0 +1,53 @@
+h1{
+	text-align: center;
+	border: 2px solid black;
+}
+tr:hover{
+	background-color: #D6EEEE;
+}
+table{
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+}
+.picture{
+	width: 150px;
+	height: 150px;
+}
+table,th,td{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+.spritingImage1, .spritingImage2, .spritingImage3, .spritingImage4, .spritingImage5, .spritingImage6, .spritingImage7, .spritingImage8, .spritingImage9, .spritingImage10{
+	background-image: url(images/spritingImage.png);
+}
+.spritingImage1{
+	background-position: -68px 500px ;
+}
+.spritingImage2{
+	background-position: -293px 500px;
+}
+.spritingImage3{
+	background-position: -545px 512px;
+}
+.spritingImage4{
+	background-position: -734px 528px;
+}
+.spritingImage5{
+	background-position: -943px 548px;
+}
+.spritingImage6{
+	background-position: -51px 237px;
+}
+.spritingImage7{
+	background-position: -242px 258px;
+}
+.spritingImage8{
+	background-position: -426px 206px;
+}
+.spritingImage9{
+	background-position: -659px 280px;
+}
+.spritingImage10{
+	background-position: -894px 280px;
+}

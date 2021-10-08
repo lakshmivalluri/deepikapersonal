@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment-6</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name = "Raj" , age = 20 , department = "CSE" , basic_salary = 150000 , gender = " male ";
+		var pf = basic_salary * 15 / 100;
+		var hra = basic_salary * 20 /100;
+		var total_sal = basic_salary + pf + hra;
+		console.log("see below Employee " + name +" salary details");
+		console.log("Basic salary : " + basic_salary);
+		console.log("hra : " + hra);
+		console.log("pf : " + pf);
+		if(gender == " male ") {
+			if(total_sal > 200000) {
+				tax_per = total_sal * 15 / 100;
+				console.log("tax percentage to " +name + "(male) is " + tax_per);
+			}
+			else if(total_sal > 100000) {
+				tax_per = total_sal * 10 / 100;
+				console.log("tax percentage to " +name + "(male) is " + tax_per);
+			}
+			else if(total_sal > 50000) {
+				tax_per = total_sal * 5 / 100;
+				console.log("tax percentage to " +name + "(male) is " + tax_per);
+			}
+
+		}
+		if(gender == " female ") {
+			if(total_sal > 200000) {
+				tax_per = total_sal * 10 / 100;
+				console.log("tax percentage to " +name + "(female) is " + tax_per);
+			}
+			else if(total_sal > 100000) {
+				tax_per = total_sal * 5 / 100;
+				console.log("tax percentage to " +name + "(female) is " + tax_per);
+			}
+			else if(total_sal > 50000) {
+				tax_per = total_sal * 0 / 100;
+				console.log("There is no tax to " +name + "(female)" );
+			}
+
+		}
+
+	</script>
+
+</body>
+</html>

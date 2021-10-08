@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Find Reversal Number</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+			var n=prompt("Enter a Number");
+			n=parseInt(n);
+			var rem,sum=0,rev=0;
+			while (n>0){
+				rem=n % 10;
+				
+				rev=rev * 10 + rem ;
+				n=n / 10 ;
+				n=parseInt(n);
+			}
+			console.log("Reversal Number is "+ rev);	
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empdata</title>
+</head>
+<body>
+     <script>
+              var empData = {
+                   eName: prompt("enter name"),
+                   eGender:prompt("Gender"),
+                   eAge: prompt("enter age"),
+                   eDept: prompt("enter Department"),
+                   eBasic: prompt("enter basic salary"),
+                   
+                   readEmpData: function(){ 
+                      eName = empData.eName;
+                      eAge = empData.eAge;
+                      eGender = empData.eGender;
+                      eDept = empData.eDept;
+                      eBasic = empData.eBasic;
+                      
+                   },
+                };
+                function getTotalsal(){
+                 empData.eHra = (5 * empData.eBasic ) / 100;
+                 empData.ePf = (10 * empData.eBasic) /100;
+                 empData.eTotal = empData.eHra + empData.ePf + empData.eBasic;
+              }
+
+                function getTotalTax(){
+                    if(empData.eGender == 'male'){
+                        if (empData.eTotal <= 100000) {
+                            empData.eTax = (empData.eTotal * 15) /100; 
+                        }else if (empData.eTotal >= 50000) {
+                            empData.eTax = (empData.eTotal * 10) /100; 
+                        }else {
+                            empData.eTax = (empData.eTotal * 2) /100; 
+                        }
+                    }else {
+
+                     if(empData.eGender == 'female'){
+                        if (empData.eTotal <= 100000) {
+                            empData.eTax = (empData.eTotal * 10) /100; 
+                        }else if (empData.eTotal >= 50000) {
+                            empData.eTax = (empData.eTotal * 5) /100; 
+                        }else {
+                            empData.eTax = (empData.eTotal * 0) /100; 
+                          }
+                       }
+                    }
+                 }
+                   
+                 function displayEmpData() {
+                    getTotalsal(); 
+                    getTotalTax();
+                    console.log("emp name : " + empData.eName);
+                    console.log("emp age : " +empData.eAge);
+                    console.log("emp dept : " +empData.eDept);
+                    console.log("emp gender : " + empData.eGender);
+                    console.log("emp eBasic : " +empData.eBasic);
+                    console.log("emp hra :"+ empData.eHra);
+                    console.log("emp pf :" + empData.ePf);
+                     console.log("emp total :" + empData.eTotal);
+                    console.log("emp tax :" + empData.eTax)
+                }
+                 displayEmpData(); 
+                  
+     </script>
+</body>
+</html>

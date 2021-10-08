@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Genator</title>
+    <link rel="stylesheet" href="genarator.css" >
+</head>
+<body>
+        <div class="Detail">
+            Employee Details Genarator
+        </div>
+        <ul>
+            <li class="li">
+                Employee Name :  <input type="text" id="name">
+            </li>
+            <li class="li">Employee Gender : <span><input name="gender" type="radio" id="Fgen" value="F" >
+                <label for="Fgen">F</label>
+            </span>
+                <span><input type="radio" id="Mgen"  value="M" name="gender">
+                    <label for="Mgen">M</label>
+                </span> 
+            </li>
+            <li class="li"> Location : <select id="loc">
+                <option>Please choose option</option>
+                <option>Hyderabad</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+                </select></li>
+            <li class="li">Department : <select id="Dept">
+                <option>IT</option>
+                <option>Admin</option>
+                <option>finance</option>
+                    </select></li>
+            <li class="li">
+                company : <input type="text" id="comp">
+            </li>
+            <li class="li">Basic salary : <input type="text" id="bsal"></li> 
+            <div class ="button"><input type="button" value="generate" id="click" onclick="generatepayslip();"/>
+            </div>     
+        </ul>
+        <ul class="EmployeeBlock">
+            <li class="cen">
+                Employee Detail
+            </li>
+            <li class="rli">Employee name : <span id="Dname"></span>
+            </li>
+            <li class="rli"> gender : <span id="Dgen"></span>
+            </li>
+            <li class="rli">  Location : <span id="Dloc"></span>
+            </li>
+            <li class="rli"> Deptarment : <span id="DDept"></span>
+            </li>
+            <li class="rli"> Company : <span id="Dcom"></span>
+            </li>
+            <li class="rli">basic salary : <span id="Dsal"></span>
+            </li>
+            <li class="rli">PF :  <span id="Dpf"></span>
+            </li>
+            <li class="rli">HRA : <span id="Dhra"></span>
+            </li>
+            <li class="rli">Total salary : <span id="Dtotal"></span>
+            </li> 
+            <li class="rli">Tax : <span id="Dtax"></span>
+            </li>
+        </ul>
+        <script src="emp.generatejs.js"></script>
+</body>
+</html>     
+
+

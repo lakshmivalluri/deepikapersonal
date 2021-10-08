@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Drag And Drop Event handling
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                width: 500px;
+                height: 400px;
+                margin: 20px auto;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" ondrop="elementDropped(event)" ondragover="dagIsOver(event)"></div>
+        <img id="prod_1" ondragstart="draggingIsStarted(event)" src="https://m.media-amazon.com/images/I/71h6PpGaz9L._AC_SL1500_.jpg" alt="" />
+        <img id="prod_2" ondragstart="draggingIsStarted(event)" src="https://bazarexonline.com/crm/public/uploads/subcategory_images/9msLDJjDS1Gun9ZrAQl1Onx3Dikg6K.jpg" alt="" />
+        <img id="prod_3" ondragstart="draggingIsStarted(event)" src="https://www.cnet.com/a/img/xh7SVje9bq1_azlPW73EGrHHJVQ=/1200x630/2020/10/28/5a601f4a-06c8-4374-b10d-9f07fe183390/babyyoda-target-1.png" alt="">
+
+        <script>
+            var productId = '';
+            var elementDropped = (event) => {
+                event.preventDefault();
+                productId = '#' + productId;
+                event.target.append(document.querySelector(productId));
+            }
+
+            var dagIsOver = (event) => {
+                event.preventDefault();
+            }
+
+            var draggingIsStarted = (event) => {
+                console.log("drag is started");
+                productId = event.target.getAttribute("id");
+
+            }
+        </script>
+    </body>
+</html>

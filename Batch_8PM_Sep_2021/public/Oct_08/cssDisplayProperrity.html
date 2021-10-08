@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Demonstrating css Display Property
+		</title>
+		<style type="text/css">
+			.item {
+				border: 1px solid;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+				display: inline;
+			}
+			span {
+				border: 1px solid red;
+				width: 120px;
+				height: 120px;
+				display: inline-block;
+			}
+			.tabItem {
+				border: 1px solid;
+				width: 130px;
+				padding: 10px;
+				text-align: center;
+				cursor: pointer;
+				display: inline;
+				margin: -3px;
+			}
+			.tabItem:hover {
+				background-color: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+
+		<span>Content 1</span>
+		<span>Content 1</span>
+		<span>Content 1</span>
+		<span>Content 1</span>
+
+		<div>
+			<div class="tabItem">Home</div>
+			<div class="tabItem">About our clients</div>
+			<div class="tabItem">Contact Details</div>
+			<div class="tabItem">Employee Info</div>
+			<div class="tabItem">Career</div>
+			<div class="tabItem">Feedback</div>
+		</div>
+	</body>
+</html>

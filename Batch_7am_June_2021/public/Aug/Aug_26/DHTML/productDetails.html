@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details Page</title>
+        <script src="../../jquery.js"></script>
+        <link rel="stylesheet" href="productDetailsStyles.css">
+        
+    </head>
+    <body>     
+        <div class="loadingBlock">
+            <img src="https://i.stack.imgur.com/hzk6C.gif" alt="">
+        </div>   
+
+        <div class="errorBlock">
+            Error while interacting with server
+        </div>
+        <h3>
+            Product Details Page
+        </h3>
+        <input type="button" value="Load Data" onclick="getProductData()">
+        <ul class="pDtails"></ul>      
+        <script src="dynamicProductDetailsGenerator.js"></script>  
+    </body>
+</html>

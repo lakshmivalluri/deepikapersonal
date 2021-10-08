@@ -1,0 +1,42 @@
+
+        h1 {
+            border: 2px solid ;
+            color: rgb(179, 240, 11);
+            text-align: center;
+            background-color:rgb(137, 149, 219)
+        }
+         
+        .information, .information li {
+            list-style: none;
+            border: 1px solid;
+            margin: 8px;
+            padding: 5px;
+           
+         }
+
+         .information li {
+            background-color: rgb(242, 132, 174);
+        }
+        
+        .information li img {
+            width: 225px;
+            height: 190px;
+            padding: 2px;
+        }
+
+        .information {
+            float: left;
+            width: 300px;
+            background-color: rgb(150, 103, 224);
+            
+        }
+
+        .eDetails {
+            background-color: rgb(71, 134, 55);
+            margin: 5px;
+            padding: 5px;
+            height: 600px;
+        }
+        body{
+            background-color: rgb(102, 60, 88);
+        }

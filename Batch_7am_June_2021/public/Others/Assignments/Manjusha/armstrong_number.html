@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Finding Armstrong number</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var n = prompt("Enter number");
+			var temp = n;
+			n = n + "";
+			var length = n.length;
+			number = parseInt(n);
+			var res, r = 0;
+			while (n > 0) {
+				res = n % 10;
+				r = r + res ** length;
+				n = n / 10;
+				n = parseInt(n);
+			}
+			console.log(r);
+			if (temp == r) {
+				console.log("armstrong");
+			} else {
+				console.log("not armstrong");
+			}
+		</script>
+	</body>
+</html>

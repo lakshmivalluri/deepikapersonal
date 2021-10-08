@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>emp details</title>
+</head>
+<body>
+    <script>
+        var empData = () => {
+        var empDetails = {
+            name: prompt("enter employee name"),
+            age: prompt("entera a age"),
+            gender: prompt("enter a gender"),
+            Dept: prompt("enter department"),
+            basicsal: prompt("enetr basic salary"),
+        };
+        empDetails.age = parseInt(empDetails.age);
+        empDetails.basicsal = parseInt(empDetails.basicsal);
+        empDetails.pf = 14 / 100 * empDetails.basicsal;
+        empDetails.hra = 16 / 100 * empDetails.basicsal;
+        empDetails.total = empDetails.pf + empDetails.hra + empDetails.basicsal;
+
+        if(empDetails.gender === "male") {
+            if(empDetails.basicsal > 40000) {
+                empDetails.tax = 10 / 100 * empDetails.total;
+            } else if (empDetails.basicsal > 25000) {
+                empDetails.tax = 8 /  100 * empDetails.total;
+            } else {
+                empDetails.tax = 0;
+            }
+        }
+        if(empDetails.gender === "female") {
+            if(empDetails.basicsal > 40000) {
+                empDetails.tax = 8 /  100 * empDetails.total;
+            } else if (empDetails.basicsal > 25000) {
+                empDetails.tax = 5 /  100 * empDetails.total;
+            } else {
+                empDetails.tax = 0;
+            }
+        }
+
+        // accept the data from JSON object just give by its name...like an array it shows the data.
+
+        console.log(empDetails);
+        console.log("------------------------------------------------------");
+
+       // accept the data from JSON object whatever the data we require....give by json name and key 
+
+        console.log("name " + empDetails.name);
+        console.log("age " + empDetails.age);
+        console.log("gender " + empDetails.gender);
+        console.log("Department " + empDetails.Dept);
+        console.log("basic salary " + empDetails.basicsal);       
+        console.log("pf " + empDetails.pf);
+        console.log("hra " + empDetails.hra);
+        console.log("total " + empDetails.total);
+        console.log("tax to pay " + empDetails.tax);
+    }
+    empData();  
+    </script>
+</body>
+</html>

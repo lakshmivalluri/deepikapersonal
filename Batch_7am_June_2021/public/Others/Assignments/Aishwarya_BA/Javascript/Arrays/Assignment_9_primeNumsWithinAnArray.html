@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h1 style="background: pink">Prime numbers within an array</h1>
+    <script>
+      var a = [10, 12, 13, 15, 18, 29, 99, 23, 89],
+        count;
+      for (var i = 0; i < a.length; i++) {
+        count = 0;
+        for (var j = 2; j < a[i]; j++) {
+          if (a[i] % j == 0) {
+            count++;
+          }
+        }
+        if (count == 0) {
+          console.log(a[i] + " is a prime number");
+        }
+      }
+    </script>
+  </body>
+</html>

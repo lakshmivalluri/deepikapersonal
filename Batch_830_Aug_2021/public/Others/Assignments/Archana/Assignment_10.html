@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date method</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var date = new Date();
+		var days = date.getDay();
+		var month = date.getMonth();
+		var choice = parseInt(prompt("Enter Your choice \n 1. dd/mm/yyyy \n 2. day month year \n 3. day month year \n 4. month day year \n 5. month/dd/yyyy \n 6. day month year, 00:00:min \n 7. month day year, 0hrs 0min 0sec" ));
+
+		var day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+		var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+		var months1 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+		switch(choice)
+		{
+
+			case 1:
+					var date1 = date.getDate() + "/" + (date.getMonth() +1) +"/"+
+					date.getFullYear();
+					console.log(date1);
+					break;
+
+			case 2:
+					var date2 = date.getDate() +" "+ months[month] +" "+
+					date.getFullYear();
+					console.log(date2);
+					break;
+			case 3:
+					var date3 = date.getDate() +"-"+ months1[month] +"-"+
+					date.getFullYear();
+					console.log(date3);
+					break;
+
+			case 4:
+					var date4 = months[month] +" , "+ date.getDate() +" "+
+					date.getFullYear();
+					console.log(date4);
+					break;
+
+			case 5: 
+					var date5 = months1[month] +","+ date.getDate() +" "+
+					date.getFullYear();
+					console.log(date5);
+					break;
+
+			case 6:
+					var date6 = date.getDate() +" "+ months[month] +" "+
+					date.getFullYear()+", "+ date.getHours() +":"+ date.getMinutes() 
+					+"min";
+					console.log(date6);
+					break;
+			case 7:
+					var date7 = months[month] +" "+ date.getDate() +" "+
+					date.getFullYear()+", "+ date.getHours() +"hrs "+ date.getMinutes() 
+					+"min "+ date.getSeconds() +"sec";
+					console.log(date7);
+					break;
+
+		}
+
+		  
+	</script>
+		
+
+</body>
+</html>

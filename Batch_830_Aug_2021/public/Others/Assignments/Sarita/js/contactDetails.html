@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var contactDetails = {
+                "firsName" : "abc",
+                "lastName": "xyz",
+                "phoneNo" : {
+                    "office": 98232323232 ,
+                    "personal": [932312323232,232323243323]},
+                "emailId" :{
+                    "office":"abc@gmail.com" , 
+                    "personal" : ["xyz@gmail.com" ,"pqr@gmail.com"]},
+                "address" :{
+                    "personal":{
+                        "Doorno":10,
+                        "streetno": 7,
+                        "StateInfo":{
+                             "stateName":"Maharashtra",
+                             "stateCode":23}},
+                    "office":{
+                        "country":"India",
+                        "stateCode":23,
+                        "stateName":"Maharashtra"
+                    }},          
+                "desigation":"Desiner",
+                "profilepic":"excelent"
+            }
+            console.log("Employee Details");
+            console.log("EmpName = " + contactDetails.firsName + " " + contactDetails.lastName);
+            console.log("PhoneNumber: Office = " +contactDetails.phoneNo.office + " " +" / Personal = " +contactDetails.phoneNo.personal[0] +"," +contactDetails.phoneNo.personal[1]);
+            console.log("EmailId: Office = " +contactDetails.emailId.office + " " +" / Personal = " +contactDetails.emailId.personal[0] +" , " +contactDetails.emailId.personal[1]);
+            console.log("Address: Personal : doorno = " +contactDetails.address.personal.Doorno + " StreetNo = " +contactDetails.address.personal.streetno+ " StateInfo: StateName =  "+contactDetails.address.personal.StateInfo.stateName + " StateCode = " + contactDetails.address.personal.StateInfo.stateCode +" / Office : Country = " +contactDetails.address.office.country + " StateCode = " +contactDetails.address.office.stateCode + " StateName = "+contactDetails.address.office.stateName);
+            console.log("Designation = " +contactDetails.desigation);
+            console.log("ProfilePic = " +contactDetails.profilepic);
+
+            
+
+            
+            
+        </script>
+    </body>
+</html>

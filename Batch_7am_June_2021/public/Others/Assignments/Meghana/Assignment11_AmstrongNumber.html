@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Amstrong number</title>
+	</head>
+	<body>
+
+	     <h4 style="text-decoration: underline; text-align: center;text-decoration: underline;background: aqua">Amstrong Number</h4>
+
+		<script type="text/javascript">
+
+          var sum =0;
+
+			 var number = prompt("enter the integer")
+
+			 number = parseInt(number);
+
+			 var temp = number;
+
+
+			 while(temp > 0){
+
+			 	var reminder = temp % 10;
+
+			 	sum += reminder * reminder * reminder ;
+
+			 	temp = temp / 10 ;
+
+			 	temp = parseInt(temp);
+
+			 }
+
+			 if(sum == number){
+
+			 	console.log("it is an Amstrong number" + number);
+			 } 
+
+			 else {
+			 	console.log("it is not an amstrong number" + number);
+			 }
+
+
+			
+
+
+		</script>
+
+	</body>
+</html>

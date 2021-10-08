@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 1 to 100 prime number</title>
+</head>
+<body>
+	1 to 100 prime number
+	<script type="text/javascript">
+		var i, j, sum = 0, n;
+		for(i = 2; i <= 100; i++) {
+			n = 0;
+			for(j = 2; j<i; j++) {
+				if(i % j == 0) {
+					n = 1;
+                    break;
+				}
+			}
+			if(n == 0) {
+				sum += i;
+			}
+		}
+		console.log(sum);
+	</script>
+</body>
+</html>

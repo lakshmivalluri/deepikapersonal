@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linear gradient</title>
+        <style>
+            .container {
+                border-radius: 10px;
+                border: 2px solid;
+                width: 400px;
+                height: 360px;
+                margin: 30px auto;
+                text-align: center;
+                /*background-image: linear-gradient(120deg,yellow, blue, red); */
+                /*background-color: rgba(85, 117, 167, 0.2); */
+                background-image: repeating-linear-gradient(to right bottom, red, green 10%, yellow 20%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            Content
+        </div>
+    </body>
+</html>

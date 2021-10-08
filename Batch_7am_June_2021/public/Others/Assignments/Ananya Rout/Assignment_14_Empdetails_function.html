@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <title>Emp details through function</title>
+   </head>
+   <body>
+   	 <h2>EMP DETAILS THROUGH FUNCTION</h2>
+   	 <script type="text/javascript">
+
+   	 	var EmpName, gender, Dept, basicSal, totalsal, pf, hra
+   	 	 EmpName = prompt("Enter EmpName");
+   	 	 gender = prompt("Enter gender");
+   	 	 Dept = prompt("Enter Dept");
+   	 	 basicSal = prompt("Enter basicSal");
+          basicSal = parseInt(basicSal);
+   	 	 totalsal, pf, hra
+          salarycalculation();
+
+         function salarycalculation(){
+   	 	pf = basicSal*14/100;
+   	 	hra = basicSal*25/100;
+   	 	totalsal = basicSal + pf + hra;
+   	 	console.log("pf is " + pf);
+   	 	console.log("hra is " + hra, "totalsal is " + totalsal);
+          }
+          salarycondition();
+
+          function salarycondition() {
+   	 	if (basicSal>=25000) {
+   	 		console.log("Employee is a developer");
+   	 		if (basicSal>25000) {
+   	 			console.log("Employee is a senior developer");
+   	 			elseif(basicSal<35000)
+   	 			console.log("Employee is a taranee");
+   	 		    
+   	 		} else {
+   	 			console.log("Employee is a junior Developer");
+   	 		}
+   	 	} else {
+   	 		console.log("Employee is a Tester");
+   	 	}
+       }
+   	 	console.log("Thank You");
+   	 </script>
+
+   </body>
+</html>

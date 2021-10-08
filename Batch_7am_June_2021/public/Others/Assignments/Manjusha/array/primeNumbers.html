@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prime numbers</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var prime = [12, 13, 19, 23, 45];
+			for(var index = 0; index <= prime.length; index++) {
+				var count = 0;
+				for(var i = 1; i <= prime[index]; i++) {
+					if(prime[index] % i == 0) {
+						count++;
+						if(count > 2) {
+							break;
+						}
+					}
+				}
+			
+					if(count == 2) {
+						console.log("prime numbers are" + " " + prime[index]);
+					}
+			}
+		</script>
+	</body>
+</html>

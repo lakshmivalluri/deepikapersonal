@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Perform diffrent opration on numbe</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var choice =prompt("Enter Your choice \n 1.Sum of Number \n 2.Find a Lucky Number \n 3.Reverse of Number \n 4.Find number is armstrng or not \n 5.Find Number is palindrome or not \n 6.Find the Number of digit in given Number");
+				switch(choice) {
+					case '1':
+						var n = prompt("enter value");
+					    parseInt(n);
+						var rem , sum = 0;
+						while(n > 0)
+						{
+						  rem = n % 10;
+						  sum = rem + sum ;
+						  n = n / 10;
+						  n = parseInt(n);
+
+				          
+						 }
+						
+						 console.log(sum);
+					break;
+					case '2':
+					    var n = prompt("enter value");
+					    parseInt(n);
+						var rem , sum = 0;
+						while(n > 0)
+						{
+						  rem = n % 10;
+						  sum = rem + sum ;
+						  n = n / 10;
+						  n = parseInt(n);
+						  if (n == 0 && sum > 9) {
+			                    n = sum;
+			                    sum = 0;
+			                }
+				          
+						 }
+						 console.log(sum);
+					break;
+					case '3':
+						var num = prompt("Enter a number");
+						var rem, reverse = 0;
+						while(num > 0){
+							rem = num % 10;
+							reverse = reverse * 10 + rem ;
+							num = num / 10;
+							num = parseInt(num);
+						}
+
+						console.log(reverse);
+					break;
+					case '4':
+						var num = prompt("Enter value");
+						num = parseInt(num);
+						
+						var count = 0 , num2, temp;
+						num2 = num ;
+						temp = num ;
+						console.log(num2);
+						while(num >0){
+							count = count+1;
+
+							num = num / 10;
+							num = parseInt(num);
+						}
+						if(count > 0){
+						var rem ,  sum = 0;
+							
+							while(num2 > 0){
+			                  rem = num2 % 10;
+			                  var n1 = rem ** count;
+			                  n1 = parseInt(n1);
+			                    num2 = num2 / 10 ;
+			                  num2 = parseInt(num2);  
+			                  sum = sum + n1 ;
+			                  
+							}
+						}
+			           if(temp == sum){
+			           	console.log("number is armstrong");
+			           }
+			           else{
+			           	console.log("number is not armstrong");
+			           }
+			        break;
+			        case '5':
+			        	var num = prompt("Enter a number");
+						var temp = num ;
+						var rem, reverse = 0;
+						while(num > 0){
+							rem = num % 10;
+							reverse = reverse * 10 + rem ;
+							num = num / 10;
+							num = parseInt(num);
+						}
+
+						console.log(reverse);
+						if( temp == reverse){
+							console.log("palindrome number");
+
+						}
+						else{
+							console.log("not palindrome number");
+
+						}
+					break;
+					case '6':
+						var num = prompt("Enter value");
+						num = parseInt(num);
+						
+						var count = 0;
+						while(num >0){
+							count = count+1;
+
+							num = num / 10;
+							num = parseInt(num);
+						}
+						console.log(count);
+					break;
+
+
+				}
+				
+			</script>
+		</body>
+</html>
+			 
+			 

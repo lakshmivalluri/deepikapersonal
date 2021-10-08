@@ -1,0 +1,25 @@
+.header {
+    font-weight: bold;
+    font-size: 18px;
+}
+ul {
+    border: 2px dotted red;
+    width: 600px;
+    margin: 10px;
+    padding: 2px;
+}
+li {
+    list-style: none;
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+.button {
+    text-align: right;
+}
+.payslip {
+    color: green;
+}
+.payslip {
+    display: none;
+}

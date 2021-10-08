@@ -1,0 +1,13 @@
+
+CACHE MANAGEMENT:
+    data/js/books.js
+    sample/data/*.*
+    images/books/logo.png
+
+NETWORK:
+    login/data/*.*
+    payment.html
+    
+
+FALLBACK:
+    custome/pagenotfound.html

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Details</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name,age,dept,basicSal,gender,pf,totalSal,hra,tax;
+		name="Satya";
+		age="33";
+		dept="Mech";
+		basicSal="35000";
+		gender="male";
+		pf=basicSal*0.14;
+		hra=basicSal*0.25;
+		totalSal=basicSal+pf+hra;
+		console.log("PF is" +pf);
+		console.log("HRA is" +hra);
+		console.log("Total Salary is" +totalSal);
+		console.log("basicSal is" +basicSal);
+
+
+
+		if(gender==="male") {
+			if(totalSal>200000){
+				tax=(15/100)*totalSal;
+				console.log("tax is" +tax);
+			}
+			else if (totalSal>100000){
+				tax=(10/100)*totalSal;
+				console.log("tax is" +tax);
+			}
+			else if (totalSal>50000) {
+				tax=(5/100)*totalSal;
+				console.log("tax is" +tax);
+			}
+			else{
+				tax=0;
+				console.log("no tax");
+			}
+		}
+		if(gender==="female"){
+			 if(totalSal>200000){
+				tax=(10/100)*totalSal;
+				console.log("tax is" +tax);
+			}
+			else if (totalSal>100000){
+				tax=(5/100)*basicSal
+				console.log("tax_percent=((5/100)*basicSal")
+			}
+			else (totalSal>50000)
+				tax=0;
+				console.log("no tax");
+		}
+	</script>
+	</body>
+</html>

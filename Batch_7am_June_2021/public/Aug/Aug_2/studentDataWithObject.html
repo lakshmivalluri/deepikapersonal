@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Studen Details with jsonobject
+        </title>
+    </head>
+    <body>
+        <script>
+            var sDetails = {
+                name: "",
+                age: 0,
+                gender: '',
+                marks: [],
+                total: 0,
+                readStudentData: function() {
+                    this.name = prompt("enter name");
+                    this.age = prompt("Enter student age");
+                    for(var i = 0 ; i < 5;  i++) {
+                        this.marks[i] = prompt("Enter value for position " + (i+1));
+                        this.marks[i] = parseInt(this.marks[i]);
+                    }
+                },
+                getTotalAndAvg: function() {
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        sDetails.total += this.marks[i];
+                    }
+                    sDetails.avg = this.total / this.marks.length;
+                },
+                getGrade: function() {
+                    this.getTotalAndAvg();
+                    if (this.avg >= 40) {
+                        this.grade = "Passed";
+                    } else {
+                        sDetails.grade = 'Surprise';
+                    }
+                },
+                displayData: function() {
+                    sDetails.readStudentData();
+                    this.getGrade();
+                    console.log("Student dtails");
+                    console.log("The toal is " + sDetails.total);
+                    console.log("Grade is " + this.grade);
+                    console.log("Avg is " + this.avg);
+                }
+            }
+
+            sDetails.displayData();
+        </script>
+    </body>
+</html>

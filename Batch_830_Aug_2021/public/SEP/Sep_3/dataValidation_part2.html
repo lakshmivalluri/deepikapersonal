@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Data Validation
+        </title>
+        <style>
+            ul {
+                border: 1px solid;
+                width: 500px;
+                margin: 30px auto;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            .err {
+                color: red;
+                font-size: 12px;
+            }
+            #nameErr {
+                display: none;
+            }
+            #ageErr {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                User Name: <input type="text" id="uname">
+                <div class="err" id="nameErr">Name is mandatry</div>
+            </li>
+            <li>
+                Age: <input type="text" id="uage" onkeypress="return doValidtion(event)" maxlength="2">
+                <div class="err" id="ageErr">
+                    Age cannot be lessthan 21
+                </div>
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="registerDetails()">
+            </li>
+        </ul>
+        <script>
+            var registerDetails = () => {
+                var sDetails = {};
+                sDetails.name = document.querySelector("#uname").value;
+                if (!sDetails.name) {
+                    document.querySelector("#nameErr").style.display = 'block';
+                    return;
+                } else {
+                    document.querySelector("#nameErr").style.display = 'none';
+                }
+                sDetails.age = document.querySelector("#uage").value;
+                if (sDetails.age < 21) {
+                    document.querySelector("#ageErr").style.display = 'block';
+                } else {
+                    document.querySelector("#ageErr").style.display = 'none';
+                }
+                console.log(sDetails);
+            }
+
+            var doValidtion = (event) => {
+                if (event.charCode >= 48 && event.charCode <= 58) {
+                    return true;
+                }
+                return false;
+            }
+        </script>
+    </body>
+</html>

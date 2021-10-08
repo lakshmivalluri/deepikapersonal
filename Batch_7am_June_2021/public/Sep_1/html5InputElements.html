@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            HTML5 Input elements
+        </title>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter user name: <input type="text">
+            </li>
+            <li>
+                User age: <input type="number" max="100" min="10">
+            </li>
+            <li>
+                Price Range: <input type="range" min="100" max="1000" onchange="showValue()" id="priceRange"> <span id="rprice"></span>
+            </li>
+            <li>
+                Fav Color: <input type="color">
+            </li>
+            <li>
+                DOB: <input type="datetime-local">
+            </li>
+            <li>
+                <input type="tel">
+            </li>
+        </ul>
+        <script>
+            function showValue() {
+                console.log(document.querySelector('#priceRange').value);
+                document.querySelector("#rprice").innerText = document.querySelector('#priceRange').value;
+            }
+        </script>
+    </body>
+</html>

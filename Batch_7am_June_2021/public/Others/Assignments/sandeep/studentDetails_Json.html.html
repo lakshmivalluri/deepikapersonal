@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Java script Object Module</h3>
+    <script>
+        var sDetails= {
+            sName : "s.sandeep",
+            sAge : 25,
+            sSalary : 25000,
+            total :0,
+            pf :0,
+            hra : 0,
+        }
+        pf= sDetails.sSalary*20/100;
+        hra = sDetails.sSalary*25/100 ;
+        total = sDetails.sSalary- pf - hra ;
+
+        console.log ("the name is"+sDetails.sName);
+        console.log ("the age is"+sDetails.sAge);
+        console.log ("the pf is"+pf);
+        console.log ("the hra is"+hra);
+        console.log ("the name is"+total);
+    </script>
+</body>
+</html>

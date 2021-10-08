@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <script>
+        var empDetails = {
+            "name" : "Ram" ,
+            "Age" : 23 ,
+            "gender" : "Male" ,
+            "basicSal" : 100000 ,
+            "hra" : 0 ,
+            "pf" : 0 ,
+            "totalSal" : 0
+        }
+        empDetails.hra = (25 *empDetails.basicSal) / 100;
+        empDetails.pf = (14 * empDetails.basicSal) / 100;
+       empDetails.totalSal = parseInt(empDetails.basicSal+empDetails.pf+empDetails.hra);
+       console.log("Employeename="+empDetails.name);
+		console.log("EmployeeAg="+empDetails.Age);
+		console.log("EmployeeGender="+empDetails.gender);
+		console.log("Hra="+empDetails.hra);
+		console.log("PF="+empDetails.pf);
+		console.log("EmployeeSalary="+empDetails.totalSal);
+		
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="heading">
+            Progress Card Generator
+        </div>
+        <ul>
+            <li> Student Name: <input maxlength="30" type="text" id="sname" onkeypress="return validateUserName(event)"></li>
+            <li> 
+                Student Age: 
+                <input type="text" id="sage" >
+                <div class="ageErr">
+                    Please enter valid age
+                </div>
+            </li>
+            <li>
+                Student Class: 
+                <select id="sclass">
+                    <option value="Class I">Class I</option>
+                    <option value="Class II">Class II</option>
+                    <option value="Class III">Class III</option>
+                    <option value="Class IV">Class IV</option>
+                    <option value="Class V">Class V</option>
+                </select>
+            </li>
+            <li class="marksContainer">
+                Marks:
+                <input type="text" id="m1" maxlength="3" onkeypress="return validateMarks(event)">
+                <input type="text" id="m2" onkeypress="return validateMarks(event)">
+                <input type="text" id="m3" onkeypress="return validateMarks(event)">
+                <input type="text" id="m4" onkeypress="return validateMarks(event)">
+                <input type="text" id="m5" onkeypress="return validateMarks(event)">
+            </li>
+            <li style="text-align: right;">
+                <input type="button" value="Generate Progress Card" onclick="generateProgressCard(event);">
+            </li>
+        </ul>
+        <ul class="progressCardBlock">
+            <li class="sTitle"> 
+                Progress Card
+            </li>
+            <li>
+                Student Name: <span id="rsname"></span>
+            </li>
+            <li>
+                Student Age: <span id="rsage"></span>
+                
+            </li>
+            <li>
+                Class: <span id="rsclass"></span>
+            </li>
+            <li>
+                Total Marks: <span id="rtotal"></span>
+            </li>
+            <li>
+                Avg: <span id="rAvg"></span>
+            </li>
+            <li>
+                Grade: <span id="rGrade"></span>
+            </li>
+        </ul>
+        <script src="progressCardDetails.js"></script>
+    </body>
+</html>

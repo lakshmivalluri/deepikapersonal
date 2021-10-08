@@ -1,0 +1,871 @@
+<html>
+
+<head>
+    <title>Students Data</title>
+    <style type="text/css">
+        .header,
+        .footer {
+            border: 1px solid #c8e1ff;
+            background-color: #f1f8ff;
+        }
+
+        .header {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+            width: 100%;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .content {
+            border: 1px solid #c8e1ff;
+            background-color: #f1f8ff;
+            overflow: auto;
+            padding: 5px;
+        }
+
+        .student_table {
+            border: 1px solid;
+            width: 100%;
+        }
+
+        .student_progress {
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid;
+            text-align: center;
+        }
+
+        th {
+            background-color: #c8e1ff;
+        }
+
+        .personImage {
+            height: 150px;
+            width: 150px;
+            border: 1px dotted;
+        }
+
+        .status_fail {
+            background-color: red;
+        }
+
+        .status_pass {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Students Data</div>
+    <div class="content">
+        <table class="student_table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Class</th>
+                    <th>Picture</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ravi</td>
+                    <td>15</td>
+                    <td>X</td>
+                    <td><img src="https://www.contentwriter.com.my/wp-content/uploads/2020/09/user.png"
+                            class="personImage"></td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>60</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>39</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>25</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Raj</td>
+                    <td>14</td>
+                    <td>IX</td>
+                    <td><img src="https://miro.medium.com/max/600/1*PiHoomzwh9Plr9_GA26JcA.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>63</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>30</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>49</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>45</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Meena</td>
+                    <td>15</td>
+                    <td>X</td>
+                    <td><img src="https://complexflights.com/wp-content/uploads/2019/08/girl.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>100</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>98</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>99</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>85</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Anupama</td>
+                    <td>13</td>
+                    <td>VIII</td>
+                    <td><img src="https://pickaface.net/gallery/avatar/TheUltra5423ca2af283a.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>69</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>38</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>48</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>98</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>49</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Ravi</td>
+                    <td>15</td>
+                    <td>X</td>
+                    <td><img src="https://www.contentwriter.com.my/wp-content/uploads/2020/09/user.png"
+                            class="personImage"></td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>60</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>39</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>25</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Raj</td>
+                    <td>14</td>
+                    <td>IX</td>
+                    <td><img src="https://miro.medium.com/max/600/1*PiHoomzwh9Plr9_GA26JcA.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>63</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>30</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>49</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>45</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Meena</td>
+                    <td>15</td>
+                    <td>X</td>
+                    <td><img src="https://complexflights.com/wp-content/uploads/2019/08/girl.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>100</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>98</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>99</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>85</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Anupama</td>
+                    <td>13</td>
+                    <td>VIII</td>
+                    <td><img src="https://pickaface.net/gallery/avatar/TheUltra5423ca2af283a.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>69</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>38</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>48</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>98</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>49</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Ravi</td>
+                    <td>15</td>
+                    <td>X</td>
+                    <td><img src="https://www.contentwriter.com.my/wp-content/uploads/2020/09/user.png"
+                            class="personImage"></td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>60</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>39</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>25</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Raj</td>
+                    <td>14</td>
+                    <td>IX</td>
+                    <td><img src="https://miro.medium.com/max/600/1*PiHoomzwh9Plr9_GA26JcA.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>63</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>30</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>49</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>45</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Meena</td>
+                    <td>15</td>
+                    <td>X</td>
+                    <td><img src="https://complexflights.com/wp-content/uploads/2019/08/girl.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>100</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>98</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>80</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>99</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>95</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>85</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Anupama</td>
+                    <td>13</td>
+                    <td>VIII</td>
+                    <td><img src="https://pickaface.net/gallery/avatar/TheUltra5423ca2af283a.png" class="personImage">
+                    </td>
+                    <td>
+                        <table class="student_progress">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Min Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Telugu</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>75</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Hindi</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>69</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>English</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>38</td>
+                                    <td class="status_fail">Fail</td>
+                                </tr>
+                                <tr>
+                                    <th>Maths</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>48</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Science</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>98</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                                <tr>
+                                    <th>Social</th>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>49</td>
+                                    <td class="status_pass">Pass</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">@CopyRights 2021</div>
+</body>
+
+</html>

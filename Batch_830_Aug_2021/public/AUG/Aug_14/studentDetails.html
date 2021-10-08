@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("about to work with student details")
+			var sname = prompt("enter student name");
+			var age = prompt("enter studnet age");
+			var m1 = prompt("enter marks 1");
+			m1 = parseInt(m1);
+			var m2 = prompt("enter marks 2");
+			m2 = parseInt(m2);
+			var m3 = prompt("enter marks 3");
+			m3 = parseInt(m3);
+			var total = 0, avg;
+
+			total = m1 + m2 + m3;
+			avg = total / 3;
+
+			console.log("Student Details");
+			console.log("Name is " + sname);
+			console.log('Age is ' + age);
+			console.log("Total is " + total);
+			console.log("Avg is " + avg);
+
+			if (avg >= 40) {
+				console.log("user got passed");
+				if (avg >= 90) {N
+					console.log("U got distinction");
+				} else if (avg >= 60) {
+					console.log("you got first class");
+				} else {
+					console.log("You got second class")
+				}
+			} else {
+				console.log("failed");
+			}
+			
+
+
+		</script>
+	</body>
+</html>

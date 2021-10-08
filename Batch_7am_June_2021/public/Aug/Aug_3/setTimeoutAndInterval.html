@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+        <title>
+            Demonstrating timeout and interval methods
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("Hello every one");
+
+
+            /*setTimeout(function()  {
+                console.log("Thanks for visiting our web page"); 
+                
+            }, 3000);*/
+            var count = 0;
+            var myInterval = setInterval(function()  {
+                count++;
+                console.log("job")
+                console.log("Thanks for visiting our web page"); 
+                if (count == 5) {                    
+                    clearInterval(myInterval);
+                }
+            }, 3000);
+
+            console.log("done")
+
+        </script>
+    </body>
+</html>

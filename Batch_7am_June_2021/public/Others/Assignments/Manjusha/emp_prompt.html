@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>employee details</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var empName = prompt("Enter employee name");
+			var age = prompt("Enter age");
+			var depart = prompt("Enter department");
+			var basicSalary = prompt("Enter basicSalary");
+				basicSalary = parseInt(basicSalary);
+			var gen = prompt("Enter gender");
+			var pf, hra, totalSalary;
+				pf = parseInt((14 * basicSalary) / 100);
+				hra = parseInt((25 * basicSalary) / 100);
+				totalSalary = parseInt(pf + hra + basicSalary);
+			console.log("employee is" + " " + empName);
+			console.log("employee-age is" + " " + age);
+			console.log("employee-gender is" + " " + gen);
+			console.log("pf is" + " " + pf);
+			console.log("hra is" + " " + hra);
+			console.log("Totalsalary is" + " " + totalSalary);
+		</script>
+	</body>
+</html>

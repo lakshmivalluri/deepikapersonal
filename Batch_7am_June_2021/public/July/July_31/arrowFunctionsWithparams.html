@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Demonstrating arrow functions with arguments
+        </title>
+    </head>
+    <body>
+        <script>
+            /*function addValues() {
+                // arguments
+                console.log(arguments)
+                console.log("Frm add values");
+            } */
+            /*var addValues = function() {
+                console.log(arguments)
+                console.log("Frm add values");
+            } */
+
+            var addValues = (p1, p2 , ...a) => {
+                console.log(a)
+                console.log("Frm add values");
+            }
+            addValues(34, 56, 78,67,88);
+        </script>
+    </body>
+</html>

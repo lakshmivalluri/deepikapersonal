@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> numbers</title>
+	</head>
+	<body>
+         <script type="text/javascript">
+         	/*Total Number Of Individual Numbers in a Given Numbe*/
+         	var number=34567897;
+         	var i;
+         	var j=0;
+         	while(number>0){
+
+		         		i=number%10;
+		         		number=number/10;
+		         		number=parseInt(number);
+		         		j=j+1; 
+
+         	}
+         	
+         	console.log("total no of digits in given number "+j);
+
+         	/*Given No Is Palandrome Or Not*/
+
+              var num=4687;
+
+               var k,h=0,s=num;
+              
+               while(num>0){
+               	               	
+                       k=num%10;
+                       num=num/10;
+                       num=parseInt(num);
+ 						h=h*10+k;	
+
+                    }
+                    if(s==h){
+ 							console.log("palandrom");
+ 						}
+ 						else if(s!=h){
+ 							console.log("not a palandrome")
+ 						}
+                           
+                      /* Find The Reverse Of Given Number*/
+
+                      var num1=3456;
+                      var reverse=0,k2;
+                      while(num1>0){
+                      	k2=num1%10;
+                      	num1=num1/10;
+                      	num1=parseInt(num1);
+                      	reverse=reverse*10+k2;
+
+                      }  
+                      console.log("reverse of the given number is"+reverse);
+                      /*Given Number Is Armstrong Or Not*/
+
+                      var num2=153;
+                      var a,b,sum1=0,c=num2;
+                      while(num2>0){
+                      	a=num2%10;
+                      	num2=num2/10;
+                      	num2=parseInt(num2);
+                      	b=(a*a*a)+0;
+                      	sum1=sum1+b;
+                      }
+                      	if(sum1==c){
+                      		console.log("Armstrong number");
+                      	}
+                      	else if(sum1!=c){
+                      		console.log(" not a Armstrong number");
+                      	}
+                      	 
+               
+               
+               
+         </script>
+	</body>
+</html>

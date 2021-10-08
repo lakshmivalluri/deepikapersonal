@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>JSON.EMP.DETAILS</title>
+
+  <h2 style="text-align: center;">EMPLOYEE DETAILS BY JSON</h2>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+     function details() {
+         var empdetails = {};
+         empdetails.empname = prompt("enter employee name :");
+         empdetails.age = prompt("enter age :");
+         empdetails.age = parseInt(empdetails.age);
+         empdetails.basicsal = prompt("enter Basic salary :");
+         empdetails.basicsal = parseInt(empdetails.basicsal);
+         empdetails.gender = prompt("enter gender :");
+         salary(empdetails);
+
+        }
+
+      function salary(empdetails) {
+        var saldetails = {}
+         saldetails.pf = 10/100 * empdetails.basicsal ;
+         saldetails.hra = 9/100 * empdetails.basicsal ;
+         saldetails.totalsal = empdetails.basicsal + saldetails.pf + saldetails.hra ;
+
+         console.log("Employee Name is : " + empdetails.empname)
+         console.log("Gender is : " + empdetails.gender)
+         console.log("The Basic Salary is : " + empdetails.basicsal);
+         console.log("The PF is : " + saldetails.pf);
+         console.log("The HRA is : " + saldetails.hra);
+         console.log("The Total salary is : " + saldetails.totalsal);
+      }
+
+      function emptax(saldetails,empdetails) {
+
+        if (empdetails.gender == "male") {
+          
+          if (saldetails.totalsal>150000) {
+            tax = 13/100 * saldetails.totalsal;
+            console.log("The Tax is : " + tax);
+          }
+          else if (saldetails.totalsal>100000 && saldetails.totalsal<150000 ) {
+            tax = 10/100 * saldetails.totalsal;
+            console.log("The Tax is : " + tax);
+            
+          } else {
+            tax = 5/100 * saldetails.totalsal;
+            console.log("The Tax is : " + tax);
+            
+          }
+          
+        }
+        
+      
+
+      if (empdetails.gender == "female") {
+          
+          if (saldetails.totalsal>150000) {
+            tax = 11/100 * saldetails.totalsal;
+            console.log("The Tax is :" + tax);
+          }
+          else if (saldetails.totalsal>100000 && saldetails.totalsal<150000 ) {
+            tax = 8/100 * saldetails.totalsal;
+            console.log("The Tax is :" + tax);
+            
+          } else {
+            tax = 2/100 * saldetails.totalsal;
+            console.log("The Tax is :" + tax);
+            
+          }
+          
+        }
+      }
+
+
+    details();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

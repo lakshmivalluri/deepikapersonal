@@ -1,0 +1,33 @@
+body{
+	margin:0;
+	padding:0;
+}
+.student1,.student2,.student3,.student4{
+	margin:10px;
+	padding:20px;
+	border:2px solid green;
+	float:left;
+	font-size:20px;
+	font-family:sans-serif;
+	width:98%;
+	background-color:#3deb34;
+	background-size: cover;
+
+}
+img{
+	height:200px;
+	width:200px;
+	float:left;
+	border:2px solid black;
+}
+img:hover{
+	background-color:#0a0708;
+	color:white;
+}
+.details{
+	float:left;
+	margin:0px;
+	padding:10px;
+	font-style: bold;
+	color:white;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>storing the data from user</title>
+	</head>
+       <link rel="stylesheet" type="text/css" href="data.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	
+	<body>
+        <div class="container">
+	        <div style="text-decoration: underline";>Login Page For Gmail</div>
+	      	<div class="space">
+	      		    Enter UserName:
+	      		   <input type="text" id="uname">
+	      	
+	      	<div class="err" id="nameErr">Name feild should not be empty</div>
+	      	</div>
+	      	<div>
+	      		Enter Password:
+	      		<input type="textbox" id="upassword" name="upassword"/>
+	      	    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+	      		<div class="err" id="passwordErr">password feild should not be empty</div>
+	      	</div>
+	      	<div class="space1"><input type="button" value="Remeber My Password" onclick="saveData()"></div>
+	      	<div class="space1" ><input type="button" value="   login   "  onclick="showMesg()"></div>
+	      	<div class="space2"><a href=""></a>sign up</div>
+       </div>
+            <div id="status1">Your Are Alerady Having The Account</div>
+            <div id="status"> Your Sucessfully Login To The Gmail</div>
+
+        <script src="data.js"></script>
+	</body>
+</html>

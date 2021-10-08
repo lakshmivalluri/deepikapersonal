@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Registration Page </title>
+		<style type="text/css">
+		.header,.footer{
+			border: 2px solid black;
+			background: #4c7ed4;
+			padding: 20px;
+			text-align: center;
+			font-size: 20px;
+			color: white;
+		}
+		ul{
+			border: 2px solid black;
+			background: #cf14e0;
+			margin: 20px 0px;
+			height: 1187px;
+			padding: 25px 15px;
+			overflow-x: hidden;
+		}
+		li{
+			border: 2px solid black;
+			background: #c1c9d6;
+			height: 147px;
+			margin-bottom: 25px;
+			list-style: none;
+			padding: 55px 150px;
+			font-size: 24px;
+
+		}
+		.block{
+			border: 2px solid black;
+			background: #f5539f;
+			position: absolute;
+			left: 132px;
+			font-size: 21px;
+			padding: 7px;
+		}
+		.block1{
+			top: 102px;
+		}
+		.block2{
+			top: 387px;
+		}	
+		.block3{
+			top: 674px;
+		}
+		.block4{
+			top: 960px;
+		}	
+		.ulabel,.contrlr{
+			display: inline-block;
+			margin: auto 50px;
+		}
+		.age{
+			position: relative;
+			top: 25px;
+			left: 50px;
+		}
+		.gender{
+			margin: 50px;
+		}
+		.extra{
+			display: inline-block;
+			padding-left: 118px;
+		}
+		.extra2{
+			padding-left: 85px;
+			display: inline-block;
+		}
+		.extra3{
+			padding-left: 100px;
+			margin-left: -30px;
+		}
+		.extra4{
+			padding: 30px;
+		}
+		.extra5{
+			padding: 2px;
+			margin-left: 77px;
+		}
+		.extra6{
+			padding-left: 285px;
+		}
+		.new{
+			position: relative;
+			left: 589px;
+			top: -22px;
+		}
+		.new2{
+			position: relative;
+			left: 793px;
+			top: -53px;
+		}
+		.new3{
+			position: relative;
+			left: 50px;
+			top: -31px;
+		}
+		.new4{
+			position: relative;
+			left: 285px;
+			top: -60px;
+		}
+		.new5{
+			position: relative;
+			left: 590px;
+			top: -84px;
+		}
+		.new6{
+			position: relative;
+			left: 765px;
+			top: -114px;
+		}
+		.new7{
+			position: relative;
+			left: 50px;
+			top: -93px;
+		}
+		.new8{
+			position: relative;
+			left: 285px;
+			top: -120px;
+		}
+		.new9{
+			position: relative;
+			left: 98px;
+			top: -23px;
+		}
+		.new10{
+			position: relative;
+			left: 279px;
+			top: -48px;
+		}
+		textarea{
+				border-radius: 25px;
+		}
+		#abc{
+				float: right;
+				width: 143px;
+				height: 54px;
+				margin-right: -153px;
+				font-size: 21px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header"> Student Registration Page </div>
+		<ul>
+			<li>
+				<span class="block block1">Personal Details</span>
+				<div class="ulabel">
+					<label for="uname"> Name: </label>
+				</div>
+				<div class="contrlr">
+					<input title="text" name="uname" maxlength="20">
+				</div>
+				<div class="ulabel">
+					<label for="umail"> Mail ID: </label>
+				</div>
+				<div class="contrlr">
+					<input title="text" name="umail" maxlength="10">
+				</div>
+				<div class="age">
+					<label for="uage"> Age: </label>
+					<div class="extra">
+						<input title="text" name="uage" maxlength="3">
+					</div>
+				</div>
+				<div class="gender">
+					<label for="ugender"> Gender: </label>
+					<div class="extra2">
+						<input type="radio" name="ugender">Male
+						<input type="radio" name="ugender">Female
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="block block2">Education Details</span>
+				<div class="age">
+					<label> Qualification: </label>
+					<div class="extra">
+						<select class="extra3">
+							<option>BCA</option>
+							<option>BBA</option>
+							<option>MCA</option>
+							<option>BE</option>
+							<option>ME</option>
+						</select>
+					</div>
+				</div>
+				<div class="age">
+					<label>Languages Known:</label>
+					<div class="extra extra4">
+						<input type="checkbox">English
+						<input type="checkbox">Hindi
+						<input type="checkbox">Telgu
+						<input type="checkbox">Urdu
+			   		</div>
+				</div>
+				<div class="age">
+					<label for="course">Course Opted:</label>
+					<div class="extra extra5">
+						<input type="radio" name="course">B.Tech
+						<input type="radio" name="course">BE
+						<input type="radio" name="course">M.Tech
+						<input type="radio" name="course">MCA
+						<input type="radio" name="course">BCA
+					</div> 
+				</div>
+			</li>
+			<li>
+				<span class="block block3">Address</span>
+				<div class="age">
+					<label for="doorno">Door No:</label>
+				</div>
+				<div class="extra extra6">
+					<input type="text" name="doorno" maxlength="5">
+				</div>
+				<div class="new">
+					<label>Country:</label>
+				</div>
+				<div class="new2">
+					<select class="extra3">
+						<option>India</option>
+						<option>US</option>
+						<option>Canada</option>
+						<option>Kenya</option>
+						<option>UAE</option>
+					</select>
+				</div>
+				<div class="new3">
+					<label for="streetnsme">Street Name:</label>
+				</div>
+				<div class="new4">
+					<input type="text" name="streetname" maxlength="10">
+				</div>
+				<div class="new5">
+					<label for="pincode">Pincode:</label>
+				</div>
+				<div class="new6">
+					<input type="text" name="pincode" maxlength="6">
+				</div>
+				<div class="new7">
+					<label>State:</label>
+				</div>
+				<select class="new8">
+					<option>Uttar Pradesh</option>
+					<option>Delhi</option>
+					<option>Gujrat</option>
+					<option>Punjab</option>
+					<option>Telangana</option>
+				</select>
+			</li>
+			<li>
+				<span class="block block4">About Yourself</span>
+				<div class="new9">
+					<label>About Yourself:</label>
+				</div>
+				<div class="new10">
+					<textarea name="abturself" rows="12" cols="135"></textarea>
+				</div>
+				<div>
+					<input type="button" value="Register" id="abc">
+				</div>
+			</li>
+		</ul>
+		<div class="footer"> @copy rights 2021 </div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Reverse in a given range</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var number = prompt("Enter the  Number : ");
+			number = parseInt(number);
+			var b = prompt("Enter the  Number : ");
+			b = parseInt(b);
+			console.log("The Reverse of Numbers from " + number + " to " + b + " is : ");
+			for (var number; number <= b ; number++){
+				var a, rev = 0;
+				var p = number;
+				while (p > 0){
+					a = p % 10;
+					rev = rev*10 + a;
+					p = p / 10;
+					p = parseInt(p);
+				}
+				console.log(rev)
+			}
+		</script>
+	</body>
+</html>

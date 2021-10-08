@@ -1,0 +1,42 @@
+.hbar, .fbar, .cbar {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+}
+
+.cbar {
+    top: 50px;
+    bottom: 50px;
+}
+
+.fbar {
+    bottom: 5px;
+}
+
+.lbar {
+    width: 300px;
+}
+
+.rbar {
+    width: 933px;
+    overflow: auto;
+}
+
+article {
+    list-style: none;
+    border: 1px solid;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.lbar, .rbar {
+    border: 1px solid;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+    height: 500px;
+}

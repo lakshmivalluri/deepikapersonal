@@ -1,0 +1,20 @@
+h3 {
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+.main {
+    border: double;
+    text-align: center;
+    width: 100%;
+}
+img {
+    width: 70px;
+    height: 70px;
+}
+.inner {
+    border: 2px solid;
+    text-align: center;
+    width: 100%;
+}

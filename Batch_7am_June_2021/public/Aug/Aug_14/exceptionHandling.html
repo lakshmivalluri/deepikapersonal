@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="abc"></div>
+        <div id="pqr"></div>
+        <div id="xyz"></div>
+        <script>
+            var id = prompt("enter element id on which u need to see msg abc/pqr/xyz");
+            id = "#" + id;
+            var a = [];
+            console.log("One step");
+            var result = 20 + 40;
+            try {            
+                console.log("The sum is " + result);
+            
+                document.querySelector(id).innerHTML = "Hello";
+                console.log("TEST");
+            } catch(err) {
+                console.log(err);
+                console.log("Boss give valid id ")
+            }
+            console.log("Done");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_1</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .header{
+        border:2px solid black;  
+        height:100%;
+        width: 100%;
+        display: block;
+        
+    }
+    .header1 { 
+        border :2px solid black;
+        height:20%;
+        margin: 7px;
+        text-align: center;
+        background-color: blue;
+
+
+
+    }
+    *{
+        font-size: 20px;
+    }
+
+    .main{
+        border:2px solid black;
+        height: 100%;
+        margin-right: 5px;  
+        margin:7px;
+        background-color:lemonchiffon;
+        padding: 3px;
+    
+    }
+
+    .middle{
+        border:2px solid black;  
+        height: 30%;
+        margin:7px;
+        background-color: fuchsia;
+    }
+
+        .middle1{
+            border:2px solid black; 
+            height: 30%;
+            margin:7px;
+            background-color: lawngreen;
+        }
+    .middle2{
+        border:2px solid black; 
+        height: 30%;
+        margin:7px;
+        background-color:lightcoral;
+    }
+    .footer{
+        border:2px solid black; 
+        height: 30%;
+        margin:7px;
+        background-color:lightseagreen;
+    }
+
+</style>
+<body>
+    <div class="header">
+        <div class = header1>
+            <sup>*****</sup><h1>Student Details</h1><sup>*****</sup>
+        </div>
+
+       
+        <div class="main">
+            Name: Ranu<br>
+            Age: 23<br>
+            Gender:Female<br>
+            Location:Pune
+            
+        </div>
+        <div class="middle">
+            Name: Ritika<br>
+            Age: 22<br>
+            Gender:Female<br>
+            Location:Nagpur
+        </div>
+
+        <div class="middle1">
+            Name: Rohan<br>
+            Age: 24<br>
+            Gender:Male<br>
+            Location:Mumbai
+        </div>
+
+        <div class="middle2">
+            Name: Tilak<br>
+            Age: 23<br>
+            Gender:Male<br>
+            Location:Amravati
+        </div>
+
+        <div class="footer">
+            Name: Vaishnavi<br>
+            Age: 23<br>
+            Gender:Female<br>
+            Location:Wardha
+        </div>
+    </div>
+
+</body>
+
+</html>

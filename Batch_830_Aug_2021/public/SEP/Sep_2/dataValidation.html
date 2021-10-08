@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Data Validation
+        </title>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 5px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value: <input type="text" id="fval" onkeypress="return doValidation(event)">
+            </li>
+            <li>
+                Enter Second value: <input type="text" id="sval">
+            </li>
+            <li>
+                The sum is: <span id="rblock"></span>
+            </li>
+            <li>
+                <input type="button" value="Add" onclick="addValues()">
+            </li>
+        </ul>
+        <script>
+            function addValues() {
+                var fval = document.querySelector("#fval").value;
+                var sval = document.querySelector("#sval").value;
+                fval = parseInt(fval);
+                sval = parseInt(sval);
+                var result = fval + sval;
+                document.querySelector("#rblock").innerText = result;
+            }
+
+            var doValidation = (event) => {
+                console.log(event);
+                if (event.charCode >= 49 && event.charCode <= 58) {
+                    return true;
+                } else {
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

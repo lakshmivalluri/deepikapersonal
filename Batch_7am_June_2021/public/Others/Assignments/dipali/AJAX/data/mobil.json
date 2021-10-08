@@ -1,0 +1,31 @@
+{
+		    "mobildata" : 
+    [
+
+		{
+			"name" : "One plus",
+			"price":60000,
+			"discount":10,
+			"manufacture":"oppo",
+			"discription":"One plus is the best Smart phone ",
+			"image":"https://www.androidcentral.com/sites/androidcentral.com/files/styles/large_wm_brw/public/article_images/2021/03/oneplus-9-vs-oneplus-9-pro-17.jpg"
+		},
+		{
+			"name":"Iphone",
+			"price":100000,
+			"discount":12,
+			"manufacture":"apple",
+			"discription":"Most favriout Smart phone in the world ",
+		    "image":"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-red-select-2019?wid=940&hei=1112&fmt=png-alpha&.v=1566956144763"
+
+		},
+		{
+			"name":"galaxy",
+			"price":48000,
+			"discount":8,
+			"manufacture":"Samsang",
+			"discription":"First stick smart phone in the world ",
+			"image":"https://m.media-amazon.com/images/I/618FTkMHQ3L._AC_SL1500_.jpg"
+		}
+    ]
+}

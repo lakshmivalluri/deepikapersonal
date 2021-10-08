@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Employee Tax Calculation</title>
+</head>
+
+<body>
+    <script>
+        var name = 'Akhil', age = 25, department = 'IT', basic_salary = 135000, gender = 'Male';
+        var pf = basic_salary * 0.15, hra = basic_salary * 0.2;
+        var total_salary = basic_salary + pf + hra;
+        var tax = 0;
+        if (gender == 'Male') {
+            if (total_salary > 200000) {
+                tax = total_salary * 0.15;
+            } else if (total_salary > 100000) {
+                tax = total_salary * 0.1;
+            } else if (total_salary > 50000) {
+                tax = total_salary * 0.05;
+            } else {
+                tax = 0;
+            }
+        } else if (gender == 'Female') {
+            if (total_salary > 200000) {
+                tax = total_salary * 0.1;
+            } else if (total_salary > 100000) {
+                tax = total_salary * 0.05;
+            } else {
+                tax = 0;
+            }
+        } else {
+            tax = 0;
+        }
+        console.log("Hello " + name + ", your salary structure is mentioned below");
+        console.log("Basic: " + basic_salary);
+        console.log("PF: " + pf);
+        console.log("HRA: " + hra);
+        console.log("Total Salary: " + total_salary);
+        console.log("Tax need to be paid: " + tax);
+    </script>
+</body>
+
+</html>

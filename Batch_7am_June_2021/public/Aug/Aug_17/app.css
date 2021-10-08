@@ -1,0 +1,26 @@
+.inputContainer {
+    margin: 20px;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: green;
+}
+
+#task_container
+{
+    text-align: center;
+    border: 2px solid;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.thanksBlock {
+    text-align: center;
+    display: none;
+    border: 1px solid;
+
+    margin: 60px auto;
+    color: green;
+}

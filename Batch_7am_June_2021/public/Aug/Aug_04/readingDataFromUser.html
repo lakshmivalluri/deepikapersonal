@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul {
+                border: 2px solid;
+                width: 300px;
+                height: 300px;
+                margin: 20px auto;                
+                padding: 0;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                margin: 5px;
+                padding: 5px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value:
+                <input type="text" id="fval">
+            </li>
+            <li>
+                Enter second value:
+                <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="DoAddition" onclick="displayData();"> 
+            </li>
+            <li>
+                <span id="rBlock"></span>
+            </li>
+        </ul>
+        <script>
+            
+            function displayData() {
+                var data = {
+                    firstValue: 0,
+                    secondValue: 0
+                };
+                data.firstValue = document.querySelector("#fval").value;
+                data.secondValue = document.querySelector("#sval").value;
+                data.firstValue = parseInt(data.firstValue);
+                data.secondValue = parseInt(data.secondValue);
+                data.result = data.firstValue + data.secondValue;
+                document.querySelector("#rBlock").innerHTML  = "The sum is " + data.result;
+            }
+            
+        </script>
+    </body>
+</html>

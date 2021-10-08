@@ -1,0 +1,25 @@
+    <html>
+    <head>
+        <title>
+            Demonstrating Arguments keyword
+        </title>
+    </head>
+    <body>
+        <script>
+            function test() {
+                console.log(arguments)
+            }
+            function addValues(a, b, c) {
+                var result = 0;
+                for (var i = 0; i < arguments.length; i++) {
+                    result += arguments[i];
+                }
+                // result = a + b + c;
+                console.log("The sum is " + result);
+            }
+
+            addValues(34, 78, 23,33,55,12);
+            test(23, 44);
+        </script> 
+    </body>
+</html>

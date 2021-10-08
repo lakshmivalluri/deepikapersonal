@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> amstrong Number</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = 678 ; rem = 0 ;  sum = 0 
+			var temp = num; count = 0;
+			var org = num
+			while(temp != 0){
+				temp = parseInt(temp/10)
+				count++;
+			}
+				//console.log(count)
+			
+
+
+
+				while(num!= 0){
+				rem = num % 10;
+				//rev = rev * 10 + rem;
+				num = num/10;
+				num = parseInt(num);
+				sum = parseInt (sum + rem**count);
+				// console.log (rem^count)
+				//console.log ( 2 ** 3)
+			}
+			if(org == sum){
+				console.log("its armstrong Number" + sum)
+			}
+			else{
+				console.log(" its not armstrong Number" + sum)
+			}
+			
+
+
+
+
+
+			
+
+		</script>
+
+	</body>
+</html>

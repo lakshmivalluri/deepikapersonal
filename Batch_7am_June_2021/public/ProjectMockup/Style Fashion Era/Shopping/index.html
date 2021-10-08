@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Main Javascript -->
+    <script src="../lib/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="stylesheets/swiper.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <title>Fashion Era</title>
+
+</head>
+
+<body>
+    <div class="chatwindow">
+        <div class="container">
+            <div class="row" style="display: flex; flex-direction: column;">
+                <button class="btn btn-info btn-chat" type="button" onclick="openchat()"> support </button>
+
+                <div class="chatBox" id="chatBox">
+                    <h3 class="btn-close" onclick="closeChat()"> Support Team</h3>
+                    <div class="chatMsg">
+                        <div class="chatcontainer">
+                            <div class="chatDirectionRight"></div>
+                            <div class="chatDirectionLeft"></div>
+                        </div>
+                        <div class="msgBox">
+                            <input type="text" id="umsg">
+                        </div>
+                        <div class="sendChat">
+                            <input class="btn-send" type="button" value="Send" onclick="sendMsg()">
+                        </div>
+                        <div class="closeChat">
+                            <input class="btn-close" type="button" value="Close" onclick="closeChat()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="productPage">
+        <header class="mainContent">
+            <div class="topHeader"></div>
+
+            <div class="centerHeader">
+                <div class="inner">
+                    <div class="row">
+
+                        <div class="cHLeft">
+                            <div class="checkout">
+                                <a href="#">Checkout</a>
+                            </div>
+                            <div class="wishlist">
+                                <a href="#">Whishlist</a>
+                            </div>
+                            <div class="contact">
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+
+                        <div class="cHLogo"></div>
+
+                        <div class="cHRight">
+                            <form class="search d-flex">
+                                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                            <div class="profile">
+                                <a href="#"><span><i class='fas fa-user-alt'></i></span></a>
+                            </div>
+                            <div class="cart">
+                                <a href="#"><span><i class="fa fa-shopping-cart"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomHeader">
+                <div class="inner">
+                    <div class="row">
+                        <div class="productMenu">
+                            <nav>
+                                <ul class="menuItems">
+                                    <li><a href="" class="menuItems">Women</a>
+                                        <div class="megaMenu">
+                                            <div class="content">
+                                                <div class="col">
+                                                    <section>
+                                                        <h2>Indian & Fusion Wear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Kurtas & Suits</a></li>
+                                                            <li><a href="#">Ethnic Wear</a></li>
+                                                            <li><a href="#">Leggings & Churidars</a></li>
+                                                            <li><a href="#">Skirts & Palazzos</a></li>
+                                                            <li><a href="#">Sarees</a></li>
+                                                            <li><a href="#">Lehenga Cholis</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col" style="background-color: rgba(245,245,246,.4)">
+                                                    <section>
+                                                        <h2>Western Wear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Dresses</a></li>
+                                                            <li><a href="#">Tops</a></li>
+                                                            <li><a href="#">Jeans</a></li>
+                                                            <li><a href="#">Shorts & Skirts</a></li>
+                                                            <li><a href="#">Shrugs</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col">
+                                                    <section>
+                                                        <h2>Sports & Active Wear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Clothing</a></li>
+                                                            <li><a href="#">Footwear</a></li>
+                                                            <li><a href="#">Sports Accessories</a></li>
+                                                            <li><a href="#">Sports Equipment</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col" style="background-color: rgba(245,245,246,.4)">
+                                                    <section>
+                                                        <h2>Winter Wear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Sweaters</a></li>
+                                                            <li><a href="#">Sweatshirts</a></li>
+                                                            <li><a href="#">Jackets</a></li>
+                                                            <li><a href="#">Coats</a></li>
+                                                            <li><a href="#">Waistcoats</a></li>
+                                                            <li><a href="#">Blazers</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="" class="menuItems">Men</a>
+                                        <div class="megaMenu">
+                                            <div class="content">
+                                                <div class="col" style="background-color: rgba(245,245,246,.4)">
+                                                    <section>
+                                                        <h2>Indian & Festive Wear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Kurtas & Kurta Sets</a></li>
+                                                            <li><a href="#">Sherwanis</a></li>
+                                                            <li><a href="#">Nehru Jackets</a></li>
+                                                            <li><a href="#">Dhotis</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col">
+                                                    <section>
+                                                        <h2>Topwear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">T-Shirts</a></li>
+                                                            <li><a href="#">Casual Shirts</a></li>
+                                                            <li><a href="#">Formal Shirts</a></li>
+                                                            <li><a href="#">Suits</a></li>
+                                                            <li><a href="#">Rain Jackets</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col" style="background-color: rgba(245,245,246,.4)">
+                                                    <section>
+                                                        <h2>Bottomwear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Jeans</a></li>
+                                                            <li><a href="#">Casual Trousers</a></li>
+                                                            <li><a href="#">Formal Trousers</a></li>
+                                                            <li><a href="#">Shorts</a></li>
+                                                            <li><a href="#">Track Pants</a></li>
+                                                            <li><a href="#">Joggers</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col">
+                                                    <section>
+                                                        <h2>Winter Wear</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Sweatshirts</a></li>
+                                                            <li><a href="#">Sweaters</a></li>
+                                                            <li><a href="#">Jackets</a></li>
+                                                            <li><a href="#">Blazers</a></li>
+                                                            <li><a href="#">Coats</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="" class="menuItems">Juniors</a>
+                                        <div class="megaMenu">
+                                            <div class="content">
+                                                <div class="col">
+                                                    <section>
+                                                        <h2>Boys Clothing</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">T-Shirts & Shirts</a></li>
+                                                            <li><a href="#">Shorts</a></li>
+                                                            <li><a href="#">Jeans</a></li>
+                                                            <li><a href="#">Ethnic wear</a></li>
+                                                            <li><a href="#">Trousers</a></li>
+                                                            <li><a href="#">Jacket</a></li>
+                                                            <li><a href="#">Sweater & Sweatshirts</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col" style="background-color: rgba(245,245,246,.4)">
+                                                    <section>
+                                                        <h2>Girls Clothing</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Dresses</a></li>
+                                                            <li><a href="#">Tops</a></li>
+                                                            <li><a href="#">Ethnic wear</a></li>
+                                                            <li><a href="#">Skirts & shorts</a></li>
+                                                            <li><a href="#">Jeans & Trousers</a></li>
+                                                            <li><a href="#">Jacket</a></li>
+                                                            <li><a href="#">Sweater & Sweatshirts</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col">
+                                                    <section>
+                                                        <h2>Infants</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Rompers & Onesies</a></li>
+                                                            <li><a href="#">Tshirts & Tops</a></li>
+                                                            <li><a href="#">Dresses</a></li>
+                                                            <li><a href="#">Bottom wear</a></li>
+                                                            <li><a href="#">Winter Wear</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                                <div class="col" style="background-color: rgba(245,245,246,.4)">
+                                                    <section>
+                                                        <h2>Home & Bath</h2>
+                                                        <ul class="megaLinks">
+                                                            <li><a href="#">Bath Towels</a></li>
+                                                            <li><a href="#">Bedsheets</a></li>
+                                                            <li><a href="#">Water Bottle</a></li>
+                                                        </ul>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="menuItems">Blog</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="productBanner">
+            <div class="banner">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/Banners/winter_girls_s.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/Banners/Mans_jeans_s.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Banners/kids_s.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accessories">
+            <div class="inner">
+                <div class="row">
+                    <div class="accessoriesImage col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                        <img src="images/Cosmetics/About_image.jpg" alt="">
+                    </div>
+                    <div class="accesoriesText col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                        <div class="accesoriesInnerText">
+                            <div class="pTitle">
+                                <div class="subTitle">
+                                    <h6>The Products</h6>
+                                </div>
+                                <div class="title">
+                                    <h5>New In Collection</h5>
+                                </div>
+                                <div class="despriction">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, to make
+                                        a type specimen book</p>
+                                </div>
+                            </div>
+                            <div class="categoryList">
+                                <div class="listItem">
+                                    <li><a href="#">Eye and facial makeup</a></li>
+                                    <li><a href="#">Lipstick & Nail Art</a></li>
+                                    <li><a href="#">Hair Serum</a></li>
+                                    <li><a href="#">Skincare Cream</a></li>
+                                    <li><a href="#">Makeup Brush</a></li>
+                                    <li><a href="#">Hair Shampoo</a></li>
+                                    <li><a href="#">Professional Powder</a></li>
+                                    <li><a href="#">Facial Kit</a></li>
+                                </div>
+                            </div>
+                            <a href="#" class="btn about-btn accessoriesBtn">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ourServices">
+            <div class="inner">
+                <div class="row center">
+                    <div class="pTitle">
+                        <div class="subTitle">
+                            <h6>The Products</h6>
+                        </div>
+                        <div class="title">
+                            <h5>Our Services</h5>
+                        </div>
+                    </div>
+                    <div class="serviceBlock row">
+                        <div class="services col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <div class="serviceImageOuter">
+                                    <div class="serviceImageInner">
+                                        <img src="images/Services/Delivery/fastDelivery.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="serviceText">
+                                    <div class="serviceTitle">Free Delivery</div>
+                                    <div class="serviceDescription">Lorem Ipsum is simply dummy text of the Testing
+                                        online.
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <div class="serviceImageOuter">
+                                    <div class="serviceImageInner">
+                                        <img src="images/Services/WayTo Buy/Buy.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="serviceText">
+                                    <div class="serviceTitle">Way To Buy</div>
+                                    <div class="serviceDescription">Lorem Ipsum is simply dummy text of the Testing
+                                        online.
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <div class="serviceImageOuter">
+                                    <div class="serviceImageInner">
+                                        <img src="images/Services/PersonalSession/session.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="serviceText">
+                                    <div class="serviceTitle">Personal Session</div>
+                                    <div class="serviceDescription">Lorem Ipsum is simply dummy text of the Testing
+                                        online.
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services col-md-3 col-sm-6 col-xs-6">
+                            <a href="#">
+                                <div class="serviceImageOuter">
+                                    <div class="serviceImageInner">
+                                        <img src="images/Services/GiftVoucher/voucher.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="serviceText">
+                                    <div class="serviceTitle">Gift Voucher</div>
+                                    <div class="serviceDescription">Lorem Ipsum is simply dummy text of the Testing
+                                        online.
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dealOfTheDay">
+            <div class="inner">
+                <div class="row">
+                    <div class="dealTimer">
+                        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                            <div class="dealTimerBlock">
+                                <div class="pTitle">
+                                    <div class="title">
+                                        <h5>New In Collection</h5>
+                                    </div>
+                                    <div class="despriction">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, to
+                                            make
+                                            a type specimen book</p>
+                                    </div>
+                                </div>
+                                <div id="countdownTimer" class="countdownTimer">
+                                    <div class="countdownDays countdown">
+                                        <div id="timerDay" class="timerDay data"></div>
+                                    </div>
+                                    <div class="countdownHours countdown">
+                                        <div class="timerHours data" id="timerHours"></div>
+                                    </div>
+                                    <div class="countdownMinutes countdown">
+                                        <div class="timerMinutes data" id="timerMinutes"></div>
+                                    </div>
+                                    <div class="countdownSeconds countdown">
+                                        <div class="timerSeconds data" id="timerSeconds"></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn about-btn accessoriesBtn dealBtn">View More</a>
+                            </div>
+                        </div>
+                        <div class="timerImage col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                            <div class="dealImage">
+                                <img src="images/Deal/deal-Png (2).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="newArrival">
+            <div class="inner">
+                <div class="row center" style="text-align: center;">
+                    <div class="pTitle" style="width: 100%;">
+                        <div class="subTitle">
+                            <h6>The Products</h6>
+                        </div>
+                        <div class="title">
+                            <h5>New Arrivals</h5>
+                        </div>
+                    </div>
+                    <div class="arrivalContent">
+                        <div class="row gridItem">
+
+                            <div class="productDisplay col-md-4 col-sm-6 col-xs-6">
+                                <div class="productDisplayItems">
+                                    <div class="cardFace cardFaceFront">
+                                        <div class="newArrivalImage">
+                                            <img src="images/NewArrival/Men_kurta.png" alt="">
+                                        </div>
+                                        <div class="newArrivalText">
+                                            <div class="nATextContent">
+                                                <h4 class="name">House Of Pataudi</h4>
+                                                <p class="desc">Embroidered Kurta</p>
+                                                <h4 class="price">Rs. 1749</h4>
+                                            </div>
+                                        </div>
+                                        <div class="newArrivalChart"></div>
+                                    </div>
+                                    <div class="cardFace cardFaceBack">
+                                        <div class="cardHeader">
+                                            <h6 class="cardTitle">House Of Pataudi</h6>
+                                            <h6 class="cardDesc">Embroidered Kurta</h6>
+                                            <h6 class="cardPrice">Rs. 1749</h6>
+                                            <div class="rating">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="cardFooter">
+                                            <div class="cardDesc">
+                                                <div class="productDetails">
+                                                    <h5>PRODUCT DETAILS</h5>
+                                                    <p>Green yoke design kurta, has a mandarin collar, long sleeves
+                                                    </p>
+                                                    <h6>Size & Fit</h6>
+                                                    <p>The model (height 6') is wearing a size M</p>
+                                                    <h6>Material & Care</h6>
+                                                    <p>70% cotton, 21% rayon, 9% linen
+                                                        Machine-wash</p>
+                                                    <h6>Complete The Look</h6>
+                                                    <p>Flaunt your style with a kurta from House of Pataudi. Dress
+                                                        this
+                                                        green piece up with your favourite accessories and head out
+                                                        to
+                                                        any family event in style.</p>
+                                                </div>
+                                            </div>
+                                            <div class="cardCart">
+                                                <a href="#" class="btn about-btn accessoriesBtn">Buy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productDisplay col-md-4 col-sm-6 col-xs-6">
+                                <div class="productDisplayItems">
+                                    <div class="cardFace cardFaceFront">
+                                        <div class="newArrivalImage">
+                                            <img src="images/NewArrival/Women_saree.png" alt="">
+                                        </div>
+                                        <div class="newArrivalText">
+                                            <div class="nATextContent">
+                                                <h4 class="name">GoSriKi</h4>
+                                                <p class="desc">Embroidered Saree</p>
+                                                <h4 class="price">Rs. 1089</h4>
+                                            </div>
+                                        </div>
+                                        <div class="newArrivalChart"></div>
+                                    </div>
+                                    <div class="cardFace cardFaceBack">
+                                        <div class="cardHeader">
+                                            <h6 class="cardTitle">GoSriKi</h6>
+                                            <h6 class="cardDesc">Embroidered Saree</h6>
+                                            <h6 class="cardPrice">Rs. 1089</h6>
+                                            <div class="rating">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="cardFooter">
+                                            <div class="cardDesc">
+                                                <div class="productDetails">
+                                                    <h5>PRODUCT DETAILS</h5>
+                                                    <p>White embroidered saree and has a zari border
+                                                        Blouse Piece</p>
+                                                    <h6>Size & Fit</h6>
+                                                    <p>Length: 5.5 metres plus 0.8 metre blouse piece <br>
+                                                        Width: 1.06 metres (approx)</p>
+                                                    <h6>Material & Care</h6>
+                                                    <p>Saree fabric: linen blend <br>
+                                                        Blouse fabric: linen blend <br>
+                                                        Hand-wash</p>
+                                                    <h6>Complete The Look</h6>
+                                                    <p>Flaunt your style with a kurta from House of Pataudi. Dress
+                                                        this
+                                                        green piece up with your favourite accessories.
+                                                </div>
+                                            </div>
+                                            <div class="cardCart">
+                                                <a href="#" class="btn about-btn accessoriesBtn">Buy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productDisplay col-md-4 col-sm-6 col-xs-6">
+                                <div class="productDisplayItems">
+                                    <div class="cardFace cardFaceFront">
+                                        <div class="newArrivalImage">
+                                            <img src="images/NewArrival/Kids_ethinic.png" alt="">
+                                        </div>
+                                        <div class="newArrivalText">
+                                            <div class="nATextContent">
+                                                <h4 class="name">JBN Creation</h4>
+                                                <p class="desc">Boys Solid Kurta With Churidar</p>
+                                                <h4 class="price">Rs. 1799</h4>
+                                            </div>
+                                        </div>
+                                        <div class="newArrivalChart"></div>
+                                    </div>
+                                    <div class="cardFace cardFaceBack">
+                                        <div class="cardHeader">
+                                            <h6 class="cardTitle">JBN Creation</h6>
+                                            <h6 class="cardDesc">Boys Solid Kurta With Churidar</h6>
+                                            <h6 class="cardPrice">Rs. 1799</h6>
+                                            <div class="rating">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="cardFooter">
+                                            <div class="cardDesc">
+                                                <div class="productDetails">
+                                                    <h5>PRODUCT DETAILS</h5>
+                                                    <p>Gold-Toned solid kurta with churidar <br>
+                                                        Gold-Toned straight knee length kurta, has a mandarin
+                                                        collar,<br>
+                                                        long sleeves, straight hem, side slits <br>
+                                                        Gold-Toned SoGold-coloured solid kurta with churidar <br>
+                                                        Gold-coloured straight knee length kurta, has a mandarin
+                                                        collar,
+                                                        <br>
+                                                        long sleeves, straight hem, side slits
+                                                    </p>
+                                                    <h6>Material & Care</h6>
+                                                    <p>Top fabric: Dupion Silk <br>
+                                                        Bottom fabric: Dupion Silk <br>
+                                                        Jacket fabric: Cotton blend <br>
+                                                        Dry-clean</p>
+                                                </div>
+                                            </div>
+                                            <div class="cardCart">
+                                                <a href="#" class="btn about-btn accessoriesBtn">Buy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customerReviews">
+            <div class="inner">
+                <div class="row center" style="text-align: center;">
+                    <div class="pTitle" style="width: 100%;">
+                        <div class="subTitle">
+                            <h6>The Products</h6>
+                        </div>
+                        <div class="title">
+                            <h5>customer Reviews</h5>
+                        </div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                            <div class="swiper-slide">Slide 10</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about"></div>
+
+        <!-- Footer -->
+        <footer>
+            <h6>@Copyright Style Fashion Era 2020</h6>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="javascripts/main.js"></script>
+    <script type="text/javascript" src='js/womensData.js'></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- Swiper JavaScript -->
+    <script src="javascripts/swiper.min.js"></script>
+    <script src="javascripts/chatapp.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!--  first Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

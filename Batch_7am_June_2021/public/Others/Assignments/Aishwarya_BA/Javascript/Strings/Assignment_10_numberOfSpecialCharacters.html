@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Strings</title>
+  </head>
+  <body>
+    <h1 style="background: pink">Number of special charactes in a string</h1>
+    <script>
+      var str = prompt("enter a string");
+      var a = "qwertyuiopasdfghjklzxcvbnm";
+      var count = 0;
+      for (var i = 0; i < str.length; i++) {
+        if (!a.includes(str[i].toLowerCase())) {
+          count++;
+        }
+      }
+      console.log(count);
+    </script>
+  </body>
+</html>

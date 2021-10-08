@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> selecting value</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num=prompt("enter the number");
+				num=parseInt(num);
+			var i,j=0,s=num,sum1=0;
+			
+			var useraction=prompt("choose individualdigits/palandrome/reverse/armstrong/luckynumber");
+			var result;
+         	
+            switch(useraction){
+            case'individualdigits':
+
+			         	while(num>0){
+
+					         		i=num%10;
+					         		num=num/10;
+					         		num=parseInt(num);
+					         		j=j+1; 
+
+			         	}
+					        	console.log(+j);
+					         	break;
+              
+            case'palandrome': 
+
+	              		 while(num>0){
+	               	               	
+				                       i=num%10;
+				                       num=num/10;
+				                       num=parseInt(num);
+				 						j=j*10+i;	
+
+				                    }
+				                    if(s==j){
+				 							console.log("palandrom");
+				 						}
+				 						else if(s!=j){
+				 							console.log("not a palandrome")
+				 						}
+				 						break;
+	 		case'reverse':
+
+                      
+                    	 while(num>0){
+
+				                      	i=num%10;
+				                      	num=num/10;
+				                      	num=parseInt(num);
+				                      	j=j*10+i;
+
+				                     } 
+				                         console.log(+j);
+				                         break;
+
+            case'armstrong': 
+
+		                 while(num>0){
+
+				                     i=num%10;
+				                     num=num/10;
+				                     num=parseInt(num);
+				                     j=(i*i*i)+0;
+				                     sum1=sum1+j;
+
+				                     }
+				                      	if(sum1==s){
+				                      		console.log("Armstrong number");
+				                      	}
+				                      	else if(sum1!=s){
+				                      		console.log(" not a Armstrong number");
+		                      	   }
+		                      	   break;
+
+            case'luckynumber': 
+
+	                       while(num>0){
+
+				                       	i=num%10;
+				                       	num=num/10;
+				                       	num=parseInt(num);
+				                       	sum1=sum1+i;
+				                     	if((num==0) && (sum1>9)){
+				                       		num=sum1;
+				                       		sum1=0;
+	                       	}
+	                       	
+
+                       } 
+                          console.log(sum1); 
+                          break;       	
+            }
+		</script>
+	</body>
+</html>

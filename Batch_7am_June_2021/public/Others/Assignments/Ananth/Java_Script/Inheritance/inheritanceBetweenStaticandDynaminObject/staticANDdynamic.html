@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>ASA Software Solutions</title>
+          <link rel="stylesheet" href="staticANDdynamicStyles.css"/>
+     </head>
+     <body>
+          <h3>Employee Details</h3>
+          <ul>
+               <li>
+                    <div class="elabel">
+					<label for="ename"><span>Employee Name: </span></label>
+				</div>
+				<div class="input">
+					<input type="text" name="ename" maxlength="10" id="empname" placeholder="Enter Here" title="Enter the employee name" onkeypress="return empname(event);">
+				</div>
+                    <div class="ename">Wrong Entry</div>
+                    <div class="name">valid Entry</div>
+               </li>
+               <li>
+                    <div class="elabel">
+                         <label for="eage"><span>Enter the employee Age : </span></label>
+                    </div>
+                    <div class="input">
+                         <input type="text" name="eage" id="empage" placeholder="Enter the emp Age" maxlength="2" onkeypress="return eage(event);"/>
+                         <div class="eage">Wrong Entry</div>
+                         <div class="age">valid Entry</div>
+                    </div>
+               </li>
+               <li>
+                    <div class="elabel">
+                         <label><span>Select Department :</span></label>
+                    </div>
+                    <div class="input">
+                         <select id="edept">
+                              <option></option>
+                              <option>IT</option>
+                              <option>Accounts</option>
+                              <option>Electrical</option>
+                              <option>HR</option>
+                         </select>
+                    </div>
+               </li>
+               <li>
+                    <div class="button">
+                         <input type="button" value="Check Status" onclick="getEmpDetails();"/>
+                    </div>
+               </li>
+          </ul>
+          <div class="displayData">
+
+          </div>
+          <script src="staticANDdynamiclogic.js"></script>
+     </body>
+</html>

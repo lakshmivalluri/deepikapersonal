@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16</title>
+    <link rel="stylesheet" href="Assignment16_Student_Details_DHTML.css">
+</head>
+
+<body>
+    <ul class="input_container">
+        <div class="left">
+            <li>Enter Name :</li>
+            <li>Age :</li>
+            <li>Gender :</li>
+            <li>Location : </li>
+        </div>
+        <div class="right">
+            <li> <input type="text" name="uname" id="uname"></li>
+            <li><input type="number" name="unumber" id="unumber" min="1"></li>
+            <li class="ugender">
+                <input type="radio" name="ugender" id="ugender" value="Male">Male
+                <input type="radio" name="ugender" id="ugender" value="Female">Female
+            </li>
+            <li><input type="text" name="ulocation" id="ulocation"> </li>
+        </div>
+        <button id="add" onclick="generate()">ADD</button>
+        <button id="save" style="display:none" onclick="doSave(event)">Save</button>
+
+    </ul>
+
+    <table class="hide">
+        <thead>
+            <tr>
+                <td colspan="6"> Student Detils</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Sno</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+            <td>Location</td>
+            <td>Options</td>
+        </tr>
+
+
+    </table>
+
+    <script src="Assignment16_Student_Details_DHTML.js"></script>
+</body>
+
+</html>

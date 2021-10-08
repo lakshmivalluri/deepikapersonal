@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Map and Set Datastructure</title>
+    </head>
+    <body>
+        <script>
+            /*var a = [12];
+            var a = new Array()*/
+
+           /* var data = new Set();
+            data.add(20);
+            data.add(30);
+            data.add("heelo");
+            data.add(30);
+            console.log(data);
+            console.log(data.size);
+            console.log(data.has(30));
+            data.forEach((item, index) => {
+                console.log(item)
+            }) */
+
+            var data = new Map();
+            
+            data.set("name", 'Teena');
+            data.set("age", 90);
+            data.set('country', 'India');
+            
+            console.log(data.get('name'));
+            console.log(data.size);
+            data.delete('name');
+            console.log(data);
+
+            for (let [key, value] of data) {
+                console.log(key);
+                console.log(value);
+            }
+
+        </script>
+    </body>
+</html>

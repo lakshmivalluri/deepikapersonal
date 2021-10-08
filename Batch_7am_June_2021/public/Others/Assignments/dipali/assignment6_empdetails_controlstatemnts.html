@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Tax</title>
+</head>
+<style type="text/css">
+	h3{
+		text-align: center;
+		border: 2px solid red;
+		color: skyblue;
+		background-color: black;
+	}
+	
+</style>
+<body>
+
+	<h3>Employee Details</h3>
+
+	<div>
+		<h4 style="text-align: center; font-style: italic;">please go to inspect and check below employee details</h4>
+		<ul>
+			<li>Tax</li>
+			<li>Total salary</li>
+			<li>Pf</li>
+			<li>Hra</li>
+
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		
+		console.log("start")
+       
+		var empname = "Dipali";
+		var age = 25;
+		var empgender = "female";
+		var basic_salary = 175000;
+		var total_salary,pf,hra;
+		var tax;
+
+        pf = (basic_salary * 14) / 100;
+
+        hra= (basic_salary * 25) / 100;
+
+        total_salary = pf + hra + basic_salary;
+
+        console.log(" Employee name is : " + empname );
+        console.log(" Age of the Employee is : "+ age);
+        console.log(" gender : " + empgender);
+        console.log(" Employee Pf for 1 month : " + pf);
+        console.log (" Employee hra for 1 month : " + hra);
+        console.log(" Total salary of the Employee : " + total_salary);
+        
+
+
+        if (empgender == "male")
+         {
+
+        	console.log(" tax for : " + empname);
+
+        	if (total_salary >= 200000) {
+
+        		console.log(empname + " Need to pay 15 percent tax  ");
+
+        	}
+        	else if (total_salary >=125000) {
+
+        		console.log(empname + " Need to pay 10 percent tax  ")
+        	}
+        	else if (total_salary >= 90000) {
+
+        		console.log(empname + " Need to pay 5 percent tax ");
+        	}
+
+        
+        	else{
+        		console.log( empname + " has doesnt need to pay tax due to less salary ")
+        	}
+         }
+        if (empgender == "female") {
+            console.log("tax for : " + empname);
+           
+           if (total_salary >= 200000) {
+           	console.log(empname + " Need to pay 10 percent tax  ")
+           }
+           else if (total_salary >= 110000) {
+           	console.log(empname + " Need to pay 5 percent tax  ")
+           }
+           else{
+           	console.log(empname + " has doesnt need to pay tax due to less salary")
+           }
+
+
+        }
+      
+
+			console.log(" The End ");
+
+          
+	</script>
+       
+
+</body>
+</html>

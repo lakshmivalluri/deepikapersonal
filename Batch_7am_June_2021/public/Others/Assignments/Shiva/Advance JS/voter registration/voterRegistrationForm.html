@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="voterStyles.css">
+        
+    </head>
+    <body>
+        <h2>Voter Registration</h2>
+        <ul>
+            <li>              
+                <label for="name">Enter Full Name : </label>                                     
+                <div>
+                   <input type="text" id = "vName" placeholder="name" maxlength="30" onkeypress = "return validateName(event);">
+                   <span id = "checkName">only characters are allowed</span>
+                </div>
+            </li>
+            <li>              
+                <label for="age">Enter your age : </label>                                    
+                <div>
+                   <input type="text" id = "vAge" placeholder="age" maxlength="2" onkeypress = "return validateAge(event);" onblur="onBlurOfAge()">
+                   <span id = "checkAge">only numbers are allowed</span>
+                </div>
+            </li>
+            <li>              
+                <label for="location">location : </label>                                     
+                <div>
+                   <select id="vLocation">
+                       <option></option>                      
+                       <option>india</option>
+                   </select>
+                   <select id="vsLocation">
+                        <option></option>
+                        <option>Telangana</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Maharastra</option>
+                        <option>Delhi</option>
+                        <option>Gujarat</option>
+                   </select>
+                </div>
+            </li>
+            <li>              
+                <label for="address">Enter your address : </label>                                     
+                <div>
+                   <textarea name="address" id="vAddress" cols="30" rows="5"></textarea>
+                </div>
+            </li>
+            <li style = "text-align: center;">
+                <input type="button" value = "register" id = "vButton" onclick = "registerVoter();" >
+            </li>
+        </ul>
+        <ul class = "wakeUp">
+            <li id="vvName"></li>
+            <li id="vvAge"></li>
+            <li id="vvLocation"></li>
+            <li id="vvsLocation"></li>
+            <li id="vvAddress"></li>
+            <li id="vvvAge"></li>
+            <li id="voterAge"></li>
+
+            
+        </ul>
+        <script src = "voterJs.js"></script>
+    </body>
+</html>

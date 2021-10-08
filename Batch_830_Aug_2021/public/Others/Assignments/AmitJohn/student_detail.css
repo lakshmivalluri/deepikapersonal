@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+  
+}
+
+.heading{
+text-align: center;
+font-size: 27px;
+font-weight: bold;
+margin: 14PX;
+
+}
+
+img{
+    height: 127px;
+    width: 180px ;}
+
+.content {
+    box-shadow: 0 4px 8px 0 rgba(53, 44, 65, 0.2);
+    transition: 0.3s;
+    margin: 25px 340px;
+    padding: 25px 14px 14px 14px;
+    width: 1200px;
+    background-color:
+    #e3f2fd;
+    display: flex;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(228, 23, 23, 0.2);
+  }
+  .container{
+      margin: 0 0 0 57px;
+  }
+  
+  p{
+      font-size: 15px;
+  }
